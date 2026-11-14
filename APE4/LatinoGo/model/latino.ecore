@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="latino" nsURI="http://www.uta.edu.ec/latino" nsPrefix="latino">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Programa">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="ProgramaNoVacio"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="ProgramaNoVacio" value="&#xA;&#x9;&#x9;&#x9;Tuple {&#xA;&#x9;&#x9;&#x9;&#x9;message : String = 'El programa esta vacio, agrega al menos una sentencia',&#xA;&#x9;&#x9;&#x9;&#x9;severity : Integer = -1,&#xA;&#x9;&#x9;&#x9;&#x9;status : Boolean = sentencias->notEmpty()&#xA;&#x9;&#x9;&#x9;}.status"/>
+    </eAnnotations>
+    <eOperations name="defineVariable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="&#xA;&#x9;&#x9;&#x9;self.oclAsType(ocl::OclElement)->closure(e | e.oclContents())->exists(e | (e.oclIsKindOf(Definicion) and e.oclAsType(Definicion).nombre = nombre) or (e.oclIsKindOf(Variable) and e.oclAsType(Variable).nombre = nombre))"/>
+      </eAnnotations>
+      <eParameters name="nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sentencias" upperBound="-1"
+        eType="#//Sentencia" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Elemento" abstract="true">
+    <eOperations name="programa" eType="#//Programa">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="&#xA;&#x9;&#x9;&#x9;self.oclAsType(ocl::OclElement)->closure(e | e.oclContainer())->select(e | e.oclIsKindOf(Programa))->any(true).oclAsType(Programa)"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="usaSoloVariablesDefinidas" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="&#xA;&#x9;&#x9;&#x9;texto = null or&#xA;&#x9;&#x9;&#x9;&#x9;texto.replaceAll('&quot;[^&quot;]*&quot;|\'[^\']*\'', '')&#xA;&#x9;&#x9;&#x9;&#x9;.tokenize(' ()[]&lt;>=!&amp;|+-*/%.,')&#xA;&#x9;&#x9;&#x9;&#x9;->select(t | t.matches('[a-zA-Z_][a-zA-Z0-9_]*') and t &lt;> 'verdadero' and t &lt;> 'falso' and t &lt;> 'cierto')&#xA;&#x9;&#x9;&#x9;&#x9;->forAll(t | self.programa().defineVariable(t))"/>
+      </eAnnotations>
+      <eParameters name="texto" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eOperations name="tipoTexto" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="&#xA;&#x9;&#x9;&#x9;if texto = null then 'desconocido' else&#xA;&#x9;&#x9;&#x9;&#x9;let s : String = texto.replaceAll('&quot;[^&quot;]*&quot;|\'[^\']*\'', '') in&#xA;&#x9;&#x9;&#x9;&#x9;if s.matches('.*[a-zA-Z_][a-zA-Z0-9_]* *[(].*') then 'desconocido'&#xA;&#x9;&#x9;&#x9;&#x9;else if s.matches('.*(==|!=|&lt;|>|&amp;&amp;|[|][|]|!).*') or s.matches('.*\\b(verdadero|falso|cierto)\\b.*') then 'logico'&#xA;&#x9;&#x9;&#x9;&#x9;else if texto.matches('.*([&quot;\']|[.][.]).*') then 'texto'&#xA;&#x9;&#x9;&#x9;&#x9;else if s.tokenize(' ()[]&lt;>=!&amp;|+-*/%.,')->forAll(t | not t.matches('[a-zA-Z_][a-zA-Z0-9_]*')) then 'numero'&#xA;&#x9;&#x9;&#x9;&#x9;else 'desconocido'&#xA;&#x9;&#x9;&#x9;&#x9;endif endif endif endif&#xA;&#x9;&#x9;&#x9;endif"/>
+      </eAnnotations>
+      <eParameters name="texto" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eOperations name="operandosNumericos" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="&#xA;&#x9;&#x9;&#x9;texto = null or texto.replaceAll('&quot;[^&quot;]*&quot;|\'[^\']*\'', '').matches('.*[a-zA-Z_][a-zA-Z0-9_]* *[(].*') or&#xA;&#x9;&#x9;&#x9;&#x9;not texto.replaceAll('&quot;[^&quot;]*&quot;|\'[^\']*\'', '@')&#xA;&#x9;&#x9;&#x9;&#x9;.replaceAll('[()]', '')&#xA;&#x9;&#x9;&#x9;&#x9;.replaceAll('\\b(verdadero|falso|cierto)\\b', '@')&#xA;&#x9;&#x9;&#x9;&#x9;.replaceAll(' ', '')&#xA;&#x9;&#x9;&#x9;&#x9;.matches('.*(@[-+*/%]|[-+*/%]@).*')"/>
+      </eAnnotations>
+      <eParameters name="texto" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eOperations name="esReservadaGo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="Set{'break', 'case', 'chan', 'const', 'continue', 'default', 'defer', 'else', 'fallthrough', 'for', 'func', 'go', 'goto', 'if', 'import', 'interface', 'map', 'package', 'range', 'return', 'select', 'struct', 'switch', 'type', 'var', 'fmt', 'main', 'true', 'false', 'nil', 'int', 'float64', 'string', 'bool', 'any', 'init', '_', 'leerTexto', 'leerNumero', 'aTexto', 'lector', 'bufio', 'math', 'os', 'strconv', 'strings', 'primeraVuelta'}->includes(n)"/>
+      </eAnnotations>
+      <eParameters name="n" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+    <eOperations name="esReservadaLatino" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="Set{'global', 'ir', 'nulo', 'clase', 'constructor', 'hereda', 'super', 'mi', 'estatico', 'nueva'}->includes(n)"/>
+      </eAnnotations>
+      <eParameters name="n" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Sentencia" abstract="true" eSuperTypes="#//Elemento"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Definicion" abstract="true" eSuperTypes="#//Sentencia">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="NombreNoReservado NombreNoReservadoLatino"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="NombreNoReservado" value="Tuple { message : String = 'Ese nombre es una palabra reservada de Go, usa otro', severity : Integer = -1, status : Boolean = not esReservadaGo(nombre) }.status"/>
+      <details key="NombreNoReservadoLatino" value="Tuple { message : String = 'Ese nombre es una palabra de Latino, usa otro', severity : Integer = -1, status : Boolean = not esReservadaLatino(nombre) }.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Asignacion" eSuperTypes="#//Definicion">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="TipoConsistente VariablesDeclaradas OperandosNumericos"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="TipoConsistente" value="&#xA;&#x9;&#x9;&#x9;Tuple {&#xA;&#x9;&#x9;&#x9;&#x9;message : String = 'La variable cambia de tipo, no mezcles numeros, textos y logicos',&#xA;&#x9;&#x9;&#x9;&#x9;severity : Integer = -1,&#xA;&#x9;&#x9;&#x9;&#x9;status : Boolean = not usaSoloVariablesDefinidas(valor) or&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;(let mio : String = tipoTexto(valor) in&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;mio = 'desconocido' or&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;programa().oclAsType(ocl::OclElement)->closure(e | e.oclContents())->selectByKind(Asignacion)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;->select(a | a.nombre = self.nombre and a.usaSoloVariablesDefinidas(a.valor))&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;->forAll(a | let otro : String = a.tipoTexto(a.valor) in otro = 'desconocido' or otro = mio))&#xA;&#x9;&#x9;&#x9;}.status"/>
+      <details key="VariablesDeclaradas" value="&#xA;&#x9;&#x9;&#x9;Tuple {&#xA;&#x9;&#x9;&#x9;&#x9;message : String = 'El valor usa una variable que no existe',&#xA;&#x9;&#x9;&#x9;&#x9;severity : Integer = -1,&#xA;&#x9;&#x9;&#x9;&#x9;status : Boolean = usaSoloVariablesDefinidas(valor)&#xA;&#x9;&#x9;&#x9;}.status"/>
+      <details key="OperandosNumericos" value="&#xA;&#x9;&#x9;&#x9;Tuple {&#xA;&#x9;&#x9;&#x9;&#x9;message : String = 'No uses + - * / % con textos o logicos, para unir textos usa ..',&#xA;&#x9;&#x9;&#x9;&#x9;severity : Integer = -1,&#xA;&#x9;&#x9;&#x9;&#x9;status : Boolean = not usaSoloVariablesDefinidas(valor) or operandosNumericos(valor)&#xA;&#x9;&#x9;&#x9;}.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Leer" eSuperTypes="#//Definicion">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="TipoLeido"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="TipoLeido" value="&#xA;&#x9;&#x9;&#x9;Tuple {&#xA;&#x9;&#x9;&#x9;&#x9;message : String = if conversion = Conversion::NUMERO&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;then 'Esta variable se lee como numero pero luego le das otro tipo'&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;else 'Esta variable se lee como texto pero luego le das otro tipo' endif,&#xA;&#x9;&#x9;&#x9;&#x9;severity : Integer = -1,&#xA;&#x9;&#x9;&#x9;&#x9;status : Boolean = conversion = Conversion::NINGUNA or&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;(let esperado : String = if conversion = Conversion::NUMERO then 'numero' else 'texto' endif in&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;programa().oclAsType(ocl::OclElement)->closure(e | e.oclContents())->selectByKind(Asignacion)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;->select(a | a.nombre = self.nombre and a.usaSoloVariablesDefinidas(a.valor))&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;->forAll(a | let otro : String = a.tipoTexto(a.valor) in otro = 'desconocido' or otro = esperado))&#xA;&#x9;&#x9;&#x9;}.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="conversion" eType="#//Conversion"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Conversion">
+    <eLiterals name="NINGUNA"/>
+    <eLiterals name="NUMERO" value="1"/>
+    <eLiterals name="TEXTO" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Lista" eSuperTypes="#//Definicion">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="VariablesDeclaradas OperandosNumericos ElementosMismoTipo ListaSiempreLista"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="VariablesDeclaradas" value="Tuple { message : String = 'La lista usa una variable que no existe', severity : Integer = -1, status : Boolean = elementos->forAll(e | usaSoloVariablesDefinidas(e)) }.status"/>
+      <details key="OperandosNumericos" value="Tuple { message : String = 'No uses + - * / % con textos o logicos, para unir textos usa ..', severity : Integer = -1, status : Boolean = not elementos->forAll(e | usaSoloVariablesDefinidas(e)) or elementos->forAll(e | operandosNumericos(e)) }.status"/>
+      <details key="ElementosMismoTipo" value="Tuple { message : String = 'La lista mezcla numeros, textos y logicos, usa un solo tipo', severity : Integer = -1, status : Boolean = not elementos->forAll(e | usaSoloVariablesDefinidas(e) and operandosNumericos(e)) or programa().oclAsType(ocl::OclElement)->closure(e | e.oclContents())->selectByKind(Lista)->select(l | l.nombre = nombre)->collect(l | l.elementos->collect(e | l.tipoTexto(e)))->reject(t | t = 'desconocido')->asSet()->size() &lt;= 1 }.status"/>
+      <details key="ListaSiempreLista" value="Tuple { message : String = 'Esta variable es una lista, no le des un valor suelto', severity : Integer = -1, status : Boolean = programa().oclAsType(ocl::OclElement)->closure(e | e.oclContents())->select(e | e.oclIsKindOf(Asignacion) or e.oclIsKindOf(Leer))->forAll(e | e.oclAsType(Definicion).nombre &lt;> nombre) }.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="elementos" unique="false"
+        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AsignacionIndice" eSuperTypes="#//Sentencia">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="ListaDeclarada VariablesDeclaradas IndiceNumerico TipoElemento"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="ListaDeclarada" value="Tuple { message : String = 'Ese nombre no es una lista, creala antes con corchetes', severity : Integer = -1, status : Boolean = programa().oclAsType(ocl::OclElement)->closure(e | e.oclContents())->selectByKind(Lista)->exists(l | l.nombre = lista) }.status"/>
+      <details key="VariablesDeclaradas" value="Tuple { message : String = 'El indice o el valor usan una variable que no existe', severity : Integer = -1, status : Boolean = usaSoloVariablesDefinidas(indice) and usaSoloVariablesDefinidas(valor) }.status"/>
+      <details key="IndiceNumerico" value="Tuple { message : String = 'El indice debe ser un numero, por ejemplo v[0]', severity : Integer = -1, status : Boolean = not usaSoloVariablesDefinidas(indice) or (let t : String = tipoTexto(indice) in t &lt;> 'texto' and t &lt;> 'logico') }.status"/>
+      <details key="TipoElemento" value="Tuple { message : String = 'El valor no es del mismo tipo que los elementos de la lista', severity : Integer = -1, status : Boolean = not usaSoloVariablesDefinidas(valor) or (let t : String = tipoTexto(valor) in t = 'desconocido' or programa().oclAsType(ocl::OclElement)->closure(e | e.oclContents())->selectByKind(Lista)->select(l | l.nombre = lista)->forAll(l | l.elementos->forAll(e | let o : String = l.tipoTexto(e) in o = 'desconocido' or o = t))) }.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lista" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="indice" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Condicional" eSuperTypes="#//Sentencia">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="BloqueNoVacio VariablesDeclaradas OperandosNumericos CondicionLogica"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="BloqueNoVacio" value="&#xA;&#x9;&#x9;&#x9;Tuple {&#xA;&#x9;&#x9;&#x9;&#x9;message : String = 'El si necesita al menos una sentencia dentro',&#xA;&#x9;&#x9;&#x9;&#x9;severity : Integer = -1,&#xA;&#x9;&#x9;&#x9;&#x9;status : Boolean = entonces->notEmpty()&#xA;&#x9;&#x9;&#x9;}.status"/>
+      <details key="VariablesDeclaradas" value="&#xA;&#x9;&#x9;&#x9;Tuple {&#xA;&#x9;&#x9;&#x9;&#x9;message : String = 'La condicion usa una variable que no existe',&#xA;&#x9;&#x9;&#x9;&#x9;severity : Integer = -1,&#xA;&#x9;&#x9;&#x9;&#x9;status : Boolean = usaSoloVariablesDefinidas(condicion)&#xA;&#x9;&#x9;&#x9;}.status"/>
+      <details key="OperandosNumericos" value="&#xA;&#x9;&#x9;&#x9;Tuple {&#xA;&#x9;&#x9;&#x9;&#x9;message : String = 'No uses + - * / % con textos o logicos, para unir textos usa ..',&#xA;&#x9;&#x9;&#x9;&#x9;severity : Integer = -1,&#xA;&#x9;&#x9;&#x9;&#x9;status : Boolean = not usaSoloVariablesDefinidas(condicion) or operandosNumericos(condicion)&#xA;&#x9;&#x9;&#x9;}.status"/>
+      <details key="CondicionLogica" value="&#xA;&#x9;&#x9;&#x9;Tuple {&#xA;&#x9;&#x9;&#x9;&#x9;message : String = 'La condicion debe ser verdadera o falsa, por ejemplo edad > 18',&#xA;&#x9;&#x9;&#x9;&#x9;severity : Integer = -1,&#xA;&#x9;&#x9;&#x9;&#x9;status : Boolean = not usaSoloVariablesDefinidas(condicion) or not operandosNumericos(condicion) or&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;(let tipo : String = tipoTexto(condicion) in tipo &lt;> 'numero' and tipo &lt;> 'texto')&#xA;&#x9;&#x9;&#x9;}.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="condicion" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entonces" upperBound="-1"
+        eType="#//Sentencia" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="osis" upperBound="-1" eType="#//Osi"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sino" upperBound="-1" eType="#//Sentencia"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Osi" eSuperTypes="#//Elemento">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="BloqueNoVacio VariablesDeclaradas OperandosNumericos CondicionLogica"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="BloqueNoVacio" value="&#xA;&#x9;&#x9;&#x9;Tuple {&#xA;&#x9;&#x9;&#x9;&#x9;message : String = 'El osi necesita al menos una sentencia dentro',&#xA;&#x9;&#x9;&#x9;&#x9;severity : Integer = -1,&#xA;&#x9;&#x9;&#x9;&#x9;status : Boolean = sentencias->notEmpty()&#xA;&#x9;&#x9;&#x9;}.status"/>
+      <details key="VariablesDeclaradas" value="&#xA;&#x9;&#x9;&#x9;Tuple {&#xA;&#x9;&#x9;&#x9;&#x9;message : String = 'La condicion del osi usa una variable que no existe',&#xA;&#x9;&#x9;&#x9;&#x9;severity : Integer = -1,&#xA;&#x9;&#x9;&#x9;&#x9;status : Boolean = usaSoloVariablesDefinidas(condicion)&#xA;&#x9;&#x9;&#x9;}.status"/>
+      <details key="OperandosNumericos" value="&#xA;&#x9;&#x9;&#x9;Tuple {&#xA;&#x9;&#x9;&#x9;&#x9;message : String = 'No uses + - * / % con textos o logicos, para unir textos usa ..',&#xA;&#x9;&#x9;&#x9;&#x9;severity : Integer = -1,&#xA;&#x9;&#x9;&#x9;&#x9;status : Boolean = not usaSoloVariablesDefinidas(condicion) or operandosNumericos(condicion)&#xA;&#x9;&#x9;&#x9;}.status"/>
+      <details key="CondicionLogica" value="&#xA;&#x9;&#x9;&#x9;Tuple {&#xA;&#x9;&#x9;&#x9;&#x9;message : String = 'La condicion del osi debe ser verdadera o falsa, por ejemplo edad > 18',&#xA;&#x9;&#x9;&#x9;&#x9;severity : Integer = -1,&#xA;&#x9;&#x9;&#x9;&#x9;status : Boolean = not usaSoloVariablesDefinidas(condicion) or not operandosNumericos(condicion) or&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;(let tipo : String = tipoTexto(condicion) in tipo &lt;> 'numero' and tipo &lt;> 'texto')&#xA;&#x9;&#x9;&#x9;}.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="condicion" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sentencias" upperBound="-1"
+        eType="#//Sentencia" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Imprimir" eSuperTypes="#//Sentencia">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="VariablesDeclaradas OperandosNumericos"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="VariablesDeclaradas" value="&#xA;&#x9;&#x9;&#x9;Tuple {&#xA;&#x9;&#x9;&#x9;&#x9;message : String = 'escribir usa una variable que no existe',&#xA;&#x9;&#x9;&#x9;&#x9;severity : Integer = -1,&#xA;&#x9;&#x9;&#x9;&#x9;status : Boolean = usaSoloVariablesDefinidas(mensaje)&#xA;&#x9;&#x9;&#x9;}.status"/>
+      <details key="OperandosNumericos" value="&#xA;&#x9;&#x9;&#x9;Tuple {&#xA;&#x9;&#x9;&#x9;&#x9;message : String = 'No uses + - * / % con textos o logicos, para unir textos usa ..',&#xA;&#x9;&#x9;&#x9;&#x9;severity : Integer = -1,&#xA;&#x9;&#x9;&#x9;&#x9;status : Boolean = not usaSoloVariablesDefinidas(mensaje) or operandosNumericos(mensaje)&#xA;&#x9;&#x9;&#x9;}.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mensaje" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ciclo" abstract="true" eSuperTypes="#//Sentencia">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="CuerpoNoVacio"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="CuerpoNoVacio" value="Tuple { message : String = 'El ciclo necesita al menos una sentencia dentro', severity : Integer = -1, status : Boolean = cuerpo->notEmpty() }.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cuerpo" upperBound="-1"
+        eType="#//Sentencia" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CicloCondicion" abstract="true" eSuperTypes="#//Ciclo">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="VariablesDeclaradas OperandosNumericos CondicionLogica"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="VariablesDeclaradas" value="Tuple { message : String = 'La condicion del ciclo usa una variable que no existe', severity : Integer = -1, status : Boolean = usaSoloVariablesDefinidas(condicion) }.status"/>
+      <details key="OperandosNumericos" value="Tuple { message : String = 'No uses + - * / % con textos o logicos, para unir textos usa ..', severity : Integer = -1, status : Boolean = not usaSoloVariablesDefinidas(condicion) or operandosNumericos(condicion) }.status"/>
+      <details key="CondicionLogica" value="Tuple { message : String = 'La condicion del ciclo debe ser verdadera o falsa, por ejemplo i &lt; 10', severity : Integer = -1, status : Boolean = not usaSoloVariablesDefinidas(condicion) or not operandosNumericos(condicion) or (let tipo : String = tipoTexto(condicion) in tipo &lt;> 'numero' and tipo &lt;> 'texto') }.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="condicion" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Mientras" eSuperTypes="#//CicloCondicion"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Repetir" eSuperTypes="#//CicloCondicion"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Desde" eSuperTypes="#//CicloCondicion">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inicio" eType="#//Asignacion"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="paso" eType="#//Sentencia"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Para" eSuperTypes="#//Ciclo">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="VariablesDeclaradas RangoNumerico"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="VariablesDeclaradas" value="Tuple { message : String = 'El rango usa una variable que no existe', severity : Integer = -1, status : Boolean = limites->forAll(l | usaSoloVariablesDefinidas(l)) }.status"/>
+      <details key="RangoNumerico" value="Tuple { message : String = 'Los valores del rango deben ser numeros', severity : Integer = -1, status : Boolean = not limites->forAll(l | usaSoloVariablesDefinidas(l)) or limites->forAll(l | let t : String = tipoTexto(l) in t &lt;> 'texto' and t &lt;> 'logico') }.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variable" eType="#//Variable"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="limites" unique="false"
+        lowerBound="1" upperBound="3" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Incremento" eSuperTypes="#//Sentencia">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="VariableDeclarada"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="VariableDeclarada" value="Tuple { message : String = 'Esa variable no existe, dale un valor antes de usar ++ o --', severity : Integer = -1, status : Boolean = programa().defineVariable(nombre) }.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="operador" eType="#//OperadorPaso"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="OperadorPaso">
+    <eLiterals name="MAS" literal="++"/>
+    <eLiterals name="MENOS" value="1" literal="--"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Salto" abstract="true" eSuperTypes="#//Sentencia">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="DentroDeCiclo"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="DentroDeCiclo" value="Tuple { message : String = 'romper y continuar solo van dentro de un ciclo', severity : Integer = -1, status : Boolean = self.oclAsType(ocl::OclElement)->closure(e | e.oclContainer())->exists(e | e.oclIsKindOf(Ciclo)) }.status"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Romper" eSuperTypes="#//Salto"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Continuar" eSuperTypes="#//Salto"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Variable" eSuperTypes="#//Elemento">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="NombreNoReservado NombreNoReservadoLatino"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="NombreNoReservado" value="Tuple { message : String = 'Ese nombre es una palabra reservada de Go, usa otro', severity : Integer = -1, status : Boolean = not esReservadaGo(nombre) }.status"/>
+      <details key="NombreNoReservadoLatino" value="Tuple { message : String = 'Ese nombre es una palabra de Latino, usa otro', severity : Integer = -1, status : Boolean = not esReservadaLatino(nombre) }.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Elegir" eSuperTypes="#//Sentencia">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="VariablesDeclaradas CasoRepetido CasosMismoTipo"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="VariablesDeclaradas" value="Tuple { message : String = 'El elegir usa una variable que no existe', severity : Integer = -1, status : Boolean = usaSoloVariablesDefinidas(expresion) }.status"/>
+      <details key="CasoRepetido" value="Tuple { message : String = 'Ese valor ya esta en otro caso del elegir', severity : Integer = -1, status : Boolean = casos->collect(c | c.valores)->size() = casos->collect(c | c.valores)->asSet()->size() }.status"/>
+      <details key="CasosMismoTipo" value="Tuple { message : String = 'Los casos deben ser del mismo tipo que lo que se elige, numeros o textos', severity : Integer = -1, status : Boolean = not usaSoloVariablesDefinidas(expresion) or casos->collect(c | c.valores)->collect(v | tipoTexto(v))->asSet()->union(programa().oclAsType(ocl::OclElement)->closure(e | e.oclContents())->selectByKind(Asignacion)->select(a | a.nombre = expresion)->collect(a | a.tipoTexto(a.valor))->asSet())->including(tipoTexto(expresion))->excluding('desconocido')->size() &lt;= 1 }.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="expresion" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="casos" upperBound="-1"
+        eType="#//Caso" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defecto" upperBound="-1"
+        eType="#//Sentencia" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Caso" eSuperTypes="#//Elemento">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valores" unique="false"
+        lowerBound="1" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sentencias" lowerBound="1"
+        upperBound="-1" eType="#//Sentencia" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Funcion" eSuperTypes="#//Definicion">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="FuncionUnica BloqueNoVacio"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="FuncionUnica" value="Tuple { message : String = 'Ese nombre ya lo usa otra funcion o una variable', severity : Integer = -1, status : Boolean = programa().oclAsType(ocl::OclElement)->closure(e | e.oclContents())->selectByKind(Definicion)->forAll(d | d = self or d.nombre &lt;> nombre) }.status"/>
+      <details key="BloqueNoVacio" value="Tuple { message : String = 'La funcion necesita al menos una sentencia dentro', severity : Integer = -1, status : Boolean = cuerpo->notEmpty() }.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parametros" upperBound="-1"
+        eType="#//Variable" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cuerpo" upperBound="-1"
+        eType="#//Sentencia" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Retorno" eSuperTypes="#//Sentencia">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="DentroDeFuncion VariablesDeclaradas OperandosNumericos"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="DentroDeFuncion" value="Tuple { message : String = 'retorno solo puede ir dentro de una funcion', severity : Integer = -1, status : Boolean = self.oclAsType(ocl::OclElement)->closure(e | e.oclContainer())->exists(e | e.oclIsKindOf(Funcion)) }.status"/>
+      <details key="VariablesDeclaradas" value="Tuple { message : String = 'El valor del retorno usa una variable que no existe', severity : Integer = -1, status : Boolean = usaSoloVariablesDefinidas(valor) }.status"/>
+      <details key="OperandosNumericos" value="Tuple { message : String = 'No uses + - * / % con textos o logicos, para unir textos usa ..', severity : Integer = -1, status : Boolean = not usaSoloVariablesDefinidas(valor) or operandosNumericos(valor) }.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Llamada" eSuperTypes="#//Sentencia">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="FuncionDeclarada ArgumentosCompletos VariablesDeclaradas OperandosNumericos"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="FuncionDeclarada" value="Tuple { message : String = 'Esa funcion no existe, definela antes con funcion', severity : Integer = -1, status : Boolean = programa().oclAsType(ocl::OclElement)->closure(e | e.oclContents())->selectByKind(Funcion)->exists(f | f.nombre = funcion) }.status"/>
+      <details key="ArgumentosCompletos" value="Tuple { message : String = 'La llamada no lleva tantos valores como parametros tiene la funcion', severity : Integer = -1, status : Boolean = programa().oclAsType(ocl::OclElement)->closure(e | e.oclContents())->selectByKind(Funcion)->select(f | f.nombre = funcion)->forAll(f | f.parametros->size() = argumentos->size()) }.status"/>
+      <details key="VariablesDeclaradas" value="Tuple { message : String = 'La llamada usa una variable que no existe', severity : Integer = -1, status : Boolean = argumentos->forAll(a | usaSoloVariablesDefinidas(a)) }.status"/>
+      <details key="OperandosNumericos" value="Tuple { message : String = 'No uses + - * / % con textos o logicos, para unir textos usa ..', severity : Integer = -1, status : Boolean = not argumentos->forAll(a | usaSoloVariablesDefinidas(a)) or argumentos->forAll(a | operandosNumericos(a)) }.status"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="funcion" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="argumentos" unique="false"
+        upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,174 @@
+grammar uta.latino.Latino with org.eclipse.xtext.common.Terminals
+
+import "platform:/resource/LatinoGo/model/latino.ecore"
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+// El archivo .lat entero es un programa, una lista de sentencias en orden
+Programa returns Programa:
+	{Programa} (sentencias+=SentenciaPrincipal)*;
+
+// Arriba del todo tambien puede ir una funcion, dentro de un si, un ciclo u otra funcion no
+SentenciaPrincipal returns Sentencia:
+	Sentencia | Funcion;
+
+// Una sentencia es una de estas
+Sentencia returns Sentencia:
+	Asignacion | Leer | Lista | AsignacionIndice | Incremento | Condicional | Imprimir
+	| Mientras | Repetir | Desde | Para | Romper | Continuar | Elegir | Retorno | Llamada;
+
+// edad = 20, en Latino no se escribe el tipo
+Asignacion returns Asignacion:
+	nombre=ID '=' valor=Expresion;
+
+// x = leer, x = anumero de leer o x = acadena de leer
+// leer solo va como valor completo, la palabra despues del = decide si es Leer o Asignacion
+Leer returns Leer:
+	nombre=ID '=' (conversion=Conversion '(' 'leer' '(' ')' ')' | 'leer' '(' ')');
+
+// anumero convierte lo leido a numero y acadena a texto, sin ninguna queda NINGUNA
+enum Conversion returns Conversion:
+	NUMERO='anumero' | TEXTO='acadena';
+
+// v = [1, 2, 3] crea una lista, puede estar vacia
+// la lista solo va como valor completo, igual que leer
+Lista returns Lista:
+	nombre=ID '=' '[' (elementos+=Expresion (',' elementos+=Expresion)*)? ']';
+
+// v[1] = 5 cambia un elemento, la lista ya debe existir y se cuenta desde 0
+AsignacionIndice returns AsignacionIndice:
+	lista=ID '[' indice=Expresion ']' '=' valor=Expresion;
+
+// si ... osi ... sino ... fin, los osi y el sino son opcionales
+Condicional returns Condicional:
+	'si' condicion=Expresion
+		(entonces+=Sentencia)*
+	(osis+=Osi)*
+	('sino'
+		(sino+=Sentencia)*
+	)?
+	'fin';
+
+// osi solo puede ir dentro de un si, nunca suelto
+Osi returns Osi:
+	'osi' condicion=Expresion
+		(sentencias+=Sentencia)*;
+
+// mientras i < 5 ... fin repite el cuerpo mientras la condicion sea verdadera
+Mientras returns Mientras:
+	'mientras' condicion=Expresion
+		(cuerpo+=Sentencia)*
+	'fin';
+
+// repetir ... hasta i >= 5 hace el cuerpo y para cuando la condicion es verdadera, no lleva fin
+Repetir returns Repetir:
+	'repetir'
+		(cuerpo+=Sentencia)*
+	'hasta' condicion=Expresion;
+
+// desde lleva parentesis con inicio, condicion y paso separados por punto y coma
+// el paso es i++, i-- o una asignacion como i = i + 2
+Desde returns Desde:
+	'desde' '(' inicio=Asignacion ';' condicion=Expresion ';' paso=(Asignacion | Incremento) ')'
+		(cuerpo+=Sentencia)*
+	'fin';
+
+// para i en rango con el fin, con inicio y fin o con inicio, fin y paso
+// el fin no se incluye, rango de 3 da 0, 1 y 2
+Para returns Para:
+	'para' variable=Variable 'en' 'rango' '(' limites+=Expresion (',' limites+=Expresion (',' limites+=Expresion)?)? ')'
+		(cuerpo+=Sentencia)*
+	'fin';
+
+// Solo da un nombre, lo usan la variable del para y los parametros de una funcion
+Variable returns Variable:
+	nombre=ID;
+
+// i++ suma uno e i-- resta uno, van como sentencia sola
+Incremento returns Incremento:
+	nombre=ID operador=OperadorPaso;
+
+enum OperadorPaso returns OperadorPaso:
+	MAS='++' | MENOS='--';
+
+// romper sale del ciclo y continuar pasa a la siguiente vuelta
+Romper returns Romper:
+	{Romper} 'romper';
+
+Continuar returns Continuar:
+	{Continuar} 'continuar';
+
+// elegir compara un valor con cada caso, no pasa al caso siguiente y no hace falta romper
+// otro o defecto va al final y se usa cuando ningun caso coincide
+Elegir returns Elegir:
+	'elegir' expresion=Expresion
+		(casos+=Caso)*
+		(('otro' | 'defecto') ':'
+			(defecto+=Sentencia)+)?
+	'fin';
+
+// Cada caso lleva un valor y dos puntos, varios valores para el mismo bloque van con varios caso seguidos
+// el bloque no puede estar vacio, asi no se confunde un caso vacio con un caso de dos valores
+Caso returns Caso:
+	'caso' valores+=Constante ':' ('caso' valores+=Constante ':')*
+		(sentencias+=Sentencia)+;
+
+// Un caso solo lleva un numero o un texto
+Constante returns ecore::EString:
+	Numero | STRING;
+
+// funcion o fun, el nombre, los parametros solo con nombre y el cuerpo hasta fin
+Funcion returns Funcion:
+	('funcion' | 'fun') nombre=ID '(' (parametros+=Variable (',' parametros+=Variable)*)? ')'
+		(cuerpo+=Sentencia)*
+	'fin';
+
+// retorno devuelve un valor, tambien se escribe retornar, regresar, devolver o ret
+// el valor es obligatorio, sin el la linea siguiente se leeria como el valor
+Retorno returns Retorno:
+	('retorno' | 'retornar' | 'regresar' | 'devolver' | 'ret') valor=Expresion;
+
+// Llamar a una funcion como sentencia sola, saludar con un valor entre parentesis
+Llamada returns Llamada:
+	funcion=ID '(' (argumentos+=Expresion (',' argumentos+=Expresion)*)? ')';
+
+// escribir, imprimir y poner hacen lo mismo
+Imprimir returns Imprimir:
+	('escribir' | 'imprimir' | 'poner') '(' mensaje=Expresion ')';
+
+// Expresiones, se guardan como texto. Las reglas van de menor a mayor prioridad
+// ||  &&  comparacion  ..  + -  * / %  y lo de mas abajo se calcula primero
+Expresion returns ecore::EString:
+	Conjuncion ('||' Conjuncion)*;
+
+Conjuncion returns ecore::EString:
+	Comparacion ('&&' Comparacion)*;
+
+Comparacion returns ecore::EString:
+	Concatenacion (('==' | '!=' | '<' | '<=' | '>' | '>=') Concatenacion)?;
+
+// .. une textos, por ejemplo "Hola " .. nombre
+Concatenacion returns ecore::EString:
+	Suma ('..' Suma)*;
+
+Suma returns ecore::EString:
+	Producto (('+' | '-') Producto)*;
+
+Producto returns ecore::EString:
+	Unario (('*' | '/' | '%') Unario)*;
+
+Unario returns ecore::EString:
+	'!' Unario | '-' Unario | Primario;
+
+// cierto es lo mismo que verdadero, v[0] lee un elemento de la lista
+// y un nombre seguido de parentesis llama a una funcion dentro de la expresion
+Primario returns ecore::EString:
+	ID ('[' Expresion ']' | '(' (Expresion (',' Expresion)*)? ')')? | STRING | Numero | 'verdadero' | 'cierto' | 'falso' | '(' Expresion ')';
+
+// 10 o 8.5
+Numero returns ecore::EString:
+	INT ('.' INT)?;
+
+// Comentarios de una linea con # o con //, las dos formas valen en Latino
+@Override
+terminal SL_COMMENT:
+	('#' | '//') !('\n' | '\r')* ('\r'? '\n')?;

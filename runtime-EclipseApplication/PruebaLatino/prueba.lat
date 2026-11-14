@@ -1,0 +1,257 @@
+
+estudiante = "Ana"
+nota1 = 8.5
+nota2 = 6.0
+minimo = 7.0
+asistencia = 90
+becado = verdadero
+promedio = (nota1 + nota2) / 2
+
+escribir("Estudiante: " .. estudiante)
+escribir("Promedio: " .. promedio) 
+
+si nota1 >= minimo && nota2 >= minimo
+    escribir("Aprobo ambas notas")
+sino
+    escribir("Reprobo al menos una nota")
+    si promedio >= minimo
+        escribir("Pero el promedio le alcanza")
+    sino
+        escribir("Y el promedio no le alcanza")
+    fin
+fin
+
+si (asistencia >= 80 && becado == verdadero) || nota1 > 9
+    escribir("Mantiene la beca")
+    asistencia = asistencia + 1
+sino
+    escribir("Pierde la beca")
+fin
+
+si !becado
+    escribir("Debe pagar matricula")
+fin
+
+# osi y sino con un solo osi
+si asistencia >= 95
+    escribir("Asistencia excelente")
+osi asistencia >= 80
+    escribir("Asistencia suficiente")
+sino
+    escribir("Asistencia baja")
+fin
+
+# Calificacion A, B, C o D segun el promedio con dos osi
+si promedio >= 9
+    letra = "A"
+osi promedio >= 8
+    letra = "B"
+osi promedio >= 7
+    letra = "C"
+sino
+    letra = "D"
+fin
+escribir("Calificacion: " .. letra)
+
+
+si nota1 > 9
+    escribir("Nota 1 sobresaliente")
+osi nota1 > 8
+    mensajeNota = "Nota 1 muy buena"
+    escribir(mensajeNota)
+fin
+
+
+si becado
+    si promedio >= 9
+        escribir("Beca completa")
+    osi promedio >= 7
+        escribir("Media beca")
+    sino
+        escribir("Beca en revision")
+    fin
+osi asistencia >= 80
+    escribir("Puede pedir beca")
+fin
+
+# .. une el texto con el resultado de la resta
+a = 10
+b = 4
+escribir("Total " .. (a - b))
+# Negativos y resta de un negativo
+x = -5
+c = a - -3
+# Lo que va entre comillas no se revisa
+escribir("El texto a - b no se calcula")
+# x sigue siendo numero porque y es numero
+x = 5
+y = 7
+x = y
+// Comparar un texto con == si vale
+nombre = "Ana"
+si nombre == "Ana"
+    escribir("Hola Ana")
+fin
+// cierto es lo mismo que verdadero
+activo = cierto
+si activo == cierto
+    escribir("Esta activo")
+fin
+# Una variable logica sola tambien sirve de condicion
+si becado
+    escribir("Tiene beca")
+fin
+si !becado
+    escribir("No tiene beca")
+fin
+
+# leer en sus tres formas, edad y limite son numeros y se pueden comparar
+nombreLeido = leer()
+edad = anumero(leer())
+ciudad = acadena(leer())
+limite = 18
+si edad >= limite
+    escribir(nombreLeido .. " es mayor de edad y vive en " .. ciudad)
+fin
+# leer sin conversion se vuelve numero porque se multiplica
+cantidad = leer()
+doble = cantidad * 2
+escribir(doble)
+# Un numero grande y una division con decimales
+grande = 1000000
+escribir(grande)
+escribir(7 / 2)
+# Resto de una division
+resto = 10 % 3
+escribir("Resto " .. resto)
+# opcion se compara con un numero, asi que se lee como numero
+opcion = leer()
+si opcion == 1
+    escribir("Elegiste la opcion uno")
+fin
+# respuesta se compara con un texto, asi que se lee como texto
+respuesta = leer()
+si respuesta != "no"
+    escribir("Seguimos")
+fin
+# Vectores, se crean con corchetes y se cuentan desde 0
+numeros = [3, 1, 4]
+numeros[1] = 5
+escribir(numeros)
+primero = numeros[0]
+escribir("Primero " .. primero)
+escribir(numeros[0 + 2] * 2)
+pos = 2
+numeros[pos - 1] = numeros[pos] * 10
+escribir(numeros)
+nombres = ["Ana", "Luis"]
+nombres[0] = "Eva"
+escribir(nombres[1] .. " y " .. nombres[0])
+escribir(nombres)
+vacia = []
+# Recorrer el vector con desde
+suma = 0
+desde (i = 0; i < 3; i++)
+    suma = suma + numeros[i]
+fin
+escribir("Suma " .. suma)
+# mientras repite mientras la condicion sea verdadera
+contador = 3
+mientras contador > 0
+    escribir("Faltan " .. contador)
+    contador = contador - 1
+fin
+# repetir hace el cuerpo al menos una vez
+k = 0
+repetir
+    k = k + 2
+hasta k >= 6
+escribir("k vale " .. k)
+# continuar dentro de repetir tambien revisa la condicion
+n2 = 0
+repetir
+    n2 = n2 + 1
+    si n2 == 2
+        continuar
+    fin
+    escribir(n2)
+hasta n2 >= 3
+# para en rango, el fin no se incluye, con continuar y romper
+para j en rango(10)
+    si j == 2
+        continuar
+    fin
+    si j > 4
+        romper
+    fin
+    escribir(j)
+fin
+# rango con inicio, fin y paso negativo
+para m en rango(6, 0, -2)
+    escribir(m)
+fin
+# desde que baja con i--
+desde (r = 3; r > 0; r--)
+    escribir(r)
+fin
+# elegir dentro de un ciclo, romper sale del ciclo y no solo del elegir
+para d en rango(1, 9)
+    elegir d
+        caso 1:
+            escribir("lunes")
+        caso 6: caso 7:
+            escribir("fin de semana")
+            romper
+        otro:
+            escribir("dia " .. d)
+    fin
+fin
+# elegir con textos, defecto es lo mismo que otro
+elegir ciudad
+    caso "Ambato":
+        escribir("Sierra centro")
+    caso "Quito": caso "Cuenca":
+        escribir("Sierra")
+    defecto:
+        escribir("Otra ciudad")
+fin
+# Funciones, se definen antes de usarlas y terminan con fin
+funcion sumar(a, b)
+    retorno a + b
+fin
+fun saludar(quien)
+    escribir("Hola " .. quien)
+fin
+funcion factorial(n)
+    si n <= 1
+        retorno 1
+    fin
+    retorno n * factorial(n - 1)
+fin
+funcion mayor(p, q)
+    si p > q
+        retornar p
+    sino
+        devolver q
+    fin
+fin
+# Llamadas dentro de una expresion y como sentencia sola
+total2 = sumar(2, 3)
+escribir("Suma " .. sumar(total2, 1))
+sumar(1, 1)
+saludar("Luis")
+saludar(nombreLeido)
+escribir(factorial(5))
+escribir(mayor(numeros[0], numeros[2]) * 2)
+escribir("El mayor es " .. mayor(7, 4))
+# Cada funcion tiene sus propios tipos, n es numero en una y texto en la otra
+fun dobleDe(n) ret n * 2 fin
+fun saluda(n) escribir("Hola " .. n) fin
+escribir(dobleDe(4))
+saluda("Ana")
+# El parametro numeros tapa a la lista global numeros dentro de la funcion
+funcion triple(numeros)
+    retorno numeros * 3
+fin
+escribir(triple(5))
+escribir(numeros)

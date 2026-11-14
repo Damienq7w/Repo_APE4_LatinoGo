@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/LatinoGo/src-gen" creationIcons="false" editDirectory="/LatinoGo.edit/src-gen"
+    editorDirectory="/LatinoGo.editor/src-gen" modelPluginID="LatinoGo" modelName="Latino"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="25.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>latino.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Latino" disposableProviderFactory="true" ecorePackage="latino.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="latino.ecore#//Conversion">
+      <genEnumLiterals ecoreEnumLiteral="latino.ecore#//Conversion/NINGUNA"/>
+      <genEnumLiterals ecoreEnumLiteral="latino.ecore#//Conversion/NUMERO"/>
+      <genEnumLiterals ecoreEnumLiteral="latino.ecore#//Conversion/TEXTO"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="latino.ecore#//OperadorPaso">
+      <genEnumLiterals ecoreEnumLiteral="latino.ecore#//OperadorPaso/MAS"/>
+      <genEnumLiterals ecoreEnumLiteral="latino.ecore#//OperadorPaso/MENOS"/>
+    </genEnums>
+    <genClasses ecoreClass="latino.ecore#//Programa">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference latino.ecore#//Programa/sentencias"/>
+      <genOperations ecoreOperation="latino.ecore#//Programa/defineVariable">
+        <genParameters ecoreParameter="latino.ecore#//Programa/defineVariable/nombre"/>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false" ecoreClass="latino.ecore#//Elemento">
+      <genOperations ecoreOperation="latino.ecore#//Elemento/programa"/>
+      <genOperations ecoreOperation="latino.ecore#//Elemento/usaSoloVariablesDefinidas">
+        <genParameters ecoreParameter="latino.ecore#//Elemento/usaSoloVariablesDefinidas/texto"/>
+      </genOperations>
+      <genOperations ecoreOperation="latino.ecore#//Elemento/tipoTexto">
+        <genParameters ecoreParameter="latino.ecore#//Elemento/tipoTexto/texto"/>
+      </genOperations>
+      <genOperations ecoreOperation="latino.ecore#//Elemento/operandosNumericos">
+        <genParameters ecoreParameter="latino.ecore#//Elemento/operandosNumericos/texto"/>
+      </genOperations>
+      <genOperations ecoreOperation="latino.ecore#//Elemento/esReservadaGo">
+        <genParameters ecoreParameter="latino.ecore#//Elemento/esReservadaGo/n"/>
+      </genOperations>
+      <genOperations ecoreOperation="latino.ecore#//Elemento/esReservadaLatino">
+        <genParameters ecoreParameter="latino.ecore#//Elemento/esReservadaLatino/n"/>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false" ecoreClass="latino.ecore#//Sentencia"/>
+    <genClasses image="false" ecoreClass="latino.ecore#//Definicion">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//Definicion/nombre"/>
+    </genClasses>
+    <genClasses ecoreClass="latino.ecore#//Asignacion">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//Asignacion/valor"/>
+    </genClasses>
+    <genClasses ecoreClass="latino.ecore#//Leer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//Leer/conversion"/>
+    </genClasses>
+    <genClasses ecoreClass="latino.ecore#//Lista">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//Lista/elementos"/>
+    </genClasses>
+    <genClasses ecoreClass="latino.ecore#//AsignacionIndice">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//AsignacionIndice/lista"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//AsignacionIndice/indice"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//AsignacionIndice/valor"/>
+    </genClasses>
+    <genClasses ecoreClass="latino.ecore#//Condicional">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//Condicional/condicion"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference latino.ecore#//Condicional/entonces"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference latino.ecore#//Condicional/osis"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference latino.ecore#//Condicional/sino"/>
+    </genClasses>
+    <genClasses ecoreClass="latino.ecore#//Osi">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//Osi/condicion"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference latino.ecore#//Osi/sentencias"/>
+    </genClasses>
+    <genClasses ecoreClass="latino.ecore#//Imprimir">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//Imprimir/mensaje"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="latino.ecore#//Ciclo">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference latino.ecore#//Ciclo/cuerpo"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="latino.ecore#//CicloCondicion">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//CicloCondicion/condicion"/>
+    </genClasses>
+    <genClasses ecoreClass="latino.ecore#//Mientras"/>
+    <genClasses ecoreClass="latino.ecore#//Repetir"/>
+    <genClasses ecoreClass="latino.ecore#//Desde">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference latino.ecore#//Desde/inicio"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference latino.ecore#//Desde/paso"/>
+    </genClasses>
+    <genClasses ecoreClass="latino.ecore#//Para">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference latino.ecore#//Para/variable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//Para/limites"/>
+    </genClasses>
+    <genClasses ecoreClass="latino.ecore#//Incremento">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//Incremento/nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//Incremento/operador"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="latino.ecore#//Salto"/>
+    <genClasses ecoreClass="latino.ecore#//Romper"/>
+    <genClasses ecoreClass="latino.ecore#//Continuar"/>
+    <genClasses ecoreClass="latino.ecore#//Variable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//Variable/nombre"/>
+    </genClasses>
+    <genClasses ecoreClass="latino.ecore#//Elegir">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//Elegir/expresion"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference latino.ecore#//Elegir/casos"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference latino.ecore#//Elegir/defecto"/>
+    </genClasses>
+    <genClasses ecoreClass="latino.ecore#//Caso">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//Caso/valores"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference latino.ecore#//Caso/sentencias"/>
+    </genClasses>
+    <genClasses ecoreClass="latino.ecore#//Funcion">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference latino.ecore#//Funcion/parametros"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference latino.ecore#//Funcion/cuerpo"/>
+    </genClasses>
+    <genClasses ecoreClass="latino.ecore#//Retorno">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//Retorno/valor"/>
+    </genClasses>
+    <genClasses ecoreClass="latino.ecore#//Llamada">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//Llamada/funcion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute latino.ecore#//Llamada/argumentos"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

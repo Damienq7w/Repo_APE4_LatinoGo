@@ -1,0 +1,6 @@
+# Lo que no se sube
+.metadata/
+bin/
+*.class
+*.log
+Thumbs.db

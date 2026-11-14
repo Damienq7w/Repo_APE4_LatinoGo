@@ -1,0 +1,221 @@
+# Cada bloque debe marcar un solo error OCL
+edad = 25
+
+# precio no existe
+total = precio * 2
+
+# sueldo no existe
+si sueldo > 100
+    escribir("sueldo alto")
+fin
+
+# El si no tiene nada dentro antes del sino
+si edad > 5
+sino
+    escribir("bloque entonces vacio")
+fin
+
+# apellido no existe
+escribir("Hola " .. apellido)
+
+# func es palabra reservada de Go, el .go no compilaria
+func = 3
+
+# El osi no tiene ninguna sentencia dentro
+si edad > 30
+    escribir("mayor de 30")
+osi edad > 20
+fin
+
+# La condicion del osi usa bono, que nunca se asigna
+si edad > 30
+    escribir("mayor de 30")
+osi bono > 20
+    escribir("bono alto")
+fin
+
+# Un texto por un numero, Latino convierte el texto a numero
+doble = "hola" * 2
+
+# Restar un texto tambien lo convierte a numero
+resta = edad - "x"
+
+# Un logico no se multiplica
+veces = verdadero * 2
+
+# + no une textos en Latino, para eso esta ..
+saludo = "a" + "b"
+
+# El parentesis no esconde el texto
+pdoble = ("hola") * 2
+
+# Sumar un numero a un texto unido con .. tambien lo convierte
+b = "mundo"
+psuma = 1 + ("a" .. b)
+
+# La condicion es solo un numero
+si 5
+    escribir("cinco")
+fin
+
+# La condicion es solo un texto
+si "hola"
+    escribir("hola")
+fin
+
+# noExiste no existe, solo se avisa eso y no lo del texto
+w = noExiste * "a"
+
+# Texto por numero en la condicion, solo se avisa eso
+si "a" * 2
+    escribir("doble")
+fin
+
+# x empieza como numero y despues pasa a texto, se marcan las dos lineas
+x = 5
+x = "a" .. b
+
+# clase es palabra de Latino
+clase = 3
+
+# Se lee como numero y luego se le da un texto, se marca solo el leer
+leido = anumero(leer())
+leido = "hola"
+
+# La lista usa total2, que no existe
+lista1 = [1, total2]
+
+# Un texto por un numero dentro de la lista
+lista2 = ["a" * 2]
+
+# La lista mezcla numeros y textos
+lista3 = [1, "dos"]
+
+# lista4 es una lista y despues recibe un numero suelto, se marca la lista
+lista4 = [1, 2]
+lista4 = 3
+
+# sinLista nunca se creo como lista
+sinLista[0] = 1
+
+# El indice usa pos, que no existe
+lista5 = [1, 2]
+lista5[pos] = 3
+
+# El indice es un texto
+lista5["a"] = 3
+
+# Un texto en una lista de numeros
+lista5[0] = "tres"
+
+# El mientras no tiene nada dentro
+mientras edad < 5
+fin
+
+# La condicion del mientras usa tope, que no existe
+mientras edad < tope
+    edad = edad + 1
+fin
+
+# Un texto por un numero en la condicion del repetir
+repetir
+    edad = edad + 1
+hasta "a" * 2 > edad
+
+# La condicion del desde es solo un numero
+desde (j = 0; 5; j++)
+    escribir(j)
+fin
+
+# El rango usa limite2, que no existe
+para k en rango(limite2)
+    escribir(k)
+fin
+
+# El rango es un texto
+para k en rango("diez")
+    escribir(k)
+fin
+
+# nadie no existe, no se le puede sumar uno
+nadie++
+
+# romper fuera de un ciclo
+romper
+
+# La variable del para es palabra reservada de Go
+para var en rango(3)
+    escribir(1)
+fin
+
+# La variable del para es palabra de Latino
+para clase en rango(3)
+    escribir(1)
+fin
+
+# dia2 no existe
+elegir dia2
+    caso 1:
+        escribir("uno")
+fin
+
+# El mismo valor en dos casos
+elegir edad
+    caso 1:
+        escribir("uno")
+    caso 1:
+        escribir("otra vez uno")
+fin
+
+# Un caso de texto cuando edad es un numero
+elegir edad
+    caso 1:
+        escribir("uno")
+    caso "dos":
+        escribir("dos")
+fin
+
+# La funcion usa el mismo nombre que una variable
+edad2 = 1
+funcion edad2()
+    escribir("x")
+fin
+
+# La funcion no tiene nada dentro
+funcion vacia()
+fin
+
+# retorno fuera de una funcion
+retorno 5
+
+# El retorno usa dato, que no existe
+funcion f1()
+    retorno dato
+fin
+
+# El retorno multiplica un texto
+funcion f2()
+    retorno "a" * 2
+fin
+
+# noHay no es una funcion
+noHay(1)
+
+# f3 pide dos valores y recibe uno
+funcion f3(a, b)
+    retorno a + b
+fin
+f3(1)
+
+# La llamada usa dato2, que no existe
+f3(1, dato2)
+
+# Un texto por un numero en la llamada
+f3(1, "a" * 2)
+
+# ciudad2 es un texto y el caso es un numero
+ciudad2 = "Quito"
+elegir ciudad2
+    caso 1:
+        escribir("uno")
+fin
