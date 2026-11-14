@@ -73,7 +73,7 @@ Un programa con errores no genera código Go.
 5. Clic derecho en `uta.latino` → **Run As → Eclipse Application**. Se abre una segunda instancia de Eclipse.
 6. En la segunda instancia, importar `runtime-EclipseApplication/PruebaLatino` y abrir:
    - `prueba.lat`: 0 errores; al guardar se genera `src-gen/prueba.go`;
-   - `errores.lat`: 52 errores, uno por cada caso inválido.
+   - `errores.lat`: 52 errores en 51 casos inválidos (el cambio de tipo marca sus dos líneas).
 7. Ejecutar el programa generado:
 
 ```bash

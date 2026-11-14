@@ -4,3 +4,5 @@ bin/
 *.class
 *.log
 Thumbs.db
+# Archivos temporales de Word mientras el documento esta abierto
+~$*
