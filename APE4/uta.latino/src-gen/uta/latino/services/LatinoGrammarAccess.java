@@ -523,7 +523,8 @@ public class LatinoGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 		private final Assignment cCondicionAssignment_3 = (Assignment)cGroup.eContents().get(3);
 		private final RuleCall cCondicionExpresionParserRuleCall_3_0 = (RuleCall)cCondicionAssignment_3.eContents().get(0);
 		
-		//// repetir ... hasta i >= 5 hace el cuerpo y para cuando la condicion es verdadera, no lleva fin
+		//// repetir ... hasta i >= 5 hace el cuerpo al menos una vez, no lleva fin
+		//// en Latino 1.4.4 la condicion se mira antes de cada vuelta y si era verdadera esa es la ultima
 		//Repetir returns Repetir:
 		//    'repetir'
 		//        (cuerpo+=Sentencia)*
@@ -1057,22 +1058,20 @@ public class LatinoGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 		private final Alternatives cAlternatives_0 = (Alternatives)cGroup.eContents().get(0);
 		private final Keyword cRetornoKeyword_0_0 = (Keyword)cAlternatives_0.eContents().get(0);
 		private final Keyword cRetornarKeyword_0_1 = (Keyword)cAlternatives_0.eContents().get(1);
-		private final Keyword cRegresarKeyword_0_2 = (Keyword)cAlternatives_0.eContents().get(2);
-		private final Keyword cDevolverKeyword_0_3 = (Keyword)cAlternatives_0.eContents().get(3);
-		private final Keyword cRetKeyword_0_4 = (Keyword)cAlternatives_0.eContents().get(4);
+		private final Keyword cRetKeyword_0_2 = (Keyword)cAlternatives_0.eContents().get(2);
 		private final Assignment cValorAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cValorExpresionParserRuleCall_1_0 = (RuleCall)cValorAssignment_1.eContents().get(0);
 		
-		//// retorno devuelve un valor, tambien se escribe retornar, regresar, devolver o ret
+		//// retorno devuelve un valor, tambien se escribe retornar o ret como en Latino 1.4.4
 		//// el valor es obligatorio, sin el la linea siguiente se leeria como el valor
 		//Retorno returns Retorno:
-		//    ('retorno' | 'retornar' | 'regresar' | 'devolver' | 'ret') valor=Expresion;
+		//    ('retorno' | 'retornar' | 'ret') valor=Expresion;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//('retorno' | 'retornar' | 'regresar' | 'devolver' | 'ret') valor=Expresion
+		//('retorno' | 'retornar' | 'ret') valor=Expresion
 		public Group getGroup() { return cGroup; }
 		
-		//('retorno' | 'retornar' | 'regresar' | 'devolver' | 'ret')
+		//('retorno' | 'retornar' | 'ret')
 		public Alternatives getAlternatives_0() { return cAlternatives_0; }
 		
 		//'retorno'
@@ -1081,14 +1080,8 @@ public class LatinoGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 		//'retornar'
 		public Keyword getRetornarKeyword_0_1() { return cRetornarKeyword_0_1; }
 		
-		//'regresar'
-		public Keyword getRegresarKeyword_0_2() { return cRegresarKeyword_0_2; }
-		
-		//'devolver'
-		public Keyword getDevolverKeyword_0_3() { return cDevolverKeyword_0_3; }
-		
 		//'ret'
-		public Keyword getRetKeyword_0_4() { return cRetKeyword_0_4; }
+		public Keyword getRetKeyword_0_2() { return cRetKeyword_0_2; }
 		
 		//valor=Expresion
 		public Assignment getValorAssignment_1() { return cValorAssignment_1; }
@@ -1882,7 +1875,8 @@ public class LatinoGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 		return getMientrasAccess().getRule();
 	}
 	
-	//// repetir ... hasta i >= 5 hace el cuerpo y para cuando la condicion es verdadera, no lleva fin
+	//// repetir ... hasta i >= 5 hace el cuerpo al menos una vez, no lleva fin
+	//// en Latino 1.4.4 la condicion se mira antes de cada vuelta y si era verdadera esa es la ultima
 	//Repetir returns Repetir:
 	//    'repetir'
 	//        (cuerpo+=Sentencia)*
@@ -2029,10 +2023,10 @@ public class LatinoGrammarAccess extends AbstractElementFinder.AbstractGrammarEl
 		return getFuncionAccess().getRule();
 	}
 	
-	//// retorno devuelve un valor, tambien se escribe retornar, regresar, devolver o ret
+	//// retorno devuelve un valor, tambien se escribe retornar o ret como en Latino 1.4.4
 	//// el valor es obligatorio, sin el la linea siguiente se leeria como el valor
 	//Retorno returns Retorno:
-	//    ('retorno' | 'retornar' | 'regresar' | 'devolver' | 'ret') valor=Expresion;
+	//    ('retorno' | 'retornar' | 'ret') valor=Expresion;
 	public RetornoElements getRetornoAccess() {
 		return pRetorno;
 	}

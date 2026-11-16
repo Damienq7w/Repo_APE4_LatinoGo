@@ -658,7 +658,7 @@ public abstract class ElementoImpl extends MinimalEObjectImpl.Container implemen
 	public boolean esReservadaGo(final String n) {
 		/**
 		 *
-		 * Set{'break', 'case', 'chan', 'const', 'continue', 'default', 'defer', 'else', 'fallthrough', 'for', 'func', 'go', 'goto', 'if', 'import', 'interface', 'map', 'package', 'range', 'return', 'select', 'struct', 'switch', 'type', 'var', 'fmt', 'main', 'true', 'false', 'nil', 'int', 'float64', 'string', 'bool', 'any', 'init', '_', 'leerTexto', 'leerNumero', 'aTexto', 'lector', 'bufio', 'math', 'os', 'strconv', 'strings', 'primeraVuelta'
+		 * Set{'break', 'case', 'chan', 'const', 'continue', 'default', 'defer', 'else', 'fallthrough', 'for', 'func', 'go', 'goto', 'if', 'import', 'interface', 'map', 'package', 'range', 'return', 'select', 'struct', 'switch', 'type', 'var', 'fmt', 'main', 'true', 'false', 'nil', 'int', 'float64', 'string', 'bool', 'any', 'init', '_', 'leerTexto', 'leerNumero', 'aTexto', 'lector', 'bufio', 'math', 'os', 'strconv', 'strings', 'ultimaVuelta'
 		 * }
 		 * ->includes(n)
 		 */

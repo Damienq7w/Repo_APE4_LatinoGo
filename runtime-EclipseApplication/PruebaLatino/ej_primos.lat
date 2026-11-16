@@ -1,0 +1,28 @@
+# Muestra los numeros primos desde 2 hasta un limite y dice cuantos hay
+# Un primo solo se divide para 1 y para el mismo
+
+# Prueba dividir para 2, 3, 4 y asi mientras el divisor al cuadrado no pase del numero
+funcion esPrimo(num)
+    si num < 2
+        retorno falso
+    fin
+    divisor = 2
+    mientras divisor * divisor <= num
+        si num % divisor == 0
+            retorno falso
+        fin
+        divisor = divisor + 1
+    fin
+    retorno verdadero
+fin
+
+escribir("Hasta que numero busco primos")
+limite = anumero(leer())
+cantidad = 0
+desde (i = 2; i <= limite; i++)
+    si esPrimo(i)
+        escribir(i)
+        cantidad++
+    fin
+fin
+escribir("Hay " .. cantidad .. " primos")

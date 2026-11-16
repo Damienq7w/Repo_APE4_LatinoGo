@@ -1,0 +1,16 @@
+# Ordena un vector de menor a mayor con el metodo de la burbuja
+# Compara cada numero con el siguiente y los cambia de lugar si estan al reves
+
+numeros = [5, 2, 9, 1, 7, 3]
+total = 6
+escribir("Antes " .. numeros)
+desde (pasada = 0; pasada < total - 1; pasada++)
+    desde (j = 0; j < total - 1 - pasada; j++)
+        si numeros[j] > numeros[j + 1]
+            auxiliar = numeros[j]
+            numeros[j] = numeros[j + 1]
+            numeros[j + 1] = auxiliar
+        fin
+    fin
+fin
+escribir("Despues " .. numeros)

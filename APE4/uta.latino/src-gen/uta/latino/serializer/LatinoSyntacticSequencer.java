@@ -25,7 +25,7 @@ public class LatinoSyntacticSequencer extends AbstractSyntacticSequencer {
 	protected AbstractElementAlias match_Elegir_DefectoKeyword_3_0_1_or_OtroKeyword_3_0_0;
 	protected AbstractElementAlias match_Funcion_FunKeyword_0_1_or_FuncionKeyword_0_0;
 	protected AbstractElementAlias match_Imprimir_EscribirKeyword_0_0_or_ImprimirKeyword_0_1_or_PonerKeyword_0_2;
-	protected AbstractElementAlias match_Retorno_DevolverKeyword_0_3_or_RegresarKeyword_0_2_or_RetKeyword_0_4_or_RetornarKeyword_0_1_or_RetornoKeyword_0_0;
+	protected AbstractElementAlias match_Retorno_RetKeyword_0_2_or_RetornarKeyword_0_1_or_RetornoKeyword_0_0;
 	
 	@Inject
 	protected void init(IGrammarAccess access) {
@@ -34,7 +34,7 @@ public class LatinoSyntacticSequencer extends AbstractSyntacticSequencer {
 		match_Elegir_DefectoKeyword_3_0_1_or_OtroKeyword_3_0_0 = new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getElegirAccess().getDefectoKeyword_3_0_1()), new TokenAlias(false, false, grammarAccess.getElegirAccess().getOtroKeyword_3_0_0()));
 		match_Funcion_FunKeyword_0_1_or_FuncionKeyword_0_0 = new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getFuncionAccess().getFunKeyword_0_1()), new TokenAlias(false, false, grammarAccess.getFuncionAccess().getFuncionKeyword_0_0()));
 		match_Imprimir_EscribirKeyword_0_0_or_ImprimirKeyword_0_1_or_PonerKeyword_0_2 = new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getImprimirAccess().getEscribirKeyword_0_0()), new TokenAlias(false, false, grammarAccess.getImprimirAccess().getImprimirKeyword_0_1()), new TokenAlias(false, false, grammarAccess.getImprimirAccess().getPonerKeyword_0_2()));
-		match_Retorno_DevolverKeyword_0_3_or_RegresarKeyword_0_2_or_RetKeyword_0_4_or_RetornarKeyword_0_1_or_RetornoKeyword_0_0 = new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getRetornoAccess().getDevolverKeyword_0_3()), new TokenAlias(false, false, grammarAccess.getRetornoAccess().getRegresarKeyword_0_2()), new TokenAlias(false, false, grammarAccess.getRetornoAccess().getRetKeyword_0_4()), new TokenAlias(false, false, grammarAccess.getRetornoAccess().getRetornarKeyword_0_1()), new TokenAlias(false, false, grammarAccess.getRetornoAccess().getRetornoKeyword_0_0()));
+		match_Retorno_RetKeyword_0_2_or_RetornarKeyword_0_1_or_RetornoKeyword_0_0 = new AlternativeAlias(false, false, new TokenAlias(false, false, grammarAccess.getRetornoAccess().getRetKeyword_0_2()), new TokenAlias(false, false, grammarAccess.getRetornoAccess().getRetornarKeyword_0_1()), new TokenAlias(false, false, grammarAccess.getRetornoAccess().getRetornoKeyword_0_0()));
 	}
 	
 	@Override
@@ -57,8 +57,8 @@ public class LatinoSyntacticSequencer extends AbstractSyntacticSequencer {
 				emit_Funcion_FunKeyword_0_1_or_FuncionKeyword_0_0(semanticObject, getLastNavigableState(), syntaxNodes);
 			else if (match_Imprimir_EscribirKeyword_0_0_or_ImprimirKeyword_0_1_or_PonerKeyword_0_2.equals(syntax))
 				emit_Imprimir_EscribirKeyword_0_0_or_ImprimirKeyword_0_1_or_PonerKeyword_0_2(semanticObject, getLastNavigableState(), syntaxNodes);
-			else if (match_Retorno_DevolverKeyword_0_3_or_RegresarKeyword_0_2_or_RetKeyword_0_4_or_RetornarKeyword_0_1_or_RetornoKeyword_0_0.equals(syntax))
-				emit_Retorno_DevolverKeyword_0_3_or_RegresarKeyword_0_2_or_RetKeyword_0_4_or_RetornarKeyword_0_1_or_RetornoKeyword_0_0(semanticObject, getLastNavigableState(), syntaxNodes);
+			else if (match_Retorno_RetKeyword_0_2_or_RetornarKeyword_0_1_or_RetornoKeyword_0_0.equals(syntax))
+				emit_Retorno_RetKeyword_0_2_or_RetornarKeyword_0_1_or_RetornoKeyword_0_0(semanticObject, getLastNavigableState(), syntaxNodes);
 			else acceptNodes(getLastNavigableState(), syntaxNodes);
 		}
 	}
@@ -125,14 +125,14 @@ public class LatinoSyntacticSequencer extends AbstractSyntacticSequencer {
 	/**
 	 * <pre>
 	 * Ambiguous syntax:
-	 *     'retorno' | 'retornar' | 'regresar' | 'devolver' | 'ret'
+	 *     'retorno' | 'retornar' | 'ret'
 	 *
 	 * This ambiguous syntax occurs at:
 	 *     (rule start) (ambiguity) valor=Expresion
 	 
 	 * </pre>
 	 */
-	protected void emit_Retorno_DevolverKeyword_0_3_or_RegresarKeyword_0_2_or_RetKeyword_0_4_or_RetornarKeyword_0_1_or_RetornoKeyword_0_0(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
+	protected void emit_Retorno_RetKeyword_0_2_or_RetornarKeyword_0_1_or_RetornoKeyword_0_0(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);
 	}
 	

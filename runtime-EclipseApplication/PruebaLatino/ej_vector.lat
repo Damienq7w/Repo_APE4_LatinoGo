@@ -1,0 +1,27 @@
+# Recorre un vector y saca el mayor, el menor, la suma y el promedio
+
+notas = [7, 9.5, 4, 8, 10, 6.5]
+total = 6
+mayor = notas[0]
+menor = notas[0]
+suma = 0
+desde (i = 0; i < total; i++)
+    suma = suma + notas[i]
+    si notas[i] > mayor
+        mayor = notas[i]
+    fin
+    si notas[i] < menor
+        menor = notas[i]
+    fin
+fin
+promedio = suma / total
+escribir("Notas " .. notas)
+escribir("Mayor " .. mayor)
+escribir("Menor " .. menor)
+escribir("Suma " .. suma)
+escribir("Promedio " .. promedio)
+si promedio >= 7
+    escribir("El curso aprueba")
+sino
+    escribir("El curso no aprueba")
+fin

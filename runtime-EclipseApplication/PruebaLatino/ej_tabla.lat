@@ -1,0 +1,14 @@
+# Muestra la tabla de multiplicar de un numero y dice si es par o impar
+
+escribir("De que numero quieres la tabla")
+numero = anumero(leer())
+si numero % 2 == 0
+    escribir(numero .. " es par")
+sino
+    escribir(numero .. " es impar")
+fin
+fila = 1
+mientras fila <= 10
+    escribir(numero .. " x " .. fila .. " = " .. numero * fila)
+    fila++
+fin

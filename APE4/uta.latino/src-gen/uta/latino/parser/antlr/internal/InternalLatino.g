@@ -1767,19 +1767,9 @@ ruleRetorno returns [EObject current=null]
 				newLeafNode(otherlv_1, grammarAccess.getRetornoAccess().getRetornarKeyword_0_1());
 			}
 			    |
-			otherlv_2='regresar'
+			otherlv_2='ret'
 			{
-				newLeafNode(otherlv_2, grammarAccess.getRetornoAccess().getRegresarKeyword_0_2());
-			}
-			    |
-			otherlv_3='devolver'
-			{
-				newLeafNode(otherlv_3, grammarAccess.getRetornoAccess().getDevolverKeyword_0_3());
-			}
-			    |
-			otherlv_4='ret'
-			{
-				newLeafNode(otherlv_4, grammarAccess.getRetornoAccess().getRetKeyword_0_4());
+				newLeafNode(otherlv_2, grammarAccess.getRetornoAccess().getRetKeyword_0_2());
 			}
 		)
 		(
@@ -1787,7 +1777,7 @@ ruleRetorno returns [EObject current=null]
 				{
 					newCompositeNode(grammarAccess.getRetornoAccess().getValorExpresionParserRuleCall_1_0());
 				}
-				lv_valor_5_0=ruleExpresion
+				lv_valor_3_0=ruleExpresion
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getRetornoRule());
@@ -1795,7 +1785,7 @@ ruleRetorno returns [EObject current=null]
 					set(
 						$current,
 						"valor",
-						lv_valor_5_0,
+						lv_valor_3_0,
 						"uta.latino.Latino.Expresion");
 					afterParserOrEnumRuleCall();
 				}

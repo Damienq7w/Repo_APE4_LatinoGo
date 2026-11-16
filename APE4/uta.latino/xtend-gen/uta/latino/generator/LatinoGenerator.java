@@ -781,10 +781,12 @@ public class LatinoGenerator extends AbstractGenerator {
     StringConcatenation _builder = new StringConcatenation();
     String _etiqueta = this.etiqueta(r);
     _builder.append(_etiqueta);
-    _builder.append("for primeraVuelta := true; primeraVuelta || !(");
+    _builder.append("for ultimaVuelta := false; !ultimaVuelta; {");
+    _builder.newLineIfNotEmpty();
+    _builder.append("\t");
+    _builder.append("ultimaVuelta = ");
     String _traducir = this.traducir(r.getCondicion());
-    _builder.append(_traducir);
-    _builder.append("); primeraVuelta = false {");
+    _builder.append(_traducir, "\t");
     _builder.newLineIfNotEmpty();
     {
       EList<Sentencia> _cuerpo = r.getCuerpo();

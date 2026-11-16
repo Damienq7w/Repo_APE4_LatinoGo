@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalLatinoParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_STRING", "RULE_INT", "RULE_SL_COMMENT", "RULE_ML_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'='", "'('", "'leer'", "')'", "'['", "','", "']'", "'si'", "'sino'", "'fin'", "'osi'", "'mientras'", "'repetir'", "'hasta'", "'desde'", "';'", "'para'", "'en'", "'rango'", "'romper'", "'continuar'", "'elegir'", "'otro'", "'defecto'", "':'", "'caso'", "'funcion'", "'fun'", "'retorno'", "'retornar'", "'regresar'", "'devolver'", "'ret'", "'escribir'", "'imprimir'", "'poner'", "'||'", "'&&'", "'=='", "'!='", "'<'", "'<='", "'>'", "'>='", "'..'", "'+'", "'-'", "'*'", "'/'", "'%'", "'!'", "'verdadero'", "'cierto'", "'falso'", "'.'", "'anumero'", "'acadena'", "'++'", "'--'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_STRING", "RULE_INT", "RULE_SL_COMMENT", "RULE_ML_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'='", "'('", "'leer'", "')'", "'['", "','", "']'", "'si'", "'sino'", "'fin'", "'osi'", "'mientras'", "'repetir'", "'hasta'", "'desde'", "';'", "'para'", "'en'", "'rango'", "'romper'", "'continuar'", "'elegir'", "'otro'", "'defecto'", "':'", "'caso'", "'funcion'", "'fun'", "'retorno'", "'retornar'", "'ret'", "'escribir'", "'imprimir'", "'poner'", "'||'", "'&&'", "'=='", "'!='", "'<'", "'<='", "'>'", "'>='", "'..'", "'+'", "'-'", "'*'", "'/'", "'%'", "'!'", "'verdadero'", "'cierto'", "'falso'", "'.'", "'anumero'", "'acadena'", "'++'", "'--'"
     };
     public static final int T__50=50;
     public static final int T__19=19;
@@ -57,9 +57,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
     public static final int T__23=23;
     public static final int T__67=67;
     public static final int T__24=24;
-    public static final int T__68=68;
     public static final int T__25=25;
-    public static final int T__69=69;
     public static final int T__62=62;
     public static final int T__63=63;
     public static final int T__20=20;
@@ -202,7 +200,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                 int alt1=2;
                 int LA1_0 = input.LA(1);
 
-                if ( (LA1_0==RULE_ID||LA1_0==18||(LA1_0>=22 && LA1_0<=23)||LA1_0==25||LA1_0==27||(LA1_0>=30 && LA1_0<=32)||(LA1_0>=37 && LA1_0<=46)) ) {
+                if ( (LA1_0==RULE_ID||LA1_0==18||(LA1_0>=22 && LA1_0<=23)||LA1_0==25||LA1_0==27||(LA1_0>=30 && LA1_0<=32)||(LA1_0>=37 && LA1_0<=44)) ) {
                     alt1=1;
                 }
 
@@ -324,7 +322,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
             int alt2=2;
             int LA2_0 = input.LA(1);
 
-            if ( (LA2_0==RULE_ID||LA2_0==18||(LA2_0>=22 && LA2_0<=23)||LA2_0==25||LA2_0==27||(LA2_0>=30 && LA2_0<=32)||(LA2_0>=39 && LA2_0<=46)) ) {
+            if ( (LA2_0==RULE_ID||LA2_0==18||(LA2_0>=22 && LA2_0<=23)||LA2_0==25||LA2_0==27||(LA2_0>=30 && LA2_0<=32)||(LA2_0>=39 && LA2_0<=44)) ) {
                 alt2=1;
             }
             else if ( ((LA2_0>=37 && LA2_0<=38)) ) {
@@ -1027,7 +1025,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
             int alt4=2;
             int LA4_0 = input.LA(1);
 
-            if ( ((LA4_0>=66 && LA4_0<=67)) ) {
+            if ( ((LA4_0>=64 && LA4_0<=65)) ) {
                 alt4=1;
             }
             else if ( (LA4_0==13) ) {
@@ -1251,7 +1249,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
             int alt6=2;
             int LA6_0 = input.LA(1);
 
-            if ( ((LA6_0>=RULE_ID && LA6_0<=RULE_INT)||LA6_0==12||LA6_0==57||(LA6_0>=61 && LA6_0<=64)) ) {
+            if ( ((LA6_0>=RULE_ID && LA6_0<=RULE_INT)||LA6_0==12||LA6_0==55||(LA6_0>=59 && LA6_0<=62)) ) {
                 alt6=1;
             }
             switch (alt6) {
@@ -1666,7 +1664,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                 int alt7=2;
                 int LA7_0 = input.LA(1);
 
-                if ( (LA7_0==RULE_ID||LA7_0==18||(LA7_0>=22 && LA7_0<=23)||LA7_0==25||LA7_0==27||(LA7_0>=30 && LA7_0<=32)||(LA7_0>=39 && LA7_0<=46)) ) {
+                if ( (LA7_0==RULE_ID||LA7_0==18||(LA7_0>=22 && LA7_0<=23)||LA7_0==25||LA7_0==27||(LA7_0>=30 && LA7_0<=32)||(LA7_0>=39 && LA7_0<=44)) ) {
                     alt7=1;
                 }
 
@@ -1779,7 +1777,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                         int alt9=2;
                         int LA9_0 = input.LA(1);
 
-                        if ( (LA9_0==RULE_ID||LA9_0==18||(LA9_0>=22 && LA9_0<=23)||LA9_0==25||LA9_0==27||(LA9_0>=30 && LA9_0<=32)||(LA9_0>=39 && LA9_0<=46)) ) {
+                        if ( (LA9_0==RULE_ID||LA9_0==18||(LA9_0>=22 && LA9_0<=23)||LA9_0==25||LA9_0==27||(LA9_0>=30 && LA9_0<=32)||(LA9_0>=39 && LA9_0<=44)) ) {
                             alt9=1;
                         }
 
@@ -1952,7 +1950,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                 int alt11=2;
                 int LA11_0 = input.LA(1);
 
-                if ( (LA11_0==RULE_ID||LA11_0==18||(LA11_0>=22 && LA11_0<=23)||LA11_0==25||LA11_0==27||(LA11_0>=30 && LA11_0<=32)||(LA11_0>=39 && LA11_0<=46)) ) {
+                if ( (LA11_0==RULE_ID||LA11_0==18||(LA11_0>=22 && LA11_0<=23)||LA11_0==25||LA11_0==27||(LA11_0>=30 && LA11_0<=32)||(LA11_0>=39 && LA11_0<=44)) ) {
                     alt11=1;
                 }
 
@@ -2116,7 +2114,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                 int alt12=2;
                 int LA12_0 = input.LA(1);
 
-                if ( (LA12_0==RULE_ID||LA12_0==18||(LA12_0>=22 && LA12_0<=23)||LA12_0==25||LA12_0==27||(LA12_0>=30 && LA12_0<=32)||(LA12_0>=39 && LA12_0<=46)) ) {
+                if ( (LA12_0==RULE_ID||LA12_0==18||(LA12_0>=22 && LA12_0<=23)||LA12_0==25||LA12_0==27||(LA12_0>=30 && LA12_0<=32)||(LA12_0>=39 && LA12_0<=44)) ) {
                     alt12=1;
                 }
 
@@ -2253,7 +2251,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                 int alt13=2;
                 int LA13_0 = input.LA(1);
 
-                if ( (LA13_0==RULE_ID||LA13_0==18||(LA13_0>=22 && LA13_0<=23)||LA13_0==25||LA13_0==27||(LA13_0>=30 && LA13_0<=32)||(LA13_0>=39 && LA13_0<=46)) ) {
+                if ( (LA13_0==RULE_ID||LA13_0==18||(LA13_0>=22 && LA13_0<=23)||LA13_0==25||LA13_0==27||(LA13_0>=30 && LA13_0<=32)||(LA13_0>=39 && LA13_0<=44)) ) {
                     alt13=1;
                 }
 
@@ -2515,7 +2513,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                 if ( (LA14_1==11) ) {
                     alt14=1;
                 }
-                else if ( ((LA14_1>=68 && LA14_1<=69)) ) {
+                else if ( ((LA14_1>=66 && LA14_1<=67)) ) {
                     alt14=2;
                 }
                 else {
@@ -2601,7 +2599,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                 int alt15=2;
                 int LA15_0 = input.LA(1);
 
-                if ( (LA15_0==RULE_ID||LA15_0==18||(LA15_0>=22 && LA15_0<=23)||LA15_0==25||LA15_0==27||(LA15_0>=30 && LA15_0<=32)||(LA15_0>=39 && LA15_0<=46)) ) {
+                if ( (LA15_0==RULE_ID||LA15_0==18||(LA15_0>=22 && LA15_0<=23)||LA15_0==25||LA15_0==27||(LA15_0>=30 && LA15_0<=32)||(LA15_0>=39 && LA15_0<=44)) ) {
                     alt15=1;
                 }
 
@@ -2932,7 +2930,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                 int alt18=2;
                 int LA18_0 = input.LA(1);
 
-                if ( (LA18_0==RULE_ID||LA18_0==18||(LA18_0>=22 && LA18_0<=23)||LA18_0==25||LA18_0==27||(LA18_0>=30 && LA18_0<=32)||(LA18_0>=39 && LA18_0<=46)) ) {
+                if ( (LA18_0==RULE_ID||LA18_0==18||(LA18_0>=22 && LA18_0<=23)||LA18_0==25||LA18_0==27||(LA18_0>=30 && LA18_0<=32)||(LA18_0>=39 && LA18_0<=44)) ) {
                     alt18=1;
                 }
 
@@ -3619,7 +3617,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                         int alt21=2;
                         int LA21_0 = input.LA(1);
 
-                        if ( (LA21_0==RULE_ID||LA21_0==18||(LA21_0>=22 && LA21_0<=23)||LA21_0==25||LA21_0==27||(LA21_0>=30 && LA21_0<=32)||(LA21_0>=39 && LA21_0<=46)) ) {
+                        if ( (LA21_0==RULE_ID||LA21_0==18||(LA21_0>=22 && LA21_0<=23)||LA21_0==25||LA21_0==27||(LA21_0>=30 && LA21_0<=32)||(LA21_0>=39 && LA21_0<=44)) ) {
                             alt21=1;
                         }
 
@@ -3869,7 +3867,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                 int alt24=2;
                 int LA24_0 = input.LA(1);
 
-                if ( (LA24_0==RULE_ID||LA24_0==18||(LA24_0>=22 && LA24_0<=23)||LA24_0==25||LA24_0==27||(LA24_0>=30 && LA24_0<=32)||(LA24_0>=39 && LA24_0<=46)) ) {
+                if ( (LA24_0==RULE_ID||LA24_0==18||(LA24_0>=22 && LA24_0<=23)||LA24_0==25||LA24_0==27||(LA24_0>=30 && LA24_0<=32)||(LA24_0>=39 && LA24_0<=44)) ) {
                     alt24=1;
                 }
 
@@ -4314,7 +4312,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                 int alt29=2;
                 int LA29_0 = input.LA(1);
 
-                if ( (LA29_0==RULE_ID||LA29_0==18||(LA29_0>=22 && LA29_0<=23)||LA29_0==25||LA29_0==27||(LA29_0>=30 && LA29_0<=32)||(LA29_0>=39 && LA29_0<=46)) ) {
+                if ( (LA29_0==RULE_ID||LA29_0==18||(LA29_0>=22 && LA29_0<=23)||LA29_0==25||LA29_0==27||(LA29_0>=30 && LA29_0<=32)||(LA29_0>=39 && LA29_0<=44)) ) {
                     alt29=1;
                 }
 
@@ -4420,30 +4418,28 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleRetorno"
-    // InternalLatino.g:1751:1: ruleRetorno returns [EObject current=null] : ( (otherlv_0= 'retorno' | otherlv_1= 'retornar' | otherlv_2= 'regresar' | otherlv_3= 'devolver' | otherlv_4= 'ret' ) ( (lv_valor_5_0= ruleExpresion ) ) ) ;
+    // InternalLatino.g:1751:1: ruleRetorno returns [EObject current=null] : ( (otherlv_0= 'retorno' | otherlv_1= 'retornar' | otherlv_2= 'ret' ) ( (lv_valor_3_0= ruleExpresion ) ) ) ;
     public final EObject ruleRetorno() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
         Token otherlv_1=null;
         Token otherlv_2=null;
-        Token otherlv_3=null;
-        Token otherlv_4=null;
-        AntlrDatatypeRuleToken lv_valor_5_0 = null;
+        AntlrDatatypeRuleToken lv_valor_3_0 = null;
 
 
 
         	enterRule();
 
         try {
-            // InternalLatino.g:1757:2: ( ( (otherlv_0= 'retorno' | otherlv_1= 'retornar' | otherlv_2= 'regresar' | otherlv_3= 'devolver' | otherlv_4= 'ret' ) ( (lv_valor_5_0= ruleExpresion ) ) ) )
-            // InternalLatino.g:1758:2: ( (otherlv_0= 'retorno' | otherlv_1= 'retornar' | otherlv_2= 'regresar' | otherlv_3= 'devolver' | otherlv_4= 'ret' ) ( (lv_valor_5_0= ruleExpresion ) ) )
+            // InternalLatino.g:1757:2: ( ( (otherlv_0= 'retorno' | otherlv_1= 'retornar' | otherlv_2= 'ret' ) ( (lv_valor_3_0= ruleExpresion ) ) ) )
+            // InternalLatino.g:1758:2: ( (otherlv_0= 'retorno' | otherlv_1= 'retornar' | otherlv_2= 'ret' ) ( (lv_valor_3_0= ruleExpresion ) ) )
             {
-            // InternalLatino.g:1758:2: ( (otherlv_0= 'retorno' | otherlv_1= 'retornar' | otherlv_2= 'regresar' | otherlv_3= 'devolver' | otherlv_4= 'ret' ) ( (lv_valor_5_0= ruleExpresion ) ) )
-            // InternalLatino.g:1759:3: (otherlv_0= 'retorno' | otherlv_1= 'retornar' | otherlv_2= 'regresar' | otherlv_3= 'devolver' | otherlv_4= 'ret' ) ( (lv_valor_5_0= ruleExpresion ) )
+            // InternalLatino.g:1758:2: ( (otherlv_0= 'retorno' | otherlv_1= 'retornar' | otherlv_2= 'ret' ) ( (lv_valor_3_0= ruleExpresion ) ) )
+            // InternalLatino.g:1759:3: (otherlv_0= 'retorno' | otherlv_1= 'retornar' | otherlv_2= 'ret' ) ( (lv_valor_3_0= ruleExpresion ) )
             {
-            // InternalLatino.g:1759:3: (otherlv_0= 'retorno' | otherlv_1= 'retornar' | otherlv_2= 'regresar' | otherlv_3= 'devolver' | otherlv_4= 'ret' )
-            int alt30=5;
+            // InternalLatino.g:1759:3: (otherlv_0= 'retorno' | otherlv_1= 'retornar' | otherlv_2= 'ret' )
+            int alt30=3;
             switch ( input.LA(1) ) {
             case 39:
                 {
@@ -4458,16 +4454,6 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
             case 41:
                 {
                 alt30=3;
-                }
-                break;
-            case 42:
-                {
-                alt30=4;
-                }
-                break;
-            case 43:
-                {
-                alt30=5;
                 }
                 break;
             default:
@@ -4499,31 +4485,11 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalLatino.g:1770:4: otherlv_2= 'regresar'
+                    // InternalLatino.g:1770:4: otherlv_2= 'ret'
                     {
                     otherlv_2=(Token)match(input,41,FOLLOW_5); 
 
-                    				newLeafNode(otherlv_2, grammarAccess.getRetornoAccess().getRegresarKeyword_0_2());
-                    			
-
-                    }
-                    break;
-                case 4 :
-                    // InternalLatino.g:1775:4: otherlv_3= 'devolver'
-                    {
-                    otherlv_3=(Token)match(input,42,FOLLOW_5); 
-
-                    				newLeafNode(otherlv_3, grammarAccess.getRetornoAccess().getDevolverKeyword_0_3());
-                    			
-
-                    }
-                    break;
-                case 5 :
-                    // InternalLatino.g:1780:4: otherlv_4= 'ret'
-                    {
-                    otherlv_4=(Token)match(input,43,FOLLOW_5); 
-
-                    				newLeafNode(otherlv_4, grammarAccess.getRetornoAccess().getRetKeyword_0_4());
+                    				newLeafNode(otherlv_2, grammarAccess.getRetornoAccess().getRetKeyword_0_2());
                     			
 
                     }
@@ -4531,17 +4497,17 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
             }
 
-            // InternalLatino.g:1785:3: ( (lv_valor_5_0= ruleExpresion ) )
-            // InternalLatino.g:1786:4: (lv_valor_5_0= ruleExpresion )
+            // InternalLatino.g:1775:3: ( (lv_valor_3_0= ruleExpresion ) )
+            // InternalLatino.g:1776:4: (lv_valor_3_0= ruleExpresion )
             {
-            // InternalLatino.g:1786:4: (lv_valor_5_0= ruleExpresion )
-            // InternalLatino.g:1787:5: lv_valor_5_0= ruleExpresion
+            // InternalLatino.g:1776:4: (lv_valor_3_0= ruleExpresion )
+            // InternalLatino.g:1777:5: lv_valor_3_0= ruleExpresion
             {
 
             					newCompositeNode(grammarAccess.getRetornoAccess().getValorExpresionParserRuleCall_1_0());
             				
             pushFollow(FOLLOW_2);
-            lv_valor_5_0=ruleExpresion();
+            lv_valor_3_0=ruleExpresion();
 
             state._fsp--;
 
@@ -4552,7 +4518,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
             					set(
             						current,
             						"valor",
-            						lv_valor_5_0,
+            						lv_valor_3_0,
             						"uta.latino.Latino.Expresion");
             					afterParserOrEnumRuleCall();
             				
@@ -4585,7 +4551,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleLlamada"
-    // InternalLatino.g:1808:1: entryRuleLlamada returns [EObject current=null] : iv_ruleLlamada= ruleLlamada EOF ;
+    // InternalLatino.g:1798:1: entryRuleLlamada returns [EObject current=null] : iv_ruleLlamada= ruleLlamada EOF ;
     public final EObject entryRuleLlamada() throws RecognitionException {
         EObject current = null;
 
@@ -4593,8 +4559,8 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalLatino.g:1808:48: (iv_ruleLlamada= ruleLlamada EOF )
-            // InternalLatino.g:1809:2: iv_ruleLlamada= ruleLlamada EOF
+            // InternalLatino.g:1798:48: (iv_ruleLlamada= ruleLlamada EOF )
+            // InternalLatino.g:1799:2: iv_ruleLlamada= ruleLlamada EOF
             {
              newCompositeNode(grammarAccess.getLlamadaRule()); 
             pushFollow(FOLLOW_1);
@@ -4621,7 +4587,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleLlamada"
-    // InternalLatino.g:1815:1: ruleLlamada returns [EObject current=null] : ( ( (lv_funcion_0_0= RULE_ID ) ) otherlv_1= '(' ( ( (lv_argumentos_2_0= ruleExpresion ) ) (otherlv_3= ',' ( (lv_argumentos_4_0= ruleExpresion ) ) )* )? otherlv_5= ')' ) ;
+    // InternalLatino.g:1805:1: ruleLlamada returns [EObject current=null] : ( ( (lv_funcion_0_0= RULE_ID ) ) otherlv_1= '(' ( ( (lv_argumentos_2_0= ruleExpresion ) ) (otherlv_3= ',' ( (lv_argumentos_4_0= ruleExpresion ) ) )* )? otherlv_5= ')' ) ;
     public final EObject ruleLlamada() throws RecognitionException {
         EObject current = null;
 
@@ -4638,17 +4604,17 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalLatino.g:1821:2: ( ( ( (lv_funcion_0_0= RULE_ID ) ) otherlv_1= '(' ( ( (lv_argumentos_2_0= ruleExpresion ) ) (otherlv_3= ',' ( (lv_argumentos_4_0= ruleExpresion ) ) )* )? otherlv_5= ')' ) )
-            // InternalLatino.g:1822:2: ( ( (lv_funcion_0_0= RULE_ID ) ) otherlv_1= '(' ( ( (lv_argumentos_2_0= ruleExpresion ) ) (otherlv_3= ',' ( (lv_argumentos_4_0= ruleExpresion ) ) )* )? otherlv_5= ')' )
+            // InternalLatino.g:1811:2: ( ( ( (lv_funcion_0_0= RULE_ID ) ) otherlv_1= '(' ( ( (lv_argumentos_2_0= ruleExpresion ) ) (otherlv_3= ',' ( (lv_argumentos_4_0= ruleExpresion ) ) )* )? otherlv_5= ')' ) )
+            // InternalLatino.g:1812:2: ( ( (lv_funcion_0_0= RULE_ID ) ) otherlv_1= '(' ( ( (lv_argumentos_2_0= ruleExpresion ) ) (otherlv_3= ',' ( (lv_argumentos_4_0= ruleExpresion ) ) )* )? otherlv_5= ')' )
             {
-            // InternalLatino.g:1822:2: ( ( (lv_funcion_0_0= RULE_ID ) ) otherlv_1= '(' ( ( (lv_argumentos_2_0= ruleExpresion ) ) (otherlv_3= ',' ( (lv_argumentos_4_0= ruleExpresion ) ) )* )? otherlv_5= ')' )
-            // InternalLatino.g:1823:3: ( (lv_funcion_0_0= RULE_ID ) ) otherlv_1= '(' ( ( (lv_argumentos_2_0= ruleExpresion ) ) (otherlv_3= ',' ( (lv_argumentos_4_0= ruleExpresion ) ) )* )? otherlv_5= ')'
+            // InternalLatino.g:1812:2: ( ( (lv_funcion_0_0= RULE_ID ) ) otherlv_1= '(' ( ( (lv_argumentos_2_0= ruleExpresion ) ) (otherlv_3= ',' ( (lv_argumentos_4_0= ruleExpresion ) ) )* )? otherlv_5= ')' )
+            // InternalLatino.g:1813:3: ( (lv_funcion_0_0= RULE_ID ) ) otherlv_1= '(' ( ( (lv_argumentos_2_0= ruleExpresion ) ) (otherlv_3= ',' ( (lv_argumentos_4_0= ruleExpresion ) ) )* )? otherlv_5= ')'
             {
-            // InternalLatino.g:1823:3: ( (lv_funcion_0_0= RULE_ID ) )
-            // InternalLatino.g:1824:4: (lv_funcion_0_0= RULE_ID )
+            // InternalLatino.g:1813:3: ( (lv_funcion_0_0= RULE_ID ) )
+            // InternalLatino.g:1814:4: (lv_funcion_0_0= RULE_ID )
             {
-            // InternalLatino.g:1824:4: (lv_funcion_0_0= RULE_ID )
-            // InternalLatino.g:1825:5: lv_funcion_0_0= RULE_ID
+            // InternalLatino.g:1814:4: (lv_funcion_0_0= RULE_ID )
+            // InternalLatino.g:1815:5: lv_funcion_0_0= RULE_ID
             {
             lv_funcion_0_0=(Token)match(input,RULE_ID,FOLLOW_7); 
 
@@ -4674,22 +4640,22 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
             			newLeafNode(otherlv_1, grammarAccess.getLlamadaAccess().getLeftParenthesisKeyword_1());
             		
-            // InternalLatino.g:1845:3: ( ( (lv_argumentos_2_0= ruleExpresion ) ) (otherlv_3= ',' ( (lv_argumentos_4_0= ruleExpresion ) ) )* )?
+            // InternalLatino.g:1835:3: ( ( (lv_argumentos_2_0= ruleExpresion ) ) (otherlv_3= ',' ( (lv_argumentos_4_0= ruleExpresion ) ) )* )?
             int alt32=2;
             int LA32_0 = input.LA(1);
 
-            if ( ((LA32_0>=RULE_ID && LA32_0<=RULE_INT)||LA32_0==12||LA32_0==57||(LA32_0>=61 && LA32_0<=64)) ) {
+            if ( ((LA32_0>=RULE_ID && LA32_0<=RULE_INT)||LA32_0==12||LA32_0==55||(LA32_0>=59 && LA32_0<=62)) ) {
                 alt32=1;
             }
             switch (alt32) {
                 case 1 :
-                    // InternalLatino.g:1846:4: ( (lv_argumentos_2_0= ruleExpresion ) ) (otherlv_3= ',' ( (lv_argumentos_4_0= ruleExpresion ) ) )*
+                    // InternalLatino.g:1836:4: ( (lv_argumentos_2_0= ruleExpresion ) ) (otherlv_3= ',' ( (lv_argumentos_4_0= ruleExpresion ) ) )*
                     {
-                    // InternalLatino.g:1846:4: ( (lv_argumentos_2_0= ruleExpresion ) )
-                    // InternalLatino.g:1847:5: (lv_argumentos_2_0= ruleExpresion )
+                    // InternalLatino.g:1836:4: ( (lv_argumentos_2_0= ruleExpresion ) )
+                    // InternalLatino.g:1837:5: (lv_argumentos_2_0= ruleExpresion )
                     {
-                    // InternalLatino.g:1847:5: (lv_argumentos_2_0= ruleExpresion )
-                    // InternalLatino.g:1848:6: lv_argumentos_2_0= ruleExpresion
+                    // InternalLatino.g:1837:5: (lv_argumentos_2_0= ruleExpresion )
+                    // InternalLatino.g:1838:6: lv_argumentos_2_0= ruleExpresion
                     {
 
                     						newCompositeNode(grammarAccess.getLlamadaAccess().getArgumentosExpresionParserRuleCall_2_0_0());
@@ -4716,7 +4682,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // InternalLatino.g:1865:4: (otherlv_3= ',' ( (lv_argumentos_4_0= ruleExpresion ) ) )*
+                    // InternalLatino.g:1855:4: (otherlv_3= ',' ( (lv_argumentos_4_0= ruleExpresion ) ) )*
                     loop31:
                     do {
                         int alt31=2;
@@ -4729,17 +4695,17 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
                         switch (alt31) {
                     	case 1 :
-                    	    // InternalLatino.g:1866:5: otherlv_3= ',' ( (lv_argumentos_4_0= ruleExpresion ) )
+                    	    // InternalLatino.g:1856:5: otherlv_3= ',' ( (lv_argumentos_4_0= ruleExpresion ) )
                     	    {
                     	    otherlv_3=(Token)match(input,16,FOLLOW_5); 
 
                     	    					newLeafNode(otherlv_3, grammarAccess.getLlamadaAccess().getCommaKeyword_2_1_0());
                     	    				
-                    	    // InternalLatino.g:1870:5: ( (lv_argumentos_4_0= ruleExpresion ) )
-                    	    // InternalLatino.g:1871:6: (lv_argumentos_4_0= ruleExpresion )
+                    	    // InternalLatino.g:1860:5: ( (lv_argumentos_4_0= ruleExpresion ) )
+                    	    // InternalLatino.g:1861:6: (lv_argumentos_4_0= ruleExpresion )
                     	    {
-                    	    // InternalLatino.g:1871:6: (lv_argumentos_4_0= ruleExpresion )
-                    	    // InternalLatino.g:1872:7: lv_argumentos_4_0= ruleExpresion
+                    	    // InternalLatino.g:1861:6: (lv_argumentos_4_0= ruleExpresion )
+                    	    // InternalLatino.g:1862:7: lv_argumentos_4_0= ruleExpresion
                     	    {
 
                     	    							newCompositeNode(grammarAccess.getLlamadaAccess().getArgumentosExpresionParserRuleCall_2_1_1_0());
@@ -4808,7 +4774,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleImprimir"
-    // InternalLatino.g:1899:1: entryRuleImprimir returns [EObject current=null] : iv_ruleImprimir= ruleImprimir EOF ;
+    // InternalLatino.g:1889:1: entryRuleImprimir returns [EObject current=null] : iv_ruleImprimir= ruleImprimir EOF ;
     public final EObject entryRuleImprimir() throws RecognitionException {
         EObject current = null;
 
@@ -4816,8 +4782,8 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalLatino.g:1899:49: (iv_ruleImprimir= ruleImprimir EOF )
-            // InternalLatino.g:1900:2: iv_ruleImprimir= ruleImprimir EOF
+            // InternalLatino.g:1889:49: (iv_ruleImprimir= ruleImprimir EOF )
+            // InternalLatino.g:1890:2: iv_ruleImprimir= ruleImprimir EOF
             {
              newCompositeNode(grammarAccess.getImprimirRule()); 
             pushFollow(FOLLOW_1);
@@ -4844,7 +4810,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleImprimir"
-    // InternalLatino.g:1906:1: ruleImprimir returns [EObject current=null] : ( (otherlv_0= 'escribir' | otherlv_1= 'imprimir' | otherlv_2= 'poner' ) otherlv_3= '(' ( (lv_mensaje_4_0= ruleExpresion ) ) otherlv_5= ')' ) ;
+    // InternalLatino.g:1896:1: ruleImprimir returns [EObject current=null] : ( (otherlv_0= 'escribir' | otherlv_1= 'imprimir' | otherlv_2= 'poner' ) otherlv_3= '(' ( (lv_mensaje_4_0= ruleExpresion ) ) otherlv_5= ')' ) ;
     public final EObject ruleImprimir() throws RecognitionException {
         EObject current = null;
 
@@ -4860,26 +4826,26 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalLatino.g:1912:2: ( ( (otherlv_0= 'escribir' | otherlv_1= 'imprimir' | otherlv_2= 'poner' ) otherlv_3= '(' ( (lv_mensaje_4_0= ruleExpresion ) ) otherlv_5= ')' ) )
-            // InternalLatino.g:1913:2: ( (otherlv_0= 'escribir' | otherlv_1= 'imprimir' | otherlv_2= 'poner' ) otherlv_3= '(' ( (lv_mensaje_4_0= ruleExpresion ) ) otherlv_5= ')' )
+            // InternalLatino.g:1902:2: ( ( (otherlv_0= 'escribir' | otherlv_1= 'imprimir' | otherlv_2= 'poner' ) otherlv_3= '(' ( (lv_mensaje_4_0= ruleExpresion ) ) otherlv_5= ')' ) )
+            // InternalLatino.g:1903:2: ( (otherlv_0= 'escribir' | otherlv_1= 'imprimir' | otherlv_2= 'poner' ) otherlv_3= '(' ( (lv_mensaje_4_0= ruleExpresion ) ) otherlv_5= ')' )
             {
-            // InternalLatino.g:1913:2: ( (otherlv_0= 'escribir' | otherlv_1= 'imprimir' | otherlv_2= 'poner' ) otherlv_3= '(' ( (lv_mensaje_4_0= ruleExpresion ) ) otherlv_5= ')' )
-            // InternalLatino.g:1914:3: (otherlv_0= 'escribir' | otherlv_1= 'imprimir' | otherlv_2= 'poner' ) otherlv_3= '(' ( (lv_mensaje_4_0= ruleExpresion ) ) otherlv_5= ')'
+            // InternalLatino.g:1903:2: ( (otherlv_0= 'escribir' | otherlv_1= 'imprimir' | otherlv_2= 'poner' ) otherlv_3= '(' ( (lv_mensaje_4_0= ruleExpresion ) ) otherlv_5= ')' )
+            // InternalLatino.g:1904:3: (otherlv_0= 'escribir' | otherlv_1= 'imprimir' | otherlv_2= 'poner' ) otherlv_3= '(' ( (lv_mensaje_4_0= ruleExpresion ) ) otherlv_5= ')'
             {
-            // InternalLatino.g:1914:3: (otherlv_0= 'escribir' | otherlv_1= 'imprimir' | otherlv_2= 'poner' )
+            // InternalLatino.g:1904:3: (otherlv_0= 'escribir' | otherlv_1= 'imprimir' | otherlv_2= 'poner' )
             int alt33=3;
             switch ( input.LA(1) ) {
-            case 44:
+            case 42:
                 {
                 alt33=1;
                 }
                 break;
-            case 45:
+            case 43:
                 {
                 alt33=2;
                 }
                 break;
-            case 46:
+            case 44:
                 {
                 alt33=3;
                 }
@@ -4893,9 +4859,9 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
             switch (alt33) {
                 case 1 :
-                    // InternalLatino.g:1915:4: otherlv_0= 'escribir'
+                    // InternalLatino.g:1905:4: otherlv_0= 'escribir'
                     {
-                    otherlv_0=(Token)match(input,44,FOLLOW_7); 
+                    otherlv_0=(Token)match(input,42,FOLLOW_7); 
 
                     				newLeafNode(otherlv_0, grammarAccess.getImprimirAccess().getEscribirKeyword_0_0());
                     			
@@ -4903,9 +4869,9 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalLatino.g:1920:4: otherlv_1= 'imprimir'
+                    // InternalLatino.g:1910:4: otherlv_1= 'imprimir'
                     {
-                    otherlv_1=(Token)match(input,45,FOLLOW_7); 
+                    otherlv_1=(Token)match(input,43,FOLLOW_7); 
 
                     				newLeafNode(otherlv_1, grammarAccess.getImprimirAccess().getImprimirKeyword_0_1());
                     			
@@ -4913,9 +4879,9 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalLatino.g:1925:4: otherlv_2= 'poner'
+                    // InternalLatino.g:1915:4: otherlv_2= 'poner'
                     {
-                    otherlv_2=(Token)match(input,46,FOLLOW_7); 
+                    otherlv_2=(Token)match(input,44,FOLLOW_7); 
 
                     				newLeafNode(otherlv_2, grammarAccess.getImprimirAccess().getPonerKeyword_0_2());
                     			
@@ -4929,11 +4895,11 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
             			newLeafNode(otherlv_3, grammarAccess.getImprimirAccess().getLeftParenthesisKeyword_1());
             		
-            // InternalLatino.g:1934:3: ( (lv_mensaje_4_0= ruleExpresion ) )
-            // InternalLatino.g:1935:4: (lv_mensaje_4_0= ruleExpresion )
+            // InternalLatino.g:1924:3: ( (lv_mensaje_4_0= ruleExpresion ) )
+            // InternalLatino.g:1925:4: (lv_mensaje_4_0= ruleExpresion )
             {
-            // InternalLatino.g:1935:4: (lv_mensaje_4_0= ruleExpresion )
-            // InternalLatino.g:1936:5: lv_mensaje_4_0= ruleExpresion
+            // InternalLatino.g:1925:4: (lv_mensaje_4_0= ruleExpresion )
+            // InternalLatino.g:1926:5: lv_mensaje_4_0= ruleExpresion
             {
 
             					newCompositeNode(grammarAccess.getImprimirAccess().getMensajeExpresionParserRuleCall_2_0());
@@ -4987,7 +4953,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleExpresion"
-    // InternalLatino.g:1961:1: entryRuleExpresion returns [String current=null] : iv_ruleExpresion= ruleExpresion EOF ;
+    // InternalLatino.g:1951:1: entryRuleExpresion returns [String current=null] : iv_ruleExpresion= ruleExpresion EOF ;
     public final String entryRuleExpresion() throws RecognitionException {
         String current = null;
 
@@ -4995,8 +4961,8 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalLatino.g:1961:49: (iv_ruleExpresion= ruleExpresion EOF )
-            // InternalLatino.g:1962:2: iv_ruleExpresion= ruleExpresion EOF
+            // InternalLatino.g:1951:49: (iv_ruleExpresion= ruleExpresion EOF )
+            // InternalLatino.g:1952:2: iv_ruleExpresion= ruleExpresion EOF
             {
              newCompositeNode(grammarAccess.getExpresionRule()); 
             pushFollow(FOLLOW_1);
@@ -5023,7 +4989,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleExpresion"
-    // InternalLatino.g:1968:1: ruleExpresion returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_Conjuncion_0= ruleConjuncion (kw= '||' this_Conjuncion_2= ruleConjuncion )* ) ;
+    // InternalLatino.g:1958:1: ruleExpresion returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_Conjuncion_0= ruleConjuncion (kw= '||' this_Conjuncion_2= ruleConjuncion )* ) ;
     public final AntlrDatatypeRuleToken ruleExpresion() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -5037,11 +5003,11 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalLatino.g:1974:2: ( (this_Conjuncion_0= ruleConjuncion (kw= '||' this_Conjuncion_2= ruleConjuncion )* ) )
-            // InternalLatino.g:1975:2: (this_Conjuncion_0= ruleConjuncion (kw= '||' this_Conjuncion_2= ruleConjuncion )* )
+            // InternalLatino.g:1964:2: ( (this_Conjuncion_0= ruleConjuncion (kw= '||' this_Conjuncion_2= ruleConjuncion )* ) )
+            // InternalLatino.g:1965:2: (this_Conjuncion_0= ruleConjuncion (kw= '||' this_Conjuncion_2= ruleConjuncion )* )
             {
-            // InternalLatino.g:1975:2: (this_Conjuncion_0= ruleConjuncion (kw= '||' this_Conjuncion_2= ruleConjuncion )* )
-            // InternalLatino.g:1976:3: this_Conjuncion_0= ruleConjuncion (kw= '||' this_Conjuncion_2= ruleConjuncion )*
+            // InternalLatino.g:1965:2: (this_Conjuncion_0= ruleConjuncion (kw= '||' this_Conjuncion_2= ruleConjuncion )* )
+            // InternalLatino.g:1966:3: this_Conjuncion_0= ruleConjuncion (kw= '||' this_Conjuncion_2= ruleConjuncion )*
             {
 
             			newCompositeNode(grammarAccess.getExpresionAccess().getConjuncionParserRuleCall_0());
@@ -5057,22 +5023,22 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
             			afterParserOrEnumRuleCall();
             		
-            // InternalLatino.g:1986:3: (kw= '||' this_Conjuncion_2= ruleConjuncion )*
+            // InternalLatino.g:1976:3: (kw= '||' this_Conjuncion_2= ruleConjuncion )*
             loop34:
             do {
                 int alt34=2;
                 int LA34_0 = input.LA(1);
 
-                if ( (LA34_0==47) ) {
+                if ( (LA34_0==45) ) {
                     alt34=1;
                 }
 
 
                 switch (alt34) {
             	case 1 :
-            	    // InternalLatino.g:1987:4: kw= '||' this_Conjuncion_2= ruleConjuncion
+            	    // InternalLatino.g:1977:4: kw= '||' this_Conjuncion_2= ruleConjuncion
             	    {
-            	    kw=(Token)match(input,47,FOLLOW_5); 
+            	    kw=(Token)match(input,45,FOLLOW_5); 
 
             	    				current.merge(kw);
             	    				newLeafNode(kw, grammarAccess.getExpresionAccess().getVerticalLineVerticalLineKeyword_1_0());
@@ -5123,7 +5089,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleConjuncion"
-    // InternalLatino.g:2007:1: entryRuleConjuncion returns [String current=null] : iv_ruleConjuncion= ruleConjuncion EOF ;
+    // InternalLatino.g:1997:1: entryRuleConjuncion returns [String current=null] : iv_ruleConjuncion= ruleConjuncion EOF ;
     public final String entryRuleConjuncion() throws RecognitionException {
         String current = null;
 
@@ -5131,8 +5097,8 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalLatino.g:2007:50: (iv_ruleConjuncion= ruleConjuncion EOF )
-            // InternalLatino.g:2008:2: iv_ruleConjuncion= ruleConjuncion EOF
+            // InternalLatino.g:1997:50: (iv_ruleConjuncion= ruleConjuncion EOF )
+            // InternalLatino.g:1998:2: iv_ruleConjuncion= ruleConjuncion EOF
             {
              newCompositeNode(grammarAccess.getConjuncionRule()); 
             pushFollow(FOLLOW_1);
@@ -5159,7 +5125,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleConjuncion"
-    // InternalLatino.g:2014:1: ruleConjuncion returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_Comparacion_0= ruleComparacion (kw= '&&' this_Comparacion_2= ruleComparacion )* ) ;
+    // InternalLatino.g:2004:1: ruleConjuncion returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_Comparacion_0= ruleComparacion (kw= '&&' this_Comparacion_2= ruleComparacion )* ) ;
     public final AntlrDatatypeRuleToken ruleConjuncion() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -5173,11 +5139,11 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalLatino.g:2020:2: ( (this_Comparacion_0= ruleComparacion (kw= '&&' this_Comparacion_2= ruleComparacion )* ) )
-            // InternalLatino.g:2021:2: (this_Comparacion_0= ruleComparacion (kw= '&&' this_Comparacion_2= ruleComparacion )* )
+            // InternalLatino.g:2010:2: ( (this_Comparacion_0= ruleComparacion (kw= '&&' this_Comparacion_2= ruleComparacion )* ) )
+            // InternalLatino.g:2011:2: (this_Comparacion_0= ruleComparacion (kw= '&&' this_Comparacion_2= ruleComparacion )* )
             {
-            // InternalLatino.g:2021:2: (this_Comparacion_0= ruleComparacion (kw= '&&' this_Comparacion_2= ruleComparacion )* )
-            // InternalLatino.g:2022:3: this_Comparacion_0= ruleComparacion (kw= '&&' this_Comparacion_2= ruleComparacion )*
+            // InternalLatino.g:2011:2: (this_Comparacion_0= ruleComparacion (kw= '&&' this_Comparacion_2= ruleComparacion )* )
+            // InternalLatino.g:2012:3: this_Comparacion_0= ruleComparacion (kw= '&&' this_Comparacion_2= ruleComparacion )*
             {
 
             			newCompositeNode(grammarAccess.getConjuncionAccess().getComparacionParserRuleCall_0());
@@ -5193,22 +5159,22 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
             			afterParserOrEnumRuleCall();
             		
-            // InternalLatino.g:2032:3: (kw= '&&' this_Comparacion_2= ruleComparacion )*
+            // InternalLatino.g:2022:3: (kw= '&&' this_Comparacion_2= ruleComparacion )*
             loop35:
             do {
                 int alt35=2;
                 int LA35_0 = input.LA(1);
 
-                if ( (LA35_0==48) ) {
+                if ( (LA35_0==46) ) {
                     alt35=1;
                 }
 
 
                 switch (alt35) {
             	case 1 :
-            	    // InternalLatino.g:2033:4: kw= '&&' this_Comparacion_2= ruleComparacion
+            	    // InternalLatino.g:2023:4: kw= '&&' this_Comparacion_2= ruleComparacion
             	    {
-            	    kw=(Token)match(input,48,FOLLOW_5); 
+            	    kw=(Token)match(input,46,FOLLOW_5); 
 
             	    				current.merge(kw);
             	    				newLeafNode(kw, grammarAccess.getConjuncionAccess().getAmpersandAmpersandKeyword_1_0());
@@ -5259,7 +5225,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleComparacion"
-    // InternalLatino.g:2053:1: entryRuleComparacion returns [String current=null] : iv_ruleComparacion= ruleComparacion EOF ;
+    // InternalLatino.g:2043:1: entryRuleComparacion returns [String current=null] : iv_ruleComparacion= ruleComparacion EOF ;
     public final String entryRuleComparacion() throws RecognitionException {
         String current = null;
 
@@ -5267,8 +5233,8 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalLatino.g:2053:51: (iv_ruleComparacion= ruleComparacion EOF )
-            // InternalLatino.g:2054:2: iv_ruleComparacion= ruleComparacion EOF
+            // InternalLatino.g:2043:51: (iv_ruleComparacion= ruleComparacion EOF )
+            // InternalLatino.g:2044:2: iv_ruleComparacion= ruleComparacion EOF
             {
              newCompositeNode(grammarAccess.getComparacionRule()); 
             pushFollow(FOLLOW_1);
@@ -5295,7 +5261,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleComparacion"
-    // InternalLatino.g:2060:1: ruleComparacion returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_Concatenacion_0= ruleConcatenacion ( (kw= '==' | kw= '!=' | kw= '<' | kw= '<=' | kw= '>' | kw= '>=' ) this_Concatenacion_7= ruleConcatenacion )? ) ;
+    // InternalLatino.g:2050:1: ruleComparacion returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_Concatenacion_0= ruleConcatenacion ( (kw= '==' | kw= '!=' | kw= '<' | kw= '<=' | kw= '>' | kw= '>=' ) this_Concatenacion_7= ruleConcatenacion )? ) ;
     public final AntlrDatatypeRuleToken ruleComparacion() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -5309,11 +5275,11 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalLatino.g:2066:2: ( (this_Concatenacion_0= ruleConcatenacion ( (kw= '==' | kw= '!=' | kw= '<' | kw= '<=' | kw= '>' | kw= '>=' ) this_Concatenacion_7= ruleConcatenacion )? ) )
-            // InternalLatino.g:2067:2: (this_Concatenacion_0= ruleConcatenacion ( (kw= '==' | kw= '!=' | kw= '<' | kw= '<=' | kw= '>' | kw= '>=' ) this_Concatenacion_7= ruleConcatenacion )? )
+            // InternalLatino.g:2056:2: ( (this_Concatenacion_0= ruleConcatenacion ( (kw= '==' | kw= '!=' | kw= '<' | kw= '<=' | kw= '>' | kw= '>=' ) this_Concatenacion_7= ruleConcatenacion )? ) )
+            // InternalLatino.g:2057:2: (this_Concatenacion_0= ruleConcatenacion ( (kw= '==' | kw= '!=' | kw= '<' | kw= '<=' | kw= '>' | kw= '>=' ) this_Concatenacion_7= ruleConcatenacion )? )
             {
-            // InternalLatino.g:2067:2: (this_Concatenacion_0= ruleConcatenacion ( (kw= '==' | kw= '!=' | kw= '<' | kw= '<=' | kw= '>' | kw= '>=' ) this_Concatenacion_7= ruleConcatenacion )? )
-            // InternalLatino.g:2068:3: this_Concatenacion_0= ruleConcatenacion ( (kw= '==' | kw= '!=' | kw= '<' | kw= '<=' | kw= '>' | kw= '>=' ) this_Concatenacion_7= ruleConcatenacion )?
+            // InternalLatino.g:2057:2: (this_Concatenacion_0= ruleConcatenacion ( (kw= '==' | kw= '!=' | kw= '<' | kw= '<=' | kw= '>' | kw= '>=' ) this_Concatenacion_7= ruleConcatenacion )? )
+            // InternalLatino.g:2058:3: this_Concatenacion_0= ruleConcatenacion ( (kw= '==' | kw= '!=' | kw= '<' | kw= '<=' | kw= '>' | kw= '>=' ) this_Concatenacion_7= ruleConcatenacion )?
             {
 
             			newCompositeNode(grammarAccess.getComparacionAccess().getConcatenacionParserRuleCall_0());
@@ -5329,46 +5295,46 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
             			afterParserOrEnumRuleCall();
             		
-            // InternalLatino.g:2078:3: ( (kw= '==' | kw= '!=' | kw= '<' | kw= '<=' | kw= '>' | kw= '>=' ) this_Concatenacion_7= ruleConcatenacion )?
+            // InternalLatino.g:2068:3: ( (kw= '==' | kw= '!=' | kw= '<' | kw= '<=' | kw= '>' | kw= '>=' ) this_Concatenacion_7= ruleConcatenacion )?
             int alt37=2;
             int LA37_0 = input.LA(1);
 
-            if ( ((LA37_0>=49 && LA37_0<=54)) ) {
+            if ( ((LA37_0>=47 && LA37_0<=52)) ) {
                 alt37=1;
             }
             switch (alt37) {
                 case 1 :
-                    // InternalLatino.g:2079:4: (kw= '==' | kw= '!=' | kw= '<' | kw= '<=' | kw= '>' | kw= '>=' ) this_Concatenacion_7= ruleConcatenacion
+                    // InternalLatino.g:2069:4: (kw= '==' | kw= '!=' | kw= '<' | kw= '<=' | kw= '>' | kw= '>=' ) this_Concatenacion_7= ruleConcatenacion
                     {
-                    // InternalLatino.g:2079:4: (kw= '==' | kw= '!=' | kw= '<' | kw= '<=' | kw= '>' | kw= '>=' )
+                    // InternalLatino.g:2069:4: (kw= '==' | kw= '!=' | kw= '<' | kw= '<=' | kw= '>' | kw= '>=' )
                     int alt36=6;
                     switch ( input.LA(1) ) {
-                    case 49:
+                    case 47:
                         {
                         alt36=1;
                         }
                         break;
-                    case 50:
+                    case 48:
                         {
                         alt36=2;
                         }
                         break;
-                    case 51:
+                    case 49:
                         {
                         alt36=3;
                         }
                         break;
-                    case 52:
+                    case 50:
                         {
                         alt36=4;
                         }
                         break;
-                    case 53:
+                    case 51:
                         {
                         alt36=5;
                         }
                         break;
-                    case 54:
+                    case 52:
                         {
                         alt36=6;
                         }
@@ -5382,9 +5348,9 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
                     switch (alt36) {
                         case 1 :
-                            // InternalLatino.g:2080:5: kw= '=='
+                            // InternalLatino.g:2070:5: kw= '=='
                             {
-                            kw=(Token)match(input,49,FOLLOW_5); 
+                            kw=(Token)match(input,47,FOLLOW_5); 
 
                             					current.merge(kw);
                             					newLeafNode(kw, grammarAccess.getComparacionAccess().getEqualsSignEqualsSignKeyword_1_0_0());
@@ -5393,9 +5359,9 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                             }
                             break;
                         case 2 :
-                            // InternalLatino.g:2086:5: kw= '!='
+                            // InternalLatino.g:2076:5: kw= '!='
                             {
-                            kw=(Token)match(input,50,FOLLOW_5); 
+                            kw=(Token)match(input,48,FOLLOW_5); 
 
                             					current.merge(kw);
                             					newLeafNode(kw, grammarAccess.getComparacionAccess().getExclamationMarkEqualsSignKeyword_1_0_1());
@@ -5404,9 +5370,9 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                             }
                             break;
                         case 3 :
-                            // InternalLatino.g:2092:5: kw= '<'
+                            // InternalLatino.g:2082:5: kw= '<'
                             {
-                            kw=(Token)match(input,51,FOLLOW_5); 
+                            kw=(Token)match(input,49,FOLLOW_5); 
 
                             					current.merge(kw);
                             					newLeafNode(kw, grammarAccess.getComparacionAccess().getLessThanSignKeyword_1_0_2());
@@ -5415,9 +5381,9 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                             }
                             break;
                         case 4 :
-                            // InternalLatino.g:2098:5: kw= '<='
+                            // InternalLatino.g:2088:5: kw= '<='
                             {
-                            kw=(Token)match(input,52,FOLLOW_5); 
+                            kw=(Token)match(input,50,FOLLOW_5); 
 
                             					current.merge(kw);
                             					newLeafNode(kw, grammarAccess.getComparacionAccess().getLessThanSignEqualsSignKeyword_1_0_3());
@@ -5426,9 +5392,9 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                             }
                             break;
                         case 5 :
-                            // InternalLatino.g:2104:5: kw= '>'
+                            // InternalLatino.g:2094:5: kw= '>'
                             {
-                            kw=(Token)match(input,53,FOLLOW_5); 
+                            kw=(Token)match(input,51,FOLLOW_5); 
 
                             					current.merge(kw);
                             					newLeafNode(kw, grammarAccess.getComparacionAccess().getGreaterThanSignKeyword_1_0_4());
@@ -5437,9 +5403,9 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                             }
                             break;
                         case 6 :
-                            // InternalLatino.g:2110:5: kw= '>='
+                            // InternalLatino.g:2100:5: kw= '>='
                             {
-                            kw=(Token)match(input,54,FOLLOW_5); 
+                            kw=(Token)match(input,52,FOLLOW_5); 
 
                             					current.merge(kw);
                             					newLeafNode(kw, grammarAccess.getComparacionAccess().getGreaterThanSignEqualsSignKeyword_1_0_5());
@@ -5493,7 +5459,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleConcatenacion"
-    // InternalLatino.g:2131:1: entryRuleConcatenacion returns [String current=null] : iv_ruleConcatenacion= ruleConcatenacion EOF ;
+    // InternalLatino.g:2121:1: entryRuleConcatenacion returns [String current=null] : iv_ruleConcatenacion= ruleConcatenacion EOF ;
     public final String entryRuleConcatenacion() throws RecognitionException {
         String current = null;
 
@@ -5501,8 +5467,8 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalLatino.g:2131:53: (iv_ruleConcatenacion= ruleConcatenacion EOF )
-            // InternalLatino.g:2132:2: iv_ruleConcatenacion= ruleConcatenacion EOF
+            // InternalLatino.g:2121:53: (iv_ruleConcatenacion= ruleConcatenacion EOF )
+            // InternalLatino.g:2122:2: iv_ruleConcatenacion= ruleConcatenacion EOF
             {
              newCompositeNode(grammarAccess.getConcatenacionRule()); 
             pushFollow(FOLLOW_1);
@@ -5529,7 +5495,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleConcatenacion"
-    // InternalLatino.g:2138:1: ruleConcatenacion returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_Suma_0= ruleSuma (kw= '..' this_Suma_2= ruleSuma )* ) ;
+    // InternalLatino.g:2128:1: ruleConcatenacion returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_Suma_0= ruleSuma (kw= '..' this_Suma_2= ruleSuma )* ) ;
     public final AntlrDatatypeRuleToken ruleConcatenacion() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -5543,11 +5509,11 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalLatino.g:2144:2: ( (this_Suma_0= ruleSuma (kw= '..' this_Suma_2= ruleSuma )* ) )
-            // InternalLatino.g:2145:2: (this_Suma_0= ruleSuma (kw= '..' this_Suma_2= ruleSuma )* )
+            // InternalLatino.g:2134:2: ( (this_Suma_0= ruleSuma (kw= '..' this_Suma_2= ruleSuma )* ) )
+            // InternalLatino.g:2135:2: (this_Suma_0= ruleSuma (kw= '..' this_Suma_2= ruleSuma )* )
             {
-            // InternalLatino.g:2145:2: (this_Suma_0= ruleSuma (kw= '..' this_Suma_2= ruleSuma )* )
-            // InternalLatino.g:2146:3: this_Suma_0= ruleSuma (kw= '..' this_Suma_2= ruleSuma )*
+            // InternalLatino.g:2135:2: (this_Suma_0= ruleSuma (kw= '..' this_Suma_2= ruleSuma )* )
+            // InternalLatino.g:2136:3: this_Suma_0= ruleSuma (kw= '..' this_Suma_2= ruleSuma )*
             {
 
             			newCompositeNode(grammarAccess.getConcatenacionAccess().getSumaParserRuleCall_0());
@@ -5563,22 +5529,22 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
             			afterParserOrEnumRuleCall();
             		
-            // InternalLatino.g:2156:3: (kw= '..' this_Suma_2= ruleSuma )*
+            // InternalLatino.g:2146:3: (kw= '..' this_Suma_2= ruleSuma )*
             loop38:
             do {
                 int alt38=2;
                 int LA38_0 = input.LA(1);
 
-                if ( (LA38_0==55) ) {
+                if ( (LA38_0==53) ) {
                     alt38=1;
                 }
 
 
                 switch (alt38) {
             	case 1 :
-            	    // InternalLatino.g:2157:4: kw= '..' this_Suma_2= ruleSuma
+            	    // InternalLatino.g:2147:4: kw= '..' this_Suma_2= ruleSuma
             	    {
-            	    kw=(Token)match(input,55,FOLLOW_5); 
+            	    kw=(Token)match(input,53,FOLLOW_5); 
 
             	    				current.merge(kw);
             	    				newLeafNode(kw, grammarAccess.getConcatenacionAccess().getFullStopFullStopKeyword_1_0());
@@ -5629,7 +5595,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleSuma"
-    // InternalLatino.g:2177:1: entryRuleSuma returns [String current=null] : iv_ruleSuma= ruleSuma EOF ;
+    // InternalLatino.g:2167:1: entryRuleSuma returns [String current=null] : iv_ruleSuma= ruleSuma EOF ;
     public final String entryRuleSuma() throws RecognitionException {
         String current = null;
 
@@ -5637,8 +5603,8 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalLatino.g:2177:44: (iv_ruleSuma= ruleSuma EOF )
-            // InternalLatino.g:2178:2: iv_ruleSuma= ruleSuma EOF
+            // InternalLatino.g:2167:44: (iv_ruleSuma= ruleSuma EOF )
+            // InternalLatino.g:2168:2: iv_ruleSuma= ruleSuma EOF
             {
              newCompositeNode(grammarAccess.getSumaRule()); 
             pushFollow(FOLLOW_1);
@@ -5665,7 +5631,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleSuma"
-    // InternalLatino.g:2184:1: ruleSuma returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_Producto_0= ruleProducto ( (kw= '+' | kw= '-' ) this_Producto_3= ruleProducto )* ) ;
+    // InternalLatino.g:2174:1: ruleSuma returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_Producto_0= ruleProducto ( (kw= '+' | kw= '-' ) this_Producto_3= ruleProducto )* ) ;
     public final AntlrDatatypeRuleToken ruleSuma() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -5679,11 +5645,11 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalLatino.g:2190:2: ( (this_Producto_0= ruleProducto ( (kw= '+' | kw= '-' ) this_Producto_3= ruleProducto )* ) )
-            // InternalLatino.g:2191:2: (this_Producto_0= ruleProducto ( (kw= '+' | kw= '-' ) this_Producto_3= ruleProducto )* )
+            // InternalLatino.g:2180:2: ( (this_Producto_0= ruleProducto ( (kw= '+' | kw= '-' ) this_Producto_3= ruleProducto )* ) )
+            // InternalLatino.g:2181:2: (this_Producto_0= ruleProducto ( (kw= '+' | kw= '-' ) this_Producto_3= ruleProducto )* )
             {
-            // InternalLatino.g:2191:2: (this_Producto_0= ruleProducto ( (kw= '+' | kw= '-' ) this_Producto_3= ruleProducto )* )
-            // InternalLatino.g:2192:3: this_Producto_0= ruleProducto ( (kw= '+' | kw= '-' ) this_Producto_3= ruleProducto )*
+            // InternalLatino.g:2181:2: (this_Producto_0= ruleProducto ( (kw= '+' | kw= '-' ) this_Producto_3= ruleProducto )* )
+            // InternalLatino.g:2182:3: this_Producto_0= ruleProducto ( (kw= '+' | kw= '-' ) this_Producto_3= ruleProducto )*
             {
 
             			newCompositeNode(grammarAccess.getSumaAccess().getProductoParserRuleCall_0());
@@ -5699,29 +5665,29 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
             			afterParserOrEnumRuleCall();
             		
-            // InternalLatino.g:2202:3: ( (kw= '+' | kw= '-' ) this_Producto_3= ruleProducto )*
+            // InternalLatino.g:2192:3: ( (kw= '+' | kw= '-' ) this_Producto_3= ruleProducto )*
             loop40:
             do {
                 int alt40=2;
                 int LA40_0 = input.LA(1);
 
-                if ( ((LA40_0>=56 && LA40_0<=57)) ) {
+                if ( ((LA40_0>=54 && LA40_0<=55)) ) {
                     alt40=1;
                 }
 
 
                 switch (alt40) {
             	case 1 :
-            	    // InternalLatino.g:2203:4: (kw= '+' | kw= '-' ) this_Producto_3= ruleProducto
+            	    // InternalLatino.g:2193:4: (kw= '+' | kw= '-' ) this_Producto_3= ruleProducto
             	    {
-            	    // InternalLatino.g:2203:4: (kw= '+' | kw= '-' )
+            	    // InternalLatino.g:2193:4: (kw= '+' | kw= '-' )
             	    int alt39=2;
             	    int LA39_0 = input.LA(1);
 
-            	    if ( (LA39_0==56) ) {
+            	    if ( (LA39_0==54) ) {
             	        alt39=1;
             	    }
-            	    else if ( (LA39_0==57) ) {
+            	    else if ( (LA39_0==55) ) {
             	        alt39=2;
             	    }
             	    else {
@@ -5732,9 +5698,9 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
             	    }
             	    switch (alt39) {
             	        case 1 :
-            	            // InternalLatino.g:2204:5: kw= '+'
+            	            // InternalLatino.g:2194:5: kw= '+'
             	            {
-            	            kw=(Token)match(input,56,FOLLOW_5); 
+            	            kw=(Token)match(input,54,FOLLOW_5); 
 
             	            					current.merge(kw);
             	            					newLeafNode(kw, grammarAccess.getSumaAccess().getPlusSignKeyword_1_0_0());
@@ -5743,9 +5709,9 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
             	            }
             	            break;
             	        case 2 :
-            	            // InternalLatino.g:2210:5: kw= '-'
+            	            // InternalLatino.g:2200:5: kw= '-'
             	            {
-            	            kw=(Token)match(input,57,FOLLOW_5); 
+            	            kw=(Token)match(input,55,FOLLOW_5); 
 
             	            					current.merge(kw);
             	            					newLeafNode(kw, grammarAccess.getSumaAccess().getHyphenMinusKeyword_1_0_1());
@@ -5802,7 +5768,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleProducto"
-    // InternalLatino.g:2231:1: entryRuleProducto returns [String current=null] : iv_ruleProducto= ruleProducto EOF ;
+    // InternalLatino.g:2221:1: entryRuleProducto returns [String current=null] : iv_ruleProducto= ruleProducto EOF ;
     public final String entryRuleProducto() throws RecognitionException {
         String current = null;
 
@@ -5810,8 +5776,8 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalLatino.g:2231:48: (iv_ruleProducto= ruleProducto EOF )
-            // InternalLatino.g:2232:2: iv_ruleProducto= ruleProducto EOF
+            // InternalLatino.g:2221:48: (iv_ruleProducto= ruleProducto EOF )
+            // InternalLatino.g:2222:2: iv_ruleProducto= ruleProducto EOF
             {
              newCompositeNode(grammarAccess.getProductoRule()); 
             pushFollow(FOLLOW_1);
@@ -5838,7 +5804,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleProducto"
-    // InternalLatino.g:2238:1: ruleProducto returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_Unario_0= ruleUnario ( (kw= '*' | kw= '/' | kw= '%' ) this_Unario_4= ruleUnario )* ) ;
+    // InternalLatino.g:2228:1: ruleProducto returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_Unario_0= ruleUnario ( (kw= '*' | kw= '/' | kw= '%' ) this_Unario_4= ruleUnario )* ) ;
     public final AntlrDatatypeRuleToken ruleProducto() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -5852,11 +5818,11 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalLatino.g:2244:2: ( (this_Unario_0= ruleUnario ( (kw= '*' | kw= '/' | kw= '%' ) this_Unario_4= ruleUnario )* ) )
-            // InternalLatino.g:2245:2: (this_Unario_0= ruleUnario ( (kw= '*' | kw= '/' | kw= '%' ) this_Unario_4= ruleUnario )* )
+            // InternalLatino.g:2234:2: ( (this_Unario_0= ruleUnario ( (kw= '*' | kw= '/' | kw= '%' ) this_Unario_4= ruleUnario )* ) )
+            // InternalLatino.g:2235:2: (this_Unario_0= ruleUnario ( (kw= '*' | kw= '/' | kw= '%' ) this_Unario_4= ruleUnario )* )
             {
-            // InternalLatino.g:2245:2: (this_Unario_0= ruleUnario ( (kw= '*' | kw= '/' | kw= '%' ) this_Unario_4= ruleUnario )* )
-            // InternalLatino.g:2246:3: this_Unario_0= ruleUnario ( (kw= '*' | kw= '/' | kw= '%' ) this_Unario_4= ruleUnario )*
+            // InternalLatino.g:2235:2: (this_Unario_0= ruleUnario ( (kw= '*' | kw= '/' | kw= '%' ) this_Unario_4= ruleUnario )* )
+            // InternalLatino.g:2236:3: this_Unario_0= ruleUnario ( (kw= '*' | kw= '/' | kw= '%' ) this_Unario_4= ruleUnario )*
             {
 
             			newCompositeNode(grammarAccess.getProductoAccess().getUnarioParserRuleCall_0());
@@ -5872,35 +5838,35 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
             			afterParserOrEnumRuleCall();
             		
-            // InternalLatino.g:2256:3: ( (kw= '*' | kw= '/' | kw= '%' ) this_Unario_4= ruleUnario )*
+            // InternalLatino.g:2246:3: ( (kw= '*' | kw= '/' | kw= '%' ) this_Unario_4= ruleUnario )*
             loop42:
             do {
                 int alt42=2;
                 int LA42_0 = input.LA(1);
 
-                if ( ((LA42_0>=58 && LA42_0<=60)) ) {
+                if ( ((LA42_0>=56 && LA42_0<=58)) ) {
                     alt42=1;
                 }
 
 
                 switch (alt42) {
             	case 1 :
-            	    // InternalLatino.g:2257:4: (kw= '*' | kw= '/' | kw= '%' ) this_Unario_4= ruleUnario
+            	    // InternalLatino.g:2247:4: (kw= '*' | kw= '/' | kw= '%' ) this_Unario_4= ruleUnario
             	    {
-            	    // InternalLatino.g:2257:4: (kw= '*' | kw= '/' | kw= '%' )
+            	    // InternalLatino.g:2247:4: (kw= '*' | kw= '/' | kw= '%' )
             	    int alt41=3;
             	    switch ( input.LA(1) ) {
-            	    case 58:
+            	    case 56:
             	        {
             	        alt41=1;
             	        }
             	        break;
-            	    case 59:
+            	    case 57:
             	        {
             	        alt41=2;
             	        }
             	        break;
-            	    case 60:
+            	    case 58:
             	        {
             	        alt41=3;
             	        }
@@ -5914,9 +5880,9 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
             	    switch (alt41) {
             	        case 1 :
-            	            // InternalLatino.g:2258:5: kw= '*'
+            	            // InternalLatino.g:2248:5: kw= '*'
             	            {
-            	            kw=(Token)match(input,58,FOLLOW_5); 
+            	            kw=(Token)match(input,56,FOLLOW_5); 
 
             	            					current.merge(kw);
             	            					newLeafNode(kw, grammarAccess.getProductoAccess().getAsteriskKeyword_1_0_0());
@@ -5925,9 +5891,9 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
             	            }
             	            break;
             	        case 2 :
-            	            // InternalLatino.g:2264:5: kw= '/'
+            	            // InternalLatino.g:2254:5: kw= '/'
             	            {
-            	            kw=(Token)match(input,59,FOLLOW_5); 
+            	            kw=(Token)match(input,57,FOLLOW_5); 
 
             	            					current.merge(kw);
             	            					newLeafNode(kw, grammarAccess.getProductoAccess().getSolidusKeyword_1_0_1());
@@ -5936,9 +5902,9 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
             	            }
             	            break;
             	        case 3 :
-            	            // InternalLatino.g:2270:5: kw= '%'
+            	            // InternalLatino.g:2260:5: kw= '%'
             	            {
-            	            kw=(Token)match(input,60,FOLLOW_5); 
+            	            kw=(Token)match(input,58,FOLLOW_5); 
 
             	            					current.merge(kw);
             	            					newLeafNode(kw, grammarAccess.getProductoAccess().getPercentSignKeyword_1_0_2());
@@ -5995,7 +5961,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleUnario"
-    // InternalLatino.g:2291:1: entryRuleUnario returns [String current=null] : iv_ruleUnario= ruleUnario EOF ;
+    // InternalLatino.g:2281:1: entryRuleUnario returns [String current=null] : iv_ruleUnario= ruleUnario EOF ;
     public final String entryRuleUnario() throws RecognitionException {
         String current = null;
 
@@ -6003,8 +5969,8 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalLatino.g:2291:46: (iv_ruleUnario= ruleUnario EOF )
-            // InternalLatino.g:2292:2: iv_ruleUnario= ruleUnario EOF
+            // InternalLatino.g:2281:46: (iv_ruleUnario= ruleUnario EOF )
+            // InternalLatino.g:2282:2: iv_ruleUnario= ruleUnario EOF
             {
              newCompositeNode(grammarAccess.getUnarioRule()); 
             pushFollow(FOLLOW_1);
@@ -6031,7 +5997,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleUnario"
-    // InternalLatino.g:2298:1: ruleUnario returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : ( (kw= '!' this_Unario_1= ruleUnario ) | (kw= '-' this_Unario_3= ruleUnario ) | this_Primario_4= rulePrimario ) ;
+    // InternalLatino.g:2288:1: ruleUnario returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : ( (kw= '!' this_Unario_1= ruleUnario ) | (kw= '-' this_Unario_3= ruleUnario ) | this_Primario_4= rulePrimario ) ;
     public final AntlrDatatypeRuleToken ruleUnario() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -6047,18 +6013,18 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalLatino.g:2304:2: ( ( (kw= '!' this_Unario_1= ruleUnario ) | (kw= '-' this_Unario_3= ruleUnario ) | this_Primario_4= rulePrimario ) )
-            // InternalLatino.g:2305:2: ( (kw= '!' this_Unario_1= ruleUnario ) | (kw= '-' this_Unario_3= ruleUnario ) | this_Primario_4= rulePrimario )
+            // InternalLatino.g:2294:2: ( ( (kw= '!' this_Unario_1= ruleUnario ) | (kw= '-' this_Unario_3= ruleUnario ) | this_Primario_4= rulePrimario ) )
+            // InternalLatino.g:2295:2: ( (kw= '!' this_Unario_1= ruleUnario ) | (kw= '-' this_Unario_3= ruleUnario ) | this_Primario_4= rulePrimario )
             {
-            // InternalLatino.g:2305:2: ( (kw= '!' this_Unario_1= ruleUnario ) | (kw= '-' this_Unario_3= ruleUnario ) | this_Primario_4= rulePrimario )
+            // InternalLatino.g:2295:2: ( (kw= '!' this_Unario_1= ruleUnario ) | (kw= '-' this_Unario_3= ruleUnario ) | this_Primario_4= rulePrimario )
             int alt43=3;
             switch ( input.LA(1) ) {
-            case 61:
+            case 59:
                 {
                 alt43=1;
                 }
                 break;
-            case 57:
+            case 55:
                 {
                 alt43=2;
                 }
@@ -6067,9 +6033,9 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
             case RULE_STRING:
             case RULE_INT:
             case 12:
+            case 60:
+            case 61:
             case 62:
-            case 63:
-            case 64:
                 {
                 alt43=3;
                 }
@@ -6083,12 +6049,12 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
             switch (alt43) {
                 case 1 :
-                    // InternalLatino.g:2306:3: (kw= '!' this_Unario_1= ruleUnario )
+                    // InternalLatino.g:2296:3: (kw= '!' this_Unario_1= ruleUnario )
                     {
-                    // InternalLatino.g:2306:3: (kw= '!' this_Unario_1= ruleUnario )
-                    // InternalLatino.g:2307:4: kw= '!' this_Unario_1= ruleUnario
+                    // InternalLatino.g:2296:3: (kw= '!' this_Unario_1= ruleUnario )
+                    // InternalLatino.g:2297:4: kw= '!' this_Unario_1= ruleUnario
                     {
-                    kw=(Token)match(input,61,FOLLOW_5); 
+                    kw=(Token)match(input,59,FOLLOW_5); 
 
                     				current.merge(kw);
                     				newLeafNode(kw, grammarAccess.getUnarioAccess().getExclamationMarkKeyword_0_0());
@@ -6114,12 +6080,12 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalLatino.g:2324:3: (kw= '-' this_Unario_3= ruleUnario )
+                    // InternalLatino.g:2314:3: (kw= '-' this_Unario_3= ruleUnario )
                     {
-                    // InternalLatino.g:2324:3: (kw= '-' this_Unario_3= ruleUnario )
-                    // InternalLatino.g:2325:4: kw= '-' this_Unario_3= ruleUnario
+                    // InternalLatino.g:2314:3: (kw= '-' this_Unario_3= ruleUnario )
+                    // InternalLatino.g:2315:4: kw= '-' this_Unario_3= ruleUnario
                     {
-                    kw=(Token)match(input,57,FOLLOW_5); 
+                    kw=(Token)match(input,55,FOLLOW_5); 
 
                     				current.merge(kw);
                     				newLeafNode(kw, grammarAccess.getUnarioAccess().getHyphenMinusKeyword_1_0());
@@ -6145,7 +6111,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalLatino.g:2342:3: this_Primario_4= rulePrimario
+                    // InternalLatino.g:2332:3: this_Primario_4= rulePrimario
                     {
 
                     			newCompositeNode(grammarAccess.getUnarioAccess().getPrimarioParserRuleCall_2());
@@ -6187,7 +6153,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRulePrimario"
-    // InternalLatino.g:2356:1: entryRulePrimario returns [String current=null] : iv_rulePrimario= rulePrimario EOF ;
+    // InternalLatino.g:2346:1: entryRulePrimario returns [String current=null] : iv_rulePrimario= rulePrimario EOF ;
     public final String entryRulePrimario() throws RecognitionException {
         String current = null;
 
@@ -6195,8 +6161,8 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalLatino.g:2356:48: (iv_rulePrimario= rulePrimario EOF )
-            // InternalLatino.g:2357:2: iv_rulePrimario= rulePrimario EOF
+            // InternalLatino.g:2346:48: (iv_rulePrimario= rulePrimario EOF )
+            // InternalLatino.g:2347:2: iv_rulePrimario= rulePrimario EOF
             {
              newCompositeNode(grammarAccess.getPrimarioRule()); 
             pushFollow(FOLLOW_1);
@@ -6223,7 +6189,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "rulePrimario"
-    // InternalLatino.g:2363:1: rulePrimario returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : ( (this_ID_0= RULE_ID ( (kw= '[' this_Expresion_2= ruleExpresion kw= ']' ) | (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' ) )? ) | this_STRING_9= RULE_STRING | this_Numero_10= ruleNumero | kw= 'verdadero' | kw= 'cierto' | kw= 'falso' | (kw= '(' this_Expresion_15= ruleExpresion kw= ')' ) ) ;
+    // InternalLatino.g:2353:1: rulePrimario returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : ( (this_ID_0= RULE_ID ( (kw= '[' this_Expresion_2= ruleExpresion kw= ']' ) | (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' ) )? ) | this_STRING_9= RULE_STRING | this_Numero_10= ruleNumero | kw= 'verdadero' | kw= 'cierto' | kw= 'falso' | (kw= '(' this_Expresion_15= ruleExpresion kw= ')' ) ) ;
     public final AntlrDatatypeRuleToken rulePrimario() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -6245,10 +6211,10 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalLatino.g:2369:2: ( ( (this_ID_0= RULE_ID ( (kw= '[' this_Expresion_2= ruleExpresion kw= ']' ) | (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' ) )? ) | this_STRING_9= RULE_STRING | this_Numero_10= ruleNumero | kw= 'verdadero' | kw= 'cierto' | kw= 'falso' | (kw= '(' this_Expresion_15= ruleExpresion kw= ')' ) ) )
-            // InternalLatino.g:2370:2: ( (this_ID_0= RULE_ID ( (kw= '[' this_Expresion_2= ruleExpresion kw= ']' ) | (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' ) )? ) | this_STRING_9= RULE_STRING | this_Numero_10= ruleNumero | kw= 'verdadero' | kw= 'cierto' | kw= 'falso' | (kw= '(' this_Expresion_15= ruleExpresion kw= ')' ) )
+            // InternalLatino.g:2359:2: ( ( (this_ID_0= RULE_ID ( (kw= '[' this_Expresion_2= ruleExpresion kw= ']' ) | (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' ) )? ) | this_STRING_9= RULE_STRING | this_Numero_10= ruleNumero | kw= 'verdadero' | kw= 'cierto' | kw= 'falso' | (kw= '(' this_Expresion_15= ruleExpresion kw= ')' ) ) )
+            // InternalLatino.g:2360:2: ( (this_ID_0= RULE_ID ( (kw= '[' this_Expresion_2= ruleExpresion kw= ']' ) | (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' ) )? ) | this_STRING_9= RULE_STRING | this_Numero_10= ruleNumero | kw= 'verdadero' | kw= 'cierto' | kw= 'falso' | (kw= '(' this_Expresion_15= ruleExpresion kw= ')' ) )
             {
-            // InternalLatino.g:2370:2: ( (this_ID_0= RULE_ID ( (kw= '[' this_Expresion_2= ruleExpresion kw= ']' ) | (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' ) )? ) | this_STRING_9= RULE_STRING | this_Numero_10= ruleNumero | kw= 'verdadero' | kw= 'cierto' | kw= 'falso' | (kw= '(' this_Expresion_15= ruleExpresion kw= ')' ) )
+            // InternalLatino.g:2360:2: ( (this_ID_0= RULE_ID ( (kw= '[' this_Expresion_2= ruleExpresion kw= ']' ) | (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' ) )? ) | this_STRING_9= RULE_STRING | this_Numero_10= ruleNumero | kw= 'verdadero' | kw= 'cierto' | kw= 'falso' | (kw= '(' this_Expresion_15= ruleExpresion kw= ')' ) )
             int alt47=7;
             switch ( input.LA(1) ) {
             case RULE_ID:
@@ -6266,17 +6232,17 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                 alt47=3;
                 }
                 break;
-            case 62:
+            case 60:
                 {
                 alt47=4;
                 }
                 break;
-            case 63:
+            case 61:
                 {
                 alt47=5;
                 }
                 break;
-            case 64:
+            case 62:
                 {
                 alt47=6;
                 }
@@ -6295,10 +6261,10 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
             switch (alt47) {
                 case 1 :
-                    // InternalLatino.g:2371:3: (this_ID_0= RULE_ID ( (kw= '[' this_Expresion_2= ruleExpresion kw= ']' ) | (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' ) )? )
+                    // InternalLatino.g:2361:3: (this_ID_0= RULE_ID ( (kw= '[' this_Expresion_2= ruleExpresion kw= ']' ) | (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' ) )? )
                     {
-                    // InternalLatino.g:2371:3: (this_ID_0= RULE_ID ( (kw= '[' this_Expresion_2= ruleExpresion kw= ']' ) | (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' ) )? )
-                    // InternalLatino.g:2372:4: this_ID_0= RULE_ID ( (kw= '[' this_Expresion_2= ruleExpresion kw= ']' ) | (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' ) )?
+                    // InternalLatino.g:2361:3: (this_ID_0= RULE_ID ( (kw= '[' this_Expresion_2= ruleExpresion kw= ']' ) | (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' ) )? )
+                    // InternalLatino.g:2362:4: this_ID_0= RULE_ID ( (kw= '[' this_Expresion_2= ruleExpresion kw= ']' ) | (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' ) )?
                     {
                     this_ID_0=(Token)match(input,RULE_ID,FOLLOW_38); 
 
@@ -6307,7 +6273,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
                     				newLeafNode(this_ID_0, grammarAccess.getPrimarioAccess().getIDTerminalRuleCall_0_0());
                     			
-                    // InternalLatino.g:2379:4: ( (kw= '[' this_Expresion_2= ruleExpresion kw= ']' ) | (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' ) )?
+                    // InternalLatino.g:2369:4: ( (kw= '[' this_Expresion_2= ruleExpresion kw= ']' ) | (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' ) )?
                     int alt46=3;
                     int LA46_0 = input.LA(1);
 
@@ -6319,10 +6285,10 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                     }
                     switch (alt46) {
                         case 1 :
-                            // InternalLatino.g:2380:5: (kw= '[' this_Expresion_2= ruleExpresion kw= ']' )
+                            // InternalLatino.g:2370:5: (kw= '[' this_Expresion_2= ruleExpresion kw= ']' )
                             {
-                            // InternalLatino.g:2380:5: (kw= '[' this_Expresion_2= ruleExpresion kw= ']' )
-                            // InternalLatino.g:2381:6: kw= '[' this_Expresion_2= ruleExpresion kw= ']'
+                            // InternalLatino.g:2370:5: (kw= '[' this_Expresion_2= ruleExpresion kw= ']' )
+                            // InternalLatino.g:2371:6: kw= '[' this_Expresion_2= ruleExpresion kw= ']'
                             {
                             kw=(Token)match(input,15,FOLLOW_5); 
 
@@ -6355,26 +6321,26 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                             }
                             break;
                         case 2 :
-                            // InternalLatino.g:2403:5: (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' )
+                            // InternalLatino.g:2393:5: (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' )
                             {
-                            // InternalLatino.g:2403:5: (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' )
-                            // InternalLatino.g:2404:6: kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')'
+                            // InternalLatino.g:2393:5: (kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')' )
+                            // InternalLatino.g:2394:6: kw= '(' (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )? kw= ')'
                             {
                             kw=(Token)match(input,12,FOLLOW_31); 
 
                             						current.merge(kw);
                             						newLeafNode(kw, grammarAccess.getPrimarioAccess().getLeftParenthesisKeyword_0_1_1_0());
                             					
-                            // InternalLatino.g:2409:6: (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )?
+                            // InternalLatino.g:2399:6: (this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )* )?
                             int alt45=2;
                             int LA45_0 = input.LA(1);
 
-                            if ( ((LA45_0>=RULE_ID && LA45_0<=RULE_INT)||LA45_0==12||LA45_0==57||(LA45_0>=61 && LA45_0<=64)) ) {
+                            if ( ((LA45_0>=RULE_ID && LA45_0<=RULE_INT)||LA45_0==12||LA45_0==55||(LA45_0>=59 && LA45_0<=62)) ) {
                                 alt45=1;
                             }
                             switch (alt45) {
                                 case 1 :
-                                    // InternalLatino.g:2410:7: this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )*
+                                    // InternalLatino.g:2400:7: this_Expresion_5= ruleExpresion (kw= ',' this_Expresion_7= ruleExpresion )*
                                     {
 
                                     							newCompositeNode(grammarAccess.getPrimarioAccess().getExpresionParserRuleCall_0_1_1_1_0());
@@ -6390,7 +6356,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
                                     							afterParserOrEnumRuleCall();
                                     						
-                                    // InternalLatino.g:2420:7: (kw= ',' this_Expresion_7= ruleExpresion )*
+                                    // InternalLatino.g:2410:7: (kw= ',' this_Expresion_7= ruleExpresion )*
                                     loop44:
                                     do {
                                         int alt44=2;
@@ -6403,7 +6369,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
                                         switch (alt44) {
                                     	case 1 :
-                                    	    // InternalLatino.g:2421:8: kw= ',' this_Expresion_7= ruleExpresion
+                                    	    // InternalLatino.g:2411:8: kw= ',' this_Expresion_7= ruleExpresion
                                     	    {
                                     	    kw=(Token)match(input,16,FOLLOW_5); 
 
@@ -6460,7 +6426,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalLatino.g:2447:3: this_STRING_9= RULE_STRING
+                    // InternalLatino.g:2437:3: this_STRING_9= RULE_STRING
                     {
                     this_STRING_9=(Token)match(input,RULE_STRING,FOLLOW_2); 
 
@@ -6473,7 +6439,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // InternalLatino.g:2455:3: this_Numero_10= ruleNumero
+                    // InternalLatino.g:2445:3: this_Numero_10= ruleNumero
                     {
 
                     			newCompositeNode(grammarAccess.getPrimarioAccess().getNumeroParserRuleCall_2());
@@ -6493,9 +6459,9 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // InternalLatino.g:2466:3: kw= 'verdadero'
+                    // InternalLatino.g:2456:3: kw= 'verdadero'
                     {
-                    kw=(Token)match(input,62,FOLLOW_2); 
+                    kw=(Token)match(input,60,FOLLOW_2); 
 
                     			current.merge(kw);
                     			newLeafNode(kw, grammarAccess.getPrimarioAccess().getVerdaderoKeyword_3());
@@ -6504,9 +6470,9 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // InternalLatino.g:2472:3: kw= 'cierto'
+                    // InternalLatino.g:2462:3: kw= 'cierto'
                     {
-                    kw=(Token)match(input,63,FOLLOW_2); 
+                    kw=(Token)match(input,61,FOLLOW_2); 
 
                     			current.merge(kw);
                     			newLeafNode(kw, grammarAccess.getPrimarioAccess().getCiertoKeyword_4());
@@ -6515,9 +6481,9 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 6 :
-                    // InternalLatino.g:2478:3: kw= 'falso'
+                    // InternalLatino.g:2468:3: kw= 'falso'
                     {
-                    kw=(Token)match(input,64,FOLLOW_2); 
+                    kw=(Token)match(input,62,FOLLOW_2); 
 
                     			current.merge(kw);
                     			newLeafNode(kw, grammarAccess.getPrimarioAccess().getFalsoKeyword_5());
@@ -6526,10 +6492,10 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 7 :
-                    // InternalLatino.g:2484:3: (kw= '(' this_Expresion_15= ruleExpresion kw= ')' )
+                    // InternalLatino.g:2474:3: (kw= '(' this_Expresion_15= ruleExpresion kw= ')' )
                     {
-                    // InternalLatino.g:2484:3: (kw= '(' this_Expresion_15= ruleExpresion kw= ')' )
-                    // InternalLatino.g:2485:4: kw= '(' this_Expresion_15= ruleExpresion kw= ')'
+                    // InternalLatino.g:2474:3: (kw= '(' this_Expresion_15= ruleExpresion kw= ')' )
+                    // InternalLatino.g:2475:4: kw= '(' this_Expresion_15= ruleExpresion kw= ')'
                     {
                     kw=(Token)match(input,12,FOLLOW_5); 
 
@@ -6584,7 +6550,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleNumero"
-    // InternalLatino.g:2510:1: entryRuleNumero returns [String current=null] : iv_ruleNumero= ruleNumero EOF ;
+    // InternalLatino.g:2500:1: entryRuleNumero returns [String current=null] : iv_ruleNumero= ruleNumero EOF ;
     public final String entryRuleNumero() throws RecognitionException {
         String current = null;
 
@@ -6592,8 +6558,8 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // InternalLatino.g:2510:46: (iv_ruleNumero= ruleNumero EOF )
-            // InternalLatino.g:2511:2: iv_ruleNumero= ruleNumero EOF
+            // InternalLatino.g:2500:46: (iv_ruleNumero= ruleNumero EOF )
+            // InternalLatino.g:2501:2: iv_ruleNumero= ruleNumero EOF
             {
              newCompositeNode(grammarAccess.getNumeroRule()); 
             pushFollow(FOLLOW_1);
@@ -6620,7 +6586,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleNumero"
-    // InternalLatino.g:2517:1: ruleNumero returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_INT_0= RULE_INT (kw= '.' this_INT_2= RULE_INT )? ) ;
+    // InternalLatino.g:2507:1: ruleNumero returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_INT_0= RULE_INT (kw= '.' this_INT_2= RULE_INT )? ) ;
     public final AntlrDatatypeRuleToken ruleNumero() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -6632,11 +6598,11 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalLatino.g:2523:2: ( (this_INT_0= RULE_INT (kw= '.' this_INT_2= RULE_INT )? ) )
-            // InternalLatino.g:2524:2: (this_INT_0= RULE_INT (kw= '.' this_INT_2= RULE_INT )? )
+            // InternalLatino.g:2513:2: ( (this_INT_0= RULE_INT (kw= '.' this_INT_2= RULE_INT )? ) )
+            // InternalLatino.g:2514:2: (this_INT_0= RULE_INT (kw= '.' this_INT_2= RULE_INT )? )
             {
-            // InternalLatino.g:2524:2: (this_INT_0= RULE_INT (kw= '.' this_INT_2= RULE_INT )? )
-            // InternalLatino.g:2525:3: this_INT_0= RULE_INT (kw= '.' this_INT_2= RULE_INT )?
+            // InternalLatino.g:2514:2: (this_INT_0= RULE_INT (kw= '.' this_INT_2= RULE_INT )? )
+            // InternalLatino.g:2515:3: this_INT_0= RULE_INT (kw= '.' this_INT_2= RULE_INT )?
             {
             this_INT_0=(Token)match(input,RULE_INT,FOLLOW_39); 
 
@@ -6645,18 +6611,18 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
             			newLeafNode(this_INT_0, grammarAccess.getNumeroAccess().getINTTerminalRuleCall_0());
             		
-            // InternalLatino.g:2532:3: (kw= '.' this_INT_2= RULE_INT )?
+            // InternalLatino.g:2522:3: (kw= '.' this_INT_2= RULE_INT )?
             int alt48=2;
             int LA48_0 = input.LA(1);
 
-            if ( (LA48_0==65) ) {
+            if ( (LA48_0==63) ) {
                 alt48=1;
             }
             switch (alt48) {
                 case 1 :
-                    // InternalLatino.g:2533:4: kw= '.' this_INT_2= RULE_INT
+                    // InternalLatino.g:2523:4: kw= '.' this_INT_2= RULE_INT
                     {
-                    kw=(Token)match(input,65,FOLLOW_40); 
+                    kw=(Token)match(input,63,FOLLOW_40); 
 
                     				current.merge(kw);
                     				newLeafNode(kw, grammarAccess.getNumeroAccess().getFullStopKeyword_1_0());
@@ -6697,7 +6663,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleConversion"
-    // InternalLatino.g:2550:1: ruleConversion returns [Enumerator current=null] : ( (enumLiteral_0= 'anumero' ) | (enumLiteral_1= 'acadena' ) ) ;
+    // InternalLatino.g:2540:1: ruleConversion returns [Enumerator current=null] : ( (enumLiteral_0= 'anumero' ) | (enumLiteral_1= 'acadena' ) ) ;
     public final Enumerator ruleConversion() throws RecognitionException {
         Enumerator current = null;
 
@@ -6708,17 +6674,17 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalLatino.g:2556:2: ( ( (enumLiteral_0= 'anumero' ) | (enumLiteral_1= 'acadena' ) ) )
-            // InternalLatino.g:2557:2: ( (enumLiteral_0= 'anumero' ) | (enumLiteral_1= 'acadena' ) )
+            // InternalLatino.g:2546:2: ( ( (enumLiteral_0= 'anumero' ) | (enumLiteral_1= 'acadena' ) ) )
+            // InternalLatino.g:2547:2: ( (enumLiteral_0= 'anumero' ) | (enumLiteral_1= 'acadena' ) )
             {
-            // InternalLatino.g:2557:2: ( (enumLiteral_0= 'anumero' ) | (enumLiteral_1= 'acadena' ) )
+            // InternalLatino.g:2547:2: ( (enumLiteral_0= 'anumero' ) | (enumLiteral_1= 'acadena' ) )
             int alt49=2;
             int LA49_0 = input.LA(1);
 
-            if ( (LA49_0==66) ) {
+            if ( (LA49_0==64) ) {
                 alt49=1;
             }
-            else if ( (LA49_0==67) ) {
+            else if ( (LA49_0==65) ) {
                 alt49=2;
             }
             else {
@@ -6729,12 +6695,12 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
             }
             switch (alt49) {
                 case 1 :
-                    // InternalLatino.g:2558:3: (enumLiteral_0= 'anumero' )
+                    // InternalLatino.g:2548:3: (enumLiteral_0= 'anumero' )
                     {
-                    // InternalLatino.g:2558:3: (enumLiteral_0= 'anumero' )
-                    // InternalLatino.g:2559:4: enumLiteral_0= 'anumero'
+                    // InternalLatino.g:2548:3: (enumLiteral_0= 'anumero' )
+                    // InternalLatino.g:2549:4: enumLiteral_0= 'anumero'
                     {
-                    enumLiteral_0=(Token)match(input,66,FOLLOW_2); 
+                    enumLiteral_0=(Token)match(input,64,FOLLOW_2); 
 
                     				current = grammarAccess.getConversionAccess().getNUMEROEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_0, grammarAccess.getConversionAccess().getNUMEROEnumLiteralDeclaration_0());
@@ -6746,12 +6712,12 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalLatino.g:2566:3: (enumLiteral_1= 'acadena' )
+                    // InternalLatino.g:2556:3: (enumLiteral_1= 'acadena' )
                     {
-                    // InternalLatino.g:2566:3: (enumLiteral_1= 'acadena' )
-                    // InternalLatino.g:2567:4: enumLiteral_1= 'acadena'
+                    // InternalLatino.g:2556:3: (enumLiteral_1= 'acadena' )
+                    // InternalLatino.g:2557:4: enumLiteral_1= 'acadena'
                     {
-                    enumLiteral_1=(Token)match(input,67,FOLLOW_2); 
+                    enumLiteral_1=(Token)match(input,65,FOLLOW_2); 
 
                     				current = grammarAccess.getConversionAccess().getTEXTOEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_1, grammarAccess.getConversionAccess().getTEXTOEnumLiteralDeclaration_1());
@@ -6785,7 +6751,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleOperadorPaso"
-    // InternalLatino.g:2577:1: ruleOperadorPaso returns [Enumerator current=null] : ( (enumLiteral_0= '++' ) | (enumLiteral_1= '--' ) ) ;
+    // InternalLatino.g:2567:1: ruleOperadorPaso returns [Enumerator current=null] : ( (enumLiteral_0= '++' ) | (enumLiteral_1= '--' ) ) ;
     public final Enumerator ruleOperadorPaso() throws RecognitionException {
         Enumerator current = null;
 
@@ -6796,17 +6762,17 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
         	enterRule();
 
         try {
-            // InternalLatino.g:2583:2: ( ( (enumLiteral_0= '++' ) | (enumLiteral_1= '--' ) ) )
-            // InternalLatino.g:2584:2: ( (enumLiteral_0= '++' ) | (enumLiteral_1= '--' ) )
+            // InternalLatino.g:2573:2: ( ( (enumLiteral_0= '++' ) | (enumLiteral_1= '--' ) ) )
+            // InternalLatino.g:2574:2: ( (enumLiteral_0= '++' ) | (enumLiteral_1= '--' ) )
             {
-            // InternalLatino.g:2584:2: ( (enumLiteral_0= '++' ) | (enumLiteral_1= '--' ) )
+            // InternalLatino.g:2574:2: ( (enumLiteral_0= '++' ) | (enumLiteral_1= '--' ) )
             int alt50=2;
             int LA50_0 = input.LA(1);
 
-            if ( (LA50_0==68) ) {
+            if ( (LA50_0==66) ) {
                 alt50=1;
             }
-            else if ( (LA50_0==69) ) {
+            else if ( (LA50_0==67) ) {
                 alt50=2;
             }
             else {
@@ -6817,12 +6783,12 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
             }
             switch (alt50) {
                 case 1 :
-                    // InternalLatino.g:2585:3: (enumLiteral_0= '++' )
+                    // InternalLatino.g:2575:3: (enumLiteral_0= '++' )
                     {
-                    // InternalLatino.g:2585:3: (enumLiteral_0= '++' )
-                    // InternalLatino.g:2586:4: enumLiteral_0= '++'
+                    // InternalLatino.g:2575:3: (enumLiteral_0= '++' )
+                    // InternalLatino.g:2576:4: enumLiteral_0= '++'
                     {
-                    enumLiteral_0=(Token)match(input,68,FOLLOW_2); 
+                    enumLiteral_0=(Token)match(input,66,FOLLOW_2); 
 
                     				current = grammarAccess.getOperadorPasoAccess().getMASEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_0, grammarAccess.getOperadorPasoAccess().getMASEnumLiteralDeclaration_0());
@@ -6834,12 +6800,12 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // InternalLatino.g:2593:3: (enumLiteral_1= '--' )
+                    // InternalLatino.g:2583:3: (enumLiteral_1= '--' )
                     {
-                    // InternalLatino.g:2593:3: (enumLiteral_1= '--' )
-                    // InternalLatino.g:2594:4: enumLiteral_1= '--'
+                    // InternalLatino.g:2583:3: (enumLiteral_1= '--' )
+                    // InternalLatino.g:2584:4: enumLiteral_1= '--'
                     {
-                    enumLiteral_1=(Token)match(input,69,FOLLOW_2); 
+                    enumLiteral_1=(Token)match(input,67,FOLLOW_2); 
 
                     				current = grammarAccess.getOperadorPasoAccess().getMENOSEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
                     				newLeafNode(enumLiteral_1, grammarAccess.getOperadorPasoAccess().getMENOSEnumLiteralDeclaration_1());
@@ -6877,12 +6843,12 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
     protected DFA3 dfa3 = new DFA3(this);
     static final String dfa_1s = "\23\uffff";
     static final String dfa_2s = "\1\4\1\13\12\uffff\1\4\6\uffff";
-    static final String dfa_3s = "\1\56\1\105\12\uffff\1\103\6\uffff";
+    static final String dfa_3s = "\1\54\1\103\12\uffff\1\101\6\uffff";
     static final String dfa_4s = "\2\uffff\1\6\1\7\1\10\1\11\1\12\1\13\1\14\1\15\1\16\1\17\1\uffff\1\4\1\5\1\20\1\1\1\3\1\2";
     static final String dfa_5s = "\23\uffff}>";
     static final String[] dfa_6s = {
-            "\1\1\15\uffff\1\2\3\uffff\1\4\1\5\1\uffff\1\6\1\uffff\1\7\2\uffff\1\10\1\11\1\12\6\uffff\5\13\3\3",
-            "\1\14\1\17\2\uffff\1\15\64\uffff\2\16",
+            "\1\1\15\uffff\1\2\3\uffff\1\4\1\5\1\uffff\1\6\1\uffff\1\7\2\uffff\1\10\1\11\1\12\6\uffff\3\13\3\3",
+            "\1\14\1\17\2\uffff\1\15\62\uffff\2\16",
             "",
             "",
             "",
@@ -6893,7 +6859,7 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
             "",
             "",
             "",
-            "\3\20\5\uffff\1\20\1\22\1\uffff\1\21\51\uffff\1\20\3\uffff\4\20\1\uffff\2\22",
+            "\3\20\5\uffff\1\20\1\22\1\uffff\1\21\47\uffff\1\20\3\uffff\4\20\1\uffff\2\22",
             "",
             "",
             "",
@@ -6930,43 +6896,43 @@ public class InternalLatinoParser extends AbstractInternalAntlrParser {
 
     public static final BitSet FOLLOW_1 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_2 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_3 = new BitSet(new long[]{0x00007FE1CAC40012L});
+    public static final BitSet FOLLOW_3 = new BitSet(new long[]{0x00001FE1CAC40012L});
     public static final BitSet FOLLOW_4 = new BitSet(new long[]{0x0000000000000800L});
-    public static final BitSet FOLLOW_5 = new BitSet(new long[]{0xE200000000001070L,0x0000000000000001L});
-    public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x0000000000002000L,0x000000000000000CL});
+    public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x7880000000001070L});
+    public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x0000000000002000L,0x0000000000000003L});
     public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0000000000001000L});
     public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000002000L});
     public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000000004000L});
     public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0xE200000000021070L,0x0000000000000001L});
+    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x7880000000021070L});
     public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000000000030000L});
     public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x00007F81CAFC0010L});
+    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x00001F81CAFC0010L});
     public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000000000380000L});
-    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x00007F81CAD40010L});
-    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x00007F81CAC40012L});
-    public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x00007F81CBC40010L});
+    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x00001F81CAD40010L});
+    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x00001F81CAC40012L});
+    public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x00001F81CBC40010L});
     public static final BitSet FOLLOW_19 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x0000000004000000L});
     public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x0000000010000000L});
     public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x0000000020000000L});
     public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0000000000014000L});
-    public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000030L});
+    public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0000000000000000L,0x000000000000000CL});
     public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x0000001600100000L});
     public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x0000000800000000L});
-    public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x00007F81CAC40010L});
+    public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x00001F81CAC40010L});
     public static final BitSet FOLLOW_28 = new BitSet(new long[]{0x0000000000000060L});
-    public static final BitSet FOLLOW_29 = new BitSet(new long[]{0x00007F91CAC40010L});
+    public static final BitSet FOLLOW_29 = new BitSet(new long[]{0x00001F91CAC40010L});
     public static final BitSet FOLLOW_30 = new BitSet(new long[]{0x0000000000004010L});
-    public static final BitSet FOLLOW_31 = new BitSet(new long[]{0xE200000000005070L,0x0000000000000001L});
-    public static final BitSet FOLLOW_32 = new BitSet(new long[]{0x0000800000000002L});
-    public static final BitSet FOLLOW_33 = new BitSet(new long[]{0x0001000000000002L});
-    public static final BitSet FOLLOW_34 = new BitSet(new long[]{0x007E000000000002L});
-    public static final BitSet FOLLOW_35 = new BitSet(new long[]{0x0080000000000002L});
-    public static final BitSet FOLLOW_36 = new BitSet(new long[]{0x0300000000000002L});
-    public static final BitSet FOLLOW_37 = new BitSet(new long[]{0x1C00000000000002L});
+    public static final BitSet FOLLOW_31 = new BitSet(new long[]{0x7880000000005070L});
+    public static final BitSet FOLLOW_32 = new BitSet(new long[]{0x0000200000000002L});
+    public static final BitSet FOLLOW_33 = new BitSet(new long[]{0x0000400000000002L});
+    public static final BitSet FOLLOW_34 = new BitSet(new long[]{0x001F800000000002L});
+    public static final BitSet FOLLOW_35 = new BitSet(new long[]{0x0020000000000002L});
+    public static final BitSet FOLLOW_36 = new BitSet(new long[]{0x00C0000000000002L});
+    public static final BitSet FOLLOW_37 = new BitSet(new long[]{0x0700000000000002L});
     public static final BitSet FOLLOW_38 = new BitSet(new long[]{0x0000000000009002L});
-    public static final BitSet FOLLOW_39 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000002L});
+    public static final BitSet FOLLOW_39 = new BitSet(new long[]{0x8000000000000002L});
     public static final BitSet FOLLOW_40 = new BitSet(new long[]{0x0000000000000040L});
 
 }

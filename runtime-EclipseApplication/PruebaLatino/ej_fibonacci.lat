@@ -1,0 +1,13 @@
+# Muestra los primeros terminos de la serie de Fibonacci
+# Cada termino es la suma de los dos anteriores, 0 1 1 2 3 5 8
+
+escribir("Cuantos terminos quieres")
+terminos = anumero(leer())
+anterior = 0
+actual = 1
+desde (i = 0; i < terminos; i++)
+    escribir(anterior)
+    siguiente = anterior + actual
+    anterior = actual
+    actual = siguiente
+fin

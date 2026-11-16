@@ -1,0 +1,28 @@
+# Calcula el factorial de un numero de dos formas
+# El factorial de 5 es 5 * 4 * 3 * 2 * 1
+
+# Con un ciclo, va multiplicando desde 2 hasta el numero
+funcion factorialCiclo(num)
+    resultado = 1
+    desde (k = 2; k <= num; k++)
+        resultado = resultado * k
+    fin
+    retorno resultado
+fin
+
+# Con recursion, la funcion se llama a si misma con un numero menor
+funcion factorialRecursivo(num)
+    si num <= 1
+        retorno 1
+    fin
+    retorno num * factorialRecursivo(num - 1)
+fin
+
+escribir("De que numero quieres el factorial")
+numero = anumero(leer())
+si numero < 0
+    escribir("No hay factorial de un numero negativo")
+sino
+    escribir("Con ciclo " .. factorialCiclo(numero))
+    escribir("Con recursion " .. factorialRecursivo(numero))
+fin

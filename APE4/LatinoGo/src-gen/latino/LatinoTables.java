@@ -210,7 +210,6 @@ public class LatinoTables extends AbstractTables
 	public static final /*@NonInvalid*/ String STR_numero = "numero";
 	public static final /*@NonInvalid*/ String STR_os = "os";
 	public static final /*@NonInvalid*/ String STR_package = "package";
-	public static final /*@NonInvalid*/ String STR_primeraVuelta = "primeraVuelta";
 	public static final /*@NonInvalid*/ String STR_range = "range";
 	public static final /*@NonInvalid*/ String STR_retorno_32_solo_32_puede_32_ir_32_dentro_32_de_32_una_32_funcion = "retorno solo puede ir dentro de una funcion";
 	public static final /*@NonInvalid*/ String STR_return = "return";
@@ -225,6 +224,7 @@ public class LatinoTables extends AbstractTables
 	public static final /*@NonInvalid*/ String STR_texto = "texto";
 	public static final /*@NonInvalid*/ String STR_true = "true";
 	public static final /*@NonInvalid*/ String STR_type = "type";
+	public static final /*@NonInvalid*/ String STR_ultimaVuelta = "ultimaVuelta";
 	public static final /*@NonInvalid*/ String STR_var = "var";
 	public static final /*@NonInvalid*/ String STR_verdadero = "verdadero";
 	public static final /*@NonInvalid*/ EnumerationLiteralId ELITid_NINGUNA = LatinoTables.ENUMid_Conversion.getEnumerationLiteralId("NINGUNA");
@@ -241,7 +241,7 @@ public class LatinoTables extends AbstractTables
 	public static final /*@NonInvalid*/ CollectionTypeId SET_CLSSid_OclElement = TypeId.SET.getSpecializedId(LatinoTables.CLSSid_OclElement, true, ValueUtil.ZERO_VALUE, ValueUtil.UNLIMITED_VALUE);
 	public static final /*@NonInvalid*/ CollectionTypeId SET_CLSSid_OclElement_0 = TypeId.SET.getSpecializedId(LatinoTables.CLSSid_OclElement, false, ValueUtil.ZERO_VALUE, ValueUtil.UNLIMITED_VALUE);
 	public static final /*@NonInvalid*/ TupleTypeId TUPLid_ = IdManager.getTupleTypeId("Tuple", LatinoTables.PARTid_, LatinoTables.PARTid__0, LatinoTables.PARTid__1);
-	public static final /*@NonInvalid*/ SetValue Set = ValueUtil.createSetOfEach(LatinoTables.SET_PRIMid_String, LatinoTables.STR_break, LatinoTables.STR_case, LatinoTables.STR_chan, LatinoTables.STR_const, LatinoTables.STR_continue, LatinoTables.STR_default, LatinoTables.STR_defer, LatinoTables.STR_else, LatinoTables.STR_fallthrough, LatinoTables.STR_for, LatinoTables.STR_func, LatinoTables.STR_go, LatinoTables.STR_goto, LatinoTables.STR_if, LatinoTables.STR_import, LatinoTables.STR_interface, LatinoTables.STR_map, LatinoTables.STR_package, LatinoTables.STR_range, LatinoTables.STR_return, LatinoTables.STR_select, LatinoTables.STR_struct, LatinoTables.STR_switch, LatinoTables.STR_type, LatinoTables.STR_var, LatinoTables.STR_fmt, LatinoTables.STR_main, LatinoTables.STR_true, LatinoTables.STR_false, LatinoTables.STR_nil, LatinoTables.STR_int, LatinoTables.STR_float64, LatinoTables.STR_string, LatinoTables.STR_bool, LatinoTables.STR_any, LatinoTables.STR_init, LatinoTables.STR__, LatinoTables.STR_leerTexto, LatinoTables.STR_leerNumero, LatinoTables.STR_aTexto, LatinoTables.STR_lector, LatinoTables.STR_bufio, LatinoTables.STR_math, LatinoTables.STR_os, LatinoTables.STR_strconv, LatinoTables.STR_strings, LatinoTables.STR_primeraVuelta);
+	public static final /*@NonInvalid*/ SetValue Set = ValueUtil.createSetOfEach(LatinoTables.SET_PRIMid_String, LatinoTables.STR_break, LatinoTables.STR_case, LatinoTables.STR_chan, LatinoTables.STR_const, LatinoTables.STR_continue, LatinoTables.STR_default, LatinoTables.STR_defer, LatinoTables.STR_else, LatinoTables.STR_fallthrough, LatinoTables.STR_for, LatinoTables.STR_func, LatinoTables.STR_go, LatinoTables.STR_goto, LatinoTables.STR_if, LatinoTables.STR_import, LatinoTables.STR_interface, LatinoTables.STR_map, LatinoTables.STR_package, LatinoTables.STR_range, LatinoTables.STR_return, LatinoTables.STR_select, LatinoTables.STR_struct, LatinoTables.STR_switch, LatinoTables.STR_type, LatinoTables.STR_var, LatinoTables.STR_fmt, LatinoTables.STR_main, LatinoTables.STR_true, LatinoTables.STR_false, LatinoTables.STR_nil, LatinoTables.STR_int, LatinoTables.STR_float64, LatinoTables.STR_string, LatinoTables.STR_bool, LatinoTables.STR_any, LatinoTables.STR_init, LatinoTables.STR__, LatinoTables.STR_leerTexto, LatinoTables.STR_leerNumero, LatinoTables.STR_aTexto, LatinoTables.STR_lector, LatinoTables.STR_bufio, LatinoTables.STR_math, LatinoTables.STR_os, LatinoTables.STR_strconv, LatinoTables.STR_strings, LatinoTables.STR_ultimaVuelta);
 	public static final /*@NonInvalid*/ SetValue Set_0 = ValueUtil.createSetOfEach(LatinoTables.SET_PRIMid_String, LatinoTables.STR_global, LatinoTables.STR_ir, LatinoTables.STR_nulo, LatinoTables.STR_clase, LatinoTables.STR_constructor, LatinoTables.STR_hereda, LatinoTables.STR_super, LatinoTables.STR_mi, LatinoTables.STR_estatico, LatinoTables.STR_nueva);
 
 	/**

@@ -50,7 +50,7 @@ public interface Elemento extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='Set{\'break\', \'case\', \'chan\', \'const\', \'continue\', \'default\', \'defer\', \'else\', \'fallthrough\', \'for\', \'func\', \'go\', \'goto\', \'if\', \'import\', \'interface\', \'map\', \'package\', \'range\', \'return\', \'select\', \'struct\', \'switch\', \'type\', \'var\', \'fmt\', \'main\', \'true\', \'false\', \'nil\', \'int\', \'float64\', \'string\', \'bool\', \'any\', \'init\', \'_\', \'leerTexto\', \'leerNumero\', \'aTexto\', \'lector\', \'bufio\', \'math\', \'os\', \'strconv\', \'strings\', \'primeraVuelta\'}-&gt;includes(n)'"
+	 * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='Set{\'break\', \'case\', \'chan\', \'const\', \'continue\', \'default\', \'defer\', \'else\', \'fallthrough\', \'for\', \'func\', \'go\', \'goto\', \'if\', \'import\', \'interface\', \'map\', \'package\', \'range\', \'return\', \'select\', \'struct\', \'switch\', \'type\', \'var\', \'fmt\', \'main\', \'true\', \'false\', \'nil\', \'int\', \'float64\', \'string\', \'bool\', \'any\', \'init\', \'_\', \'leerTexto\', \'leerNumero\', \'aTexto\', \'lector\', \'bufio\', \'math\', \'os\', \'strconv\', \'strings\', \'ultimaVuelta\'}-&gt;includes(n)'"
 	 * @generated
 	 */
 	boolean esReservadaGo(String n);

@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalLatinoParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_SL_COMMENT", "RULE_ML_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'otro'", "'defecto'", "'funcion'", "'fun'", "'retorno'", "'retornar'", "'regresar'", "'devolver'", "'ret'", "'escribir'", "'imprimir'", "'poner'", "'=='", "'!='", "'<'", "'<='", "'>'", "'>='", "'+'", "'-'", "'*'", "'/'", "'%'", "'verdadero'", "'cierto'", "'falso'", "'anumero'", "'acadena'", "'++'", "'--'", "'='", "'('", "'leer'", "')'", "'['", "']'", "','", "'si'", "'fin'", "'sino'", "'osi'", "'mientras'", "'repetir'", "'hasta'", "'desde'", "';'", "'para'", "'en'", "'rango'", "'romper'", "'continuar'", "'elegir'", "':'", "'caso'", "'||'", "'&&'", "'..'", "'!'", "'.'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_SL_COMMENT", "RULE_ML_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'otro'", "'defecto'", "'funcion'", "'fun'", "'retorno'", "'retornar'", "'ret'", "'escribir'", "'imprimir'", "'poner'", "'=='", "'!='", "'<'", "'<='", "'>'", "'>='", "'+'", "'-'", "'*'", "'/'", "'%'", "'verdadero'", "'cierto'", "'falso'", "'anumero'", "'acadena'", "'++'", "'--'", "'='", "'('", "'leer'", "')'", "'['", "']'", "','", "'si'", "'fin'", "'sino'", "'osi'", "'mientras'", "'repetir'", "'hasta'", "'desde'", "';'", "'para'", "'en'", "'rango'", "'romper'", "'continuar'", "'elegir'", "':'", "'caso'", "'||'", "'&&'", "'..'", "'!'", "'.'"
     };
     public static final int T__50=50;
     public static final int T__19=19;
@@ -57,9 +57,7 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
     public static final int T__23=23;
     public static final int T__67=67;
     public static final int T__24=24;
-    public static final int T__68=68;
     public static final int T__25=25;
-    public static final int T__69=69;
     public static final int T__62=62;
     public static final int T__63=63;
     public static final int T__20=20;
@@ -2773,7 +2771,7 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
             int alt1=2;
             int LA1_0 = input.LA(1);
 
-            if ( (LA1_0==RULE_ID||(LA1_0>=15 && LA1_0<=22)||LA1_0==48||(LA1_0>=52 && LA1_0<=53)||LA1_0==55||LA1_0==57||(LA1_0>=60 && LA1_0<=62)) ) {
+            if ( (LA1_0==RULE_ID||(LA1_0>=15 && LA1_0<=20)||LA1_0==46||(LA1_0>=50 && LA1_0<=51)||LA1_0==53||LA1_0==55||(LA1_0>=58 && LA1_0<=60)) ) {
                 alt1=1;
             }
             else if ( ((LA1_0>=13 && LA1_0<=14)) ) {
@@ -3184,10 +3182,10 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
             int alt3=2;
             int LA3_0 = input.LA(1);
 
-            if ( ((LA3_0>=37 && LA3_0<=38)) ) {
+            if ( ((LA3_0>=35 && LA3_0<=36)) ) {
                 alt3=1;
             }
-            else if ( (LA3_0==43) ) {
+            else if ( (LA3_0==41) ) {
                 alt3=2;
             }
             else {
@@ -3278,10 +3276,10 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
             if ( (LA4_0==RULE_ID) ) {
                 int LA4_1 = input.LA(2);
 
-                if ( (LA4_1==41) ) {
+                if ( (LA4_1==39) ) {
                     alt4=1;
                 }
-                else if ( ((LA4_1>=39 && LA4_1<=40)) ) {
+                else if ( ((LA4_1>=37 && LA4_1<=38)) ) {
                     alt4=2;
                 }
                 else {
@@ -3571,14 +3569,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Retorno__Alternatives_0"
-    // InternalLatino.g:1140:1: rule__Retorno__Alternatives_0 : ( ( 'retorno' ) | ( 'retornar' ) | ( 'regresar' ) | ( 'devolver' ) | ( 'ret' ) );
+    // InternalLatino.g:1140:1: rule__Retorno__Alternatives_0 : ( ( 'retorno' ) | ( 'retornar' ) | ( 'ret' ) );
     public final void rule__Retorno__Alternatives_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1144:1: ( ( 'retorno' ) | ( 'retornar' ) | ( 'regresar' ) | ( 'devolver' ) | ( 'ret' ) )
-            int alt8=5;
+            // InternalLatino.g:1144:1: ( ( 'retorno' ) | ( 'retornar' ) | ( 'ret' ) )
+            int alt8=3;
             switch ( input.LA(1) ) {
             case 15:
                 {
@@ -3593,16 +3591,6 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
             case 17:
                 {
                 alt8=3;
-                }
-                break;
-            case 18:
-                {
-                alt8=4;
-                }
-                break;
-            case 19:
-                {
-                alt8=5;
                 }
                 break;
             default:
@@ -3644,44 +3632,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalLatino.g:1157:2: ( 'regresar' )
+                    // InternalLatino.g:1157:2: ( 'ret' )
                     {
-                    // InternalLatino.g:1157:2: ( 'regresar' )
-                    // InternalLatino.g:1158:3: 'regresar'
+                    // InternalLatino.g:1157:2: ( 'ret' )
+                    // InternalLatino.g:1158:3: 'ret'
                     {
-                     before(grammarAccess.getRetornoAccess().getRegresarKeyword_0_2()); 
+                     before(grammarAccess.getRetornoAccess().getRetKeyword_0_2()); 
                     match(input,17,FOLLOW_2); 
-                     after(grammarAccess.getRetornoAccess().getRegresarKeyword_0_2()); 
-
-                    }
-
-
-                    }
-                    break;
-                case 4 :
-                    // InternalLatino.g:1163:2: ( 'devolver' )
-                    {
-                    // InternalLatino.g:1163:2: ( 'devolver' )
-                    // InternalLatino.g:1164:3: 'devolver'
-                    {
-                     before(grammarAccess.getRetornoAccess().getDevolverKeyword_0_3()); 
-                    match(input,18,FOLLOW_2); 
-                     after(grammarAccess.getRetornoAccess().getDevolverKeyword_0_3()); 
-
-                    }
-
-
-                    }
-                    break;
-                case 5 :
-                    // InternalLatino.g:1169:2: ( 'ret' )
-                    {
-                    // InternalLatino.g:1169:2: ( 'ret' )
-                    // InternalLatino.g:1170:3: 'ret'
-                    {
-                     before(grammarAccess.getRetornoAccess().getRetKeyword_0_4()); 
-                    match(input,19,FOLLOW_2); 
-                     after(grammarAccess.getRetornoAccess().getRetKeyword_0_4()); 
+                     after(grammarAccess.getRetornoAccess().getRetKeyword_0_2()); 
 
                     }
 
@@ -3706,26 +3664,26 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Imprimir__Alternatives_0"
-    // InternalLatino.g:1179:1: rule__Imprimir__Alternatives_0 : ( ( 'escribir' ) | ( 'imprimir' ) | ( 'poner' ) );
+    // InternalLatino.g:1167:1: rule__Imprimir__Alternatives_0 : ( ( 'escribir' ) | ( 'imprimir' ) | ( 'poner' ) );
     public final void rule__Imprimir__Alternatives_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1183:1: ( ( 'escribir' ) | ( 'imprimir' ) | ( 'poner' ) )
+            // InternalLatino.g:1171:1: ( ( 'escribir' ) | ( 'imprimir' ) | ( 'poner' ) )
             int alt9=3;
             switch ( input.LA(1) ) {
-            case 20:
+            case 18:
                 {
                 alt9=1;
                 }
                 break;
-            case 21:
+            case 19:
                 {
                 alt9=2;
                 }
                 break;
-            case 22:
+            case 20:
                 {
                 alt9=3;
                 }
@@ -3739,13 +3697,13 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
             switch (alt9) {
                 case 1 :
-                    // InternalLatino.g:1184:2: ( 'escribir' )
+                    // InternalLatino.g:1172:2: ( 'escribir' )
                     {
-                    // InternalLatino.g:1184:2: ( 'escribir' )
-                    // InternalLatino.g:1185:3: 'escribir'
+                    // InternalLatino.g:1172:2: ( 'escribir' )
+                    // InternalLatino.g:1173:3: 'escribir'
                     {
                      before(grammarAccess.getImprimirAccess().getEscribirKeyword_0_0()); 
-                    match(input,20,FOLLOW_2); 
+                    match(input,18,FOLLOW_2); 
                      after(grammarAccess.getImprimirAccess().getEscribirKeyword_0_0()); 
 
                     }
@@ -3754,13 +3712,13 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalLatino.g:1190:2: ( 'imprimir' )
+                    // InternalLatino.g:1178:2: ( 'imprimir' )
                     {
-                    // InternalLatino.g:1190:2: ( 'imprimir' )
-                    // InternalLatino.g:1191:3: 'imprimir'
+                    // InternalLatino.g:1178:2: ( 'imprimir' )
+                    // InternalLatino.g:1179:3: 'imprimir'
                     {
                      before(grammarAccess.getImprimirAccess().getImprimirKeyword_0_1()); 
-                    match(input,21,FOLLOW_2); 
+                    match(input,19,FOLLOW_2); 
                      after(grammarAccess.getImprimirAccess().getImprimirKeyword_0_1()); 
 
                     }
@@ -3769,13 +3727,13 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalLatino.g:1196:2: ( 'poner' )
+                    // InternalLatino.g:1184:2: ( 'poner' )
                     {
-                    // InternalLatino.g:1196:2: ( 'poner' )
-                    // InternalLatino.g:1197:3: 'poner'
+                    // InternalLatino.g:1184:2: ( 'poner' )
+                    // InternalLatino.g:1185:3: 'poner'
                     {
                      before(grammarAccess.getImprimirAccess().getPonerKeyword_0_2()); 
-                    match(input,22,FOLLOW_2); 
+                    match(input,20,FOLLOW_2); 
                      after(grammarAccess.getImprimirAccess().getPonerKeyword_0_2()); 
 
                     }
@@ -3801,41 +3759,41 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Comparacion__Alternatives_1_0"
-    // InternalLatino.g:1206:1: rule__Comparacion__Alternatives_1_0 : ( ( '==' ) | ( '!=' ) | ( '<' ) | ( '<=' ) | ( '>' ) | ( '>=' ) );
+    // InternalLatino.g:1194:1: rule__Comparacion__Alternatives_1_0 : ( ( '==' ) | ( '!=' ) | ( '<' ) | ( '<=' ) | ( '>' ) | ( '>=' ) );
     public final void rule__Comparacion__Alternatives_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1210:1: ( ( '==' ) | ( '!=' ) | ( '<' ) | ( '<=' ) | ( '>' ) | ( '>=' ) )
+            // InternalLatino.g:1198:1: ( ( '==' ) | ( '!=' ) | ( '<' ) | ( '<=' ) | ( '>' ) | ( '>=' ) )
             int alt10=6;
             switch ( input.LA(1) ) {
-            case 23:
+            case 21:
                 {
                 alt10=1;
                 }
                 break;
-            case 24:
+            case 22:
                 {
                 alt10=2;
                 }
                 break;
-            case 25:
+            case 23:
                 {
                 alt10=3;
                 }
                 break;
-            case 26:
+            case 24:
                 {
                 alt10=4;
                 }
                 break;
-            case 27:
+            case 25:
                 {
                 alt10=5;
                 }
                 break;
-            case 28:
+            case 26:
                 {
                 alt10=6;
                 }
@@ -3849,13 +3807,13 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
             switch (alt10) {
                 case 1 :
-                    // InternalLatino.g:1211:2: ( '==' )
+                    // InternalLatino.g:1199:2: ( '==' )
                     {
-                    // InternalLatino.g:1211:2: ( '==' )
-                    // InternalLatino.g:1212:3: '=='
+                    // InternalLatino.g:1199:2: ( '==' )
+                    // InternalLatino.g:1200:3: '=='
                     {
                      before(grammarAccess.getComparacionAccess().getEqualsSignEqualsSignKeyword_1_0_0()); 
-                    match(input,23,FOLLOW_2); 
+                    match(input,21,FOLLOW_2); 
                      after(grammarAccess.getComparacionAccess().getEqualsSignEqualsSignKeyword_1_0_0()); 
 
                     }
@@ -3864,13 +3822,13 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalLatino.g:1217:2: ( '!=' )
+                    // InternalLatino.g:1205:2: ( '!=' )
                     {
-                    // InternalLatino.g:1217:2: ( '!=' )
-                    // InternalLatino.g:1218:3: '!='
+                    // InternalLatino.g:1205:2: ( '!=' )
+                    // InternalLatino.g:1206:3: '!='
                     {
                      before(grammarAccess.getComparacionAccess().getExclamationMarkEqualsSignKeyword_1_0_1()); 
-                    match(input,24,FOLLOW_2); 
+                    match(input,22,FOLLOW_2); 
                      after(grammarAccess.getComparacionAccess().getExclamationMarkEqualsSignKeyword_1_0_1()); 
 
                     }
@@ -3879,13 +3837,13 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalLatino.g:1223:2: ( '<' )
+                    // InternalLatino.g:1211:2: ( '<' )
                     {
-                    // InternalLatino.g:1223:2: ( '<' )
-                    // InternalLatino.g:1224:3: '<'
+                    // InternalLatino.g:1211:2: ( '<' )
+                    // InternalLatino.g:1212:3: '<'
                     {
                      before(grammarAccess.getComparacionAccess().getLessThanSignKeyword_1_0_2()); 
-                    match(input,25,FOLLOW_2); 
+                    match(input,23,FOLLOW_2); 
                      after(grammarAccess.getComparacionAccess().getLessThanSignKeyword_1_0_2()); 
 
                     }
@@ -3894,13 +3852,13 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 4 :
-                    // InternalLatino.g:1229:2: ( '<=' )
+                    // InternalLatino.g:1217:2: ( '<=' )
                     {
-                    // InternalLatino.g:1229:2: ( '<=' )
-                    // InternalLatino.g:1230:3: '<='
+                    // InternalLatino.g:1217:2: ( '<=' )
+                    // InternalLatino.g:1218:3: '<='
                     {
                      before(grammarAccess.getComparacionAccess().getLessThanSignEqualsSignKeyword_1_0_3()); 
-                    match(input,26,FOLLOW_2); 
+                    match(input,24,FOLLOW_2); 
                      after(grammarAccess.getComparacionAccess().getLessThanSignEqualsSignKeyword_1_0_3()); 
 
                     }
@@ -3909,13 +3867,13 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 5 :
-                    // InternalLatino.g:1235:2: ( '>' )
+                    // InternalLatino.g:1223:2: ( '>' )
                     {
-                    // InternalLatino.g:1235:2: ( '>' )
-                    // InternalLatino.g:1236:3: '>'
+                    // InternalLatino.g:1223:2: ( '>' )
+                    // InternalLatino.g:1224:3: '>'
                     {
                      before(grammarAccess.getComparacionAccess().getGreaterThanSignKeyword_1_0_4()); 
-                    match(input,27,FOLLOW_2); 
+                    match(input,25,FOLLOW_2); 
                      after(grammarAccess.getComparacionAccess().getGreaterThanSignKeyword_1_0_4()); 
 
                     }
@@ -3924,13 +3882,13 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 6 :
-                    // InternalLatino.g:1241:2: ( '>=' )
+                    // InternalLatino.g:1229:2: ( '>=' )
                     {
-                    // InternalLatino.g:1241:2: ( '>=' )
-                    // InternalLatino.g:1242:3: '>='
+                    // InternalLatino.g:1229:2: ( '>=' )
+                    // InternalLatino.g:1230:3: '>='
                     {
                      before(grammarAccess.getComparacionAccess().getGreaterThanSignEqualsSignKeyword_1_0_5()); 
-                    match(input,28,FOLLOW_2); 
+                    match(input,26,FOLLOW_2); 
                      after(grammarAccess.getComparacionAccess().getGreaterThanSignEqualsSignKeyword_1_0_5()); 
 
                     }
@@ -3956,20 +3914,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Suma__Alternatives_1_0"
-    // InternalLatino.g:1251:1: rule__Suma__Alternatives_1_0 : ( ( '+' ) | ( '-' ) );
+    // InternalLatino.g:1239:1: rule__Suma__Alternatives_1_0 : ( ( '+' ) | ( '-' ) );
     public final void rule__Suma__Alternatives_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1255:1: ( ( '+' ) | ( '-' ) )
+            // InternalLatino.g:1243:1: ( ( '+' ) | ( '-' ) )
             int alt11=2;
             int LA11_0 = input.LA(1);
 
-            if ( (LA11_0==29) ) {
+            if ( (LA11_0==27) ) {
                 alt11=1;
             }
-            else if ( (LA11_0==30) ) {
+            else if ( (LA11_0==28) ) {
                 alt11=2;
             }
             else {
@@ -3980,13 +3938,13 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
             }
             switch (alt11) {
                 case 1 :
-                    // InternalLatino.g:1256:2: ( '+' )
+                    // InternalLatino.g:1244:2: ( '+' )
                     {
-                    // InternalLatino.g:1256:2: ( '+' )
-                    // InternalLatino.g:1257:3: '+'
+                    // InternalLatino.g:1244:2: ( '+' )
+                    // InternalLatino.g:1245:3: '+'
                     {
                      before(grammarAccess.getSumaAccess().getPlusSignKeyword_1_0_0()); 
-                    match(input,29,FOLLOW_2); 
+                    match(input,27,FOLLOW_2); 
                      after(grammarAccess.getSumaAccess().getPlusSignKeyword_1_0_0()); 
 
                     }
@@ -3995,13 +3953,13 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalLatino.g:1262:2: ( '-' )
+                    // InternalLatino.g:1250:2: ( '-' )
                     {
-                    // InternalLatino.g:1262:2: ( '-' )
-                    // InternalLatino.g:1263:3: '-'
+                    // InternalLatino.g:1250:2: ( '-' )
+                    // InternalLatino.g:1251:3: '-'
                     {
                      before(grammarAccess.getSumaAccess().getHyphenMinusKeyword_1_0_1()); 
-                    match(input,30,FOLLOW_2); 
+                    match(input,28,FOLLOW_2); 
                      after(grammarAccess.getSumaAccess().getHyphenMinusKeyword_1_0_1()); 
 
                     }
@@ -4027,26 +3985,26 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Producto__Alternatives_1_0"
-    // InternalLatino.g:1272:1: rule__Producto__Alternatives_1_0 : ( ( '*' ) | ( '/' ) | ( '%' ) );
+    // InternalLatino.g:1260:1: rule__Producto__Alternatives_1_0 : ( ( '*' ) | ( '/' ) | ( '%' ) );
     public final void rule__Producto__Alternatives_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1276:1: ( ( '*' ) | ( '/' ) | ( '%' ) )
+            // InternalLatino.g:1264:1: ( ( '*' ) | ( '/' ) | ( '%' ) )
             int alt12=3;
             switch ( input.LA(1) ) {
-            case 31:
+            case 29:
                 {
                 alt12=1;
                 }
                 break;
-            case 32:
+            case 30:
                 {
                 alt12=2;
                 }
                 break;
-            case 33:
+            case 31:
                 {
                 alt12=3;
                 }
@@ -4060,13 +4018,13 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
             switch (alt12) {
                 case 1 :
-                    // InternalLatino.g:1277:2: ( '*' )
+                    // InternalLatino.g:1265:2: ( '*' )
                     {
-                    // InternalLatino.g:1277:2: ( '*' )
-                    // InternalLatino.g:1278:3: '*'
+                    // InternalLatino.g:1265:2: ( '*' )
+                    // InternalLatino.g:1266:3: '*'
                     {
                      before(grammarAccess.getProductoAccess().getAsteriskKeyword_1_0_0()); 
-                    match(input,31,FOLLOW_2); 
+                    match(input,29,FOLLOW_2); 
                      after(grammarAccess.getProductoAccess().getAsteriskKeyword_1_0_0()); 
 
                     }
@@ -4075,13 +4033,13 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalLatino.g:1283:2: ( '/' )
+                    // InternalLatino.g:1271:2: ( '/' )
                     {
-                    // InternalLatino.g:1283:2: ( '/' )
-                    // InternalLatino.g:1284:3: '/'
+                    // InternalLatino.g:1271:2: ( '/' )
+                    // InternalLatino.g:1272:3: '/'
                     {
                      before(grammarAccess.getProductoAccess().getSolidusKeyword_1_0_1()); 
-                    match(input,32,FOLLOW_2); 
+                    match(input,30,FOLLOW_2); 
                      after(grammarAccess.getProductoAccess().getSolidusKeyword_1_0_1()); 
 
                     }
@@ -4090,13 +4048,13 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalLatino.g:1289:2: ( '%' )
+                    // InternalLatino.g:1277:2: ( '%' )
                     {
-                    // InternalLatino.g:1289:2: ( '%' )
-                    // InternalLatino.g:1290:3: '%'
+                    // InternalLatino.g:1277:2: ( '%' )
+                    // InternalLatino.g:1278:3: '%'
                     {
                      before(grammarAccess.getProductoAccess().getPercentSignKeyword_1_0_2()); 
-                    match(input,33,FOLLOW_2); 
+                    match(input,31,FOLLOW_2); 
                      after(grammarAccess.getProductoAccess().getPercentSignKeyword_1_0_2()); 
 
                     }
@@ -4122,21 +4080,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Unario__Alternatives"
-    // InternalLatino.g:1299:1: rule__Unario__Alternatives : ( ( ( rule__Unario__Group_0__0 ) ) | ( ( rule__Unario__Group_1__0 ) ) | ( rulePrimario ) );
+    // InternalLatino.g:1287:1: rule__Unario__Alternatives : ( ( ( rule__Unario__Group_0__0 ) ) | ( ( rule__Unario__Group_1__0 ) ) | ( rulePrimario ) );
     public final void rule__Unario__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1303:1: ( ( ( rule__Unario__Group_0__0 ) ) | ( ( rule__Unario__Group_1__0 ) ) | ( rulePrimario ) )
+            // InternalLatino.g:1291:1: ( ( ( rule__Unario__Group_0__0 ) ) | ( ( rule__Unario__Group_1__0 ) ) | ( rulePrimario ) )
             int alt13=3;
             switch ( input.LA(1) ) {
-            case 68:
+            case 66:
                 {
                 alt13=1;
                 }
                 break;
-            case 30:
+            case 28:
                 {
                 alt13=2;
                 }
@@ -4144,10 +4102,10 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
             case RULE_STRING:
             case RULE_ID:
             case RULE_INT:
+            case 32:
+            case 33:
             case 34:
-            case 35:
-            case 36:
-            case 42:
+            case 40:
                 {
                 alt13=3;
                 }
@@ -4161,14 +4119,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
             switch (alt13) {
                 case 1 :
-                    // InternalLatino.g:1304:2: ( ( rule__Unario__Group_0__0 ) )
+                    // InternalLatino.g:1292:2: ( ( rule__Unario__Group_0__0 ) )
                     {
-                    // InternalLatino.g:1304:2: ( ( rule__Unario__Group_0__0 ) )
-                    // InternalLatino.g:1305:3: ( rule__Unario__Group_0__0 )
+                    // InternalLatino.g:1292:2: ( ( rule__Unario__Group_0__0 ) )
+                    // InternalLatino.g:1293:3: ( rule__Unario__Group_0__0 )
                     {
                      before(grammarAccess.getUnarioAccess().getGroup_0()); 
-                    // InternalLatino.g:1306:3: ( rule__Unario__Group_0__0 )
-                    // InternalLatino.g:1306:4: rule__Unario__Group_0__0
+                    // InternalLatino.g:1294:3: ( rule__Unario__Group_0__0 )
+                    // InternalLatino.g:1294:4: rule__Unario__Group_0__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Unario__Group_0__0();
@@ -4186,14 +4144,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalLatino.g:1310:2: ( ( rule__Unario__Group_1__0 ) )
+                    // InternalLatino.g:1298:2: ( ( rule__Unario__Group_1__0 ) )
                     {
-                    // InternalLatino.g:1310:2: ( ( rule__Unario__Group_1__0 ) )
-                    // InternalLatino.g:1311:3: ( rule__Unario__Group_1__0 )
+                    // InternalLatino.g:1298:2: ( ( rule__Unario__Group_1__0 ) )
+                    // InternalLatino.g:1299:3: ( rule__Unario__Group_1__0 )
                     {
                      before(grammarAccess.getUnarioAccess().getGroup_1()); 
-                    // InternalLatino.g:1312:3: ( rule__Unario__Group_1__0 )
-                    // InternalLatino.g:1312:4: rule__Unario__Group_1__0
+                    // InternalLatino.g:1300:3: ( rule__Unario__Group_1__0 )
+                    // InternalLatino.g:1300:4: rule__Unario__Group_1__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Unario__Group_1__0();
@@ -4211,10 +4169,10 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalLatino.g:1316:2: ( rulePrimario )
+                    // InternalLatino.g:1304:2: ( rulePrimario )
                     {
-                    // InternalLatino.g:1316:2: ( rulePrimario )
-                    // InternalLatino.g:1317:3: rulePrimario
+                    // InternalLatino.g:1304:2: ( rulePrimario )
+                    // InternalLatino.g:1305:3: rulePrimario
                     {
                      before(grammarAccess.getUnarioAccess().getPrimarioParserRuleCall_2()); 
                     pushFollow(FOLLOW_2);
@@ -4247,13 +4205,13 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Alternatives"
-    // InternalLatino.g:1326:1: rule__Primario__Alternatives : ( ( ( rule__Primario__Group_0__0 ) ) | ( RULE_STRING ) | ( ruleNumero ) | ( 'verdadero' ) | ( 'cierto' ) | ( 'falso' ) | ( ( rule__Primario__Group_6__0 ) ) );
+    // InternalLatino.g:1314:1: rule__Primario__Alternatives : ( ( ( rule__Primario__Group_0__0 ) ) | ( RULE_STRING ) | ( ruleNumero ) | ( 'verdadero' ) | ( 'cierto' ) | ( 'falso' ) | ( ( rule__Primario__Group_6__0 ) ) );
     public final void rule__Primario__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1330:1: ( ( ( rule__Primario__Group_0__0 ) ) | ( RULE_STRING ) | ( ruleNumero ) | ( 'verdadero' ) | ( 'cierto' ) | ( 'falso' ) | ( ( rule__Primario__Group_6__0 ) ) )
+            // InternalLatino.g:1318:1: ( ( ( rule__Primario__Group_0__0 ) ) | ( RULE_STRING ) | ( ruleNumero ) | ( 'verdadero' ) | ( 'cierto' ) | ( 'falso' ) | ( ( rule__Primario__Group_6__0 ) ) )
             int alt14=7;
             switch ( input.LA(1) ) {
             case RULE_ID:
@@ -4271,22 +4229,22 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                 alt14=3;
                 }
                 break;
-            case 34:
+            case 32:
                 {
                 alt14=4;
                 }
                 break;
-            case 35:
+            case 33:
                 {
                 alt14=5;
                 }
                 break;
-            case 36:
+            case 34:
                 {
                 alt14=6;
                 }
                 break;
-            case 42:
+            case 40:
                 {
                 alt14=7;
                 }
@@ -4300,14 +4258,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
             switch (alt14) {
                 case 1 :
-                    // InternalLatino.g:1331:2: ( ( rule__Primario__Group_0__0 ) )
+                    // InternalLatino.g:1319:2: ( ( rule__Primario__Group_0__0 ) )
                     {
-                    // InternalLatino.g:1331:2: ( ( rule__Primario__Group_0__0 ) )
-                    // InternalLatino.g:1332:3: ( rule__Primario__Group_0__0 )
+                    // InternalLatino.g:1319:2: ( ( rule__Primario__Group_0__0 ) )
+                    // InternalLatino.g:1320:3: ( rule__Primario__Group_0__0 )
                     {
                      before(grammarAccess.getPrimarioAccess().getGroup_0()); 
-                    // InternalLatino.g:1333:3: ( rule__Primario__Group_0__0 )
-                    // InternalLatino.g:1333:4: rule__Primario__Group_0__0
+                    // InternalLatino.g:1321:3: ( rule__Primario__Group_0__0 )
+                    // InternalLatino.g:1321:4: rule__Primario__Group_0__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Primario__Group_0__0();
@@ -4325,10 +4283,10 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalLatino.g:1337:2: ( RULE_STRING )
+                    // InternalLatino.g:1325:2: ( RULE_STRING )
                     {
-                    // InternalLatino.g:1337:2: ( RULE_STRING )
-                    // InternalLatino.g:1338:3: RULE_STRING
+                    // InternalLatino.g:1325:2: ( RULE_STRING )
+                    // InternalLatino.g:1326:3: RULE_STRING
                     {
                      before(grammarAccess.getPrimarioAccess().getSTRINGTerminalRuleCall_1()); 
                     match(input,RULE_STRING,FOLLOW_2); 
@@ -4340,10 +4298,10 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 3 :
-                    // InternalLatino.g:1343:2: ( ruleNumero )
+                    // InternalLatino.g:1331:2: ( ruleNumero )
                     {
-                    // InternalLatino.g:1343:2: ( ruleNumero )
-                    // InternalLatino.g:1344:3: ruleNumero
+                    // InternalLatino.g:1331:2: ( ruleNumero )
+                    // InternalLatino.g:1332:3: ruleNumero
                     {
                      before(grammarAccess.getPrimarioAccess().getNumeroParserRuleCall_2()); 
                     pushFollow(FOLLOW_2);
@@ -4359,13 +4317,13 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 4 :
-                    // InternalLatino.g:1349:2: ( 'verdadero' )
+                    // InternalLatino.g:1337:2: ( 'verdadero' )
                     {
-                    // InternalLatino.g:1349:2: ( 'verdadero' )
-                    // InternalLatino.g:1350:3: 'verdadero'
+                    // InternalLatino.g:1337:2: ( 'verdadero' )
+                    // InternalLatino.g:1338:3: 'verdadero'
                     {
                      before(grammarAccess.getPrimarioAccess().getVerdaderoKeyword_3()); 
-                    match(input,34,FOLLOW_2); 
+                    match(input,32,FOLLOW_2); 
                      after(grammarAccess.getPrimarioAccess().getVerdaderoKeyword_3()); 
 
                     }
@@ -4374,13 +4332,13 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 5 :
-                    // InternalLatino.g:1355:2: ( 'cierto' )
+                    // InternalLatino.g:1343:2: ( 'cierto' )
                     {
-                    // InternalLatino.g:1355:2: ( 'cierto' )
-                    // InternalLatino.g:1356:3: 'cierto'
+                    // InternalLatino.g:1343:2: ( 'cierto' )
+                    // InternalLatino.g:1344:3: 'cierto'
                     {
                      before(grammarAccess.getPrimarioAccess().getCiertoKeyword_4()); 
-                    match(input,35,FOLLOW_2); 
+                    match(input,33,FOLLOW_2); 
                      after(grammarAccess.getPrimarioAccess().getCiertoKeyword_4()); 
 
                     }
@@ -4389,13 +4347,13 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 6 :
-                    // InternalLatino.g:1361:2: ( 'falso' )
+                    // InternalLatino.g:1349:2: ( 'falso' )
                     {
-                    // InternalLatino.g:1361:2: ( 'falso' )
-                    // InternalLatino.g:1362:3: 'falso'
+                    // InternalLatino.g:1349:2: ( 'falso' )
+                    // InternalLatino.g:1350:3: 'falso'
                     {
                      before(grammarAccess.getPrimarioAccess().getFalsoKeyword_5()); 
-                    match(input,36,FOLLOW_2); 
+                    match(input,34,FOLLOW_2); 
                      after(grammarAccess.getPrimarioAccess().getFalsoKeyword_5()); 
 
                     }
@@ -4404,14 +4362,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 7 :
-                    // InternalLatino.g:1367:2: ( ( rule__Primario__Group_6__0 ) )
+                    // InternalLatino.g:1355:2: ( ( rule__Primario__Group_6__0 ) )
                     {
-                    // InternalLatino.g:1367:2: ( ( rule__Primario__Group_6__0 ) )
-                    // InternalLatino.g:1368:3: ( rule__Primario__Group_6__0 )
+                    // InternalLatino.g:1355:2: ( ( rule__Primario__Group_6__0 ) )
+                    // InternalLatino.g:1356:3: ( rule__Primario__Group_6__0 )
                     {
                      before(grammarAccess.getPrimarioAccess().getGroup_6()); 
-                    // InternalLatino.g:1369:3: ( rule__Primario__Group_6__0 )
-                    // InternalLatino.g:1369:4: rule__Primario__Group_6__0
+                    // InternalLatino.g:1357:3: ( rule__Primario__Group_6__0 )
+                    // InternalLatino.g:1357:4: rule__Primario__Group_6__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Primario__Group_6__0();
@@ -4446,20 +4404,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Alternatives_0_1"
-    // InternalLatino.g:1377:1: rule__Primario__Alternatives_0_1 : ( ( ( rule__Primario__Group_0_1_0__0 ) ) | ( ( rule__Primario__Group_0_1_1__0 ) ) );
+    // InternalLatino.g:1365:1: rule__Primario__Alternatives_0_1 : ( ( ( rule__Primario__Group_0_1_0__0 ) ) | ( ( rule__Primario__Group_0_1_1__0 ) ) );
     public final void rule__Primario__Alternatives_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1381:1: ( ( ( rule__Primario__Group_0_1_0__0 ) ) | ( ( rule__Primario__Group_0_1_1__0 ) ) )
+            // InternalLatino.g:1369:1: ( ( ( rule__Primario__Group_0_1_0__0 ) ) | ( ( rule__Primario__Group_0_1_1__0 ) ) )
             int alt15=2;
             int LA15_0 = input.LA(1);
 
-            if ( (LA15_0==45) ) {
+            if ( (LA15_0==43) ) {
                 alt15=1;
             }
-            else if ( (LA15_0==42) ) {
+            else if ( (LA15_0==40) ) {
                 alt15=2;
             }
             else {
@@ -4470,14 +4428,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
             }
             switch (alt15) {
                 case 1 :
-                    // InternalLatino.g:1382:2: ( ( rule__Primario__Group_0_1_0__0 ) )
+                    // InternalLatino.g:1370:2: ( ( rule__Primario__Group_0_1_0__0 ) )
                     {
-                    // InternalLatino.g:1382:2: ( ( rule__Primario__Group_0_1_0__0 ) )
-                    // InternalLatino.g:1383:3: ( rule__Primario__Group_0_1_0__0 )
+                    // InternalLatino.g:1370:2: ( ( rule__Primario__Group_0_1_0__0 ) )
+                    // InternalLatino.g:1371:3: ( rule__Primario__Group_0_1_0__0 )
                     {
                      before(grammarAccess.getPrimarioAccess().getGroup_0_1_0()); 
-                    // InternalLatino.g:1384:3: ( rule__Primario__Group_0_1_0__0 )
-                    // InternalLatino.g:1384:4: rule__Primario__Group_0_1_0__0
+                    // InternalLatino.g:1372:3: ( rule__Primario__Group_0_1_0__0 )
+                    // InternalLatino.g:1372:4: rule__Primario__Group_0_1_0__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Primario__Group_0_1_0__0();
@@ -4495,14 +4453,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalLatino.g:1388:2: ( ( rule__Primario__Group_0_1_1__0 ) )
+                    // InternalLatino.g:1376:2: ( ( rule__Primario__Group_0_1_1__0 ) )
                     {
-                    // InternalLatino.g:1388:2: ( ( rule__Primario__Group_0_1_1__0 ) )
-                    // InternalLatino.g:1389:3: ( rule__Primario__Group_0_1_1__0 )
+                    // InternalLatino.g:1376:2: ( ( rule__Primario__Group_0_1_1__0 ) )
+                    // InternalLatino.g:1377:3: ( rule__Primario__Group_0_1_1__0 )
                     {
                      before(grammarAccess.getPrimarioAccess().getGroup_0_1_1()); 
-                    // InternalLatino.g:1390:3: ( rule__Primario__Group_0_1_1__0 )
-                    // InternalLatino.g:1390:4: rule__Primario__Group_0_1_1__0
+                    // InternalLatino.g:1378:3: ( rule__Primario__Group_0_1_1__0 )
+                    // InternalLatino.g:1378:4: rule__Primario__Group_0_1_1__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Primario__Group_0_1_1__0();
@@ -4537,20 +4495,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Conversion__Alternatives"
-    // InternalLatino.g:1398:1: rule__Conversion__Alternatives : ( ( ( 'anumero' ) ) | ( ( 'acadena' ) ) );
+    // InternalLatino.g:1386:1: rule__Conversion__Alternatives : ( ( ( 'anumero' ) ) | ( ( 'acadena' ) ) );
     public final void rule__Conversion__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1402:1: ( ( ( 'anumero' ) ) | ( ( 'acadena' ) ) )
+            // InternalLatino.g:1390:1: ( ( ( 'anumero' ) ) | ( ( 'acadena' ) ) )
             int alt16=2;
             int LA16_0 = input.LA(1);
 
-            if ( (LA16_0==37) ) {
+            if ( (LA16_0==35) ) {
                 alt16=1;
             }
-            else if ( (LA16_0==38) ) {
+            else if ( (LA16_0==36) ) {
                 alt16=2;
             }
             else {
@@ -4561,16 +4519,16 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
             }
             switch (alt16) {
                 case 1 :
-                    // InternalLatino.g:1403:2: ( ( 'anumero' ) )
+                    // InternalLatino.g:1391:2: ( ( 'anumero' ) )
                     {
-                    // InternalLatino.g:1403:2: ( ( 'anumero' ) )
-                    // InternalLatino.g:1404:3: ( 'anumero' )
+                    // InternalLatino.g:1391:2: ( ( 'anumero' ) )
+                    // InternalLatino.g:1392:3: ( 'anumero' )
                     {
                      before(grammarAccess.getConversionAccess().getNUMEROEnumLiteralDeclaration_0()); 
-                    // InternalLatino.g:1405:3: ( 'anumero' )
-                    // InternalLatino.g:1405:4: 'anumero'
+                    // InternalLatino.g:1393:3: ( 'anumero' )
+                    // InternalLatino.g:1393:4: 'anumero'
                     {
-                    match(input,37,FOLLOW_2); 
+                    match(input,35,FOLLOW_2); 
 
                     }
 
@@ -4582,16 +4540,16 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalLatino.g:1409:2: ( ( 'acadena' ) )
+                    // InternalLatino.g:1397:2: ( ( 'acadena' ) )
                     {
-                    // InternalLatino.g:1409:2: ( ( 'acadena' ) )
-                    // InternalLatino.g:1410:3: ( 'acadena' )
+                    // InternalLatino.g:1397:2: ( ( 'acadena' ) )
+                    // InternalLatino.g:1398:3: ( 'acadena' )
                     {
                      before(grammarAccess.getConversionAccess().getTEXTOEnumLiteralDeclaration_1()); 
-                    // InternalLatino.g:1411:3: ( 'acadena' )
-                    // InternalLatino.g:1411:4: 'acadena'
+                    // InternalLatino.g:1399:3: ( 'acadena' )
+                    // InternalLatino.g:1399:4: 'acadena'
                     {
-                    match(input,38,FOLLOW_2); 
+                    match(input,36,FOLLOW_2); 
 
                     }
 
@@ -4620,20 +4578,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__OperadorPaso__Alternatives"
-    // InternalLatino.g:1419:1: rule__OperadorPaso__Alternatives : ( ( ( '++' ) ) | ( ( '--' ) ) );
+    // InternalLatino.g:1407:1: rule__OperadorPaso__Alternatives : ( ( ( '++' ) ) | ( ( '--' ) ) );
     public final void rule__OperadorPaso__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1423:1: ( ( ( '++' ) ) | ( ( '--' ) ) )
+            // InternalLatino.g:1411:1: ( ( ( '++' ) ) | ( ( '--' ) ) )
             int alt17=2;
             int LA17_0 = input.LA(1);
 
-            if ( (LA17_0==39) ) {
+            if ( (LA17_0==37) ) {
                 alt17=1;
             }
-            else if ( (LA17_0==40) ) {
+            else if ( (LA17_0==38) ) {
                 alt17=2;
             }
             else {
@@ -4644,16 +4602,16 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
             }
             switch (alt17) {
                 case 1 :
-                    // InternalLatino.g:1424:2: ( ( '++' ) )
+                    // InternalLatino.g:1412:2: ( ( '++' ) )
                     {
-                    // InternalLatino.g:1424:2: ( ( '++' ) )
-                    // InternalLatino.g:1425:3: ( '++' )
+                    // InternalLatino.g:1412:2: ( ( '++' ) )
+                    // InternalLatino.g:1413:3: ( '++' )
                     {
                      before(grammarAccess.getOperadorPasoAccess().getMASEnumLiteralDeclaration_0()); 
-                    // InternalLatino.g:1426:3: ( '++' )
-                    // InternalLatino.g:1426:4: '++'
+                    // InternalLatino.g:1414:3: ( '++' )
+                    // InternalLatino.g:1414:4: '++'
                     {
-                    match(input,39,FOLLOW_2); 
+                    match(input,37,FOLLOW_2); 
 
                     }
 
@@ -4665,16 +4623,16 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
                     }
                     break;
                 case 2 :
-                    // InternalLatino.g:1430:2: ( ( '--' ) )
+                    // InternalLatino.g:1418:2: ( ( '--' ) )
                     {
-                    // InternalLatino.g:1430:2: ( ( '--' ) )
-                    // InternalLatino.g:1431:3: ( '--' )
+                    // InternalLatino.g:1418:2: ( ( '--' ) )
+                    // InternalLatino.g:1419:3: ( '--' )
                     {
                      before(grammarAccess.getOperadorPasoAccess().getMENOSEnumLiteralDeclaration_1()); 
-                    // InternalLatino.g:1432:3: ( '--' )
-                    // InternalLatino.g:1432:4: '--'
+                    // InternalLatino.g:1420:3: ( '--' )
+                    // InternalLatino.g:1420:4: '--'
                     {
-                    match(input,40,FOLLOW_2); 
+                    match(input,38,FOLLOW_2); 
 
                     }
 
@@ -4703,14 +4661,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Programa__Group__0"
-    // InternalLatino.g:1440:1: rule__Programa__Group__0 : rule__Programa__Group__0__Impl rule__Programa__Group__1 ;
+    // InternalLatino.g:1428:1: rule__Programa__Group__0 : rule__Programa__Group__0__Impl rule__Programa__Group__1 ;
     public final void rule__Programa__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1444:1: ( rule__Programa__Group__0__Impl rule__Programa__Group__1 )
-            // InternalLatino.g:1445:2: rule__Programa__Group__0__Impl rule__Programa__Group__1
+            // InternalLatino.g:1432:1: ( rule__Programa__Group__0__Impl rule__Programa__Group__1 )
+            // InternalLatino.g:1433:2: rule__Programa__Group__0__Impl rule__Programa__Group__1
             {
             pushFollow(FOLLOW_3);
             rule__Programa__Group__0__Impl();
@@ -4741,21 +4699,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Programa__Group__0__Impl"
-    // InternalLatino.g:1452:1: rule__Programa__Group__0__Impl : ( () ) ;
+    // InternalLatino.g:1440:1: rule__Programa__Group__0__Impl : ( () ) ;
     public final void rule__Programa__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1456:1: ( ( () ) )
-            // InternalLatino.g:1457:1: ( () )
+            // InternalLatino.g:1444:1: ( ( () ) )
+            // InternalLatino.g:1445:1: ( () )
             {
-            // InternalLatino.g:1457:1: ( () )
-            // InternalLatino.g:1458:2: ()
+            // InternalLatino.g:1445:1: ( () )
+            // InternalLatino.g:1446:2: ()
             {
              before(grammarAccess.getProgramaAccess().getProgramaAction_0()); 
-            // InternalLatino.g:1459:2: ()
-            // InternalLatino.g:1459:3: 
+            // InternalLatino.g:1447:2: ()
+            // InternalLatino.g:1447:3: 
             {
             }
 
@@ -4778,14 +4736,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Programa__Group__1"
-    // InternalLatino.g:1467:1: rule__Programa__Group__1 : rule__Programa__Group__1__Impl ;
+    // InternalLatino.g:1455:1: rule__Programa__Group__1 : rule__Programa__Group__1__Impl ;
     public final void rule__Programa__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1471:1: ( rule__Programa__Group__1__Impl )
-            // InternalLatino.g:1472:2: rule__Programa__Group__1__Impl
+            // InternalLatino.g:1459:1: ( rule__Programa__Group__1__Impl )
+            // InternalLatino.g:1460:2: rule__Programa__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Programa__Group__1__Impl();
@@ -4811,33 +4769,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Programa__Group__1__Impl"
-    // InternalLatino.g:1478:1: rule__Programa__Group__1__Impl : ( ( rule__Programa__SentenciasAssignment_1 )* ) ;
+    // InternalLatino.g:1466:1: rule__Programa__Group__1__Impl : ( ( rule__Programa__SentenciasAssignment_1 )* ) ;
     public final void rule__Programa__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1482:1: ( ( ( rule__Programa__SentenciasAssignment_1 )* ) )
-            // InternalLatino.g:1483:1: ( ( rule__Programa__SentenciasAssignment_1 )* )
+            // InternalLatino.g:1470:1: ( ( ( rule__Programa__SentenciasAssignment_1 )* ) )
+            // InternalLatino.g:1471:1: ( ( rule__Programa__SentenciasAssignment_1 )* )
             {
-            // InternalLatino.g:1483:1: ( ( rule__Programa__SentenciasAssignment_1 )* )
-            // InternalLatino.g:1484:2: ( rule__Programa__SentenciasAssignment_1 )*
+            // InternalLatino.g:1471:1: ( ( rule__Programa__SentenciasAssignment_1 )* )
+            // InternalLatino.g:1472:2: ( rule__Programa__SentenciasAssignment_1 )*
             {
              before(grammarAccess.getProgramaAccess().getSentenciasAssignment_1()); 
-            // InternalLatino.g:1485:2: ( rule__Programa__SentenciasAssignment_1 )*
+            // InternalLatino.g:1473:2: ( rule__Programa__SentenciasAssignment_1 )*
             loop18:
             do {
                 int alt18=2;
                 int LA18_0 = input.LA(1);
 
-                if ( (LA18_0==RULE_ID||(LA18_0>=13 && LA18_0<=22)||LA18_0==48||(LA18_0>=52 && LA18_0<=53)||LA18_0==55||LA18_0==57||(LA18_0>=60 && LA18_0<=62)) ) {
+                if ( (LA18_0==RULE_ID||(LA18_0>=13 && LA18_0<=20)||LA18_0==46||(LA18_0>=50 && LA18_0<=51)||LA18_0==53||LA18_0==55||(LA18_0>=58 && LA18_0<=60)) ) {
                     alt18=1;
                 }
 
 
                 switch (alt18) {
             	case 1 :
-            	    // InternalLatino.g:1485:3: rule__Programa__SentenciasAssignment_1
+            	    // InternalLatino.g:1473:3: rule__Programa__SentenciasAssignment_1
             	    {
             	    pushFollow(FOLLOW_4);
             	    rule__Programa__SentenciasAssignment_1();
@@ -4876,14 +4834,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Asignacion__Group__0"
-    // InternalLatino.g:1494:1: rule__Asignacion__Group__0 : rule__Asignacion__Group__0__Impl rule__Asignacion__Group__1 ;
+    // InternalLatino.g:1482:1: rule__Asignacion__Group__0 : rule__Asignacion__Group__0__Impl rule__Asignacion__Group__1 ;
     public final void rule__Asignacion__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1498:1: ( rule__Asignacion__Group__0__Impl rule__Asignacion__Group__1 )
-            // InternalLatino.g:1499:2: rule__Asignacion__Group__0__Impl rule__Asignacion__Group__1
+            // InternalLatino.g:1486:1: ( rule__Asignacion__Group__0__Impl rule__Asignacion__Group__1 )
+            // InternalLatino.g:1487:2: rule__Asignacion__Group__0__Impl rule__Asignacion__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__Asignacion__Group__0__Impl();
@@ -4914,21 +4872,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Asignacion__Group__0__Impl"
-    // InternalLatino.g:1506:1: rule__Asignacion__Group__0__Impl : ( ( rule__Asignacion__NombreAssignment_0 ) ) ;
+    // InternalLatino.g:1494:1: rule__Asignacion__Group__0__Impl : ( ( rule__Asignacion__NombreAssignment_0 ) ) ;
     public final void rule__Asignacion__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1510:1: ( ( ( rule__Asignacion__NombreAssignment_0 ) ) )
-            // InternalLatino.g:1511:1: ( ( rule__Asignacion__NombreAssignment_0 ) )
+            // InternalLatino.g:1498:1: ( ( ( rule__Asignacion__NombreAssignment_0 ) ) )
+            // InternalLatino.g:1499:1: ( ( rule__Asignacion__NombreAssignment_0 ) )
             {
-            // InternalLatino.g:1511:1: ( ( rule__Asignacion__NombreAssignment_0 ) )
-            // InternalLatino.g:1512:2: ( rule__Asignacion__NombreAssignment_0 )
+            // InternalLatino.g:1499:1: ( ( rule__Asignacion__NombreAssignment_0 ) )
+            // InternalLatino.g:1500:2: ( rule__Asignacion__NombreAssignment_0 )
             {
              before(grammarAccess.getAsignacionAccess().getNombreAssignment_0()); 
-            // InternalLatino.g:1513:2: ( rule__Asignacion__NombreAssignment_0 )
-            // InternalLatino.g:1513:3: rule__Asignacion__NombreAssignment_0
+            // InternalLatino.g:1501:2: ( rule__Asignacion__NombreAssignment_0 )
+            // InternalLatino.g:1501:3: rule__Asignacion__NombreAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__Asignacion__NombreAssignment_0();
@@ -4961,14 +4919,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Asignacion__Group__1"
-    // InternalLatino.g:1521:1: rule__Asignacion__Group__1 : rule__Asignacion__Group__1__Impl rule__Asignacion__Group__2 ;
+    // InternalLatino.g:1509:1: rule__Asignacion__Group__1 : rule__Asignacion__Group__1__Impl rule__Asignacion__Group__2 ;
     public final void rule__Asignacion__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1525:1: ( rule__Asignacion__Group__1__Impl rule__Asignacion__Group__2 )
-            // InternalLatino.g:1526:2: rule__Asignacion__Group__1__Impl rule__Asignacion__Group__2
+            // InternalLatino.g:1513:1: ( rule__Asignacion__Group__1__Impl rule__Asignacion__Group__2 )
+            // InternalLatino.g:1514:2: rule__Asignacion__Group__1__Impl rule__Asignacion__Group__2
             {
             pushFollow(FOLLOW_6);
             rule__Asignacion__Group__1__Impl();
@@ -4999,20 +4957,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Asignacion__Group__1__Impl"
-    // InternalLatino.g:1533:1: rule__Asignacion__Group__1__Impl : ( '=' ) ;
+    // InternalLatino.g:1521:1: rule__Asignacion__Group__1__Impl : ( '=' ) ;
     public final void rule__Asignacion__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1537:1: ( ( '=' ) )
-            // InternalLatino.g:1538:1: ( '=' )
+            // InternalLatino.g:1525:1: ( ( '=' ) )
+            // InternalLatino.g:1526:1: ( '=' )
             {
-            // InternalLatino.g:1538:1: ( '=' )
-            // InternalLatino.g:1539:2: '='
+            // InternalLatino.g:1526:1: ( '=' )
+            // InternalLatino.g:1527:2: '='
             {
              before(grammarAccess.getAsignacionAccess().getEqualsSignKeyword_1()); 
-            match(input,41,FOLLOW_2); 
+            match(input,39,FOLLOW_2); 
              after(grammarAccess.getAsignacionAccess().getEqualsSignKeyword_1()); 
 
             }
@@ -5036,14 +4994,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Asignacion__Group__2"
-    // InternalLatino.g:1548:1: rule__Asignacion__Group__2 : rule__Asignacion__Group__2__Impl ;
+    // InternalLatino.g:1536:1: rule__Asignacion__Group__2 : rule__Asignacion__Group__2__Impl ;
     public final void rule__Asignacion__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1552:1: ( rule__Asignacion__Group__2__Impl )
-            // InternalLatino.g:1553:2: rule__Asignacion__Group__2__Impl
+            // InternalLatino.g:1540:1: ( rule__Asignacion__Group__2__Impl )
+            // InternalLatino.g:1541:2: rule__Asignacion__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Asignacion__Group__2__Impl();
@@ -5069,21 +5027,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Asignacion__Group__2__Impl"
-    // InternalLatino.g:1559:1: rule__Asignacion__Group__2__Impl : ( ( rule__Asignacion__ValorAssignment_2 ) ) ;
+    // InternalLatino.g:1547:1: rule__Asignacion__Group__2__Impl : ( ( rule__Asignacion__ValorAssignment_2 ) ) ;
     public final void rule__Asignacion__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1563:1: ( ( ( rule__Asignacion__ValorAssignment_2 ) ) )
-            // InternalLatino.g:1564:1: ( ( rule__Asignacion__ValorAssignment_2 ) )
+            // InternalLatino.g:1551:1: ( ( ( rule__Asignacion__ValorAssignment_2 ) ) )
+            // InternalLatino.g:1552:1: ( ( rule__Asignacion__ValorAssignment_2 ) )
             {
-            // InternalLatino.g:1564:1: ( ( rule__Asignacion__ValorAssignment_2 ) )
-            // InternalLatino.g:1565:2: ( rule__Asignacion__ValorAssignment_2 )
+            // InternalLatino.g:1552:1: ( ( rule__Asignacion__ValorAssignment_2 ) )
+            // InternalLatino.g:1553:2: ( rule__Asignacion__ValorAssignment_2 )
             {
              before(grammarAccess.getAsignacionAccess().getValorAssignment_2()); 
-            // InternalLatino.g:1566:2: ( rule__Asignacion__ValorAssignment_2 )
-            // InternalLatino.g:1566:3: rule__Asignacion__ValorAssignment_2
+            // InternalLatino.g:1554:2: ( rule__Asignacion__ValorAssignment_2 )
+            // InternalLatino.g:1554:3: rule__Asignacion__ValorAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__Asignacion__ValorAssignment_2();
@@ -5116,14 +5074,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group__0"
-    // InternalLatino.g:1575:1: rule__Leer__Group__0 : rule__Leer__Group__0__Impl rule__Leer__Group__1 ;
+    // InternalLatino.g:1563:1: rule__Leer__Group__0 : rule__Leer__Group__0__Impl rule__Leer__Group__1 ;
     public final void rule__Leer__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1579:1: ( rule__Leer__Group__0__Impl rule__Leer__Group__1 )
-            // InternalLatino.g:1580:2: rule__Leer__Group__0__Impl rule__Leer__Group__1
+            // InternalLatino.g:1567:1: ( rule__Leer__Group__0__Impl rule__Leer__Group__1 )
+            // InternalLatino.g:1568:2: rule__Leer__Group__0__Impl rule__Leer__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__Leer__Group__0__Impl();
@@ -5154,21 +5112,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group__0__Impl"
-    // InternalLatino.g:1587:1: rule__Leer__Group__0__Impl : ( ( rule__Leer__NombreAssignment_0 ) ) ;
+    // InternalLatino.g:1575:1: rule__Leer__Group__0__Impl : ( ( rule__Leer__NombreAssignment_0 ) ) ;
     public final void rule__Leer__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1591:1: ( ( ( rule__Leer__NombreAssignment_0 ) ) )
-            // InternalLatino.g:1592:1: ( ( rule__Leer__NombreAssignment_0 ) )
+            // InternalLatino.g:1579:1: ( ( ( rule__Leer__NombreAssignment_0 ) ) )
+            // InternalLatino.g:1580:1: ( ( rule__Leer__NombreAssignment_0 ) )
             {
-            // InternalLatino.g:1592:1: ( ( rule__Leer__NombreAssignment_0 ) )
-            // InternalLatino.g:1593:2: ( rule__Leer__NombreAssignment_0 )
+            // InternalLatino.g:1580:1: ( ( rule__Leer__NombreAssignment_0 ) )
+            // InternalLatino.g:1581:2: ( rule__Leer__NombreAssignment_0 )
             {
              before(grammarAccess.getLeerAccess().getNombreAssignment_0()); 
-            // InternalLatino.g:1594:2: ( rule__Leer__NombreAssignment_0 )
-            // InternalLatino.g:1594:3: rule__Leer__NombreAssignment_0
+            // InternalLatino.g:1582:2: ( rule__Leer__NombreAssignment_0 )
+            // InternalLatino.g:1582:3: rule__Leer__NombreAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__Leer__NombreAssignment_0();
@@ -5201,14 +5159,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group__1"
-    // InternalLatino.g:1602:1: rule__Leer__Group__1 : rule__Leer__Group__1__Impl rule__Leer__Group__2 ;
+    // InternalLatino.g:1590:1: rule__Leer__Group__1 : rule__Leer__Group__1__Impl rule__Leer__Group__2 ;
     public final void rule__Leer__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1606:1: ( rule__Leer__Group__1__Impl rule__Leer__Group__2 )
-            // InternalLatino.g:1607:2: rule__Leer__Group__1__Impl rule__Leer__Group__2
+            // InternalLatino.g:1594:1: ( rule__Leer__Group__1__Impl rule__Leer__Group__2 )
+            // InternalLatino.g:1595:2: rule__Leer__Group__1__Impl rule__Leer__Group__2
             {
             pushFollow(FOLLOW_7);
             rule__Leer__Group__1__Impl();
@@ -5239,20 +5197,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group__1__Impl"
-    // InternalLatino.g:1614:1: rule__Leer__Group__1__Impl : ( '=' ) ;
+    // InternalLatino.g:1602:1: rule__Leer__Group__1__Impl : ( '=' ) ;
     public final void rule__Leer__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1618:1: ( ( '=' ) )
-            // InternalLatino.g:1619:1: ( '=' )
+            // InternalLatino.g:1606:1: ( ( '=' ) )
+            // InternalLatino.g:1607:1: ( '=' )
             {
-            // InternalLatino.g:1619:1: ( '=' )
-            // InternalLatino.g:1620:2: '='
+            // InternalLatino.g:1607:1: ( '=' )
+            // InternalLatino.g:1608:2: '='
             {
              before(grammarAccess.getLeerAccess().getEqualsSignKeyword_1()); 
-            match(input,41,FOLLOW_2); 
+            match(input,39,FOLLOW_2); 
              after(grammarAccess.getLeerAccess().getEqualsSignKeyword_1()); 
 
             }
@@ -5276,14 +5234,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group__2"
-    // InternalLatino.g:1629:1: rule__Leer__Group__2 : rule__Leer__Group__2__Impl ;
+    // InternalLatino.g:1617:1: rule__Leer__Group__2 : rule__Leer__Group__2__Impl ;
     public final void rule__Leer__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1633:1: ( rule__Leer__Group__2__Impl )
-            // InternalLatino.g:1634:2: rule__Leer__Group__2__Impl
+            // InternalLatino.g:1621:1: ( rule__Leer__Group__2__Impl )
+            // InternalLatino.g:1622:2: rule__Leer__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Leer__Group__2__Impl();
@@ -5309,21 +5267,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group__2__Impl"
-    // InternalLatino.g:1640:1: rule__Leer__Group__2__Impl : ( ( rule__Leer__Alternatives_2 ) ) ;
+    // InternalLatino.g:1628:1: rule__Leer__Group__2__Impl : ( ( rule__Leer__Alternatives_2 ) ) ;
     public final void rule__Leer__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1644:1: ( ( ( rule__Leer__Alternatives_2 ) ) )
-            // InternalLatino.g:1645:1: ( ( rule__Leer__Alternatives_2 ) )
+            // InternalLatino.g:1632:1: ( ( ( rule__Leer__Alternatives_2 ) ) )
+            // InternalLatino.g:1633:1: ( ( rule__Leer__Alternatives_2 ) )
             {
-            // InternalLatino.g:1645:1: ( ( rule__Leer__Alternatives_2 ) )
-            // InternalLatino.g:1646:2: ( rule__Leer__Alternatives_2 )
+            // InternalLatino.g:1633:1: ( ( rule__Leer__Alternatives_2 ) )
+            // InternalLatino.g:1634:2: ( rule__Leer__Alternatives_2 )
             {
              before(grammarAccess.getLeerAccess().getAlternatives_2()); 
-            // InternalLatino.g:1647:2: ( rule__Leer__Alternatives_2 )
-            // InternalLatino.g:1647:3: rule__Leer__Alternatives_2
+            // InternalLatino.g:1635:2: ( rule__Leer__Alternatives_2 )
+            // InternalLatino.g:1635:3: rule__Leer__Alternatives_2
             {
             pushFollow(FOLLOW_2);
             rule__Leer__Alternatives_2();
@@ -5356,14 +5314,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group_2_0__0"
-    // InternalLatino.g:1656:1: rule__Leer__Group_2_0__0 : rule__Leer__Group_2_0__0__Impl rule__Leer__Group_2_0__1 ;
+    // InternalLatino.g:1644:1: rule__Leer__Group_2_0__0 : rule__Leer__Group_2_0__0__Impl rule__Leer__Group_2_0__1 ;
     public final void rule__Leer__Group_2_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1660:1: ( rule__Leer__Group_2_0__0__Impl rule__Leer__Group_2_0__1 )
-            // InternalLatino.g:1661:2: rule__Leer__Group_2_0__0__Impl rule__Leer__Group_2_0__1
+            // InternalLatino.g:1648:1: ( rule__Leer__Group_2_0__0__Impl rule__Leer__Group_2_0__1 )
+            // InternalLatino.g:1649:2: rule__Leer__Group_2_0__0__Impl rule__Leer__Group_2_0__1
             {
             pushFollow(FOLLOW_8);
             rule__Leer__Group_2_0__0__Impl();
@@ -5394,21 +5352,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group_2_0__0__Impl"
-    // InternalLatino.g:1668:1: rule__Leer__Group_2_0__0__Impl : ( ( rule__Leer__ConversionAssignment_2_0_0 ) ) ;
+    // InternalLatino.g:1656:1: rule__Leer__Group_2_0__0__Impl : ( ( rule__Leer__ConversionAssignment_2_0_0 ) ) ;
     public final void rule__Leer__Group_2_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1672:1: ( ( ( rule__Leer__ConversionAssignment_2_0_0 ) ) )
-            // InternalLatino.g:1673:1: ( ( rule__Leer__ConversionAssignment_2_0_0 ) )
+            // InternalLatino.g:1660:1: ( ( ( rule__Leer__ConversionAssignment_2_0_0 ) ) )
+            // InternalLatino.g:1661:1: ( ( rule__Leer__ConversionAssignment_2_0_0 ) )
             {
-            // InternalLatino.g:1673:1: ( ( rule__Leer__ConversionAssignment_2_0_0 ) )
-            // InternalLatino.g:1674:2: ( rule__Leer__ConversionAssignment_2_0_0 )
+            // InternalLatino.g:1661:1: ( ( rule__Leer__ConversionAssignment_2_0_0 ) )
+            // InternalLatino.g:1662:2: ( rule__Leer__ConversionAssignment_2_0_0 )
             {
              before(grammarAccess.getLeerAccess().getConversionAssignment_2_0_0()); 
-            // InternalLatino.g:1675:2: ( rule__Leer__ConversionAssignment_2_0_0 )
-            // InternalLatino.g:1675:3: rule__Leer__ConversionAssignment_2_0_0
+            // InternalLatino.g:1663:2: ( rule__Leer__ConversionAssignment_2_0_0 )
+            // InternalLatino.g:1663:3: rule__Leer__ConversionAssignment_2_0_0
             {
             pushFollow(FOLLOW_2);
             rule__Leer__ConversionAssignment_2_0_0();
@@ -5441,14 +5399,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group_2_0__1"
-    // InternalLatino.g:1683:1: rule__Leer__Group_2_0__1 : rule__Leer__Group_2_0__1__Impl rule__Leer__Group_2_0__2 ;
+    // InternalLatino.g:1671:1: rule__Leer__Group_2_0__1 : rule__Leer__Group_2_0__1__Impl rule__Leer__Group_2_0__2 ;
     public final void rule__Leer__Group_2_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1687:1: ( rule__Leer__Group_2_0__1__Impl rule__Leer__Group_2_0__2 )
-            // InternalLatino.g:1688:2: rule__Leer__Group_2_0__1__Impl rule__Leer__Group_2_0__2
+            // InternalLatino.g:1675:1: ( rule__Leer__Group_2_0__1__Impl rule__Leer__Group_2_0__2 )
+            // InternalLatino.g:1676:2: rule__Leer__Group_2_0__1__Impl rule__Leer__Group_2_0__2
             {
             pushFollow(FOLLOW_9);
             rule__Leer__Group_2_0__1__Impl();
@@ -5479,20 +5437,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group_2_0__1__Impl"
-    // InternalLatino.g:1695:1: rule__Leer__Group_2_0__1__Impl : ( '(' ) ;
+    // InternalLatino.g:1683:1: rule__Leer__Group_2_0__1__Impl : ( '(' ) ;
     public final void rule__Leer__Group_2_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1699:1: ( ( '(' ) )
-            // InternalLatino.g:1700:1: ( '(' )
+            // InternalLatino.g:1687:1: ( ( '(' ) )
+            // InternalLatino.g:1688:1: ( '(' )
             {
-            // InternalLatino.g:1700:1: ( '(' )
-            // InternalLatino.g:1701:2: '('
+            // InternalLatino.g:1688:1: ( '(' )
+            // InternalLatino.g:1689:2: '('
             {
              before(grammarAccess.getLeerAccess().getLeftParenthesisKeyword_2_0_1()); 
-            match(input,42,FOLLOW_2); 
+            match(input,40,FOLLOW_2); 
              after(grammarAccess.getLeerAccess().getLeftParenthesisKeyword_2_0_1()); 
 
             }
@@ -5516,14 +5474,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group_2_0__2"
-    // InternalLatino.g:1710:1: rule__Leer__Group_2_0__2 : rule__Leer__Group_2_0__2__Impl rule__Leer__Group_2_0__3 ;
+    // InternalLatino.g:1698:1: rule__Leer__Group_2_0__2 : rule__Leer__Group_2_0__2__Impl rule__Leer__Group_2_0__3 ;
     public final void rule__Leer__Group_2_0__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1714:1: ( rule__Leer__Group_2_0__2__Impl rule__Leer__Group_2_0__3 )
-            // InternalLatino.g:1715:2: rule__Leer__Group_2_0__2__Impl rule__Leer__Group_2_0__3
+            // InternalLatino.g:1702:1: ( rule__Leer__Group_2_0__2__Impl rule__Leer__Group_2_0__3 )
+            // InternalLatino.g:1703:2: rule__Leer__Group_2_0__2__Impl rule__Leer__Group_2_0__3
             {
             pushFollow(FOLLOW_8);
             rule__Leer__Group_2_0__2__Impl();
@@ -5554,20 +5512,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group_2_0__2__Impl"
-    // InternalLatino.g:1722:1: rule__Leer__Group_2_0__2__Impl : ( 'leer' ) ;
+    // InternalLatino.g:1710:1: rule__Leer__Group_2_0__2__Impl : ( 'leer' ) ;
     public final void rule__Leer__Group_2_0__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1726:1: ( ( 'leer' ) )
-            // InternalLatino.g:1727:1: ( 'leer' )
+            // InternalLatino.g:1714:1: ( ( 'leer' ) )
+            // InternalLatino.g:1715:1: ( 'leer' )
             {
-            // InternalLatino.g:1727:1: ( 'leer' )
-            // InternalLatino.g:1728:2: 'leer'
+            // InternalLatino.g:1715:1: ( 'leer' )
+            // InternalLatino.g:1716:2: 'leer'
             {
              before(grammarAccess.getLeerAccess().getLeerKeyword_2_0_2()); 
-            match(input,43,FOLLOW_2); 
+            match(input,41,FOLLOW_2); 
              after(grammarAccess.getLeerAccess().getLeerKeyword_2_0_2()); 
 
             }
@@ -5591,14 +5549,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group_2_0__3"
-    // InternalLatino.g:1737:1: rule__Leer__Group_2_0__3 : rule__Leer__Group_2_0__3__Impl rule__Leer__Group_2_0__4 ;
+    // InternalLatino.g:1725:1: rule__Leer__Group_2_0__3 : rule__Leer__Group_2_0__3__Impl rule__Leer__Group_2_0__4 ;
     public final void rule__Leer__Group_2_0__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1741:1: ( rule__Leer__Group_2_0__3__Impl rule__Leer__Group_2_0__4 )
-            // InternalLatino.g:1742:2: rule__Leer__Group_2_0__3__Impl rule__Leer__Group_2_0__4
+            // InternalLatino.g:1729:1: ( rule__Leer__Group_2_0__3__Impl rule__Leer__Group_2_0__4 )
+            // InternalLatino.g:1730:2: rule__Leer__Group_2_0__3__Impl rule__Leer__Group_2_0__4
             {
             pushFollow(FOLLOW_10);
             rule__Leer__Group_2_0__3__Impl();
@@ -5629,20 +5587,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group_2_0__3__Impl"
-    // InternalLatino.g:1749:1: rule__Leer__Group_2_0__3__Impl : ( '(' ) ;
+    // InternalLatino.g:1737:1: rule__Leer__Group_2_0__3__Impl : ( '(' ) ;
     public final void rule__Leer__Group_2_0__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1753:1: ( ( '(' ) )
-            // InternalLatino.g:1754:1: ( '(' )
+            // InternalLatino.g:1741:1: ( ( '(' ) )
+            // InternalLatino.g:1742:1: ( '(' )
             {
-            // InternalLatino.g:1754:1: ( '(' )
-            // InternalLatino.g:1755:2: '('
+            // InternalLatino.g:1742:1: ( '(' )
+            // InternalLatino.g:1743:2: '('
             {
              before(grammarAccess.getLeerAccess().getLeftParenthesisKeyword_2_0_3()); 
-            match(input,42,FOLLOW_2); 
+            match(input,40,FOLLOW_2); 
              after(grammarAccess.getLeerAccess().getLeftParenthesisKeyword_2_0_3()); 
 
             }
@@ -5666,14 +5624,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group_2_0__4"
-    // InternalLatino.g:1764:1: rule__Leer__Group_2_0__4 : rule__Leer__Group_2_0__4__Impl rule__Leer__Group_2_0__5 ;
+    // InternalLatino.g:1752:1: rule__Leer__Group_2_0__4 : rule__Leer__Group_2_0__4__Impl rule__Leer__Group_2_0__5 ;
     public final void rule__Leer__Group_2_0__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1768:1: ( rule__Leer__Group_2_0__4__Impl rule__Leer__Group_2_0__5 )
-            // InternalLatino.g:1769:2: rule__Leer__Group_2_0__4__Impl rule__Leer__Group_2_0__5
+            // InternalLatino.g:1756:1: ( rule__Leer__Group_2_0__4__Impl rule__Leer__Group_2_0__5 )
+            // InternalLatino.g:1757:2: rule__Leer__Group_2_0__4__Impl rule__Leer__Group_2_0__5
             {
             pushFollow(FOLLOW_10);
             rule__Leer__Group_2_0__4__Impl();
@@ -5704,20 +5662,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group_2_0__4__Impl"
-    // InternalLatino.g:1776:1: rule__Leer__Group_2_0__4__Impl : ( ')' ) ;
+    // InternalLatino.g:1764:1: rule__Leer__Group_2_0__4__Impl : ( ')' ) ;
     public final void rule__Leer__Group_2_0__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1780:1: ( ( ')' ) )
-            // InternalLatino.g:1781:1: ( ')' )
+            // InternalLatino.g:1768:1: ( ( ')' ) )
+            // InternalLatino.g:1769:1: ( ')' )
             {
-            // InternalLatino.g:1781:1: ( ')' )
-            // InternalLatino.g:1782:2: ')'
+            // InternalLatino.g:1769:1: ( ')' )
+            // InternalLatino.g:1770:2: ')'
             {
              before(grammarAccess.getLeerAccess().getRightParenthesisKeyword_2_0_4()); 
-            match(input,44,FOLLOW_2); 
+            match(input,42,FOLLOW_2); 
              after(grammarAccess.getLeerAccess().getRightParenthesisKeyword_2_0_4()); 
 
             }
@@ -5741,14 +5699,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group_2_0__5"
-    // InternalLatino.g:1791:1: rule__Leer__Group_2_0__5 : rule__Leer__Group_2_0__5__Impl ;
+    // InternalLatino.g:1779:1: rule__Leer__Group_2_0__5 : rule__Leer__Group_2_0__5__Impl ;
     public final void rule__Leer__Group_2_0__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1795:1: ( rule__Leer__Group_2_0__5__Impl )
-            // InternalLatino.g:1796:2: rule__Leer__Group_2_0__5__Impl
+            // InternalLatino.g:1783:1: ( rule__Leer__Group_2_0__5__Impl )
+            // InternalLatino.g:1784:2: rule__Leer__Group_2_0__5__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Leer__Group_2_0__5__Impl();
@@ -5774,20 +5732,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group_2_0__5__Impl"
-    // InternalLatino.g:1802:1: rule__Leer__Group_2_0__5__Impl : ( ')' ) ;
+    // InternalLatino.g:1790:1: rule__Leer__Group_2_0__5__Impl : ( ')' ) ;
     public final void rule__Leer__Group_2_0__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1806:1: ( ( ')' ) )
-            // InternalLatino.g:1807:1: ( ')' )
+            // InternalLatino.g:1794:1: ( ( ')' ) )
+            // InternalLatino.g:1795:1: ( ')' )
             {
-            // InternalLatino.g:1807:1: ( ')' )
-            // InternalLatino.g:1808:2: ')'
+            // InternalLatino.g:1795:1: ( ')' )
+            // InternalLatino.g:1796:2: ')'
             {
              before(grammarAccess.getLeerAccess().getRightParenthesisKeyword_2_0_5()); 
-            match(input,44,FOLLOW_2); 
+            match(input,42,FOLLOW_2); 
              after(grammarAccess.getLeerAccess().getRightParenthesisKeyword_2_0_5()); 
 
             }
@@ -5811,14 +5769,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group_2_1__0"
-    // InternalLatino.g:1818:1: rule__Leer__Group_2_1__0 : rule__Leer__Group_2_1__0__Impl rule__Leer__Group_2_1__1 ;
+    // InternalLatino.g:1806:1: rule__Leer__Group_2_1__0 : rule__Leer__Group_2_1__0__Impl rule__Leer__Group_2_1__1 ;
     public final void rule__Leer__Group_2_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1822:1: ( rule__Leer__Group_2_1__0__Impl rule__Leer__Group_2_1__1 )
-            // InternalLatino.g:1823:2: rule__Leer__Group_2_1__0__Impl rule__Leer__Group_2_1__1
+            // InternalLatino.g:1810:1: ( rule__Leer__Group_2_1__0__Impl rule__Leer__Group_2_1__1 )
+            // InternalLatino.g:1811:2: rule__Leer__Group_2_1__0__Impl rule__Leer__Group_2_1__1
             {
             pushFollow(FOLLOW_8);
             rule__Leer__Group_2_1__0__Impl();
@@ -5849,20 +5807,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group_2_1__0__Impl"
-    // InternalLatino.g:1830:1: rule__Leer__Group_2_1__0__Impl : ( 'leer' ) ;
+    // InternalLatino.g:1818:1: rule__Leer__Group_2_1__0__Impl : ( 'leer' ) ;
     public final void rule__Leer__Group_2_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1834:1: ( ( 'leer' ) )
-            // InternalLatino.g:1835:1: ( 'leer' )
+            // InternalLatino.g:1822:1: ( ( 'leer' ) )
+            // InternalLatino.g:1823:1: ( 'leer' )
             {
-            // InternalLatino.g:1835:1: ( 'leer' )
-            // InternalLatino.g:1836:2: 'leer'
+            // InternalLatino.g:1823:1: ( 'leer' )
+            // InternalLatino.g:1824:2: 'leer'
             {
              before(grammarAccess.getLeerAccess().getLeerKeyword_2_1_0()); 
-            match(input,43,FOLLOW_2); 
+            match(input,41,FOLLOW_2); 
              after(grammarAccess.getLeerAccess().getLeerKeyword_2_1_0()); 
 
             }
@@ -5886,14 +5844,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group_2_1__1"
-    // InternalLatino.g:1845:1: rule__Leer__Group_2_1__1 : rule__Leer__Group_2_1__1__Impl rule__Leer__Group_2_1__2 ;
+    // InternalLatino.g:1833:1: rule__Leer__Group_2_1__1 : rule__Leer__Group_2_1__1__Impl rule__Leer__Group_2_1__2 ;
     public final void rule__Leer__Group_2_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1849:1: ( rule__Leer__Group_2_1__1__Impl rule__Leer__Group_2_1__2 )
-            // InternalLatino.g:1850:2: rule__Leer__Group_2_1__1__Impl rule__Leer__Group_2_1__2
+            // InternalLatino.g:1837:1: ( rule__Leer__Group_2_1__1__Impl rule__Leer__Group_2_1__2 )
+            // InternalLatino.g:1838:2: rule__Leer__Group_2_1__1__Impl rule__Leer__Group_2_1__2
             {
             pushFollow(FOLLOW_10);
             rule__Leer__Group_2_1__1__Impl();
@@ -5924,20 +5882,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group_2_1__1__Impl"
-    // InternalLatino.g:1857:1: rule__Leer__Group_2_1__1__Impl : ( '(' ) ;
+    // InternalLatino.g:1845:1: rule__Leer__Group_2_1__1__Impl : ( '(' ) ;
     public final void rule__Leer__Group_2_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1861:1: ( ( '(' ) )
-            // InternalLatino.g:1862:1: ( '(' )
+            // InternalLatino.g:1849:1: ( ( '(' ) )
+            // InternalLatino.g:1850:1: ( '(' )
             {
-            // InternalLatino.g:1862:1: ( '(' )
-            // InternalLatino.g:1863:2: '('
+            // InternalLatino.g:1850:1: ( '(' )
+            // InternalLatino.g:1851:2: '('
             {
              before(grammarAccess.getLeerAccess().getLeftParenthesisKeyword_2_1_1()); 
-            match(input,42,FOLLOW_2); 
+            match(input,40,FOLLOW_2); 
              after(grammarAccess.getLeerAccess().getLeftParenthesisKeyword_2_1_1()); 
 
             }
@@ -5961,14 +5919,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group_2_1__2"
-    // InternalLatino.g:1872:1: rule__Leer__Group_2_1__2 : rule__Leer__Group_2_1__2__Impl ;
+    // InternalLatino.g:1860:1: rule__Leer__Group_2_1__2 : rule__Leer__Group_2_1__2__Impl ;
     public final void rule__Leer__Group_2_1__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1876:1: ( rule__Leer__Group_2_1__2__Impl )
-            // InternalLatino.g:1877:2: rule__Leer__Group_2_1__2__Impl
+            // InternalLatino.g:1864:1: ( rule__Leer__Group_2_1__2__Impl )
+            // InternalLatino.g:1865:2: rule__Leer__Group_2_1__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Leer__Group_2_1__2__Impl();
@@ -5994,20 +5952,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__Group_2_1__2__Impl"
-    // InternalLatino.g:1883:1: rule__Leer__Group_2_1__2__Impl : ( ')' ) ;
+    // InternalLatino.g:1871:1: rule__Leer__Group_2_1__2__Impl : ( ')' ) ;
     public final void rule__Leer__Group_2_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1887:1: ( ( ')' ) )
-            // InternalLatino.g:1888:1: ( ')' )
+            // InternalLatino.g:1875:1: ( ( ')' ) )
+            // InternalLatino.g:1876:1: ( ')' )
             {
-            // InternalLatino.g:1888:1: ( ')' )
-            // InternalLatino.g:1889:2: ')'
+            // InternalLatino.g:1876:1: ( ')' )
+            // InternalLatino.g:1877:2: ')'
             {
              before(grammarAccess.getLeerAccess().getRightParenthesisKeyword_2_1_2()); 
-            match(input,44,FOLLOW_2); 
+            match(input,42,FOLLOW_2); 
              after(grammarAccess.getLeerAccess().getRightParenthesisKeyword_2_1_2()); 
 
             }
@@ -6031,14 +5989,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__Group__0"
-    // InternalLatino.g:1899:1: rule__Lista__Group__0 : rule__Lista__Group__0__Impl rule__Lista__Group__1 ;
+    // InternalLatino.g:1887:1: rule__Lista__Group__0 : rule__Lista__Group__0__Impl rule__Lista__Group__1 ;
     public final void rule__Lista__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1903:1: ( rule__Lista__Group__0__Impl rule__Lista__Group__1 )
-            // InternalLatino.g:1904:2: rule__Lista__Group__0__Impl rule__Lista__Group__1
+            // InternalLatino.g:1891:1: ( rule__Lista__Group__0__Impl rule__Lista__Group__1 )
+            // InternalLatino.g:1892:2: rule__Lista__Group__0__Impl rule__Lista__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__Lista__Group__0__Impl();
@@ -6069,21 +6027,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__Group__0__Impl"
-    // InternalLatino.g:1911:1: rule__Lista__Group__0__Impl : ( ( rule__Lista__NombreAssignment_0 ) ) ;
+    // InternalLatino.g:1899:1: rule__Lista__Group__0__Impl : ( ( rule__Lista__NombreAssignment_0 ) ) ;
     public final void rule__Lista__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1915:1: ( ( ( rule__Lista__NombreAssignment_0 ) ) )
-            // InternalLatino.g:1916:1: ( ( rule__Lista__NombreAssignment_0 ) )
+            // InternalLatino.g:1903:1: ( ( ( rule__Lista__NombreAssignment_0 ) ) )
+            // InternalLatino.g:1904:1: ( ( rule__Lista__NombreAssignment_0 ) )
             {
-            // InternalLatino.g:1916:1: ( ( rule__Lista__NombreAssignment_0 ) )
-            // InternalLatino.g:1917:2: ( rule__Lista__NombreAssignment_0 )
+            // InternalLatino.g:1904:1: ( ( rule__Lista__NombreAssignment_0 ) )
+            // InternalLatino.g:1905:2: ( rule__Lista__NombreAssignment_0 )
             {
              before(grammarAccess.getListaAccess().getNombreAssignment_0()); 
-            // InternalLatino.g:1918:2: ( rule__Lista__NombreAssignment_0 )
-            // InternalLatino.g:1918:3: rule__Lista__NombreAssignment_0
+            // InternalLatino.g:1906:2: ( rule__Lista__NombreAssignment_0 )
+            // InternalLatino.g:1906:3: rule__Lista__NombreAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__Lista__NombreAssignment_0();
@@ -6116,14 +6074,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__Group__1"
-    // InternalLatino.g:1926:1: rule__Lista__Group__1 : rule__Lista__Group__1__Impl rule__Lista__Group__2 ;
+    // InternalLatino.g:1914:1: rule__Lista__Group__1 : rule__Lista__Group__1__Impl rule__Lista__Group__2 ;
     public final void rule__Lista__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1930:1: ( rule__Lista__Group__1__Impl rule__Lista__Group__2 )
-            // InternalLatino.g:1931:2: rule__Lista__Group__1__Impl rule__Lista__Group__2
+            // InternalLatino.g:1918:1: ( rule__Lista__Group__1__Impl rule__Lista__Group__2 )
+            // InternalLatino.g:1919:2: rule__Lista__Group__1__Impl rule__Lista__Group__2
             {
             pushFollow(FOLLOW_11);
             rule__Lista__Group__1__Impl();
@@ -6154,20 +6112,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__Group__1__Impl"
-    // InternalLatino.g:1938:1: rule__Lista__Group__1__Impl : ( '=' ) ;
+    // InternalLatino.g:1926:1: rule__Lista__Group__1__Impl : ( '=' ) ;
     public final void rule__Lista__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1942:1: ( ( '=' ) )
-            // InternalLatino.g:1943:1: ( '=' )
+            // InternalLatino.g:1930:1: ( ( '=' ) )
+            // InternalLatino.g:1931:1: ( '=' )
             {
-            // InternalLatino.g:1943:1: ( '=' )
-            // InternalLatino.g:1944:2: '='
+            // InternalLatino.g:1931:1: ( '=' )
+            // InternalLatino.g:1932:2: '='
             {
              before(grammarAccess.getListaAccess().getEqualsSignKeyword_1()); 
-            match(input,41,FOLLOW_2); 
+            match(input,39,FOLLOW_2); 
              after(grammarAccess.getListaAccess().getEqualsSignKeyword_1()); 
 
             }
@@ -6191,14 +6149,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__Group__2"
-    // InternalLatino.g:1953:1: rule__Lista__Group__2 : rule__Lista__Group__2__Impl rule__Lista__Group__3 ;
+    // InternalLatino.g:1941:1: rule__Lista__Group__2 : rule__Lista__Group__2__Impl rule__Lista__Group__3 ;
     public final void rule__Lista__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1957:1: ( rule__Lista__Group__2__Impl rule__Lista__Group__3 )
-            // InternalLatino.g:1958:2: rule__Lista__Group__2__Impl rule__Lista__Group__3
+            // InternalLatino.g:1945:1: ( rule__Lista__Group__2__Impl rule__Lista__Group__3 )
+            // InternalLatino.g:1946:2: rule__Lista__Group__2__Impl rule__Lista__Group__3
             {
             pushFollow(FOLLOW_12);
             rule__Lista__Group__2__Impl();
@@ -6229,20 +6187,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__Group__2__Impl"
-    // InternalLatino.g:1965:1: rule__Lista__Group__2__Impl : ( '[' ) ;
+    // InternalLatino.g:1953:1: rule__Lista__Group__2__Impl : ( '[' ) ;
     public final void rule__Lista__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1969:1: ( ( '[' ) )
-            // InternalLatino.g:1970:1: ( '[' )
+            // InternalLatino.g:1957:1: ( ( '[' ) )
+            // InternalLatino.g:1958:1: ( '[' )
             {
-            // InternalLatino.g:1970:1: ( '[' )
-            // InternalLatino.g:1971:2: '['
+            // InternalLatino.g:1958:1: ( '[' )
+            // InternalLatino.g:1959:2: '['
             {
              before(grammarAccess.getListaAccess().getLeftSquareBracketKeyword_2()); 
-            match(input,45,FOLLOW_2); 
+            match(input,43,FOLLOW_2); 
              after(grammarAccess.getListaAccess().getLeftSquareBracketKeyword_2()); 
 
             }
@@ -6266,14 +6224,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__Group__3"
-    // InternalLatino.g:1980:1: rule__Lista__Group__3 : rule__Lista__Group__3__Impl rule__Lista__Group__4 ;
+    // InternalLatino.g:1968:1: rule__Lista__Group__3 : rule__Lista__Group__3__Impl rule__Lista__Group__4 ;
     public final void rule__Lista__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1984:1: ( rule__Lista__Group__3__Impl rule__Lista__Group__4 )
-            // InternalLatino.g:1985:2: rule__Lista__Group__3__Impl rule__Lista__Group__4
+            // InternalLatino.g:1972:1: ( rule__Lista__Group__3__Impl rule__Lista__Group__4 )
+            // InternalLatino.g:1973:2: rule__Lista__Group__3__Impl rule__Lista__Group__4
             {
             pushFollow(FOLLOW_12);
             rule__Lista__Group__3__Impl();
@@ -6304,29 +6262,29 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__Group__3__Impl"
-    // InternalLatino.g:1992:1: rule__Lista__Group__3__Impl : ( ( rule__Lista__Group_3__0 )? ) ;
+    // InternalLatino.g:1980:1: rule__Lista__Group__3__Impl : ( ( rule__Lista__Group_3__0 )? ) ;
     public final void rule__Lista__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:1996:1: ( ( ( rule__Lista__Group_3__0 )? ) )
-            // InternalLatino.g:1997:1: ( ( rule__Lista__Group_3__0 )? )
+            // InternalLatino.g:1984:1: ( ( ( rule__Lista__Group_3__0 )? ) )
+            // InternalLatino.g:1985:1: ( ( rule__Lista__Group_3__0 )? )
             {
-            // InternalLatino.g:1997:1: ( ( rule__Lista__Group_3__0 )? )
-            // InternalLatino.g:1998:2: ( rule__Lista__Group_3__0 )?
+            // InternalLatino.g:1985:1: ( ( rule__Lista__Group_3__0 )? )
+            // InternalLatino.g:1986:2: ( rule__Lista__Group_3__0 )?
             {
              before(grammarAccess.getListaAccess().getGroup_3()); 
-            // InternalLatino.g:1999:2: ( rule__Lista__Group_3__0 )?
+            // InternalLatino.g:1987:2: ( rule__Lista__Group_3__0 )?
             int alt19=2;
             int LA19_0 = input.LA(1);
 
-            if ( ((LA19_0>=RULE_STRING && LA19_0<=RULE_INT)||LA19_0==30||(LA19_0>=34 && LA19_0<=36)||LA19_0==42||LA19_0==68) ) {
+            if ( ((LA19_0>=RULE_STRING && LA19_0<=RULE_INT)||LA19_0==28||(LA19_0>=32 && LA19_0<=34)||LA19_0==40||LA19_0==66) ) {
                 alt19=1;
             }
             switch (alt19) {
                 case 1 :
-                    // InternalLatino.g:1999:3: rule__Lista__Group_3__0
+                    // InternalLatino.g:1987:3: rule__Lista__Group_3__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Lista__Group_3__0();
@@ -6362,14 +6320,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__Group__4"
-    // InternalLatino.g:2007:1: rule__Lista__Group__4 : rule__Lista__Group__4__Impl ;
+    // InternalLatino.g:1995:1: rule__Lista__Group__4 : rule__Lista__Group__4__Impl ;
     public final void rule__Lista__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2011:1: ( rule__Lista__Group__4__Impl )
-            // InternalLatino.g:2012:2: rule__Lista__Group__4__Impl
+            // InternalLatino.g:1999:1: ( rule__Lista__Group__4__Impl )
+            // InternalLatino.g:2000:2: rule__Lista__Group__4__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Lista__Group__4__Impl();
@@ -6395,20 +6353,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__Group__4__Impl"
-    // InternalLatino.g:2018:1: rule__Lista__Group__4__Impl : ( ']' ) ;
+    // InternalLatino.g:2006:1: rule__Lista__Group__4__Impl : ( ']' ) ;
     public final void rule__Lista__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2022:1: ( ( ']' ) )
-            // InternalLatino.g:2023:1: ( ']' )
+            // InternalLatino.g:2010:1: ( ( ']' ) )
+            // InternalLatino.g:2011:1: ( ']' )
             {
-            // InternalLatino.g:2023:1: ( ']' )
-            // InternalLatino.g:2024:2: ']'
+            // InternalLatino.g:2011:1: ( ']' )
+            // InternalLatino.g:2012:2: ']'
             {
              before(grammarAccess.getListaAccess().getRightSquareBracketKeyword_4()); 
-            match(input,46,FOLLOW_2); 
+            match(input,44,FOLLOW_2); 
              after(grammarAccess.getListaAccess().getRightSquareBracketKeyword_4()); 
 
             }
@@ -6432,14 +6390,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__Group_3__0"
-    // InternalLatino.g:2034:1: rule__Lista__Group_3__0 : rule__Lista__Group_3__0__Impl rule__Lista__Group_3__1 ;
+    // InternalLatino.g:2022:1: rule__Lista__Group_3__0 : rule__Lista__Group_3__0__Impl rule__Lista__Group_3__1 ;
     public final void rule__Lista__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2038:1: ( rule__Lista__Group_3__0__Impl rule__Lista__Group_3__1 )
-            // InternalLatino.g:2039:2: rule__Lista__Group_3__0__Impl rule__Lista__Group_3__1
+            // InternalLatino.g:2026:1: ( rule__Lista__Group_3__0__Impl rule__Lista__Group_3__1 )
+            // InternalLatino.g:2027:2: rule__Lista__Group_3__0__Impl rule__Lista__Group_3__1
             {
             pushFollow(FOLLOW_13);
             rule__Lista__Group_3__0__Impl();
@@ -6470,21 +6428,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__Group_3__0__Impl"
-    // InternalLatino.g:2046:1: rule__Lista__Group_3__0__Impl : ( ( rule__Lista__ElementosAssignment_3_0 ) ) ;
+    // InternalLatino.g:2034:1: rule__Lista__Group_3__0__Impl : ( ( rule__Lista__ElementosAssignment_3_0 ) ) ;
     public final void rule__Lista__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2050:1: ( ( ( rule__Lista__ElementosAssignment_3_0 ) ) )
-            // InternalLatino.g:2051:1: ( ( rule__Lista__ElementosAssignment_3_0 ) )
+            // InternalLatino.g:2038:1: ( ( ( rule__Lista__ElementosAssignment_3_0 ) ) )
+            // InternalLatino.g:2039:1: ( ( rule__Lista__ElementosAssignment_3_0 ) )
             {
-            // InternalLatino.g:2051:1: ( ( rule__Lista__ElementosAssignment_3_0 ) )
-            // InternalLatino.g:2052:2: ( rule__Lista__ElementosAssignment_3_0 )
+            // InternalLatino.g:2039:1: ( ( rule__Lista__ElementosAssignment_3_0 ) )
+            // InternalLatino.g:2040:2: ( rule__Lista__ElementosAssignment_3_0 )
             {
              before(grammarAccess.getListaAccess().getElementosAssignment_3_0()); 
-            // InternalLatino.g:2053:2: ( rule__Lista__ElementosAssignment_3_0 )
-            // InternalLatino.g:2053:3: rule__Lista__ElementosAssignment_3_0
+            // InternalLatino.g:2041:2: ( rule__Lista__ElementosAssignment_3_0 )
+            // InternalLatino.g:2041:3: rule__Lista__ElementosAssignment_3_0
             {
             pushFollow(FOLLOW_2);
             rule__Lista__ElementosAssignment_3_0();
@@ -6517,14 +6475,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__Group_3__1"
-    // InternalLatino.g:2061:1: rule__Lista__Group_3__1 : rule__Lista__Group_3__1__Impl ;
+    // InternalLatino.g:2049:1: rule__Lista__Group_3__1 : rule__Lista__Group_3__1__Impl ;
     public final void rule__Lista__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2065:1: ( rule__Lista__Group_3__1__Impl )
-            // InternalLatino.g:2066:2: rule__Lista__Group_3__1__Impl
+            // InternalLatino.g:2053:1: ( rule__Lista__Group_3__1__Impl )
+            // InternalLatino.g:2054:2: rule__Lista__Group_3__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Lista__Group_3__1__Impl();
@@ -6550,33 +6508,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__Group_3__1__Impl"
-    // InternalLatino.g:2072:1: rule__Lista__Group_3__1__Impl : ( ( rule__Lista__Group_3_1__0 )* ) ;
+    // InternalLatino.g:2060:1: rule__Lista__Group_3__1__Impl : ( ( rule__Lista__Group_3_1__0 )* ) ;
     public final void rule__Lista__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2076:1: ( ( ( rule__Lista__Group_3_1__0 )* ) )
-            // InternalLatino.g:2077:1: ( ( rule__Lista__Group_3_1__0 )* )
+            // InternalLatino.g:2064:1: ( ( ( rule__Lista__Group_3_1__0 )* ) )
+            // InternalLatino.g:2065:1: ( ( rule__Lista__Group_3_1__0 )* )
             {
-            // InternalLatino.g:2077:1: ( ( rule__Lista__Group_3_1__0 )* )
-            // InternalLatino.g:2078:2: ( rule__Lista__Group_3_1__0 )*
+            // InternalLatino.g:2065:1: ( ( rule__Lista__Group_3_1__0 )* )
+            // InternalLatino.g:2066:2: ( rule__Lista__Group_3_1__0 )*
             {
              before(grammarAccess.getListaAccess().getGroup_3_1()); 
-            // InternalLatino.g:2079:2: ( rule__Lista__Group_3_1__0 )*
+            // InternalLatino.g:2067:2: ( rule__Lista__Group_3_1__0 )*
             loop20:
             do {
                 int alt20=2;
                 int LA20_0 = input.LA(1);
 
-                if ( (LA20_0==47) ) {
+                if ( (LA20_0==45) ) {
                     alt20=1;
                 }
 
 
                 switch (alt20) {
             	case 1 :
-            	    // InternalLatino.g:2079:3: rule__Lista__Group_3_1__0
+            	    // InternalLatino.g:2067:3: rule__Lista__Group_3_1__0
             	    {
             	    pushFollow(FOLLOW_14);
             	    rule__Lista__Group_3_1__0();
@@ -6615,14 +6573,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__Group_3_1__0"
-    // InternalLatino.g:2088:1: rule__Lista__Group_3_1__0 : rule__Lista__Group_3_1__0__Impl rule__Lista__Group_3_1__1 ;
+    // InternalLatino.g:2076:1: rule__Lista__Group_3_1__0 : rule__Lista__Group_3_1__0__Impl rule__Lista__Group_3_1__1 ;
     public final void rule__Lista__Group_3_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2092:1: ( rule__Lista__Group_3_1__0__Impl rule__Lista__Group_3_1__1 )
-            // InternalLatino.g:2093:2: rule__Lista__Group_3_1__0__Impl rule__Lista__Group_3_1__1
+            // InternalLatino.g:2080:1: ( rule__Lista__Group_3_1__0__Impl rule__Lista__Group_3_1__1 )
+            // InternalLatino.g:2081:2: rule__Lista__Group_3_1__0__Impl rule__Lista__Group_3_1__1
             {
             pushFollow(FOLLOW_6);
             rule__Lista__Group_3_1__0__Impl();
@@ -6653,20 +6611,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__Group_3_1__0__Impl"
-    // InternalLatino.g:2100:1: rule__Lista__Group_3_1__0__Impl : ( ',' ) ;
+    // InternalLatino.g:2088:1: rule__Lista__Group_3_1__0__Impl : ( ',' ) ;
     public final void rule__Lista__Group_3_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2104:1: ( ( ',' ) )
-            // InternalLatino.g:2105:1: ( ',' )
+            // InternalLatino.g:2092:1: ( ( ',' ) )
+            // InternalLatino.g:2093:1: ( ',' )
             {
-            // InternalLatino.g:2105:1: ( ',' )
-            // InternalLatino.g:2106:2: ','
+            // InternalLatino.g:2093:1: ( ',' )
+            // InternalLatino.g:2094:2: ','
             {
              before(grammarAccess.getListaAccess().getCommaKeyword_3_1_0()); 
-            match(input,47,FOLLOW_2); 
+            match(input,45,FOLLOW_2); 
              after(grammarAccess.getListaAccess().getCommaKeyword_3_1_0()); 
 
             }
@@ -6690,14 +6648,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__Group_3_1__1"
-    // InternalLatino.g:2115:1: rule__Lista__Group_3_1__1 : rule__Lista__Group_3_1__1__Impl ;
+    // InternalLatino.g:2103:1: rule__Lista__Group_3_1__1 : rule__Lista__Group_3_1__1__Impl ;
     public final void rule__Lista__Group_3_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2119:1: ( rule__Lista__Group_3_1__1__Impl )
-            // InternalLatino.g:2120:2: rule__Lista__Group_3_1__1__Impl
+            // InternalLatino.g:2107:1: ( rule__Lista__Group_3_1__1__Impl )
+            // InternalLatino.g:2108:2: rule__Lista__Group_3_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Lista__Group_3_1__1__Impl();
@@ -6723,21 +6681,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__Group_3_1__1__Impl"
-    // InternalLatino.g:2126:1: rule__Lista__Group_3_1__1__Impl : ( ( rule__Lista__ElementosAssignment_3_1_1 ) ) ;
+    // InternalLatino.g:2114:1: rule__Lista__Group_3_1__1__Impl : ( ( rule__Lista__ElementosAssignment_3_1_1 ) ) ;
     public final void rule__Lista__Group_3_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2130:1: ( ( ( rule__Lista__ElementosAssignment_3_1_1 ) ) )
-            // InternalLatino.g:2131:1: ( ( rule__Lista__ElementosAssignment_3_1_1 ) )
+            // InternalLatino.g:2118:1: ( ( ( rule__Lista__ElementosAssignment_3_1_1 ) ) )
+            // InternalLatino.g:2119:1: ( ( rule__Lista__ElementosAssignment_3_1_1 ) )
             {
-            // InternalLatino.g:2131:1: ( ( rule__Lista__ElementosAssignment_3_1_1 ) )
-            // InternalLatino.g:2132:2: ( rule__Lista__ElementosAssignment_3_1_1 )
+            // InternalLatino.g:2119:1: ( ( rule__Lista__ElementosAssignment_3_1_1 ) )
+            // InternalLatino.g:2120:2: ( rule__Lista__ElementosAssignment_3_1_1 )
             {
              before(grammarAccess.getListaAccess().getElementosAssignment_3_1_1()); 
-            // InternalLatino.g:2133:2: ( rule__Lista__ElementosAssignment_3_1_1 )
-            // InternalLatino.g:2133:3: rule__Lista__ElementosAssignment_3_1_1
+            // InternalLatino.g:2121:2: ( rule__Lista__ElementosAssignment_3_1_1 )
+            // InternalLatino.g:2121:3: rule__Lista__ElementosAssignment_3_1_1
             {
             pushFollow(FOLLOW_2);
             rule__Lista__ElementosAssignment_3_1_1();
@@ -6770,14 +6728,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AsignacionIndice__Group__0"
-    // InternalLatino.g:2142:1: rule__AsignacionIndice__Group__0 : rule__AsignacionIndice__Group__0__Impl rule__AsignacionIndice__Group__1 ;
+    // InternalLatino.g:2130:1: rule__AsignacionIndice__Group__0 : rule__AsignacionIndice__Group__0__Impl rule__AsignacionIndice__Group__1 ;
     public final void rule__AsignacionIndice__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2146:1: ( rule__AsignacionIndice__Group__0__Impl rule__AsignacionIndice__Group__1 )
-            // InternalLatino.g:2147:2: rule__AsignacionIndice__Group__0__Impl rule__AsignacionIndice__Group__1
+            // InternalLatino.g:2134:1: ( rule__AsignacionIndice__Group__0__Impl rule__AsignacionIndice__Group__1 )
+            // InternalLatino.g:2135:2: rule__AsignacionIndice__Group__0__Impl rule__AsignacionIndice__Group__1
             {
             pushFollow(FOLLOW_11);
             rule__AsignacionIndice__Group__0__Impl();
@@ -6808,21 +6766,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AsignacionIndice__Group__0__Impl"
-    // InternalLatino.g:2154:1: rule__AsignacionIndice__Group__0__Impl : ( ( rule__AsignacionIndice__ListaAssignment_0 ) ) ;
+    // InternalLatino.g:2142:1: rule__AsignacionIndice__Group__0__Impl : ( ( rule__AsignacionIndice__ListaAssignment_0 ) ) ;
     public final void rule__AsignacionIndice__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2158:1: ( ( ( rule__AsignacionIndice__ListaAssignment_0 ) ) )
-            // InternalLatino.g:2159:1: ( ( rule__AsignacionIndice__ListaAssignment_0 ) )
+            // InternalLatino.g:2146:1: ( ( ( rule__AsignacionIndice__ListaAssignment_0 ) ) )
+            // InternalLatino.g:2147:1: ( ( rule__AsignacionIndice__ListaAssignment_0 ) )
             {
-            // InternalLatino.g:2159:1: ( ( rule__AsignacionIndice__ListaAssignment_0 ) )
-            // InternalLatino.g:2160:2: ( rule__AsignacionIndice__ListaAssignment_0 )
+            // InternalLatino.g:2147:1: ( ( rule__AsignacionIndice__ListaAssignment_0 ) )
+            // InternalLatino.g:2148:2: ( rule__AsignacionIndice__ListaAssignment_0 )
             {
              before(grammarAccess.getAsignacionIndiceAccess().getListaAssignment_0()); 
-            // InternalLatino.g:2161:2: ( rule__AsignacionIndice__ListaAssignment_0 )
-            // InternalLatino.g:2161:3: rule__AsignacionIndice__ListaAssignment_0
+            // InternalLatino.g:2149:2: ( rule__AsignacionIndice__ListaAssignment_0 )
+            // InternalLatino.g:2149:3: rule__AsignacionIndice__ListaAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__AsignacionIndice__ListaAssignment_0();
@@ -6855,14 +6813,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AsignacionIndice__Group__1"
-    // InternalLatino.g:2169:1: rule__AsignacionIndice__Group__1 : rule__AsignacionIndice__Group__1__Impl rule__AsignacionIndice__Group__2 ;
+    // InternalLatino.g:2157:1: rule__AsignacionIndice__Group__1 : rule__AsignacionIndice__Group__1__Impl rule__AsignacionIndice__Group__2 ;
     public final void rule__AsignacionIndice__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2173:1: ( rule__AsignacionIndice__Group__1__Impl rule__AsignacionIndice__Group__2 )
-            // InternalLatino.g:2174:2: rule__AsignacionIndice__Group__1__Impl rule__AsignacionIndice__Group__2
+            // InternalLatino.g:2161:1: ( rule__AsignacionIndice__Group__1__Impl rule__AsignacionIndice__Group__2 )
+            // InternalLatino.g:2162:2: rule__AsignacionIndice__Group__1__Impl rule__AsignacionIndice__Group__2
             {
             pushFollow(FOLLOW_6);
             rule__AsignacionIndice__Group__1__Impl();
@@ -6893,20 +6851,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AsignacionIndice__Group__1__Impl"
-    // InternalLatino.g:2181:1: rule__AsignacionIndice__Group__1__Impl : ( '[' ) ;
+    // InternalLatino.g:2169:1: rule__AsignacionIndice__Group__1__Impl : ( '[' ) ;
     public final void rule__AsignacionIndice__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2185:1: ( ( '[' ) )
-            // InternalLatino.g:2186:1: ( '[' )
+            // InternalLatino.g:2173:1: ( ( '[' ) )
+            // InternalLatino.g:2174:1: ( '[' )
             {
-            // InternalLatino.g:2186:1: ( '[' )
-            // InternalLatino.g:2187:2: '['
+            // InternalLatino.g:2174:1: ( '[' )
+            // InternalLatino.g:2175:2: '['
             {
              before(grammarAccess.getAsignacionIndiceAccess().getLeftSquareBracketKeyword_1()); 
-            match(input,45,FOLLOW_2); 
+            match(input,43,FOLLOW_2); 
              after(grammarAccess.getAsignacionIndiceAccess().getLeftSquareBracketKeyword_1()); 
 
             }
@@ -6930,14 +6888,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AsignacionIndice__Group__2"
-    // InternalLatino.g:2196:1: rule__AsignacionIndice__Group__2 : rule__AsignacionIndice__Group__2__Impl rule__AsignacionIndice__Group__3 ;
+    // InternalLatino.g:2184:1: rule__AsignacionIndice__Group__2 : rule__AsignacionIndice__Group__2__Impl rule__AsignacionIndice__Group__3 ;
     public final void rule__AsignacionIndice__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2200:1: ( rule__AsignacionIndice__Group__2__Impl rule__AsignacionIndice__Group__3 )
-            // InternalLatino.g:2201:2: rule__AsignacionIndice__Group__2__Impl rule__AsignacionIndice__Group__3
+            // InternalLatino.g:2188:1: ( rule__AsignacionIndice__Group__2__Impl rule__AsignacionIndice__Group__3 )
+            // InternalLatino.g:2189:2: rule__AsignacionIndice__Group__2__Impl rule__AsignacionIndice__Group__3
             {
             pushFollow(FOLLOW_15);
             rule__AsignacionIndice__Group__2__Impl();
@@ -6968,21 +6926,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AsignacionIndice__Group__2__Impl"
-    // InternalLatino.g:2208:1: rule__AsignacionIndice__Group__2__Impl : ( ( rule__AsignacionIndice__IndiceAssignment_2 ) ) ;
+    // InternalLatino.g:2196:1: rule__AsignacionIndice__Group__2__Impl : ( ( rule__AsignacionIndice__IndiceAssignment_2 ) ) ;
     public final void rule__AsignacionIndice__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2212:1: ( ( ( rule__AsignacionIndice__IndiceAssignment_2 ) ) )
-            // InternalLatino.g:2213:1: ( ( rule__AsignacionIndice__IndiceAssignment_2 ) )
+            // InternalLatino.g:2200:1: ( ( ( rule__AsignacionIndice__IndiceAssignment_2 ) ) )
+            // InternalLatino.g:2201:1: ( ( rule__AsignacionIndice__IndiceAssignment_2 ) )
             {
-            // InternalLatino.g:2213:1: ( ( rule__AsignacionIndice__IndiceAssignment_2 ) )
-            // InternalLatino.g:2214:2: ( rule__AsignacionIndice__IndiceAssignment_2 )
+            // InternalLatino.g:2201:1: ( ( rule__AsignacionIndice__IndiceAssignment_2 ) )
+            // InternalLatino.g:2202:2: ( rule__AsignacionIndice__IndiceAssignment_2 )
             {
              before(grammarAccess.getAsignacionIndiceAccess().getIndiceAssignment_2()); 
-            // InternalLatino.g:2215:2: ( rule__AsignacionIndice__IndiceAssignment_2 )
-            // InternalLatino.g:2215:3: rule__AsignacionIndice__IndiceAssignment_2
+            // InternalLatino.g:2203:2: ( rule__AsignacionIndice__IndiceAssignment_2 )
+            // InternalLatino.g:2203:3: rule__AsignacionIndice__IndiceAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__AsignacionIndice__IndiceAssignment_2();
@@ -7015,14 +6973,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AsignacionIndice__Group__3"
-    // InternalLatino.g:2223:1: rule__AsignacionIndice__Group__3 : rule__AsignacionIndice__Group__3__Impl rule__AsignacionIndice__Group__4 ;
+    // InternalLatino.g:2211:1: rule__AsignacionIndice__Group__3 : rule__AsignacionIndice__Group__3__Impl rule__AsignacionIndice__Group__4 ;
     public final void rule__AsignacionIndice__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2227:1: ( rule__AsignacionIndice__Group__3__Impl rule__AsignacionIndice__Group__4 )
-            // InternalLatino.g:2228:2: rule__AsignacionIndice__Group__3__Impl rule__AsignacionIndice__Group__4
+            // InternalLatino.g:2215:1: ( rule__AsignacionIndice__Group__3__Impl rule__AsignacionIndice__Group__4 )
+            // InternalLatino.g:2216:2: rule__AsignacionIndice__Group__3__Impl rule__AsignacionIndice__Group__4
             {
             pushFollow(FOLLOW_5);
             rule__AsignacionIndice__Group__3__Impl();
@@ -7053,20 +7011,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AsignacionIndice__Group__3__Impl"
-    // InternalLatino.g:2235:1: rule__AsignacionIndice__Group__3__Impl : ( ']' ) ;
+    // InternalLatino.g:2223:1: rule__AsignacionIndice__Group__3__Impl : ( ']' ) ;
     public final void rule__AsignacionIndice__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2239:1: ( ( ']' ) )
-            // InternalLatino.g:2240:1: ( ']' )
+            // InternalLatino.g:2227:1: ( ( ']' ) )
+            // InternalLatino.g:2228:1: ( ']' )
             {
-            // InternalLatino.g:2240:1: ( ']' )
-            // InternalLatino.g:2241:2: ']'
+            // InternalLatino.g:2228:1: ( ']' )
+            // InternalLatino.g:2229:2: ']'
             {
              before(grammarAccess.getAsignacionIndiceAccess().getRightSquareBracketKeyword_3()); 
-            match(input,46,FOLLOW_2); 
+            match(input,44,FOLLOW_2); 
              after(grammarAccess.getAsignacionIndiceAccess().getRightSquareBracketKeyword_3()); 
 
             }
@@ -7090,14 +7048,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AsignacionIndice__Group__4"
-    // InternalLatino.g:2250:1: rule__AsignacionIndice__Group__4 : rule__AsignacionIndice__Group__4__Impl rule__AsignacionIndice__Group__5 ;
+    // InternalLatino.g:2238:1: rule__AsignacionIndice__Group__4 : rule__AsignacionIndice__Group__4__Impl rule__AsignacionIndice__Group__5 ;
     public final void rule__AsignacionIndice__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2254:1: ( rule__AsignacionIndice__Group__4__Impl rule__AsignacionIndice__Group__5 )
-            // InternalLatino.g:2255:2: rule__AsignacionIndice__Group__4__Impl rule__AsignacionIndice__Group__5
+            // InternalLatino.g:2242:1: ( rule__AsignacionIndice__Group__4__Impl rule__AsignacionIndice__Group__5 )
+            // InternalLatino.g:2243:2: rule__AsignacionIndice__Group__4__Impl rule__AsignacionIndice__Group__5
             {
             pushFollow(FOLLOW_6);
             rule__AsignacionIndice__Group__4__Impl();
@@ -7128,20 +7086,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AsignacionIndice__Group__4__Impl"
-    // InternalLatino.g:2262:1: rule__AsignacionIndice__Group__4__Impl : ( '=' ) ;
+    // InternalLatino.g:2250:1: rule__AsignacionIndice__Group__4__Impl : ( '=' ) ;
     public final void rule__AsignacionIndice__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2266:1: ( ( '=' ) )
-            // InternalLatino.g:2267:1: ( '=' )
+            // InternalLatino.g:2254:1: ( ( '=' ) )
+            // InternalLatino.g:2255:1: ( '=' )
             {
-            // InternalLatino.g:2267:1: ( '=' )
-            // InternalLatino.g:2268:2: '='
+            // InternalLatino.g:2255:1: ( '=' )
+            // InternalLatino.g:2256:2: '='
             {
              before(grammarAccess.getAsignacionIndiceAccess().getEqualsSignKeyword_4()); 
-            match(input,41,FOLLOW_2); 
+            match(input,39,FOLLOW_2); 
              after(grammarAccess.getAsignacionIndiceAccess().getEqualsSignKeyword_4()); 
 
             }
@@ -7165,14 +7123,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AsignacionIndice__Group__5"
-    // InternalLatino.g:2277:1: rule__AsignacionIndice__Group__5 : rule__AsignacionIndice__Group__5__Impl ;
+    // InternalLatino.g:2265:1: rule__AsignacionIndice__Group__5 : rule__AsignacionIndice__Group__5__Impl ;
     public final void rule__AsignacionIndice__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2281:1: ( rule__AsignacionIndice__Group__5__Impl )
-            // InternalLatino.g:2282:2: rule__AsignacionIndice__Group__5__Impl
+            // InternalLatino.g:2269:1: ( rule__AsignacionIndice__Group__5__Impl )
+            // InternalLatino.g:2270:2: rule__AsignacionIndice__Group__5__Impl
             {
             pushFollow(FOLLOW_2);
             rule__AsignacionIndice__Group__5__Impl();
@@ -7198,21 +7156,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AsignacionIndice__Group__5__Impl"
-    // InternalLatino.g:2288:1: rule__AsignacionIndice__Group__5__Impl : ( ( rule__AsignacionIndice__ValorAssignment_5 ) ) ;
+    // InternalLatino.g:2276:1: rule__AsignacionIndice__Group__5__Impl : ( ( rule__AsignacionIndice__ValorAssignment_5 ) ) ;
     public final void rule__AsignacionIndice__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2292:1: ( ( ( rule__AsignacionIndice__ValorAssignment_5 ) ) )
-            // InternalLatino.g:2293:1: ( ( rule__AsignacionIndice__ValorAssignment_5 ) )
+            // InternalLatino.g:2280:1: ( ( ( rule__AsignacionIndice__ValorAssignment_5 ) ) )
+            // InternalLatino.g:2281:1: ( ( rule__AsignacionIndice__ValorAssignment_5 ) )
             {
-            // InternalLatino.g:2293:1: ( ( rule__AsignacionIndice__ValorAssignment_5 ) )
-            // InternalLatino.g:2294:2: ( rule__AsignacionIndice__ValorAssignment_5 )
+            // InternalLatino.g:2281:1: ( ( rule__AsignacionIndice__ValorAssignment_5 ) )
+            // InternalLatino.g:2282:2: ( rule__AsignacionIndice__ValorAssignment_5 )
             {
              before(grammarAccess.getAsignacionIndiceAccess().getValorAssignment_5()); 
-            // InternalLatino.g:2295:2: ( rule__AsignacionIndice__ValorAssignment_5 )
-            // InternalLatino.g:2295:3: rule__AsignacionIndice__ValorAssignment_5
+            // InternalLatino.g:2283:2: ( rule__AsignacionIndice__ValorAssignment_5 )
+            // InternalLatino.g:2283:3: rule__AsignacionIndice__ValorAssignment_5
             {
             pushFollow(FOLLOW_2);
             rule__AsignacionIndice__ValorAssignment_5();
@@ -7245,14 +7203,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__Group__0"
-    // InternalLatino.g:2304:1: rule__Condicional__Group__0 : rule__Condicional__Group__0__Impl rule__Condicional__Group__1 ;
+    // InternalLatino.g:2292:1: rule__Condicional__Group__0 : rule__Condicional__Group__0__Impl rule__Condicional__Group__1 ;
     public final void rule__Condicional__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2308:1: ( rule__Condicional__Group__0__Impl rule__Condicional__Group__1 )
-            // InternalLatino.g:2309:2: rule__Condicional__Group__0__Impl rule__Condicional__Group__1
+            // InternalLatino.g:2296:1: ( rule__Condicional__Group__0__Impl rule__Condicional__Group__1 )
+            // InternalLatino.g:2297:2: rule__Condicional__Group__0__Impl rule__Condicional__Group__1
             {
             pushFollow(FOLLOW_6);
             rule__Condicional__Group__0__Impl();
@@ -7283,20 +7241,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__Group__0__Impl"
-    // InternalLatino.g:2316:1: rule__Condicional__Group__0__Impl : ( 'si' ) ;
+    // InternalLatino.g:2304:1: rule__Condicional__Group__0__Impl : ( 'si' ) ;
     public final void rule__Condicional__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2320:1: ( ( 'si' ) )
-            // InternalLatino.g:2321:1: ( 'si' )
+            // InternalLatino.g:2308:1: ( ( 'si' ) )
+            // InternalLatino.g:2309:1: ( 'si' )
             {
-            // InternalLatino.g:2321:1: ( 'si' )
-            // InternalLatino.g:2322:2: 'si'
+            // InternalLatino.g:2309:1: ( 'si' )
+            // InternalLatino.g:2310:2: 'si'
             {
              before(grammarAccess.getCondicionalAccess().getSiKeyword_0()); 
-            match(input,48,FOLLOW_2); 
+            match(input,46,FOLLOW_2); 
              after(grammarAccess.getCondicionalAccess().getSiKeyword_0()); 
 
             }
@@ -7320,14 +7278,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__Group__1"
-    // InternalLatino.g:2331:1: rule__Condicional__Group__1 : rule__Condicional__Group__1__Impl rule__Condicional__Group__2 ;
+    // InternalLatino.g:2319:1: rule__Condicional__Group__1 : rule__Condicional__Group__1__Impl rule__Condicional__Group__2 ;
     public final void rule__Condicional__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2335:1: ( rule__Condicional__Group__1__Impl rule__Condicional__Group__2 )
-            // InternalLatino.g:2336:2: rule__Condicional__Group__1__Impl rule__Condicional__Group__2
+            // InternalLatino.g:2323:1: ( rule__Condicional__Group__1__Impl rule__Condicional__Group__2 )
+            // InternalLatino.g:2324:2: rule__Condicional__Group__1__Impl rule__Condicional__Group__2
             {
             pushFollow(FOLLOW_16);
             rule__Condicional__Group__1__Impl();
@@ -7358,21 +7316,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__Group__1__Impl"
-    // InternalLatino.g:2343:1: rule__Condicional__Group__1__Impl : ( ( rule__Condicional__CondicionAssignment_1 ) ) ;
+    // InternalLatino.g:2331:1: rule__Condicional__Group__1__Impl : ( ( rule__Condicional__CondicionAssignment_1 ) ) ;
     public final void rule__Condicional__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2347:1: ( ( ( rule__Condicional__CondicionAssignment_1 ) ) )
-            // InternalLatino.g:2348:1: ( ( rule__Condicional__CondicionAssignment_1 ) )
+            // InternalLatino.g:2335:1: ( ( ( rule__Condicional__CondicionAssignment_1 ) ) )
+            // InternalLatino.g:2336:1: ( ( rule__Condicional__CondicionAssignment_1 ) )
             {
-            // InternalLatino.g:2348:1: ( ( rule__Condicional__CondicionAssignment_1 ) )
-            // InternalLatino.g:2349:2: ( rule__Condicional__CondicionAssignment_1 )
+            // InternalLatino.g:2336:1: ( ( rule__Condicional__CondicionAssignment_1 ) )
+            // InternalLatino.g:2337:2: ( rule__Condicional__CondicionAssignment_1 )
             {
              before(grammarAccess.getCondicionalAccess().getCondicionAssignment_1()); 
-            // InternalLatino.g:2350:2: ( rule__Condicional__CondicionAssignment_1 )
-            // InternalLatino.g:2350:3: rule__Condicional__CondicionAssignment_1
+            // InternalLatino.g:2338:2: ( rule__Condicional__CondicionAssignment_1 )
+            // InternalLatino.g:2338:3: rule__Condicional__CondicionAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Condicional__CondicionAssignment_1();
@@ -7405,14 +7363,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__Group__2"
-    // InternalLatino.g:2358:1: rule__Condicional__Group__2 : rule__Condicional__Group__2__Impl rule__Condicional__Group__3 ;
+    // InternalLatino.g:2346:1: rule__Condicional__Group__2 : rule__Condicional__Group__2__Impl rule__Condicional__Group__3 ;
     public final void rule__Condicional__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2362:1: ( rule__Condicional__Group__2__Impl rule__Condicional__Group__3 )
-            // InternalLatino.g:2363:2: rule__Condicional__Group__2__Impl rule__Condicional__Group__3
+            // InternalLatino.g:2350:1: ( rule__Condicional__Group__2__Impl rule__Condicional__Group__3 )
+            // InternalLatino.g:2351:2: rule__Condicional__Group__2__Impl rule__Condicional__Group__3
             {
             pushFollow(FOLLOW_16);
             rule__Condicional__Group__2__Impl();
@@ -7443,33 +7401,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__Group__2__Impl"
-    // InternalLatino.g:2370:1: rule__Condicional__Group__2__Impl : ( ( rule__Condicional__EntoncesAssignment_2 )* ) ;
+    // InternalLatino.g:2358:1: rule__Condicional__Group__2__Impl : ( ( rule__Condicional__EntoncesAssignment_2 )* ) ;
     public final void rule__Condicional__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2374:1: ( ( ( rule__Condicional__EntoncesAssignment_2 )* ) )
-            // InternalLatino.g:2375:1: ( ( rule__Condicional__EntoncesAssignment_2 )* )
+            // InternalLatino.g:2362:1: ( ( ( rule__Condicional__EntoncesAssignment_2 )* ) )
+            // InternalLatino.g:2363:1: ( ( rule__Condicional__EntoncesAssignment_2 )* )
             {
-            // InternalLatino.g:2375:1: ( ( rule__Condicional__EntoncesAssignment_2 )* )
-            // InternalLatino.g:2376:2: ( rule__Condicional__EntoncesAssignment_2 )*
+            // InternalLatino.g:2363:1: ( ( rule__Condicional__EntoncesAssignment_2 )* )
+            // InternalLatino.g:2364:2: ( rule__Condicional__EntoncesAssignment_2 )*
             {
              before(grammarAccess.getCondicionalAccess().getEntoncesAssignment_2()); 
-            // InternalLatino.g:2377:2: ( rule__Condicional__EntoncesAssignment_2 )*
+            // InternalLatino.g:2365:2: ( rule__Condicional__EntoncesAssignment_2 )*
             loop21:
             do {
                 int alt21=2;
                 int LA21_0 = input.LA(1);
 
-                if ( (LA21_0==RULE_ID||(LA21_0>=15 && LA21_0<=22)||LA21_0==48||(LA21_0>=52 && LA21_0<=53)||LA21_0==55||LA21_0==57||(LA21_0>=60 && LA21_0<=62)) ) {
+                if ( (LA21_0==RULE_ID||(LA21_0>=15 && LA21_0<=20)||LA21_0==46||(LA21_0>=50 && LA21_0<=51)||LA21_0==53||LA21_0==55||(LA21_0>=58 && LA21_0<=60)) ) {
                     alt21=1;
                 }
 
 
                 switch (alt21) {
             	case 1 :
-            	    // InternalLatino.g:2377:3: rule__Condicional__EntoncesAssignment_2
+            	    // InternalLatino.g:2365:3: rule__Condicional__EntoncesAssignment_2
             	    {
             	    pushFollow(FOLLOW_17);
             	    rule__Condicional__EntoncesAssignment_2();
@@ -7508,14 +7466,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__Group__3"
-    // InternalLatino.g:2385:1: rule__Condicional__Group__3 : rule__Condicional__Group__3__Impl rule__Condicional__Group__4 ;
+    // InternalLatino.g:2373:1: rule__Condicional__Group__3 : rule__Condicional__Group__3__Impl rule__Condicional__Group__4 ;
     public final void rule__Condicional__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2389:1: ( rule__Condicional__Group__3__Impl rule__Condicional__Group__4 )
-            // InternalLatino.g:2390:2: rule__Condicional__Group__3__Impl rule__Condicional__Group__4
+            // InternalLatino.g:2377:1: ( rule__Condicional__Group__3__Impl rule__Condicional__Group__4 )
+            // InternalLatino.g:2378:2: rule__Condicional__Group__3__Impl rule__Condicional__Group__4
             {
             pushFollow(FOLLOW_16);
             rule__Condicional__Group__3__Impl();
@@ -7546,33 +7504,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__Group__3__Impl"
-    // InternalLatino.g:2397:1: rule__Condicional__Group__3__Impl : ( ( rule__Condicional__OsisAssignment_3 )* ) ;
+    // InternalLatino.g:2385:1: rule__Condicional__Group__3__Impl : ( ( rule__Condicional__OsisAssignment_3 )* ) ;
     public final void rule__Condicional__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2401:1: ( ( ( rule__Condicional__OsisAssignment_3 )* ) )
-            // InternalLatino.g:2402:1: ( ( rule__Condicional__OsisAssignment_3 )* )
+            // InternalLatino.g:2389:1: ( ( ( rule__Condicional__OsisAssignment_3 )* ) )
+            // InternalLatino.g:2390:1: ( ( rule__Condicional__OsisAssignment_3 )* )
             {
-            // InternalLatino.g:2402:1: ( ( rule__Condicional__OsisAssignment_3 )* )
-            // InternalLatino.g:2403:2: ( rule__Condicional__OsisAssignment_3 )*
+            // InternalLatino.g:2390:1: ( ( rule__Condicional__OsisAssignment_3 )* )
+            // InternalLatino.g:2391:2: ( rule__Condicional__OsisAssignment_3 )*
             {
              before(grammarAccess.getCondicionalAccess().getOsisAssignment_3()); 
-            // InternalLatino.g:2404:2: ( rule__Condicional__OsisAssignment_3 )*
+            // InternalLatino.g:2392:2: ( rule__Condicional__OsisAssignment_3 )*
             loop22:
             do {
                 int alt22=2;
                 int LA22_0 = input.LA(1);
 
-                if ( (LA22_0==51) ) {
+                if ( (LA22_0==49) ) {
                     alt22=1;
                 }
 
 
                 switch (alt22) {
             	case 1 :
-            	    // InternalLatino.g:2404:3: rule__Condicional__OsisAssignment_3
+            	    // InternalLatino.g:2392:3: rule__Condicional__OsisAssignment_3
             	    {
             	    pushFollow(FOLLOW_18);
             	    rule__Condicional__OsisAssignment_3();
@@ -7611,14 +7569,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__Group__4"
-    // InternalLatino.g:2412:1: rule__Condicional__Group__4 : rule__Condicional__Group__4__Impl rule__Condicional__Group__5 ;
+    // InternalLatino.g:2400:1: rule__Condicional__Group__4 : rule__Condicional__Group__4__Impl rule__Condicional__Group__5 ;
     public final void rule__Condicional__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2416:1: ( rule__Condicional__Group__4__Impl rule__Condicional__Group__5 )
-            // InternalLatino.g:2417:2: rule__Condicional__Group__4__Impl rule__Condicional__Group__5
+            // InternalLatino.g:2404:1: ( rule__Condicional__Group__4__Impl rule__Condicional__Group__5 )
+            // InternalLatino.g:2405:2: rule__Condicional__Group__4__Impl rule__Condicional__Group__5
             {
             pushFollow(FOLLOW_16);
             rule__Condicional__Group__4__Impl();
@@ -7649,29 +7607,29 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__Group__4__Impl"
-    // InternalLatino.g:2424:1: rule__Condicional__Group__4__Impl : ( ( rule__Condicional__Group_4__0 )? ) ;
+    // InternalLatino.g:2412:1: rule__Condicional__Group__4__Impl : ( ( rule__Condicional__Group_4__0 )? ) ;
     public final void rule__Condicional__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2428:1: ( ( ( rule__Condicional__Group_4__0 )? ) )
-            // InternalLatino.g:2429:1: ( ( rule__Condicional__Group_4__0 )? )
+            // InternalLatino.g:2416:1: ( ( ( rule__Condicional__Group_4__0 )? ) )
+            // InternalLatino.g:2417:1: ( ( rule__Condicional__Group_4__0 )? )
             {
-            // InternalLatino.g:2429:1: ( ( rule__Condicional__Group_4__0 )? )
-            // InternalLatino.g:2430:2: ( rule__Condicional__Group_4__0 )?
+            // InternalLatino.g:2417:1: ( ( rule__Condicional__Group_4__0 )? )
+            // InternalLatino.g:2418:2: ( rule__Condicional__Group_4__0 )?
             {
              before(grammarAccess.getCondicionalAccess().getGroup_4()); 
-            // InternalLatino.g:2431:2: ( rule__Condicional__Group_4__0 )?
+            // InternalLatino.g:2419:2: ( rule__Condicional__Group_4__0 )?
             int alt23=2;
             int LA23_0 = input.LA(1);
 
-            if ( (LA23_0==50) ) {
+            if ( (LA23_0==48) ) {
                 alt23=1;
             }
             switch (alt23) {
                 case 1 :
-                    // InternalLatino.g:2431:3: rule__Condicional__Group_4__0
+                    // InternalLatino.g:2419:3: rule__Condicional__Group_4__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Condicional__Group_4__0();
@@ -7707,14 +7665,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__Group__5"
-    // InternalLatino.g:2439:1: rule__Condicional__Group__5 : rule__Condicional__Group__5__Impl ;
+    // InternalLatino.g:2427:1: rule__Condicional__Group__5 : rule__Condicional__Group__5__Impl ;
     public final void rule__Condicional__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2443:1: ( rule__Condicional__Group__5__Impl )
-            // InternalLatino.g:2444:2: rule__Condicional__Group__5__Impl
+            // InternalLatino.g:2431:1: ( rule__Condicional__Group__5__Impl )
+            // InternalLatino.g:2432:2: rule__Condicional__Group__5__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Condicional__Group__5__Impl();
@@ -7740,20 +7698,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__Group__5__Impl"
-    // InternalLatino.g:2450:1: rule__Condicional__Group__5__Impl : ( 'fin' ) ;
+    // InternalLatino.g:2438:1: rule__Condicional__Group__5__Impl : ( 'fin' ) ;
     public final void rule__Condicional__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2454:1: ( ( 'fin' ) )
-            // InternalLatino.g:2455:1: ( 'fin' )
+            // InternalLatino.g:2442:1: ( ( 'fin' ) )
+            // InternalLatino.g:2443:1: ( 'fin' )
             {
-            // InternalLatino.g:2455:1: ( 'fin' )
-            // InternalLatino.g:2456:2: 'fin'
+            // InternalLatino.g:2443:1: ( 'fin' )
+            // InternalLatino.g:2444:2: 'fin'
             {
              before(grammarAccess.getCondicionalAccess().getFinKeyword_5()); 
-            match(input,49,FOLLOW_2); 
+            match(input,47,FOLLOW_2); 
              after(grammarAccess.getCondicionalAccess().getFinKeyword_5()); 
 
             }
@@ -7777,14 +7735,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__Group_4__0"
-    // InternalLatino.g:2466:1: rule__Condicional__Group_4__0 : rule__Condicional__Group_4__0__Impl rule__Condicional__Group_4__1 ;
+    // InternalLatino.g:2454:1: rule__Condicional__Group_4__0 : rule__Condicional__Group_4__0__Impl rule__Condicional__Group_4__1 ;
     public final void rule__Condicional__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2470:1: ( rule__Condicional__Group_4__0__Impl rule__Condicional__Group_4__1 )
-            // InternalLatino.g:2471:2: rule__Condicional__Group_4__0__Impl rule__Condicional__Group_4__1
+            // InternalLatino.g:2458:1: ( rule__Condicional__Group_4__0__Impl rule__Condicional__Group_4__1 )
+            // InternalLatino.g:2459:2: rule__Condicional__Group_4__0__Impl rule__Condicional__Group_4__1
             {
             pushFollow(FOLLOW_19);
             rule__Condicional__Group_4__0__Impl();
@@ -7815,20 +7773,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__Group_4__0__Impl"
-    // InternalLatino.g:2478:1: rule__Condicional__Group_4__0__Impl : ( 'sino' ) ;
+    // InternalLatino.g:2466:1: rule__Condicional__Group_4__0__Impl : ( 'sino' ) ;
     public final void rule__Condicional__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2482:1: ( ( 'sino' ) )
-            // InternalLatino.g:2483:1: ( 'sino' )
+            // InternalLatino.g:2470:1: ( ( 'sino' ) )
+            // InternalLatino.g:2471:1: ( 'sino' )
             {
-            // InternalLatino.g:2483:1: ( 'sino' )
-            // InternalLatino.g:2484:2: 'sino'
+            // InternalLatino.g:2471:1: ( 'sino' )
+            // InternalLatino.g:2472:2: 'sino'
             {
              before(grammarAccess.getCondicionalAccess().getSinoKeyword_4_0()); 
-            match(input,50,FOLLOW_2); 
+            match(input,48,FOLLOW_2); 
              after(grammarAccess.getCondicionalAccess().getSinoKeyword_4_0()); 
 
             }
@@ -7852,14 +7810,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__Group_4__1"
-    // InternalLatino.g:2493:1: rule__Condicional__Group_4__1 : rule__Condicional__Group_4__1__Impl ;
+    // InternalLatino.g:2481:1: rule__Condicional__Group_4__1 : rule__Condicional__Group_4__1__Impl ;
     public final void rule__Condicional__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2497:1: ( rule__Condicional__Group_4__1__Impl )
-            // InternalLatino.g:2498:2: rule__Condicional__Group_4__1__Impl
+            // InternalLatino.g:2485:1: ( rule__Condicional__Group_4__1__Impl )
+            // InternalLatino.g:2486:2: rule__Condicional__Group_4__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Condicional__Group_4__1__Impl();
@@ -7885,33 +7843,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__Group_4__1__Impl"
-    // InternalLatino.g:2504:1: rule__Condicional__Group_4__1__Impl : ( ( rule__Condicional__SinoAssignment_4_1 )* ) ;
+    // InternalLatino.g:2492:1: rule__Condicional__Group_4__1__Impl : ( ( rule__Condicional__SinoAssignment_4_1 )* ) ;
     public final void rule__Condicional__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2508:1: ( ( ( rule__Condicional__SinoAssignment_4_1 )* ) )
-            // InternalLatino.g:2509:1: ( ( rule__Condicional__SinoAssignment_4_1 )* )
+            // InternalLatino.g:2496:1: ( ( ( rule__Condicional__SinoAssignment_4_1 )* ) )
+            // InternalLatino.g:2497:1: ( ( rule__Condicional__SinoAssignment_4_1 )* )
             {
-            // InternalLatino.g:2509:1: ( ( rule__Condicional__SinoAssignment_4_1 )* )
-            // InternalLatino.g:2510:2: ( rule__Condicional__SinoAssignment_4_1 )*
+            // InternalLatino.g:2497:1: ( ( rule__Condicional__SinoAssignment_4_1 )* )
+            // InternalLatino.g:2498:2: ( rule__Condicional__SinoAssignment_4_1 )*
             {
              before(grammarAccess.getCondicionalAccess().getSinoAssignment_4_1()); 
-            // InternalLatino.g:2511:2: ( rule__Condicional__SinoAssignment_4_1 )*
+            // InternalLatino.g:2499:2: ( rule__Condicional__SinoAssignment_4_1 )*
             loop24:
             do {
                 int alt24=2;
                 int LA24_0 = input.LA(1);
 
-                if ( (LA24_0==RULE_ID||(LA24_0>=15 && LA24_0<=22)||LA24_0==48||(LA24_0>=52 && LA24_0<=53)||LA24_0==55||LA24_0==57||(LA24_0>=60 && LA24_0<=62)) ) {
+                if ( (LA24_0==RULE_ID||(LA24_0>=15 && LA24_0<=20)||LA24_0==46||(LA24_0>=50 && LA24_0<=51)||LA24_0==53||LA24_0==55||(LA24_0>=58 && LA24_0<=60)) ) {
                     alt24=1;
                 }
 
 
                 switch (alt24) {
             	case 1 :
-            	    // InternalLatino.g:2511:3: rule__Condicional__SinoAssignment_4_1
+            	    // InternalLatino.g:2499:3: rule__Condicional__SinoAssignment_4_1
             	    {
             	    pushFollow(FOLLOW_17);
             	    rule__Condicional__SinoAssignment_4_1();
@@ -7950,14 +7908,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Osi__Group__0"
-    // InternalLatino.g:2520:1: rule__Osi__Group__0 : rule__Osi__Group__0__Impl rule__Osi__Group__1 ;
+    // InternalLatino.g:2508:1: rule__Osi__Group__0 : rule__Osi__Group__0__Impl rule__Osi__Group__1 ;
     public final void rule__Osi__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2524:1: ( rule__Osi__Group__0__Impl rule__Osi__Group__1 )
-            // InternalLatino.g:2525:2: rule__Osi__Group__0__Impl rule__Osi__Group__1
+            // InternalLatino.g:2512:1: ( rule__Osi__Group__0__Impl rule__Osi__Group__1 )
+            // InternalLatino.g:2513:2: rule__Osi__Group__0__Impl rule__Osi__Group__1
             {
             pushFollow(FOLLOW_6);
             rule__Osi__Group__0__Impl();
@@ -7988,20 +7946,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Osi__Group__0__Impl"
-    // InternalLatino.g:2532:1: rule__Osi__Group__0__Impl : ( 'osi' ) ;
+    // InternalLatino.g:2520:1: rule__Osi__Group__0__Impl : ( 'osi' ) ;
     public final void rule__Osi__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2536:1: ( ( 'osi' ) )
-            // InternalLatino.g:2537:1: ( 'osi' )
+            // InternalLatino.g:2524:1: ( ( 'osi' ) )
+            // InternalLatino.g:2525:1: ( 'osi' )
             {
-            // InternalLatino.g:2537:1: ( 'osi' )
-            // InternalLatino.g:2538:2: 'osi'
+            // InternalLatino.g:2525:1: ( 'osi' )
+            // InternalLatino.g:2526:2: 'osi'
             {
              before(grammarAccess.getOsiAccess().getOsiKeyword_0()); 
-            match(input,51,FOLLOW_2); 
+            match(input,49,FOLLOW_2); 
              after(grammarAccess.getOsiAccess().getOsiKeyword_0()); 
 
             }
@@ -8025,14 +7983,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Osi__Group__1"
-    // InternalLatino.g:2547:1: rule__Osi__Group__1 : rule__Osi__Group__1__Impl rule__Osi__Group__2 ;
+    // InternalLatino.g:2535:1: rule__Osi__Group__1 : rule__Osi__Group__1__Impl rule__Osi__Group__2 ;
     public final void rule__Osi__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2551:1: ( rule__Osi__Group__1__Impl rule__Osi__Group__2 )
-            // InternalLatino.g:2552:2: rule__Osi__Group__1__Impl rule__Osi__Group__2
+            // InternalLatino.g:2539:1: ( rule__Osi__Group__1__Impl rule__Osi__Group__2 )
+            // InternalLatino.g:2540:2: rule__Osi__Group__1__Impl rule__Osi__Group__2
             {
             pushFollow(FOLLOW_19);
             rule__Osi__Group__1__Impl();
@@ -8063,21 +8021,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Osi__Group__1__Impl"
-    // InternalLatino.g:2559:1: rule__Osi__Group__1__Impl : ( ( rule__Osi__CondicionAssignment_1 ) ) ;
+    // InternalLatino.g:2547:1: rule__Osi__Group__1__Impl : ( ( rule__Osi__CondicionAssignment_1 ) ) ;
     public final void rule__Osi__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2563:1: ( ( ( rule__Osi__CondicionAssignment_1 ) ) )
-            // InternalLatino.g:2564:1: ( ( rule__Osi__CondicionAssignment_1 ) )
+            // InternalLatino.g:2551:1: ( ( ( rule__Osi__CondicionAssignment_1 ) ) )
+            // InternalLatino.g:2552:1: ( ( rule__Osi__CondicionAssignment_1 ) )
             {
-            // InternalLatino.g:2564:1: ( ( rule__Osi__CondicionAssignment_1 ) )
-            // InternalLatino.g:2565:2: ( rule__Osi__CondicionAssignment_1 )
+            // InternalLatino.g:2552:1: ( ( rule__Osi__CondicionAssignment_1 ) )
+            // InternalLatino.g:2553:2: ( rule__Osi__CondicionAssignment_1 )
             {
              before(grammarAccess.getOsiAccess().getCondicionAssignment_1()); 
-            // InternalLatino.g:2566:2: ( rule__Osi__CondicionAssignment_1 )
-            // InternalLatino.g:2566:3: rule__Osi__CondicionAssignment_1
+            // InternalLatino.g:2554:2: ( rule__Osi__CondicionAssignment_1 )
+            // InternalLatino.g:2554:3: rule__Osi__CondicionAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Osi__CondicionAssignment_1();
@@ -8110,14 +8068,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Osi__Group__2"
-    // InternalLatino.g:2574:1: rule__Osi__Group__2 : rule__Osi__Group__2__Impl ;
+    // InternalLatino.g:2562:1: rule__Osi__Group__2 : rule__Osi__Group__2__Impl ;
     public final void rule__Osi__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2578:1: ( rule__Osi__Group__2__Impl )
-            // InternalLatino.g:2579:2: rule__Osi__Group__2__Impl
+            // InternalLatino.g:2566:1: ( rule__Osi__Group__2__Impl )
+            // InternalLatino.g:2567:2: rule__Osi__Group__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Osi__Group__2__Impl();
@@ -8143,33 +8101,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Osi__Group__2__Impl"
-    // InternalLatino.g:2585:1: rule__Osi__Group__2__Impl : ( ( rule__Osi__SentenciasAssignment_2 )* ) ;
+    // InternalLatino.g:2573:1: rule__Osi__Group__2__Impl : ( ( rule__Osi__SentenciasAssignment_2 )* ) ;
     public final void rule__Osi__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2589:1: ( ( ( rule__Osi__SentenciasAssignment_2 )* ) )
-            // InternalLatino.g:2590:1: ( ( rule__Osi__SentenciasAssignment_2 )* )
+            // InternalLatino.g:2577:1: ( ( ( rule__Osi__SentenciasAssignment_2 )* ) )
+            // InternalLatino.g:2578:1: ( ( rule__Osi__SentenciasAssignment_2 )* )
             {
-            // InternalLatino.g:2590:1: ( ( rule__Osi__SentenciasAssignment_2 )* )
-            // InternalLatino.g:2591:2: ( rule__Osi__SentenciasAssignment_2 )*
+            // InternalLatino.g:2578:1: ( ( rule__Osi__SentenciasAssignment_2 )* )
+            // InternalLatino.g:2579:2: ( rule__Osi__SentenciasAssignment_2 )*
             {
              before(grammarAccess.getOsiAccess().getSentenciasAssignment_2()); 
-            // InternalLatino.g:2592:2: ( rule__Osi__SentenciasAssignment_2 )*
+            // InternalLatino.g:2580:2: ( rule__Osi__SentenciasAssignment_2 )*
             loop25:
             do {
                 int alt25=2;
                 int LA25_0 = input.LA(1);
 
-                if ( (LA25_0==RULE_ID||(LA25_0>=15 && LA25_0<=22)||LA25_0==48||(LA25_0>=52 && LA25_0<=53)||LA25_0==55||LA25_0==57||(LA25_0>=60 && LA25_0<=62)) ) {
+                if ( (LA25_0==RULE_ID||(LA25_0>=15 && LA25_0<=20)||LA25_0==46||(LA25_0>=50 && LA25_0<=51)||LA25_0==53||LA25_0==55||(LA25_0>=58 && LA25_0<=60)) ) {
                     alt25=1;
                 }
 
 
                 switch (alt25) {
             	case 1 :
-            	    // InternalLatino.g:2592:3: rule__Osi__SentenciasAssignment_2
+            	    // InternalLatino.g:2580:3: rule__Osi__SentenciasAssignment_2
             	    {
             	    pushFollow(FOLLOW_17);
             	    rule__Osi__SentenciasAssignment_2();
@@ -8208,14 +8166,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Mientras__Group__0"
-    // InternalLatino.g:2601:1: rule__Mientras__Group__0 : rule__Mientras__Group__0__Impl rule__Mientras__Group__1 ;
+    // InternalLatino.g:2589:1: rule__Mientras__Group__0 : rule__Mientras__Group__0__Impl rule__Mientras__Group__1 ;
     public final void rule__Mientras__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2605:1: ( rule__Mientras__Group__0__Impl rule__Mientras__Group__1 )
-            // InternalLatino.g:2606:2: rule__Mientras__Group__0__Impl rule__Mientras__Group__1
+            // InternalLatino.g:2593:1: ( rule__Mientras__Group__0__Impl rule__Mientras__Group__1 )
+            // InternalLatino.g:2594:2: rule__Mientras__Group__0__Impl rule__Mientras__Group__1
             {
             pushFollow(FOLLOW_6);
             rule__Mientras__Group__0__Impl();
@@ -8246,20 +8204,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Mientras__Group__0__Impl"
-    // InternalLatino.g:2613:1: rule__Mientras__Group__0__Impl : ( 'mientras' ) ;
+    // InternalLatino.g:2601:1: rule__Mientras__Group__0__Impl : ( 'mientras' ) ;
     public final void rule__Mientras__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2617:1: ( ( 'mientras' ) )
-            // InternalLatino.g:2618:1: ( 'mientras' )
+            // InternalLatino.g:2605:1: ( ( 'mientras' ) )
+            // InternalLatino.g:2606:1: ( 'mientras' )
             {
-            // InternalLatino.g:2618:1: ( 'mientras' )
-            // InternalLatino.g:2619:2: 'mientras'
+            // InternalLatino.g:2606:1: ( 'mientras' )
+            // InternalLatino.g:2607:2: 'mientras'
             {
              before(grammarAccess.getMientrasAccess().getMientrasKeyword_0()); 
-            match(input,52,FOLLOW_2); 
+            match(input,50,FOLLOW_2); 
              after(grammarAccess.getMientrasAccess().getMientrasKeyword_0()); 
 
             }
@@ -8283,14 +8241,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Mientras__Group__1"
-    // InternalLatino.g:2628:1: rule__Mientras__Group__1 : rule__Mientras__Group__1__Impl rule__Mientras__Group__2 ;
+    // InternalLatino.g:2616:1: rule__Mientras__Group__1 : rule__Mientras__Group__1__Impl rule__Mientras__Group__2 ;
     public final void rule__Mientras__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2632:1: ( rule__Mientras__Group__1__Impl rule__Mientras__Group__2 )
-            // InternalLatino.g:2633:2: rule__Mientras__Group__1__Impl rule__Mientras__Group__2
+            // InternalLatino.g:2620:1: ( rule__Mientras__Group__1__Impl rule__Mientras__Group__2 )
+            // InternalLatino.g:2621:2: rule__Mientras__Group__1__Impl rule__Mientras__Group__2
             {
             pushFollow(FOLLOW_20);
             rule__Mientras__Group__1__Impl();
@@ -8321,21 +8279,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Mientras__Group__1__Impl"
-    // InternalLatino.g:2640:1: rule__Mientras__Group__1__Impl : ( ( rule__Mientras__CondicionAssignment_1 ) ) ;
+    // InternalLatino.g:2628:1: rule__Mientras__Group__1__Impl : ( ( rule__Mientras__CondicionAssignment_1 ) ) ;
     public final void rule__Mientras__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2644:1: ( ( ( rule__Mientras__CondicionAssignment_1 ) ) )
-            // InternalLatino.g:2645:1: ( ( rule__Mientras__CondicionAssignment_1 ) )
+            // InternalLatino.g:2632:1: ( ( ( rule__Mientras__CondicionAssignment_1 ) ) )
+            // InternalLatino.g:2633:1: ( ( rule__Mientras__CondicionAssignment_1 ) )
             {
-            // InternalLatino.g:2645:1: ( ( rule__Mientras__CondicionAssignment_1 ) )
-            // InternalLatino.g:2646:2: ( rule__Mientras__CondicionAssignment_1 )
+            // InternalLatino.g:2633:1: ( ( rule__Mientras__CondicionAssignment_1 ) )
+            // InternalLatino.g:2634:2: ( rule__Mientras__CondicionAssignment_1 )
             {
              before(grammarAccess.getMientrasAccess().getCondicionAssignment_1()); 
-            // InternalLatino.g:2647:2: ( rule__Mientras__CondicionAssignment_1 )
-            // InternalLatino.g:2647:3: rule__Mientras__CondicionAssignment_1
+            // InternalLatino.g:2635:2: ( rule__Mientras__CondicionAssignment_1 )
+            // InternalLatino.g:2635:3: rule__Mientras__CondicionAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Mientras__CondicionAssignment_1();
@@ -8368,14 +8326,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Mientras__Group__2"
-    // InternalLatino.g:2655:1: rule__Mientras__Group__2 : rule__Mientras__Group__2__Impl rule__Mientras__Group__3 ;
+    // InternalLatino.g:2643:1: rule__Mientras__Group__2 : rule__Mientras__Group__2__Impl rule__Mientras__Group__3 ;
     public final void rule__Mientras__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2659:1: ( rule__Mientras__Group__2__Impl rule__Mientras__Group__3 )
-            // InternalLatino.g:2660:2: rule__Mientras__Group__2__Impl rule__Mientras__Group__3
+            // InternalLatino.g:2647:1: ( rule__Mientras__Group__2__Impl rule__Mientras__Group__3 )
+            // InternalLatino.g:2648:2: rule__Mientras__Group__2__Impl rule__Mientras__Group__3
             {
             pushFollow(FOLLOW_20);
             rule__Mientras__Group__2__Impl();
@@ -8406,33 +8364,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Mientras__Group__2__Impl"
-    // InternalLatino.g:2667:1: rule__Mientras__Group__2__Impl : ( ( rule__Mientras__CuerpoAssignment_2 )* ) ;
+    // InternalLatino.g:2655:1: rule__Mientras__Group__2__Impl : ( ( rule__Mientras__CuerpoAssignment_2 )* ) ;
     public final void rule__Mientras__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2671:1: ( ( ( rule__Mientras__CuerpoAssignment_2 )* ) )
-            // InternalLatino.g:2672:1: ( ( rule__Mientras__CuerpoAssignment_2 )* )
+            // InternalLatino.g:2659:1: ( ( ( rule__Mientras__CuerpoAssignment_2 )* ) )
+            // InternalLatino.g:2660:1: ( ( rule__Mientras__CuerpoAssignment_2 )* )
             {
-            // InternalLatino.g:2672:1: ( ( rule__Mientras__CuerpoAssignment_2 )* )
-            // InternalLatino.g:2673:2: ( rule__Mientras__CuerpoAssignment_2 )*
+            // InternalLatino.g:2660:1: ( ( rule__Mientras__CuerpoAssignment_2 )* )
+            // InternalLatino.g:2661:2: ( rule__Mientras__CuerpoAssignment_2 )*
             {
              before(grammarAccess.getMientrasAccess().getCuerpoAssignment_2()); 
-            // InternalLatino.g:2674:2: ( rule__Mientras__CuerpoAssignment_2 )*
+            // InternalLatino.g:2662:2: ( rule__Mientras__CuerpoAssignment_2 )*
             loop26:
             do {
                 int alt26=2;
                 int LA26_0 = input.LA(1);
 
-                if ( (LA26_0==RULE_ID||(LA26_0>=15 && LA26_0<=22)||LA26_0==48||(LA26_0>=52 && LA26_0<=53)||LA26_0==55||LA26_0==57||(LA26_0>=60 && LA26_0<=62)) ) {
+                if ( (LA26_0==RULE_ID||(LA26_0>=15 && LA26_0<=20)||LA26_0==46||(LA26_0>=50 && LA26_0<=51)||LA26_0==53||LA26_0==55||(LA26_0>=58 && LA26_0<=60)) ) {
                     alt26=1;
                 }
 
 
                 switch (alt26) {
             	case 1 :
-            	    // InternalLatino.g:2674:3: rule__Mientras__CuerpoAssignment_2
+            	    // InternalLatino.g:2662:3: rule__Mientras__CuerpoAssignment_2
             	    {
             	    pushFollow(FOLLOW_17);
             	    rule__Mientras__CuerpoAssignment_2();
@@ -8471,14 +8429,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Mientras__Group__3"
-    // InternalLatino.g:2682:1: rule__Mientras__Group__3 : rule__Mientras__Group__3__Impl ;
+    // InternalLatino.g:2670:1: rule__Mientras__Group__3 : rule__Mientras__Group__3__Impl ;
     public final void rule__Mientras__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2686:1: ( rule__Mientras__Group__3__Impl )
-            // InternalLatino.g:2687:2: rule__Mientras__Group__3__Impl
+            // InternalLatino.g:2674:1: ( rule__Mientras__Group__3__Impl )
+            // InternalLatino.g:2675:2: rule__Mientras__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Mientras__Group__3__Impl();
@@ -8504,20 +8462,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Mientras__Group__3__Impl"
-    // InternalLatino.g:2693:1: rule__Mientras__Group__3__Impl : ( 'fin' ) ;
+    // InternalLatino.g:2681:1: rule__Mientras__Group__3__Impl : ( 'fin' ) ;
     public final void rule__Mientras__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2697:1: ( ( 'fin' ) )
-            // InternalLatino.g:2698:1: ( 'fin' )
+            // InternalLatino.g:2685:1: ( ( 'fin' ) )
+            // InternalLatino.g:2686:1: ( 'fin' )
             {
-            // InternalLatino.g:2698:1: ( 'fin' )
-            // InternalLatino.g:2699:2: 'fin'
+            // InternalLatino.g:2686:1: ( 'fin' )
+            // InternalLatino.g:2687:2: 'fin'
             {
              before(grammarAccess.getMientrasAccess().getFinKeyword_3()); 
-            match(input,49,FOLLOW_2); 
+            match(input,47,FOLLOW_2); 
              after(grammarAccess.getMientrasAccess().getFinKeyword_3()); 
 
             }
@@ -8541,14 +8499,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Repetir__Group__0"
-    // InternalLatino.g:2709:1: rule__Repetir__Group__0 : rule__Repetir__Group__0__Impl rule__Repetir__Group__1 ;
+    // InternalLatino.g:2697:1: rule__Repetir__Group__0 : rule__Repetir__Group__0__Impl rule__Repetir__Group__1 ;
     public final void rule__Repetir__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2713:1: ( rule__Repetir__Group__0__Impl rule__Repetir__Group__1 )
-            // InternalLatino.g:2714:2: rule__Repetir__Group__0__Impl rule__Repetir__Group__1
+            // InternalLatino.g:2701:1: ( rule__Repetir__Group__0__Impl rule__Repetir__Group__1 )
+            // InternalLatino.g:2702:2: rule__Repetir__Group__0__Impl rule__Repetir__Group__1
             {
             pushFollow(FOLLOW_21);
             rule__Repetir__Group__0__Impl();
@@ -8579,20 +8537,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Repetir__Group__0__Impl"
-    // InternalLatino.g:2721:1: rule__Repetir__Group__0__Impl : ( 'repetir' ) ;
+    // InternalLatino.g:2709:1: rule__Repetir__Group__0__Impl : ( 'repetir' ) ;
     public final void rule__Repetir__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2725:1: ( ( 'repetir' ) )
-            // InternalLatino.g:2726:1: ( 'repetir' )
+            // InternalLatino.g:2713:1: ( ( 'repetir' ) )
+            // InternalLatino.g:2714:1: ( 'repetir' )
             {
-            // InternalLatino.g:2726:1: ( 'repetir' )
-            // InternalLatino.g:2727:2: 'repetir'
+            // InternalLatino.g:2714:1: ( 'repetir' )
+            // InternalLatino.g:2715:2: 'repetir'
             {
              before(grammarAccess.getRepetirAccess().getRepetirKeyword_0()); 
-            match(input,53,FOLLOW_2); 
+            match(input,51,FOLLOW_2); 
              after(grammarAccess.getRepetirAccess().getRepetirKeyword_0()); 
 
             }
@@ -8616,14 +8574,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Repetir__Group__1"
-    // InternalLatino.g:2736:1: rule__Repetir__Group__1 : rule__Repetir__Group__1__Impl rule__Repetir__Group__2 ;
+    // InternalLatino.g:2724:1: rule__Repetir__Group__1 : rule__Repetir__Group__1__Impl rule__Repetir__Group__2 ;
     public final void rule__Repetir__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2740:1: ( rule__Repetir__Group__1__Impl rule__Repetir__Group__2 )
-            // InternalLatino.g:2741:2: rule__Repetir__Group__1__Impl rule__Repetir__Group__2
+            // InternalLatino.g:2728:1: ( rule__Repetir__Group__1__Impl rule__Repetir__Group__2 )
+            // InternalLatino.g:2729:2: rule__Repetir__Group__1__Impl rule__Repetir__Group__2
             {
             pushFollow(FOLLOW_21);
             rule__Repetir__Group__1__Impl();
@@ -8654,33 +8612,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Repetir__Group__1__Impl"
-    // InternalLatino.g:2748:1: rule__Repetir__Group__1__Impl : ( ( rule__Repetir__CuerpoAssignment_1 )* ) ;
+    // InternalLatino.g:2736:1: rule__Repetir__Group__1__Impl : ( ( rule__Repetir__CuerpoAssignment_1 )* ) ;
     public final void rule__Repetir__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2752:1: ( ( ( rule__Repetir__CuerpoAssignment_1 )* ) )
-            // InternalLatino.g:2753:1: ( ( rule__Repetir__CuerpoAssignment_1 )* )
+            // InternalLatino.g:2740:1: ( ( ( rule__Repetir__CuerpoAssignment_1 )* ) )
+            // InternalLatino.g:2741:1: ( ( rule__Repetir__CuerpoAssignment_1 )* )
             {
-            // InternalLatino.g:2753:1: ( ( rule__Repetir__CuerpoAssignment_1 )* )
-            // InternalLatino.g:2754:2: ( rule__Repetir__CuerpoAssignment_1 )*
+            // InternalLatino.g:2741:1: ( ( rule__Repetir__CuerpoAssignment_1 )* )
+            // InternalLatino.g:2742:2: ( rule__Repetir__CuerpoAssignment_1 )*
             {
              before(grammarAccess.getRepetirAccess().getCuerpoAssignment_1()); 
-            // InternalLatino.g:2755:2: ( rule__Repetir__CuerpoAssignment_1 )*
+            // InternalLatino.g:2743:2: ( rule__Repetir__CuerpoAssignment_1 )*
             loop27:
             do {
                 int alt27=2;
                 int LA27_0 = input.LA(1);
 
-                if ( (LA27_0==RULE_ID||(LA27_0>=15 && LA27_0<=22)||LA27_0==48||(LA27_0>=52 && LA27_0<=53)||LA27_0==55||LA27_0==57||(LA27_0>=60 && LA27_0<=62)) ) {
+                if ( (LA27_0==RULE_ID||(LA27_0>=15 && LA27_0<=20)||LA27_0==46||(LA27_0>=50 && LA27_0<=51)||LA27_0==53||LA27_0==55||(LA27_0>=58 && LA27_0<=60)) ) {
                     alt27=1;
                 }
 
 
                 switch (alt27) {
             	case 1 :
-            	    // InternalLatino.g:2755:3: rule__Repetir__CuerpoAssignment_1
+            	    // InternalLatino.g:2743:3: rule__Repetir__CuerpoAssignment_1
             	    {
             	    pushFollow(FOLLOW_17);
             	    rule__Repetir__CuerpoAssignment_1();
@@ -8719,14 +8677,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Repetir__Group__2"
-    // InternalLatino.g:2763:1: rule__Repetir__Group__2 : rule__Repetir__Group__2__Impl rule__Repetir__Group__3 ;
+    // InternalLatino.g:2751:1: rule__Repetir__Group__2 : rule__Repetir__Group__2__Impl rule__Repetir__Group__3 ;
     public final void rule__Repetir__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2767:1: ( rule__Repetir__Group__2__Impl rule__Repetir__Group__3 )
-            // InternalLatino.g:2768:2: rule__Repetir__Group__2__Impl rule__Repetir__Group__3
+            // InternalLatino.g:2755:1: ( rule__Repetir__Group__2__Impl rule__Repetir__Group__3 )
+            // InternalLatino.g:2756:2: rule__Repetir__Group__2__Impl rule__Repetir__Group__3
             {
             pushFollow(FOLLOW_6);
             rule__Repetir__Group__2__Impl();
@@ -8757,20 +8715,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Repetir__Group__2__Impl"
-    // InternalLatino.g:2775:1: rule__Repetir__Group__2__Impl : ( 'hasta' ) ;
+    // InternalLatino.g:2763:1: rule__Repetir__Group__2__Impl : ( 'hasta' ) ;
     public final void rule__Repetir__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2779:1: ( ( 'hasta' ) )
-            // InternalLatino.g:2780:1: ( 'hasta' )
+            // InternalLatino.g:2767:1: ( ( 'hasta' ) )
+            // InternalLatino.g:2768:1: ( 'hasta' )
             {
-            // InternalLatino.g:2780:1: ( 'hasta' )
-            // InternalLatino.g:2781:2: 'hasta'
+            // InternalLatino.g:2768:1: ( 'hasta' )
+            // InternalLatino.g:2769:2: 'hasta'
             {
              before(grammarAccess.getRepetirAccess().getHastaKeyword_2()); 
-            match(input,54,FOLLOW_2); 
+            match(input,52,FOLLOW_2); 
              after(grammarAccess.getRepetirAccess().getHastaKeyword_2()); 
 
             }
@@ -8794,14 +8752,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Repetir__Group__3"
-    // InternalLatino.g:2790:1: rule__Repetir__Group__3 : rule__Repetir__Group__3__Impl ;
+    // InternalLatino.g:2778:1: rule__Repetir__Group__3 : rule__Repetir__Group__3__Impl ;
     public final void rule__Repetir__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2794:1: ( rule__Repetir__Group__3__Impl )
-            // InternalLatino.g:2795:2: rule__Repetir__Group__3__Impl
+            // InternalLatino.g:2782:1: ( rule__Repetir__Group__3__Impl )
+            // InternalLatino.g:2783:2: rule__Repetir__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Repetir__Group__3__Impl();
@@ -8827,21 +8785,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Repetir__Group__3__Impl"
-    // InternalLatino.g:2801:1: rule__Repetir__Group__3__Impl : ( ( rule__Repetir__CondicionAssignment_3 ) ) ;
+    // InternalLatino.g:2789:1: rule__Repetir__Group__3__Impl : ( ( rule__Repetir__CondicionAssignment_3 ) ) ;
     public final void rule__Repetir__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2805:1: ( ( ( rule__Repetir__CondicionAssignment_3 ) ) )
-            // InternalLatino.g:2806:1: ( ( rule__Repetir__CondicionAssignment_3 ) )
+            // InternalLatino.g:2793:1: ( ( ( rule__Repetir__CondicionAssignment_3 ) ) )
+            // InternalLatino.g:2794:1: ( ( rule__Repetir__CondicionAssignment_3 ) )
             {
-            // InternalLatino.g:2806:1: ( ( rule__Repetir__CondicionAssignment_3 ) )
-            // InternalLatino.g:2807:2: ( rule__Repetir__CondicionAssignment_3 )
+            // InternalLatino.g:2794:1: ( ( rule__Repetir__CondicionAssignment_3 ) )
+            // InternalLatino.g:2795:2: ( rule__Repetir__CondicionAssignment_3 )
             {
              before(grammarAccess.getRepetirAccess().getCondicionAssignment_3()); 
-            // InternalLatino.g:2808:2: ( rule__Repetir__CondicionAssignment_3 )
-            // InternalLatino.g:2808:3: rule__Repetir__CondicionAssignment_3
+            // InternalLatino.g:2796:2: ( rule__Repetir__CondicionAssignment_3 )
+            // InternalLatino.g:2796:3: rule__Repetir__CondicionAssignment_3
             {
             pushFollow(FOLLOW_2);
             rule__Repetir__CondicionAssignment_3();
@@ -8874,14 +8832,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__0"
-    // InternalLatino.g:2817:1: rule__Desde__Group__0 : rule__Desde__Group__0__Impl rule__Desde__Group__1 ;
+    // InternalLatino.g:2805:1: rule__Desde__Group__0 : rule__Desde__Group__0__Impl rule__Desde__Group__1 ;
     public final void rule__Desde__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2821:1: ( rule__Desde__Group__0__Impl rule__Desde__Group__1 )
-            // InternalLatino.g:2822:2: rule__Desde__Group__0__Impl rule__Desde__Group__1
+            // InternalLatino.g:2809:1: ( rule__Desde__Group__0__Impl rule__Desde__Group__1 )
+            // InternalLatino.g:2810:2: rule__Desde__Group__0__Impl rule__Desde__Group__1
             {
             pushFollow(FOLLOW_8);
             rule__Desde__Group__0__Impl();
@@ -8912,20 +8870,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__0__Impl"
-    // InternalLatino.g:2829:1: rule__Desde__Group__0__Impl : ( 'desde' ) ;
+    // InternalLatino.g:2817:1: rule__Desde__Group__0__Impl : ( 'desde' ) ;
     public final void rule__Desde__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2833:1: ( ( 'desde' ) )
-            // InternalLatino.g:2834:1: ( 'desde' )
+            // InternalLatino.g:2821:1: ( ( 'desde' ) )
+            // InternalLatino.g:2822:1: ( 'desde' )
             {
-            // InternalLatino.g:2834:1: ( 'desde' )
-            // InternalLatino.g:2835:2: 'desde'
+            // InternalLatino.g:2822:1: ( 'desde' )
+            // InternalLatino.g:2823:2: 'desde'
             {
              before(grammarAccess.getDesdeAccess().getDesdeKeyword_0()); 
-            match(input,55,FOLLOW_2); 
+            match(input,53,FOLLOW_2); 
              after(grammarAccess.getDesdeAccess().getDesdeKeyword_0()); 
 
             }
@@ -8949,14 +8907,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__1"
-    // InternalLatino.g:2844:1: rule__Desde__Group__1 : rule__Desde__Group__1__Impl rule__Desde__Group__2 ;
+    // InternalLatino.g:2832:1: rule__Desde__Group__1 : rule__Desde__Group__1__Impl rule__Desde__Group__2 ;
     public final void rule__Desde__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2848:1: ( rule__Desde__Group__1__Impl rule__Desde__Group__2 )
-            // InternalLatino.g:2849:2: rule__Desde__Group__1__Impl rule__Desde__Group__2
+            // InternalLatino.g:2836:1: ( rule__Desde__Group__1__Impl rule__Desde__Group__2 )
+            // InternalLatino.g:2837:2: rule__Desde__Group__1__Impl rule__Desde__Group__2
             {
             pushFollow(FOLLOW_22);
             rule__Desde__Group__1__Impl();
@@ -8987,20 +8945,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__1__Impl"
-    // InternalLatino.g:2856:1: rule__Desde__Group__1__Impl : ( '(' ) ;
+    // InternalLatino.g:2844:1: rule__Desde__Group__1__Impl : ( '(' ) ;
     public final void rule__Desde__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2860:1: ( ( '(' ) )
-            // InternalLatino.g:2861:1: ( '(' )
+            // InternalLatino.g:2848:1: ( ( '(' ) )
+            // InternalLatino.g:2849:1: ( '(' )
             {
-            // InternalLatino.g:2861:1: ( '(' )
-            // InternalLatino.g:2862:2: '('
+            // InternalLatino.g:2849:1: ( '(' )
+            // InternalLatino.g:2850:2: '('
             {
              before(grammarAccess.getDesdeAccess().getLeftParenthesisKeyword_1()); 
-            match(input,42,FOLLOW_2); 
+            match(input,40,FOLLOW_2); 
              after(grammarAccess.getDesdeAccess().getLeftParenthesisKeyword_1()); 
 
             }
@@ -9024,14 +8982,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__2"
-    // InternalLatino.g:2871:1: rule__Desde__Group__2 : rule__Desde__Group__2__Impl rule__Desde__Group__3 ;
+    // InternalLatino.g:2859:1: rule__Desde__Group__2 : rule__Desde__Group__2__Impl rule__Desde__Group__3 ;
     public final void rule__Desde__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2875:1: ( rule__Desde__Group__2__Impl rule__Desde__Group__3 )
-            // InternalLatino.g:2876:2: rule__Desde__Group__2__Impl rule__Desde__Group__3
+            // InternalLatino.g:2863:1: ( rule__Desde__Group__2__Impl rule__Desde__Group__3 )
+            // InternalLatino.g:2864:2: rule__Desde__Group__2__Impl rule__Desde__Group__3
             {
             pushFollow(FOLLOW_23);
             rule__Desde__Group__2__Impl();
@@ -9062,21 +9020,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__2__Impl"
-    // InternalLatino.g:2883:1: rule__Desde__Group__2__Impl : ( ( rule__Desde__InicioAssignment_2 ) ) ;
+    // InternalLatino.g:2871:1: rule__Desde__Group__2__Impl : ( ( rule__Desde__InicioAssignment_2 ) ) ;
     public final void rule__Desde__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2887:1: ( ( ( rule__Desde__InicioAssignment_2 ) ) )
-            // InternalLatino.g:2888:1: ( ( rule__Desde__InicioAssignment_2 ) )
+            // InternalLatino.g:2875:1: ( ( ( rule__Desde__InicioAssignment_2 ) ) )
+            // InternalLatino.g:2876:1: ( ( rule__Desde__InicioAssignment_2 ) )
             {
-            // InternalLatino.g:2888:1: ( ( rule__Desde__InicioAssignment_2 ) )
-            // InternalLatino.g:2889:2: ( rule__Desde__InicioAssignment_2 )
+            // InternalLatino.g:2876:1: ( ( rule__Desde__InicioAssignment_2 ) )
+            // InternalLatino.g:2877:2: ( rule__Desde__InicioAssignment_2 )
             {
              before(grammarAccess.getDesdeAccess().getInicioAssignment_2()); 
-            // InternalLatino.g:2890:2: ( rule__Desde__InicioAssignment_2 )
-            // InternalLatino.g:2890:3: rule__Desde__InicioAssignment_2
+            // InternalLatino.g:2878:2: ( rule__Desde__InicioAssignment_2 )
+            // InternalLatino.g:2878:3: rule__Desde__InicioAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__Desde__InicioAssignment_2();
@@ -9109,14 +9067,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__3"
-    // InternalLatino.g:2898:1: rule__Desde__Group__3 : rule__Desde__Group__3__Impl rule__Desde__Group__4 ;
+    // InternalLatino.g:2886:1: rule__Desde__Group__3 : rule__Desde__Group__3__Impl rule__Desde__Group__4 ;
     public final void rule__Desde__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2902:1: ( rule__Desde__Group__3__Impl rule__Desde__Group__4 )
-            // InternalLatino.g:2903:2: rule__Desde__Group__3__Impl rule__Desde__Group__4
+            // InternalLatino.g:2890:1: ( rule__Desde__Group__3__Impl rule__Desde__Group__4 )
+            // InternalLatino.g:2891:2: rule__Desde__Group__3__Impl rule__Desde__Group__4
             {
             pushFollow(FOLLOW_6);
             rule__Desde__Group__3__Impl();
@@ -9147,20 +9105,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__3__Impl"
-    // InternalLatino.g:2910:1: rule__Desde__Group__3__Impl : ( ';' ) ;
+    // InternalLatino.g:2898:1: rule__Desde__Group__3__Impl : ( ';' ) ;
     public final void rule__Desde__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2914:1: ( ( ';' ) )
-            // InternalLatino.g:2915:1: ( ';' )
+            // InternalLatino.g:2902:1: ( ( ';' ) )
+            // InternalLatino.g:2903:1: ( ';' )
             {
-            // InternalLatino.g:2915:1: ( ';' )
-            // InternalLatino.g:2916:2: ';'
+            // InternalLatino.g:2903:1: ( ';' )
+            // InternalLatino.g:2904:2: ';'
             {
              before(grammarAccess.getDesdeAccess().getSemicolonKeyword_3()); 
-            match(input,56,FOLLOW_2); 
+            match(input,54,FOLLOW_2); 
              after(grammarAccess.getDesdeAccess().getSemicolonKeyword_3()); 
 
             }
@@ -9184,14 +9142,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__4"
-    // InternalLatino.g:2925:1: rule__Desde__Group__4 : rule__Desde__Group__4__Impl rule__Desde__Group__5 ;
+    // InternalLatino.g:2913:1: rule__Desde__Group__4 : rule__Desde__Group__4__Impl rule__Desde__Group__5 ;
     public final void rule__Desde__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2929:1: ( rule__Desde__Group__4__Impl rule__Desde__Group__5 )
-            // InternalLatino.g:2930:2: rule__Desde__Group__4__Impl rule__Desde__Group__5
+            // InternalLatino.g:2917:1: ( rule__Desde__Group__4__Impl rule__Desde__Group__5 )
+            // InternalLatino.g:2918:2: rule__Desde__Group__4__Impl rule__Desde__Group__5
             {
             pushFollow(FOLLOW_23);
             rule__Desde__Group__4__Impl();
@@ -9222,21 +9180,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__4__Impl"
-    // InternalLatino.g:2937:1: rule__Desde__Group__4__Impl : ( ( rule__Desde__CondicionAssignment_4 ) ) ;
+    // InternalLatino.g:2925:1: rule__Desde__Group__4__Impl : ( ( rule__Desde__CondicionAssignment_4 ) ) ;
     public final void rule__Desde__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2941:1: ( ( ( rule__Desde__CondicionAssignment_4 ) ) )
-            // InternalLatino.g:2942:1: ( ( rule__Desde__CondicionAssignment_4 ) )
+            // InternalLatino.g:2929:1: ( ( ( rule__Desde__CondicionAssignment_4 ) ) )
+            // InternalLatino.g:2930:1: ( ( rule__Desde__CondicionAssignment_4 ) )
             {
-            // InternalLatino.g:2942:1: ( ( rule__Desde__CondicionAssignment_4 ) )
-            // InternalLatino.g:2943:2: ( rule__Desde__CondicionAssignment_4 )
+            // InternalLatino.g:2930:1: ( ( rule__Desde__CondicionAssignment_4 ) )
+            // InternalLatino.g:2931:2: ( rule__Desde__CondicionAssignment_4 )
             {
              before(grammarAccess.getDesdeAccess().getCondicionAssignment_4()); 
-            // InternalLatino.g:2944:2: ( rule__Desde__CondicionAssignment_4 )
-            // InternalLatino.g:2944:3: rule__Desde__CondicionAssignment_4
+            // InternalLatino.g:2932:2: ( rule__Desde__CondicionAssignment_4 )
+            // InternalLatino.g:2932:3: rule__Desde__CondicionAssignment_4
             {
             pushFollow(FOLLOW_2);
             rule__Desde__CondicionAssignment_4();
@@ -9269,14 +9227,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__5"
-    // InternalLatino.g:2952:1: rule__Desde__Group__5 : rule__Desde__Group__5__Impl rule__Desde__Group__6 ;
+    // InternalLatino.g:2940:1: rule__Desde__Group__5 : rule__Desde__Group__5__Impl rule__Desde__Group__6 ;
     public final void rule__Desde__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2956:1: ( rule__Desde__Group__5__Impl rule__Desde__Group__6 )
-            // InternalLatino.g:2957:2: rule__Desde__Group__5__Impl rule__Desde__Group__6
+            // InternalLatino.g:2944:1: ( rule__Desde__Group__5__Impl rule__Desde__Group__6 )
+            // InternalLatino.g:2945:2: rule__Desde__Group__5__Impl rule__Desde__Group__6
             {
             pushFollow(FOLLOW_22);
             rule__Desde__Group__5__Impl();
@@ -9307,20 +9265,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__5__Impl"
-    // InternalLatino.g:2964:1: rule__Desde__Group__5__Impl : ( ';' ) ;
+    // InternalLatino.g:2952:1: rule__Desde__Group__5__Impl : ( ';' ) ;
     public final void rule__Desde__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2968:1: ( ( ';' ) )
-            // InternalLatino.g:2969:1: ( ';' )
+            // InternalLatino.g:2956:1: ( ( ';' ) )
+            // InternalLatino.g:2957:1: ( ';' )
             {
-            // InternalLatino.g:2969:1: ( ';' )
-            // InternalLatino.g:2970:2: ';'
+            // InternalLatino.g:2957:1: ( ';' )
+            // InternalLatino.g:2958:2: ';'
             {
              before(grammarAccess.getDesdeAccess().getSemicolonKeyword_5()); 
-            match(input,56,FOLLOW_2); 
+            match(input,54,FOLLOW_2); 
              after(grammarAccess.getDesdeAccess().getSemicolonKeyword_5()); 
 
             }
@@ -9344,14 +9302,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__6"
-    // InternalLatino.g:2979:1: rule__Desde__Group__6 : rule__Desde__Group__6__Impl rule__Desde__Group__7 ;
+    // InternalLatino.g:2967:1: rule__Desde__Group__6 : rule__Desde__Group__6__Impl rule__Desde__Group__7 ;
     public final void rule__Desde__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2983:1: ( rule__Desde__Group__6__Impl rule__Desde__Group__7 )
-            // InternalLatino.g:2984:2: rule__Desde__Group__6__Impl rule__Desde__Group__7
+            // InternalLatino.g:2971:1: ( rule__Desde__Group__6__Impl rule__Desde__Group__7 )
+            // InternalLatino.g:2972:2: rule__Desde__Group__6__Impl rule__Desde__Group__7
             {
             pushFollow(FOLLOW_10);
             rule__Desde__Group__6__Impl();
@@ -9382,21 +9340,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__6__Impl"
-    // InternalLatino.g:2991:1: rule__Desde__Group__6__Impl : ( ( rule__Desde__PasoAssignment_6 ) ) ;
+    // InternalLatino.g:2979:1: rule__Desde__Group__6__Impl : ( ( rule__Desde__PasoAssignment_6 ) ) ;
     public final void rule__Desde__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:2995:1: ( ( ( rule__Desde__PasoAssignment_6 ) ) )
-            // InternalLatino.g:2996:1: ( ( rule__Desde__PasoAssignment_6 ) )
+            // InternalLatino.g:2983:1: ( ( ( rule__Desde__PasoAssignment_6 ) ) )
+            // InternalLatino.g:2984:1: ( ( rule__Desde__PasoAssignment_6 ) )
             {
-            // InternalLatino.g:2996:1: ( ( rule__Desde__PasoAssignment_6 ) )
-            // InternalLatino.g:2997:2: ( rule__Desde__PasoAssignment_6 )
+            // InternalLatino.g:2984:1: ( ( rule__Desde__PasoAssignment_6 ) )
+            // InternalLatino.g:2985:2: ( rule__Desde__PasoAssignment_6 )
             {
              before(grammarAccess.getDesdeAccess().getPasoAssignment_6()); 
-            // InternalLatino.g:2998:2: ( rule__Desde__PasoAssignment_6 )
-            // InternalLatino.g:2998:3: rule__Desde__PasoAssignment_6
+            // InternalLatino.g:2986:2: ( rule__Desde__PasoAssignment_6 )
+            // InternalLatino.g:2986:3: rule__Desde__PasoAssignment_6
             {
             pushFollow(FOLLOW_2);
             rule__Desde__PasoAssignment_6();
@@ -9429,14 +9387,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__7"
-    // InternalLatino.g:3006:1: rule__Desde__Group__7 : rule__Desde__Group__7__Impl rule__Desde__Group__8 ;
+    // InternalLatino.g:2994:1: rule__Desde__Group__7 : rule__Desde__Group__7__Impl rule__Desde__Group__8 ;
     public final void rule__Desde__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3010:1: ( rule__Desde__Group__7__Impl rule__Desde__Group__8 )
-            // InternalLatino.g:3011:2: rule__Desde__Group__7__Impl rule__Desde__Group__8
+            // InternalLatino.g:2998:1: ( rule__Desde__Group__7__Impl rule__Desde__Group__8 )
+            // InternalLatino.g:2999:2: rule__Desde__Group__7__Impl rule__Desde__Group__8
             {
             pushFollow(FOLLOW_20);
             rule__Desde__Group__7__Impl();
@@ -9467,20 +9425,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__7__Impl"
-    // InternalLatino.g:3018:1: rule__Desde__Group__7__Impl : ( ')' ) ;
+    // InternalLatino.g:3006:1: rule__Desde__Group__7__Impl : ( ')' ) ;
     public final void rule__Desde__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3022:1: ( ( ')' ) )
-            // InternalLatino.g:3023:1: ( ')' )
+            // InternalLatino.g:3010:1: ( ( ')' ) )
+            // InternalLatino.g:3011:1: ( ')' )
             {
-            // InternalLatino.g:3023:1: ( ')' )
-            // InternalLatino.g:3024:2: ')'
+            // InternalLatino.g:3011:1: ( ')' )
+            // InternalLatino.g:3012:2: ')'
             {
              before(grammarAccess.getDesdeAccess().getRightParenthesisKeyword_7()); 
-            match(input,44,FOLLOW_2); 
+            match(input,42,FOLLOW_2); 
              after(grammarAccess.getDesdeAccess().getRightParenthesisKeyword_7()); 
 
             }
@@ -9504,14 +9462,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__8"
-    // InternalLatino.g:3033:1: rule__Desde__Group__8 : rule__Desde__Group__8__Impl rule__Desde__Group__9 ;
+    // InternalLatino.g:3021:1: rule__Desde__Group__8 : rule__Desde__Group__8__Impl rule__Desde__Group__9 ;
     public final void rule__Desde__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3037:1: ( rule__Desde__Group__8__Impl rule__Desde__Group__9 )
-            // InternalLatino.g:3038:2: rule__Desde__Group__8__Impl rule__Desde__Group__9
+            // InternalLatino.g:3025:1: ( rule__Desde__Group__8__Impl rule__Desde__Group__9 )
+            // InternalLatino.g:3026:2: rule__Desde__Group__8__Impl rule__Desde__Group__9
             {
             pushFollow(FOLLOW_20);
             rule__Desde__Group__8__Impl();
@@ -9542,33 +9500,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__8__Impl"
-    // InternalLatino.g:3045:1: rule__Desde__Group__8__Impl : ( ( rule__Desde__CuerpoAssignment_8 )* ) ;
+    // InternalLatino.g:3033:1: rule__Desde__Group__8__Impl : ( ( rule__Desde__CuerpoAssignment_8 )* ) ;
     public final void rule__Desde__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3049:1: ( ( ( rule__Desde__CuerpoAssignment_8 )* ) )
-            // InternalLatino.g:3050:1: ( ( rule__Desde__CuerpoAssignment_8 )* )
+            // InternalLatino.g:3037:1: ( ( ( rule__Desde__CuerpoAssignment_8 )* ) )
+            // InternalLatino.g:3038:1: ( ( rule__Desde__CuerpoAssignment_8 )* )
             {
-            // InternalLatino.g:3050:1: ( ( rule__Desde__CuerpoAssignment_8 )* )
-            // InternalLatino.g:3051:2: ( rule__Desde__CuerpoAssignment_8 )*
+            // InternalLatino.g:3038:1: ( ( rule__Desde__CuerpoAssignment_8 )* )
+            // InternalLatino.g:3039:2: ( rule__Desde__CuerpoAssignment_8 )*
             {
              before(grammarAccess.getDesdeAccess().getCuerpoAssignment_8()); 
-            // InternalLatino.g:3052:2: ( rule__Desde__CuerpoAssignment_8 )*
+            // InternalLatino.g:3040:2: ( rule__Desde__CuerpoAssignment_8 )*
             loop28:
             do {
                 int alt28=2;
                 int LA28_0 = input.LA(1);
 
-                if ( (LA28_0==RULE_ID||(LA28_0>=15 && LA28_0<=22)||LA28_0==48||(LA28_0>=52 && LA28_0<=53)||LA28_0==55||LA28_0==57||(LA28_0>=60 && LA28_0<=62)) ) {
+                if ( (LA28_0==RULE_ID||(LA28_0>=15 && LA28_0<=20)||LA28_0==46||(LA28_0>=50 && LA28_0<=51)||LA28_0==53||LA28_0==55||(LA28_0>=58 && LA28_0<=60)) ) {
                     alt28=1;
                 }
 
 
                 switch (alt28) {
             	case 1 :
-            	    // InternalLatino.g:3052:3: rule__Desde__CuerpoAssignment_8
+            	    // InternalLatino.g:3040:3: rule__Desde__CuerpoAssignment_8
             	    {
             	    pushFollow(FOLLOW_17);
             	    rule__Desde__CuerpoAssignment_8();
@@ -9607,14 +9565,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__9"
-    // InternalLatino.g:3060:1: rule__Desde__Group__9 : rule__Desde__Group__9__Impl ;
+    // InternalLatino.g:3048:1: rule__Desde__Group__9 : rule__Desde__Group__9__Impl ;
     public final void rule__Desde__Group__9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3064:1: ( rule__Desde__Group__9__Impl )
-            // InternalLatino.g:3065:2: rule__Desde__Group__9__Impl
+            // InternalLatino.g:3052:1: ( rule__Desde__Group__9__Impl )
+            // InternalLatino.g:3053:2: rule__Desde__Group__9__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Desde__Group__9__Impl();
@@ -9640,20 +9598,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__Group__9__Impl"
-    // InternalLatino.g:3071:1: rule__Desde__Group__9__Impl : ( 'fin' ) ;
+    // InternalLatino.g:3059:1: rule__Desde__Group__9__Impl : ( 'fin' ) ;
     public final void rule__Desde__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3075:1: ( ( 'fin' ) )
-            // InternalLatino.g:3076:1: ( 'fin' )
+            // InternalLatino.g:3063:1: ( ( 'fin' ) )
+            // InternalLatino.g:3064:1: ( 'fin' )
             {
-            // InternalLatino.g:3076:1: ( 'fin' )
-            // InternalLatino.g:3077:2: 'fin'
+            // InternalLatino.g:3064:1: ( 'fin' )
+            // InternalLatino.g:3065:2: 'fin'
             {
              before(grammarAccess.getDesdeAccess().getFinKeyword_9()); 
-            match(input,49,FOLLOW_2); 
+            match(input,47,FOLLOW_2); 
              after(grammarAccess.getDesdeAccess().getFinKeyword_9()); 
 
             }
@@ -9677,14 +9635,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__0"
-    // InternalLatino.g:3087:1: rule__Para__Group__0 : rule__Para__Group__0__Impl rule__Para__Group__1 ;
+    // InternalLatino.g:3075:1: rule__Para__Group__0 : rule__Para__Group__0__Impl rule__Para__Group__1 ;
     public final void rule__Para__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3091:1: ( rule__Para__Group__0__Impl rule__Para__Group__1 )
-            // InternalLatino.g:3092:2: rule__Para__Group__0__Impl rule__Para__Group__1
+            // InternalLatino.g:3079:1: ( rule__Para__Group__0__Impl rule__Para__Group__1 )
+            // InternalLatino.g:3080:2: rule__Para__Group__0__Impl rule__Para__Group__1
             {
             pushFollow(FOLLOW_22);
             rule__Para__Group__0__Impl();
@@ -9715,20 +9673,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__0__Impl"
-    // InternalLatino.g:3099:1: rule__Para__Group__0__Impl : ( 'para' ) ;
+    // InternalLatino.g:3087:1: rule__Para__Group__0__Impl : ( 'para' ) ;
     public final void rule__Para__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3103:1: ( ( 'para' ) )
-            // InternalLatino.g:3104:1: ( 'para' )
+            // InternalLatino.g:3091:1: ( ( 'para' ) )
+            // InternalLatino.g:3092:1: ( 'para' )
             {
-            // InternalLatino.g:3104:1: ( 'para' )
-            // InternalLatino.g:3105:2: 'para'
+            // InternalLatino.g:3092:1: ( 'para' )
+            // InternalLatino.g:3093:2: 'para'
             {
              before(grammarAccess.getParaAccess().getParaKeyword_0()); 
-            match(input,57,FOLLOW_2); 
+            match(input,55,FOLLOW_2); 
              after(grammarAccess.getParaAccess().getParaKeyword_0()); 
 
             }
@@ -9752,14 +9710,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__1"
-    // InternalLatino.g:3114:1: rule__Para__Group__1 : rule__Para__Group__1__Impl rule__Para__Group__2 ;
+    // InternalLatino.g:3102:1: rule__Para__Group__1 : rule__Para__Group__1__Impl rule__Para__Group__2 ;
     public final void rule__Para__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3118:1: ( rule__Para__Group__1__Impl rule__Para__Group__2 )
-            // InternalLatino.g:3119:2: rule__Para__Group__1__Impl rule__Para__Group__2
+            // InternalLatino.g:3106:1: ( rule__Para__Group__1__Impl rule__Para__Group__2 )
+            // InternalLatino.g:3107:2: rule__Para__Group__1__Impl rule__Para__Group__2
             {
             pushFollow(FOLLOW_24);
             rule__Para__Group__1__Impl();
@@ -9790,21 +9748,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__1__Impl"
-    // InternalLatino.g:3126:1: rule__Para__Group__1__Impl : ( ( rule__Para__VariableAssignment_1 ) ) ;
+    // InternalLatino.g:3114:1: rule__Para__Group__1__Impl : ( ( rule__Para__VariableAssignment_1 ) ) ;
     public final void rule__Para__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3130:1: ( ( ( rule__Para__VariableAssignment_1 ) ) )
-            // InternalLatino.g:3131:1: ( ( rule__Para__VariableAssignment_1 ) )
+            // InternalLatino.g:3118:1: ( ( ( rule__Para__VariableAssignment_1 ) ) )
+            // InternalLatino.g:3119:1: ( ( rule__Para__VariableAssignment_1 ) )
             {
-            // InternalLatino.g:3131:1: ( ( rule__Para__VariableAssignment_1 ) )
-            // InternalLatino.g:3132:2: ( rule__Para__VariableAssignment_1 )
+            // InternalLatino.g:3119:1: ( ( rule__Para__VariableAssignment_1 ) )
+            // InternalLatino.g:3120:2: ( rule__Para__VariableAssignment_1 )
             {
              before(grammarAccess.getParaAccess().getVariableAssignment_1()); 
-            // InternalLatino.g:3133:2: ( rule__Para__VariableAssignment_1 )
-            // InternalLatino.g:3133:3: rule__Para__VariableAssignment_1
+            // InternalLatino.g:3121:2: ( rule__Para__VariableAssignment_1 )
+            // InternalLatino.g:3121:3: rule__Para__VariableAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Para__VariableAssignment_1();
@@ -9837,14 +9795,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__2"
-    // InternalLatino.g:3141:1: rule__Para__Group__2 : rule__Para__Group__2__Impl rule__Para__Group__3 ;
+    // InternalLatino.g:3129:1: rule__Para__Group__2 : rule__Para__Group__2__Impl rule__Para__Group__3 ;
     public final void rule__Para__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3145:1: ( rule__Para__Group__2__Impl rule__Para__Group__3 )
-            // InternalLatino.g:3146:2: rule__Para__Group__2__Impl rule__Para__Group__3
+            // InternalLatino.g:3133:1: ( rule__Para__Group__2__Impl rule__Para__Group__3 )
+            // InternalLatino.g:3134:2: rule__Para__Group__2__Impl rule__Para__Group__3
             {
             pushFollow(FOLLOW_25);
             rule__Para__Group__2__Impl();
@@ -9875,20 +9833,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__2__Impl"
-    // InternalLatino.g:3153:1: rule__Para__Group__2__Impl : ( 'en' ) ;
+    // InternalLatino.g:3141:1: rule__Para__Group__2__Impl : ( 'en' ) ;
     public final void rule__Para__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3157:1: ( ( 'en' ) )
-            // InternalLatino.g:3158:1: ( 'en' )
+            // InternalLatino.g:3145:1: ( ( 'en' ) )
+            // InternalLatino.g:3146:1: ( 'en' )
             {
-            // InternalLatino.g:3158:1: ( 'en' )
-            // InternalLatino.g:3159:2: 'en'
+            // InternalLatino.g:3146:1: ( 'en' )
+            // InternalLatino.g:3147:2: 'en'
             {
              before(grammarAccess.getParaAccess().getEnKeyword_2()); 
-            match(input,58,FOLLOW_2); 
+            match(input,56,FOLLOW_2); 
              after(grammarAccess.getParaAccess().getEnKeyword_2()); 
 
             }
@@ -9912,14 +9870,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__3"
-    // InternalLatino.g:3168:1: rule__Para__Group__3 : rule__Para__Group__3__Impl rule__Para__Group__4 ;
+    // InternalLatino.g:3156:1: rule__Para__Group__3 : rule__Para__Group__3__Impl rule__Para__Group__4 ;
     public final void rule__Para__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3172:1: ( rule__Para__Group__3__Impl rule__Para__Group__4 )
-            // InternalLatino.g:3173:2: rule__Para__Group__3__Impl rule__Para__Group__4
+            // InternalLatino.g:3160:1: ( rule__Para__Group__3__Impl rule__Para__Group__4 )
+            // InternalLatino.g:3161:2: rule__Para__Group__3__Impl rule__Para__Group__4
             {
             pushFollow(FOLLOW_8);
             rule__Para__Group__3__Impl();
@@ -9950,20 +9908,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__3__Impl"
-    // InternalLatino.g:3180:1: rule__Para__Group__3__Impl : ( 'rango' ) ;
+    // InternalLatino.g:3168:1: rule__Para__Group__3__Impl : ( 'rango' ) ;
     public final void rule__Para__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3184:1: ( ( 'rango' ) )
-            // InternalLatino.g:3185:1: ( 'rango' )
+            // InternalLatino.g:3172:1: ( ( 'rango' ) )
+            // InternalLatino.g:3173:1: ( 'rango' )
             {
-            // InternalLatino.g:3185:1: ( 'rango' )
-            // InternalLatino.g:3186:2: 'rango'
+            // InternalLatino.g:3173:1: ( 'rango' )
+            // InternalLatino.g:3174:2: 'rango'
             {
              before(grammarAccess.getParaAccess().getRangoKeyword_3()); 
-            match(input,59,FOLLOW_2); 
+            match(input,57,FOLLOW_2); 
              after(grammarAccess.getParaAccess().getRangoKeyword_3()); 
 
             }
@@ -9987,14 +9945,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__4"
-    // InternalLatino.g:3195:1: rule__Para__Group__4 : rule__Para__Group__4__Impl rule__Para__Group__5 ;
+    // InternalLatino.g:3183:1: rule__Para__Group__4 : rule__Para__Group__4__Impl rule__Para__Group__5 ;
     public final void rule__Para__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3199:1: ( rule__Para__Group__4__Impl rule__Para__Group__5 )
-            // InternalLatino.g:3200:2: rule__Para__Group__4__Impl rule__Para__Group__5
+            // InternalLatino.g:3187:1: ( rule__Para__Group__4__Impl rule__Para__Group__5 )
+            // InternalLatino.g:3188:2: rule__Para__Group__4__Impl rule__Para__Group__5
             {
             pushFollow(FOLLOW_6);
             rule__Para__Group__4__Impl();
@@ -10025,20 +9983,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__4__Impl"
-    // InternalLatino.g:3207:1: rule__Para__Group__4__Impl : ( '(' ) ;
+    // InternalLatino.g:3195:1: rule__Para__Group__4__Impl : ( '(' ) ;
     public final void rule__Para__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3211:1: ( ( '(' ) )
-            // InternalLatino.g:3212:1: ( '(' )
+            // InternalLatino.g:3199:1: ( ( '(' ) )
+            // InternalLatino.g:3200:1: ( '(' )
             {
-            // InternalLatino.g:3212:1: ( '(' )
-            // InternalLatino.g:3213:2: '('
+            // InternalLatino.g:3200:1: ( '(' )
+            // InternalLatino.g:3201:2: '('
             {
              before(grammarAccess.getParaAccess().getLeftParenthesisKeyword_4()); 
-            match(input,42,FOLLOW_2); 
+            match(input,40,FOLLOW_2); 
              after(grammarAccess.getParaAccess().getLeftParenthesisKeyword_4()); 
 
             }
@@ -10062,14 +10020,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__5"
-    // InternalLatino.g:3222:1: rule__Para__Group__5 : rule__Para__Group__5__Impl rule__Para__Group__6 ;
+    // InternalLatino.g:3210:1: rule__Para__Group__5 : rule__Para__Group__5__Impl rule__Para__Group__6 ;
     public final void rule__Para__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3226:1: ( rule__Para__Group__5__Impl rule__Para__Group__6 )
-            // InternalLatino.g:3227:2: rule__Para__Group__5__Impl rule__Para__Group__6
+            // InternalLatino.g:3214:1: ( rule__Para__Group__5__Impl rule__Para__Group__6 )
+            // InternalLatino.g:3215:2: rule__Para__Group__5__Impl rule__Para__Group__6
             {
             pushFollow(FOLLOW_26);
             rule__Para__Group__5__Impl();
@@ -10100,21 +10058,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__5__Impl"
-    // InternalLatino.g:3234:1: rule__Para__Group__5__Impl : ( ( rule__Para__LimitesAssignment_5 ) ) ;
+    // InternalLatino.g:3222:1: rule__Para__Group__5__Impl : ( ( rule__Para__LimitesAssignment_5 ) ) ;
     public final void rule__Para__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3238:1: ( ( ( rule__Para__LimitesAssignment_5 ) ) )
-            // InternalLatino.g:3239:1: ( ( rule__Para__LimitesAssignment_5 ) )
+            // InternalLatino.g:3226:1: ( ( ( rule__Para__LimitesAssignment_5 ) ) )
+            // InternalLatino.g:3227:1: ( ( rule__Para__LimitesAssignment_5 ) )
             {
-            // InternalLatino.g:3239:1: ( ( rule__Para__LimitesAssignment_5 ) )
-            // InternalLatino.g:3240:2: ( rule__Para__LimitesAssignment_5 )
+            // InternalLatino.g:3227:1: ( ( rule__Para__LimitesAssignment_5 ) )
+            // InternalLatino.g:3228:2: ( rule__Para__LimitesAssignment_5 )
             {
              before(grammarAccess.getParaAccess().getLimitesAssignment_5()); 
-            // InternalLatino.g:3241:2: ( rule__Para__LimitesAssignment_5 )
-            // InternalLatino.g:3241:3: rule__Para__LimitesAssignment_5
+            // InternalLatino.g:3229:2: ( rule__Para__LimitesAssignment_5 )
+            // InternalLatino.g:3229:3: rule__Para__LimitesAssignment_5
             {
             pushFollow(FOLLOW_2);
             rule__Para__LimitesAssignment_5();
@@ -10147,14 +10105,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__6"
-    // InternalLatino.g:3249:1: rule__Para__Group__6 : rule__Para__Group__6__Impl rule__Para__Group__7 ;
+    // InternalLatino.g:3237:1: rule__Para__Group__6 : rule__Para__Group__6__Impl rule__Para__Group__7 ;
     public final void rule__Para__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3253:1: ( rule__Para__Group__6__Impl rule__Para__Group__7 )
-            // InternalLatino.g:3254:2: rule__Para__Group__6__Impl rule__Para__Group__7
+            // InternalLatino.g:3241:1: ( rule__Para__Group__6__Impl rule__Para__Group__7 )
+            // InternalLatino.g:3242:2: rule__Para__Group__6__Impl rule__Para__Group__7
             {
             pushFollow(FOLLOW_26);
             rule__Para__Group__6__Impl();
@@ -10185,29 +10143,29 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__6__Impl"
-    // InternalLatino.g:3261:1: rule__Para__Group__6__Impl : ( ( rule__Para__Group_6__0 )? ) ;
+    // InternalLatino.g:3249:1: rule__Para__Group__6__Impl : ( ( rule__Para__Group_6__0 )? ) ;
     public final void rule__Para__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3265:1: ( ( ( rule__Para__Group_6__0 )? ) )
-            // InternalLatino.g:3266:1: ( ( rule__Para__Group_6__0 )? )
+            // InternalLatino.g:3253:1: ( ( ( rule__Para__Group_6__0 )? ) )
+            // InternalLatino.g:3254:1: ( ( rule__Para__Group_6__0 )? )
             {
-            // InternalLatino.g:3266:1: ( ( rule__Para__Group_6__0 )? )
-            // InternalLatino.g:3267:2: ( rule__Para__Group_6__0 )?
+            // InternalLatino.g:3254:1: ( ( rule__Para__Group_6__0 )? )
+            // InternalLatino.g:3255:2: ( rule__Para__Group_6__0 )?
             {
              before(grammarAccess.getParaAccess().getGroup_6()); 
-            // InternalLatino.g:3268:2: ( rule__Para__Group_6__0 )?
+            // InternalLatino.g:3256:2: ( rule__Para__Group_6__0 )?
             int alt29=2;
             int LA29_0 = input.LA(1);
 
-            if ( (LA29_0==47) ) {
+            if ( (LA29_0==45) ) {
                 alt29=1;
             }
             switch (alt29) {
                 case 1 :
-                    // InternalLatino.g:3268:3: rule__Para__Group_6__0
+                    // InternalLatino.g:3256:3: rule__Para__Group_6__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Para__Group_6__0();
@@ -10243,14 +10201,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__7"
-    // InternalLatino.g:3276:1: rule__Para__Group__7 : rule__Para__Group__7__Impl rule__Para__Group__8 ;
+    // InternalLatino.g:3264:1: rule__Para__Group__7 : rule__Para__Group__7__Impl rule__Para__Group__8 ;
     public final void rule__Para__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3280:1: ( rule__Para__Group__7__Impl rule__Para__Group__8 )
-            // InternalLatino.g:3281:2: rule__Para__Group__7__Impl rule__Para__Group__8
+            // InternalLatino.g:3268:1: ( rule__Para__Group__7__Impl rule__Para__Group__8 )
+            // InternalLatino.g:3269:2: rule__Para__Group__7__Impl rule__Para__Group__8
             {
             pushFollow(FOLLOW_20);
             rule__Para__Group__7__Impl();
@@ -10281,20 +10239,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__7__Impl"
-    // InternalLatino.g:3288:1: rule__Para__Group__7__Impl : ( ')' ) ;
+    // InternalLatino.g:3276:1: rule__Para__Group__7__Impl : ( ')' ) ;
     public final void rule__Para__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3292:1: ( ( ')' ) )
-            // InternalLatino.g:3293:1: ( ')' )
+            // InternalLatino.g:3280:1: ( ( ')' ) )
+            // InternalLatino.g:3281:1: ( ')' )
             {
-            // InternalLatino.g:3293:1: ( ')' )
-            // InternalLatino.g:3294:2: ')'
+            // InternalLatino.g:3281:1: ( ')' )
+            // InternalLatino.g:3282:2: ')'
             {
              before(grammarAccess.getParaAccess().getRightParenthesisKeyword_7()); 
-            match(input,44,FOLLOW_2); 
+            match(input,42,FOLLOW_2); 
              after(grammarAccess.getParaAccess().getRightParenthesisKeyword_7()); 
 
             }
@@ -10318,14 +10276,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__8"
-    // InternalLatino.g:3303:1: rule__Para__Group__8 : rule__Para__Group__8__Impl rule__Para__Group__9 ;
+    // InternalLatino.g:3291:1: rule__Para__Group__8 : rule__Para__Group__8__Impl rule__Para__Group__9 ;
     public final void rule__Para__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3307:1: ( rule__Para__Group__8__Impl rule__Para__Group__9 )
-            // InternalLatino.g:3308:2: rule__Para__Group__8__Impl rule__Para__Group__9
+            // InternalLatino.g:3295:1: ( rule__Para__Group__8__Impl rule__Para__Group__9 )
+            // InternalLatino.g:3296:2: rule__Para__Group__8__Impl rule__Para__Group__9
             {
             pushFollow(FOLLOW_20);
             rule__Para__Group__8__Impl();
@@ -10356,33 +10314,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__8__Impl"
-    // InternalLatino.g:3315:1: rule__Para__Group__8__Impl : ( ( rule__Para__CuerpoAssignment_8 )* ) ;
+    // InternalLatino.g:3303:1: rule__Para__Group__8__Impl : ( ( rule__Para__CuerpoAssignment_8 )* ) ;
     public final void rule__Para__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3319:1: ( ( ( rule__Para__CuerpoAssignment_8 )* ) )
-            // InternalLatino.g:3320:1: ( ( rule__Para__CuerpoAssignment_8 )* )
+            // InternalLatino.g:3307:1: ( ( ( rule__Para__CuerpoAssignment_8 )* ) )
+            // InternalLatino.g:3308:1: ( ( rule__Para__CuerpoAssignment_8 )* )
             {
-            // InternalLatino.g:3320:1: ( ( rule__Para__CuerpoAssignment_8 )* )
-            // InternalLatino.g:3321:2: ( rule__Para__CuerpoAssignment_8 )*
+            // InternalLatino.g:3308:1: ( ( rule__Para__CuerpoAssignment_8 )* )
+            // InternalLatino.g:3309:2: ( rule__Para__CuerpoAssignment_8 )*
             {
              before(grammarAccess.getParaAccess().getCuerpoAssignment_8()); 
-            // InternalLatino.g:3322:2: ( rule__Para__CuerpoAssignment_8 )*
+            // InternalLatino.g:3310:2: ( rule__Para__CuerpoAssignment_8 )*
             loop30:
             do {
                 int alt30=2;
                 int LA30_0 = input.LA(1);
 
-                if ( (LA30_0==RULE_ID||(LA30_0>=15 && LA30_0<=22)||LA30_0==48||(LA30_0>=52 && LA30_0<=53)||LA30_0==55||LA30_0==57||(LA30_0>=60 && LA30_0<=62)) ) {
+                if ( (LA30_0==RULE_ID||(LA30_0>=15 && LA30_0<=20)||LA30_0==46||(LA30_0>=50 && LA30_0<=51)||LA30_0==53||LA30_0==55||(LA30_0>=58 && LA30_0<=60)) ) {
                     alt30=1;
                 }
 
 
                 switch (alt30) {
             	case 1 :
-            	    // InternalLatino.g:3322:3: rule__Para__CuerpoAssignment_8
+            	    // InternalLatino.g:3310:3: rule__Para__CuerpoAssignment_8
             	    {
             	    pushFollow(FOLLOW_17);
             	    rule__Para__CuerpoAssignment_8();
@@ -10421,14 +10379,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__9"
-    // InternalLatino.g:3330:1: rule__Para__Group__9 : rule__Para__Group__9__Impl ;
+    // InternalLatino.g:3318:1: rule__Para__Group__9 : rule__Para__Group__9__Impl ;
     public final void rule__Para__Group__9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3334:1: ( rule__Para__Group__9__Impl )
-            // InternalLatino.g:3335:2: rule__Para__Group__9__Impl
+            // InternalLatino.g:3322:1: ( rule__Para__Group__9__Impl )
+            // InternalLatino.g:3323:2: rule__Para__Group__9__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Para__Group__9__Impl();
@@ -10454,20 +10412,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group__9__Impl"
-    // InternalLatino.g:3341:1: rule__Para__Group__9__Impl : ( 'fin' ) ;
+    // InternalLatino.g:3329:1: rule__Para__Group__9__Impl : ( 'fin' ) ;
     public final void rule__Para__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3345:1: ( ( 'fin' ) )
-            // InternalLatino.g:3346:1: ( 'fin' )
+            // InternalLatino.g:3333:1: ( ( 'fin' ) )
+            // InternalLatino.g:3334:1: ( 'fin' )
             {
-            // InternalLatino.g:3346:1: ( 'fin' )
-            // InternalLatino.g:3347:2: 'fin'
+            // InternalLatino.g:3334:1: ( 'fin' )
+            // InternalLatino.g:3335:2: 'fin'
             {
              before(grammarAccess.getParaAccess().getFinKeyword_9()); 
-            match(input,49,FOLLOW_2); 
+            match(input,47,FOLLOW_2); 
              after(grammarAccess.getParaAccess().getFinKeyword_9()); 
 
             }
@@ -10491,14 +10449,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group_6__0"
-    // InternalLatino.g:3357:1: rule__Para__Group_6__0 : rule__Para__Group_6__0__Impl rule__Para__Group_6__1 ;
+    // InternalLatino.g:3345:1: rule__Para__Group_6__0 : rule__Para__Group_6__0__Impl rule__Para__Group_6__1 ;
     public final void rule__Para__Group_6__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3361:1: ( rule__Para__Group_6__0__Impl rule__Para__Group_6__1 )
-            // InternalLatino.g:3362:2: rule__Para__Group_6__0__Impl rule__Para__Group_6__1
+            // InternalLatino.g:3349:1: ( rule__Para__Group_6__0__Impl rule__Para__Group_6__1 )
+            // InternalLatino.g:3350:2: rule__Para__Group_6__0__Impl rule__Para__Group_6__1
             {
             pushFollow(FOLLOW_6);
             rule__Para__Group_6__0__Impl();
@@ -10529,20 +10487,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group_6__0__Impl"
-    // InternalLatino.g:3369:1: rule__Para__Group_6__0__Impl : ( ',' ) ;
+    // InternalLatino.g:3357:1: rule__Para__Group_6__0__Impl : ( ',' ) ;
     public final void rule__Para__Group_6__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3373:1: ( ( ',' ) )
-            // InternalLatino.g:3374:1: ( ',' )
+            // InternalLatino.g:3361:1: ( ( ',' ) )
+            // InternalLatino.g:3362:1: ( ',' )
             {
-            // InternalLatino.g:3374:1: ( ',' )
-            // InternalLatino.g:3375:2: ','
+            // InternalLatino.g:3362:1: ( ',' )
+            // InternalLatino.g:3363:2: ','
             {
              before(grammarAccess.getParaAccess().getCommaKeyword_6_0()); 
-            match(input,47,FOLLOW_2); 
+            match(input,45,FOLLOW_2); 
              after(grammarAccess.getParaAccess().getCommaKeyword_6_0()); 
 
             }
@@ -10566,14 +10524,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group_6__1"
-    // InternalLatino.g:3384:1: rule__Para__Group_6__1 : rule__Para__Group_6__1__Impl rule__Para__Group_6__2 ;
+    // InternalLatino.g:3372:1: rule__Para__Group_6__1 : rule__Para__Group_6__1__Impl rule__Para__Group_6__2 ;
     public final void rule__Para__Group_6__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3388:1: ( rule__Para__Group_6__1__Impl rule__Para__Group_6__2 )
-            // InternalLatino.g:3389:2: rule__Para__Group_6__1__Impl rule__Para__Group_6__2
+            // InternalLatino.g:3376:1: ( rule__Para__Group_6__1__Impl rule__Para__Group_6__2 )
+            // InternalLatino.g:3377:2: rule__Para__Group_6__1__Impl rule__Para__Group_6__2
             {
             pushFollow(FOLLOW_13);
             rule__Para__Group_6__1__Impl();
@@ -10604,21 +10562,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group_6__1__Impl"
-    // InternalLatino.g:3396:1: rule__Para__Group_6__1__Impl : ( ( rule__Para__LimitesAssignment_6_1 ) ) ;
+    // InternalLatino.g:3384:1: rule__Para__Group_6__1__Impl : ( ( rule__Para__LimitesAssignment_6_1 ) ) ;
     public final void rule__Para__Group_6__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3400:1: ( ( ( rule__Para__LimitesAssignment_6_1 ) ) )
-            // InternalLatino.g:3401:1: ( ( rule__Para__LimitesAssignment_6_1 ) )
+            // InternalLatino.g:3388:1: ( ( ( rule__Para__LimitesAssignment_6_1 ) ) )
+            // InternalLatino.g:3389:1: ( ( rule__Para__LimitesAssignment_6_1 ) )
             {
-            // InternalLatino.g:3401:1: ( ( rule__Para__LimitesAssignment_6_1 ) )
-            // InternalLatino.g:3402:2: ( rule__Para__LimitesAssignment_6_1 )
+            // InternalLatino.g:3389:1: ( ( rule__Para__LimitesAssignment_6_1 ) )
+            // InternalLatino.g:3390:2: ( rule__Para__LimitesAssignment_6_1 )
             {
              before(grammarAccess.getParaAccess().getLimitesAssignment_6_1()); 
-            // InternalLatino.g:3403:2: ( rule__Para__LimitesAssignment_6_1 )
-            // InternalLatino.g:3403:3: rule__Para__LimitesAssignment_6_1
+            // InternalLatino.g:3391:2: ( rule__Para__LimitesAssignment_6_1 )
+            // InternalLatino.g:3391:3: rule__Para__LimitesAssignment_6_1
             {
             pushFollow(FOLLOW_2);
             rule__Para__LimitesAssignment_6_1();
@@ -10651,14 +10609,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group_6__2"
-    // InternalLatino.g:3411:1: rule__Para__Group_6__2 : rule__Para__Group_6__2__Impl ;
+    // InternalLatino.g:3399:1: rule__Para__Group_6__2 : rule__Para__Group_6__2__Impl ;
     public final void rule__Para__Group_6__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3415:1: ( rule__Para__Group_6__2__Impl )
-            // InternalLatino.g:3416:2: rule__Para__Group_6__2__Impl
+            // InternalLatino.g:3403:1: ( rule__Para__Group_6__2__Impl )
+            // InternalLatino.g:3404:2: rule__Para__Group_6__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Para__Group_6__2__Impl();
@@ -10684,29 +10642,29 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group_6__2__Impl"
-    // InternalLatino.g:3422:1: rule__Para__Group_6__2__Impl : ( ( rule__Para__Group_6_2__0 )? ) ;
+    // InternalLatino.g:3410:1: rule__Para__Group_6__2__Impl : ( ( rule__Para__Group_6_2__0 )? ) ;
     public final void rule__Para__Group_6__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3426:1: ( ( ( rule__Para__Group_6_2__0 )? ) )
-            // InternalLatino.g:3427:1: ( ( rule__Para__Group_6_2__0 )? )
+            // InternalLatino.g:3414:1: ( ( ( rule__Para__Group_6_2__0 )? ) )
+            // InternalLatino.g:3415:1: ( ( rule__Para__Group_6_2__0 )? )
             {
-            // InternalLatino.g:3427:1: ( ( rule__Para__Group_6_2__0 )? )
-            // InternalLatino.g:3428:2: ( rule__Para__Group_6_2__0 )?
+            // InternalLatino.g:3415:1: ( ( rule__Para__Group_6_2__0 )? )
+            // InternalLatino.g:3416:2: ( rule__Para__Group_6_2__0 )?
             {
              before(grammarAccess.getParaAccess().getGroup_6_2()); 
-            // InternalLatino.g:3429:2: ( rule__Para__Group_6_2__0 )?
+            // InternalLatino.g:3417:2: ( rule__Para__Group_6_2__0 )?
             int alt31=2;
             int LA31_0 = input.LA(1);
 
-            if ( (LA31_0==47) ) {
+            if ( (LA31_0==45) ) {
                 alt31=1;
             }
             switch (alt31) {
                 case 1 :
-                    // InternalLatino.g:3429:3: rule__Para__Group_6_2__0
+                    // InternalLatino.g:3417:3: rule__Para__Group_6_2__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Para__Group_6_2__0();
@@ -10742,14 +10700,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group_6_2__0"
-    // InternalLatino.g:3438:1: rule__Para__Group_6_2__0 : rule__Para__Group_6_2__0__Impl rule__Para__Group_6_2__1 ;
+    // InternalLatino.g:3426:1: rule__Para__Group_6_2__0 : rule__Para__Group_6_2__0__Impl rule__Para__Group_6_2__1 ;
     public final void rule__Para__Group_6_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3442:1: ( rule__Para__Group_6_2__0__Impl rule__Para__Group_6_2__1 )
-            // InternalLatino.g:3443:2: rule__Para__Group_6_2__0__Impl rule__Para__Group_6_2__1
+            // InternalLatino.g:3430:1: ( rule__Para__Group_6_2__0__Impl rule__Para__Group_6_2__1 )
+            // InternalLatino.g:3431:2: rule__Para__Group_6_2__0__Impl rule__Para__Group_6_2__1
             {
             pushFollow(FOLLOW_6);
             rule__Para__Group_6_2__0__Impl();
@@ -10780,20 +10738,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group_6_2__0__Impl"
-    // InternalLatino.g:3450:1: rule__Para__Group_6_2__0__Impl : ( ',' ) ;
+    // InternalLatino.g:3438:1: rule__Para__Group_6_2__0__Impl : ( ',' ) ;
     public final void rule__Para__Group_6_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3454:1: ( ( ',' ) )
-            // InternalLatino.g:3455:1: ( ',' )
+            // InternalLatino.g:3442:1: ( ( ',' ) )
+            // InternalLatino.g:3443:1: ( ',' )
             {
-            // InternalLatino.g:3455:1: ( ',' )
-            // InternalLatino.g:3456:2: ','
+            // InternalLatino.g:3443:1: ( ',' )
+            // InternalLatino.g:3444:2: ','
             {
              before(grammarAccess.getParaAccess().getCommaKeyword_6_2_0()); 
-            match(input,47,FOLLOW_2); 
+            match(input,45,FOLLOW_2); 
              after(grammarAccess.getParaAccess().getCommaKeyword_6_2_0()); 
 
             }
@@ -10817,14 +10775,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group_6_2__1"
-    // InternalLatino.g:3465:1: rule__Para__Group_6_2__1 : rule__Para__Group_6_2__1__Impl ;
+    // InternalLatino.g:3453:1: rule__Para__Group_6_2__1 : rule__Para__Group_6_2__1__Impl ;
     public final void rule__Para__Group_6_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3469:1: ( rule__Para__Group_6_2__1__Impl )
-            // InternalLatino.g:3470:2: rule__Para__Group_6_2__1__Impl
+            // InternalLatino.g:3457:1: ( rule__Para__Group_6_2__1__Impl )
+            // InternalLatino.g:3458:2: rule__Para__Group_6_2__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Para__Group_6_2__1__Impl();
@@ -10850,21 +10808,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__Group_6_2__1__Impl"
-    // InternalLatino.g:3476:1: rule__Para__Group_6_2__1__Impl : ( ( rule__Para__LimitesAssignment_6_2_1 ) ) ;
+    // InternalLatino.g:3464:1: rule__Para__Group_6_2__1__Impl : ( ( rule__Para__LimitesAssignment_6_2_1 ) ) ;
     public final void rule__Para__Group_6_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3480:1: ( ( ( rule__Para__LimitesAssignment_6_2_1 ) ) )
-            // InternalLatino.g:3481:1: ( ( rule__Para__LimitesAssignment_6_2_1 ) )
+            // InternalLatino.g:3468:1: ( ( ( rule__Para__LimitesAssignment_6_2_1 ) ) )
+            // InternalLatino.g:3469:1: ( ( rule__Para__LimitesAssignment_6_2_1 ) )
             {
-            // InternalLatino.g:3481:1: ( ( rule__Para__LimitesAssignment_6_2_1 ) )
-            // InternalLatino.g:3482:2: ( rule__Para__LimitesAssignment_6_2_1 )
+            // InternalLatino.g:3469:1: ( ( rule__Para__LimitesAssignment_6_2_1 ) )
+            // InternalLatino.g:3470:2: ( rule__Para__LimitesAssignment_6_2_1 )
             {
              before(grammarAccess.getParaAccess().getLimitesAssignment_6_2_1()); 
-            // InternalLatino.g:3483:2: ( rule__Para__LimitesAssignment_6_2_1 )
-            // InternalLatino.g:3483:3: rule__Para__LimitesAssignment_6_2_1
+            // InternalLatino.g:3471:2: ( rule__Para__LimitesAssignment_6_2_1 )
+            // InternalLatino.g:3471:3: rule__Para__LimitesAssignment_6_2_1
             {
             pushFollow(FOLLOW_2);
             rule__Para__LimitesAssignment_6_2_1();
@@ -10897,14 +10855,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Incremento__Group__0"
-    // InternalLatino.g:3492:1: rule__Incremento__Group__0 : rule__Incremento__Group__0__Impl rule__Incremento__Group__1 ;
+    // InternalLatino.g:3480:1: rule__Incremento__Group__0 : rule__Incremento__Group__0__Impl rule__Incremento__Group__1 ;
     public final void rule__Incremento__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3496:1: ( rule__Incremento__Group__0__Impl rule__Incremento__Group__1 )
-            // InternalLatino.g:3497:2: rule__Incremento__Group__0__Impl rule__Incremento__Group__1
+            // InternalLatino.g:3484:1: ( rule__Incremento__Group__0__Impl rule__Incremento__Group__1 )
+            // InternalLatino.g:3485:2: rule__Incremento__Group__0__Impl rule__Incremento__Group__1
             {
             pushFollow(FOLLOW_27);
             rule__Incremento__Group__0__Impl();
@@ -10935,21 +10893,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Incremento__Group__0__Impl"
-    // InternalLatino.g:3504:1: rule__Incremento__Group__0__Impl : ( ( rule__Incremento__NombreAssignment_0 ) ) ;
+    // InternalLatino.g:3492:1: rule__Incremento__Group__0__Impl : ( ( rule__Incremento__NombreAssignment_0 ) ) ;
     public final void rule__Incremento__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3508:1: ( ( ( rule__Incremento__NombreAssignment_0 ) ) )
-            // InternalLatino.g:3509:1: ( ( rule__Incremento__NombreAssignment_0 ) )
+            // InternalLatino.g:3496:1: ( ( ( rule__Incremento__NombreAssignment_0 ) ) )
+            // InternalLatino.g:3497:1: ( ( rule__Incremento__NombreAssignment_0 ) )
             {
-            // InternalLatino.g:3509:1: ( ( rule__Incremento__NombreAssignment_0 ) )
-            // InternalLatino.g:3510:2: ( rule__Incremento__NombreAssignment_0 )
+            // InternalLatino.g:3497:1: ( ( rule__Incremento__NombreAssignment_0 ) )
+            // InternalLatino.g:3498:2: ( rule__Incremento__NombreAssignment_0 )
             {
              before(grammarAccess.getIncrementoAccess().getNombreAssignment_0()); 
-            // InternalLatino.g:3511:2: ( rule__Incremento__NombreAssignment_0 )
-            // InternalLatino.g:3511:3: rule__Incremento__NombreAssignment_0
+            // InternalLatino.g:3499:2: ( rule__Incremento__NombreAssignment_0 )
+            // InternalLatino.g:3499:3: rule__Incremento__NombreAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__Incremento__NombreAssignment_0();
@@ -10982,14 +10940,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Incremento__Group__1"
-    // InternalLatino.g:3519:1: rule__Incremento__Group__1 : rule__Incremento__Group__1__Impl ;
+    // InternalLatino.g:3507:1: rule__Incremento__Group__1 : rule__Incremento__Group__1__Impl ;
     public final void rule__Incremento__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3523:1: ( rule__Incremento__Group__1__Impl )
-            // InternalLatino.g:3524:2: rule__Incremento__Group__1__Impl
+            // InternalLatino.g:3511:1: ( rule__Incremento__Group__1__Impl )
+            // InternalLatino.g:3512:2: rule__Incremento__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Incremento__Group__1__Impl();
@@ -11015,21 +10973,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Incremento__Group__1__Impl"
-    // InternalLatino.g:3530:1: rule__Incremento__Group__1__Impl : ( ( rule__Incremento__OperadorAssignment_1 ) ) ;
+    // InternalLatino.g:3518:1: rule__Incremento__Group__1__Impl : ( ( rule__Incremento__OperadorAssignment_1 ) ) ;
     public final void rule__Incremento__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3534:1: ( ( ( rule__Incremento__OperadorAssignment_1 ) ) )
-            // InternalLatino.g:3535:1: ( ( rule__Incremento__OperadorAssignment_1 ) )
+            // InternalLatino.g:3522:1: ( ( ( rule__Incremento__OperadorAssignment_1 ) ) )
+            // InternalLatino.g:3523:1: ( ( rule__Incremento__OperadorAssignment_1 ) )
             {
-            // InternalLatino.g:3535:1: ( ( rule__Incremento__OperadorAssignment_1 ) )
-            // InternalLatino.g:3536:2: ( rule__Incremento__OperadorAssignment_1 )
+            // InternalLatino.g:3523:1: ( ( rule__Incremento__OperadorAssignment_1 ) )
+            // InternalLatino.g:3524:2: ( rule__Incremento__OperadorAssignment_1 )
             {
              before(grammarAccess.getIncrementoAccess().getOperadorAssignment_1()); 
-            // InternalLatino.g:3537:2: ( rule__Incremento__OperadorAssignment_1 )
-            // InternalLatino.g:3537:3: rule__Incremento__OperadorAssignment_1
+            // InternalLatino.g:3525:2: ( rule__Incremento__OperadorAssignment_1 )
+            // InternalLatino.g:3525:3: rule__Incremento__OperadorAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Incremento__OperadorAssignment_1();
@@ -11062,14 +11020,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Romper__Group__0"
-    // InternalLatino.g:3546:1: rule__Romper__Group__0 : rule__Romper__Group__0__Impl rule__Romper__Group__1 ;
+    // InternalLatino.g:3534:1: rule__Romper__Group__0 : rule__Romper__Group__0__Impl rule__Romper__Group__1 ;
     public final void rule__Romper__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3550:1: ( rule__Romper__Group__0__Impl rule__Romper__Group__1 )
-            // InternalLatino.g:3551:2: rule__Romper__Group__0__Impl rule__Romper__Group__1
+            // InternalLatino.g:3538:1: ( rule__Romper__Group__0__Impl rule__Romper__Group__1 )
+            // InternalLatino.g:3539:2: rule__Romper__Group__0__Impl rule__Romper__Group__1
             {
             pushFollow(FOLLOW_28);
             rule__Romper__Group__0__Impl();
@@ -11100,21 +11058,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Romper__Group__0__Impl"
-    // InternalLatino.g:3558:1: rule__Romper__Group__0__Impl : ( () ) ;
+    // InternalLatino.g:3546:1: rule__Romper__Group__0__Impl : ( () ) ;
     public final void rule__Romper__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3562:1: ( ( () ) )
-            // InternalLatino.g:3563:1: ( () )
+            // InternalLatino.g:3550:1: ( ( () ) )
+            // InternalLatino.g:3551:1: ( () )
             {
-            // InternalLatino.g:3563:1: ( () )
-            // InternalLatino.g:3564:2: ()
+            // InternalLatino.g:3551:1: ( () )
+            // InternalLatino.g:3552:2: ()
             {
              before(grammarAccess.getRomperAccess().getRomperAction_0()); 
-            // InternalLatino.g:3565:2: ()
-            // InternalLatino.g:3565:3: 
+            // InternalLatino.g:3553:2: ()
+            // InternalLatino.g:3553:3: 
             {
             }
 
@@ -11137,14 +11095,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Romper__Group__1"
-    // InternalLatino.g:3573:1: rule__Romper__Group__1 : rule__Romper__Group__1__Impl ;
+    // InternalLatino.g:3561:1: rule__Romper__Group__1 : rule__Romper__Group__1__Impl ;
     public final void rule__Romper__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3577:1: ( rule__Romper__Group__1__Impl )
-            // InternalLatino.g:3578:2: rule__Romper__Group__1__Impl
+            // InternalLatino.g:3565:1: ( rule__Romper__Group__1__Impl )
+            // InternalLatino.g:3566:2: rule__Romper__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Romper__Group__1__Impl();
@@ -11170,20 +11128,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Romper__Group__1__Impl"
-    // InternalLatino.g:3584:1: rule__Romper__Group__1__Impl : ( 'romper' ) ;
+    // InternalLatino.g:3572:1: rule__Romper__Group__1__Impl : ( 'romper' ) ;
     public final void rule__Romper__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3588:1: ( ( 'romper' ) )
-            // InternalLatino.g:3589:1: ( 'romper' )
+            // InternalLatino.g:3576:1: ( ( 'romper' ) )
+            // InternalLatino.g:3577:1: ( 'romper' )
             {
-            // InternalLatino.g:3589:1: ( 'romper' )
-            // InternalLatino.g:3590:2: 'romper'
+            // InternalLatino.g:3577:1: ( 'romper' )
+            // InternalLatino.g:3578:2: 'romper'
             {
              before(grammarAccess.getRomperAccess().getRomperKeyword_1()); 
-            match(input,60,FOLLOW_2); 
+            match(input,58,FOLLOW_2); 
              after(grammarAccess.getRomperAccess().getRomperKeyword_1()); 
 
             }
@@ -11207,14 +11165,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Continuar__Group__0"
-    // InternalLatino.g:3600:1: rule__Continuar__Group__0 : rule__Continuar__Group__0__Impl rule__Continuar__Group__1 ;
+    // InternalLatino.g:3588:1: rule__Continuar__Group__0 : rule__Continuar__Group__0__Impl rule__Continuar__Group__1 ;
     public final void rule__Continuar__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3604:1: ( rule__Continuar__Group__0__Impl rule__Continuar__Group__1 )
-            // InternalLatino.g:3605:2: rule__Continuar__Group__0__Impl rule__Continuar__Group__1
+            // InternalLatino.g:3592:1: ( rule__Continuar__Group__0__Impl rule__Continuar__Group__1 )
+            // InternalLatino.g:3593:2: rule__Continuar__Group__0__Impl rule__Continuar__Group__1
             {
             pushFollow(FOLLOW_29);
             rule__Continuar__Group__0__Impl();
@@ -11245,21 +11203,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Continuar__Group__0__Impl"
-    // InternalLatino.g:3612:1: rule__Continuar__Group__0__Impl : ( () ) ;
+    // InternalLatino.g:3600:1: rule__Continuar__Group__0__Impl : ( () ) ;
     public final void rule__Continuar__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3616:1: ( ( () ) )
-            // InternalLatino.g:3617:1: ( () )
+            // InternalLatino.g:3604:1: ( ( () ) )
+            // InternalLatino.g:3605:1: ( () )
             {
-            // InternalLatino.g:3617:1: ( () )
-            // InternalLatino.g:3618:2: ()
+            // InternalLatino.g:3605:1: ( () )
+            // InternalLatino.g:3606:2: ()
             {
              before(grammarAccess.getContinuarAccess().getContinuarAction_0()); 
-            // InternalLatino.g:3619:2: ()
-            // InternalLatino.g:3619:3: 
+            // InternalLatino.g:3607:2: ()
+            // InternalLatino.g:3607:3: 
             {
             }
 
@@ -11282,14 +11240,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Continuar__Group__1"
-    // InternalLatino.g:3627:1: rule__Continuar__Group__1 : rule__Continuar__Group__1__Impl ;
+    // InternalLatino.g:3615:1: rule__Continuar__Group__1 : rule__Continuar__Group__1__Impl ;
     public final void rule__Continuar__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3631:1: ( rule__Continuar__Group__1__Impl )
-            // InternalLatino.g:3632:2: rule__Continuar__Group__1__Impl
+            // InternalLatino.g:3619:1: ( rule__Continuar__Group__1__Impl )
+            // InternalLatino.g:3620:2: rule__Continuar__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Continuar__Group__1__Impl();
@@ -11315,20 +11273,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Continuar__Group__1__Impl"
-    // InternalLatino.g:3638:1: rule__Continuar__Group__1__Impl : ( 'continuar' ) ;
+    // InternalLatino.g:3626:1: rule__Continuar__Group__1__Impl : ( 'continuar' ) ;
     public final void rule__Continuar__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3642:1: ( ( 'continuar' ) )
-            // InternalLatino.g:3643:1: ( 'continuar' )
+            // InternalLatino.g:3630:1: ( ( 'continuar' ) )
+            // InternalLatino.g:3631:1: ( 'continuar' )
             {
-            // InternalLatino.g:3643:1: ( 'continuar' )
-            // InternalLatino.g:3644:2: 'continuar'
+            // InternalLatino.g:3631:1: ( 'continuar' )
+            // InternalLatino.g:3632:2: 'continuar'
             {
              before(grammarAccess.getContinuarAccess().getContinuarKeyword_1()); 
-            match(input,61,FOLLOW_2); 
+            match(input,59,FOLLOW_2); 
              after(grammarAccess.getContinuarAccess().getContinuarKeyword_1()); 
 
             }
@@ -11352,14 +11310,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Elegir__Group__0"
-    // InternalLatino.g:3654:1: rule__Elegir__Group__0 : rule__Elegir__Group__0__Impl rule__Elegir__Group__1 ;
+    // InternalLatino.g:3642:1: rule__Elegir__Group__0 : rule__Elegir__Group__0__Impl rule__Elegir__Group__1 ;
     public final void rule__Elegir__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3658:1: ( rule__Elegir__Group__0__Impl rule__Elegir__Group__1 )
-            // InternalLatino.g:3659:2: rule__Elegir__Group__0__Impl rule__Elegir__Group__1
+            // InternalLatino.g:3646:1: ( rule__Elegir__Group__0__Impl rule__Elegir__Group__1 )
+            // InternalLatino.g:3647:2: rule__Elegir__Group__0__Impl rule__Elegir__Group__1
             {
             pushFollow(FOLLOW_6);
             rule__Elegir__Group__0__Impl();
@@ -11390,20 +11348,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Elegir__Group__0__Impl"
-    // InternalLatino.g:3666:1: rule__Elegir__Group__0__Impl : ( 'elegir' ) ;
+    // InternalLatino.g:3654:1: rule__Elegir__Group__0__Impl : ( 'elegir' ) ;
     public final void rule__Elegir__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3670:1: ( ( 'elegir' ) )
-            // InternalLatino.g:3671:1: ( 'elegir' )
+            // InternalLatino.g:3658:1: ( ( 'elegir' ) )
+            // InternalLatino.g:3659:1: ( 'elegir' )
             {
-            // InternalLatino.g:3671:1: ( 'elegir' )
-            // InternalLatino.g:3672:2: 'elegir'
+            // InternalLatino.g:3659:1: ( 'elegir' )
+            // InternalLatino.g:3660:2: 'elegir'
             {
              before(grammarAccess.getElegirAccess().getElegirKeyword_0()); 
-            match(input,62,FOLLOW_2); 
+            match(input,60,FOLLOW_2); 
              after(grammarAccess.getElegirAccess().getElegirKeyword_0()); 
 
             }
@@ -11427,14 +11385,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Elegir__Group__1"
-    // InternalLatino.g:3681:1: rule__Elegir__Group__1 : rule__Elegir__Group__1__Impl rule__Elegir__Group__2 ;
+    // InternalLatino.g:3669:1: rule__Elegir__Group__1 : rule__Elegir__Group__1__Impl rule__Elegir__Group__2 ;
     public final void rule__Elegir__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3685:1: ( rule__Elegir__Group__1__Impl rule__Elegir__Group__2 )
-            // InternalLatino.g:3686:2: rule__Elegir__Group__1__Impl rule__Elegir__Group__2
+            // InternalLatino.g:3673:1: ( rule__Elegir__Group__1__Impl rule__Elegir__Group__2 )
+            // InternalLatino.g:3674:2: rule__Elegir__Group__1__Impl rule__Elegir__Group__2
             {
             pushFollow(FOLLOW_30);
             rule__Elegir__Group__1__Impl();
@@ -11465,21 +11423,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Elegir__Group__1__Impl"
-    // InternalLatino.g:3693:1: rule__Elegir__Group__1__Impl : ( ( rule__Elegir__ExpresionAssignment_1 ) ) ;
+    // InternalLatino.g:3681:1: rule__Elegir__Group__1__Impl : ( ( rule__Elegir__ExpresionAssignment_1 ) ) ;
     public final void rule__Elegir__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3697:1: ( ( ( rule__Elegir__ExpresionAssignment_1 ) ) )
-            // InternalLatino.g:3698:1: ( ( rule__Elegir__ExpresionAssignment_1 ) )
+            // InternalLatino.g:3685:1: ( ( ( rule__Elegir__ExpresionAssignment_1 ) ) )
+            // InternalLatino.g:3686:1: ( ( rule__Elegir__ExpresionAssignment_1 ) )
             {
-            // InternalLatino.g:3698:1: ( ( rule__Elegir__ExpresionAssignment_1 ) )
-            // InternalLatino.g:3699:2: ( rule__Elegir__ExpresionAssignment_1 )
+            // InternalLatino.g:3686:1: ( ( rule__Elegir__ExpresionAssignment_1 ) )
+            // InternalLatino.g:3687:2: ( rule__Elegir__ExpresionAssignment_1 )
             {
              before(grammarAccess.getElegirAccess().getExpresionAssignment_1()); 
-            // InternalLatino.g:3700:2: ( rule__Elegir__ExpresionAssignment_1 )
-            // InternalLatino.g:3700:3: rule__Elegir__ExpresionAssignment_1
+            // InternalLatino.g:3688:2: ( rule__Elegir__ExpresionAssignment_1 )
+            // InternalLatino.g:3688:3: rule__Elegir__ExpresionAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Elegir__ExpresionAssignment_1();
@@ -11512,14 +11470,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Elegir__Group__2"
-    // InternalLatino.g:3708:1: rule__Elegir__Group__2 : rule__Elegir__Group__2__Impl rule__Elegir__Group__3 ;
+    // InternalLatino.g:3696:1: rule__Elegir__Group__2 : rule__Elegir__Group__2__Impl rule__Elegir__Group__3 ;
     public final void rule__Elegir__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3712:1: ( rule__Elegir__Group__2__Impl rule__Elegir__Group__3 )
-            // InternalLatino.g:3713:2: rule__Elegir__Group__2__Impl rule__Elegir__Group__3
+            // InternalLatino.g:3700:1: ( rule__Elegir__Group__2__Impl rule__Elegir__Group__3 )
+            // InternalLatino.g:3701:2: rule__Elegir__Group__2__Impl rule__Elegir__Group__3
             {
             pushFollow(FOLLOW_30);
             rule__Elegir__Group__2__Impl();
@@ -11550,33 +11508,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Elegir__Group__2__Impl"
-    // InternalLatino.g:3720:1: rule__Elegir__Group__2__Impl : ( ( rule__Elegir__CasosAssignment_2 )* ) ;
+    // InternalLatino.g:3708:1: rule__Elegir__Group__2__Impl : ( ( rule__Elegir__CasosAssignment_2 )* ) ;
     public final void rule__Elegir__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3724:1: ( ( ( rule__Elegir__CasosAssignment_2 )* ) )
-            // InternalLatino.g:3725:1: ( ( rule__Elegir__CasosAssignment_2 )* )
+            // InternalLatino.g:3712:1: ( ( ( rule__Elegir__CasosAssignment_2 )* ) )
+            // InternalLatino.g:3713:1: ( ( rule__Elegir__CasosAssignment_2 )* )
             {
-            // InternalLatino.g:3725:1: ( ( rule__Elegir__CasosAssignment_2 )* )
-            // InternalLatino.g:3726:2: ( rule__Elegir__CasosAssignment_2 )*
+            // InternalLatino.g:3713:1: ( ( rule__Elegir__CasosAssignment_2 )* )
+            // InternalLatino.g:3714:2: ( rule__Elegir__CasosAssignment_2 )*
             {
              before(grammarAccess.getElegirAccess().getCasosAssignment_2()); 
-            // InternalLatino.g:3727:2: ( rule__Elegir__CasosAssignment_2 )*
+            // InternalLatino.g:3715:2: ( rule__Elegir__CasosAssignment_2 )*
             loop32:
             do {
                 int alt32=2;
                 int LA32_0 = input.LA(1);
 
-                if ( (LA32_0==64) ) {
+                if ( (LA32_0==62) ) {
                     alt32=1;
                 }
 
 
                 switch (alt32) {
             	case 1 :
-            	    // InternalLatino.g:3727:3: rule__Elegir__CasosAssignment_2
+            	    // InternalLatino.g:3715:3: rule__Elegir__CasosAssignment_2
             	    {
             	    pushFollow(FOLLOW_31);
             	    rule__Elegir__CasosAssignment_2();
@@ -11615,14 +11573,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Elegir__Group__3"
-    // InternalLatino.g:3735:1: rule__Elegir__Group__3 : rule__Elegir__Group__3__Impl rule__Elegir__Group__4 ;
+    // InternalLatino.g:3723:1: rule__Elegir__Group__3 : rule__Elegir__Group__3__Impl rule__Elegir__Group__4 ;
     public final void rule__Elegir__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3739:1: ( rule__Elegir__Group__3__Impl rule__Elegir__Group__4 )
-            // InternalLatino.g:3740:2: rule__Elegir__Group__3__Impl rule__Elegir__Group__4
+            // InternalLatino.g:3727:1: ( rule__Elegir__Group__3__Impl rule__Elegir__Group__4 )
+            // InternalLatino.g:3728:2: rule__Elegir__Group__3__Impl rule__Elegir__Group__4
             {
             pushFollow(FOLLOW_30);
             rule__Elegir__Group__3__Impl();
@@ -11653,20 +11611,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Elegir__Group__3__Impl"
-    // InternalLatino.g:3747:1: rule__Elegir__Group__3__Impl : ( ( rule__Elegir__Group_3__0 )? ) ;
+    // InternalLatino.g:3735:1: rule__Elegir__Group__3__Impl : ( ( rule__Elegir__Group_3__0 )? ) ;
     public final void rule__Elegir__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3751:1: ( ( ( rule__Elegir__Group_3__0 )? ) )
-            // InternalLatino.g:3752:1: ( ( rule__Elegir__Group_3__0 )? )
+            // InternalLatino.g:3739:1: ( ( ( rule__Elegir__Group_3__0 )? ) )
+            // InternalLatino.g:3740:1: ( ( rule__Elegir__Group_3__0 )? )
             {
-            // InternalLatino.g:3752:1: ( ( rule__Elegir__Group_3__0 )? )
-            // InternalLatino.g:3753:2: ( rule__Elegir__Group_3__0 )?
+            // InternalLatino.g:3740:1: ( ( rule__Elegir__Group_3__0 )? )
+            // InternalLatino.g:3741:2: ( rule__Elegir__Group_3__0 )?
             {
              before(grammarAccess.getElegirAccess().getGroup_3()); 
-            // InternalLatino.g:3754:2: ( rule__Elegir__Group_3__0 )?
+            // InternalLatino.g:3742:2: ( rule__Elegir__Group_3__0 )?
             int alt33=2;
             int LA33_0 = input.LA(1);
 
@@ -11675,7 +11633,7 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
             }
             switch (alt33) {
                 case 1 :
-                    // InternalLatino.g:3754:3: rule__Elegir__Group_3__0
+                    // InternalLatino.g:3742:3: rule__Elegir__Group_3__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Elegir__Group_3__0();
@@ -11711,14 +11669,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Elegir__Group__4"
-    // InternalLatino.g:3762:1: rule__Elegir__Group__4 : rule__Elegir__Group__4__Impl ;
+    // InternalLatino.g:3750:1: rule__Elegir__Group__4 : rule__Elegir__Group__4__Impl ;
     public final void rule__Elegir__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3766:1: ( rule__Elegir__Group__4__Impl )
-            // InternalLatino.g:3767:2: rule__Elegir__Group__4__Impl
+            // InternalLatino.g:3754:1: ( rule__Elegir__Group__4__Impl )
+            // InternalLatino.g:3755:2: rule__Elegir__Group__4__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Elegir__Group__4__Impl();
@@ -11744,20 +11702,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Elegir__Group__4__Impl"
-    // InternalLatino.g:3773:1: rule__Elegir__Group__4__Impl : ( 'fin' ) ;
+    // InternalLatino.g:3761:1: rule__Elegir__Group__4__Impl : ( 'fin' ) ;
     public final void rule__Elegir__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3777:1: ( ( 'fin' ) )
-            // InternalLatino.g:3778:1: ( 'fin' )
+            // InternalLatino.g:3765:1: ( ( 'fin' ) )
+            // InternalLatino.g:3766:1: ( 'fin' )
             {
-            // InternalLatino.g:3778:1: ( 'fin' )
-            // InternalLatino.g:3779:2: 'fin'
+            // InternalLatino.g:3766:1: ( 'fin' )
+            // InternalLatino.g:3767:2: 'fin'
             {
              before(grammarAccess.getElegirAccess().getFinKeyword_4()); 
-            match(input,49,FOLLOW_2); 
+            match(input,47,FOLLOW_2); 
              after(grammarAccess.getElegirAccess().getFinKeyword_4()); 
 
             }
@@ -11781,14 +11739,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Elegir__Group_3__0"
-    // InternalLatino.g:3789:1: rule__Elegir__Group_3__0 : rule__Elegir__Group_3__0__Impl rule__Elegir__Group_3__1 ;
+    // InternalLatino.g:3777:1: rule__Elegir__Group_3__0 : rule__Elegir__Group_3__0__Impl rule__Elegir__Group_3__1 ;
     public final void rule__Elegir__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3793:1: ( rule__Elegir__Group_3__0__Impl rule__Elegir__Group_3__1 )
-            // InternalLatino.g:3794:2: rule__Elegir__Group_3__0__Impl rule__Elegir__Group_3__1
+            // InternalLatino.g:3781:1: ( rule__Elegir__Group_3__0__Impl rule__Elegir__Group_3__1 )
+            // InternalLatino.g:3782:2: rule__Elegir__Group_3__0__Impl rule__Elegir__Group_3__1
             {
             pushFollow(FOLLOW_32);
             rule__Elegir__Group_3__0__Impl();
@@ -11819,21 +11777,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Elegir__Group_3__0__Impl"
-    // InternalLatino.g:3801:1: rule__Elegir__Group_3__0__Impl : ( ( rule__Elegir__Alternatives_3_0 ) ) ;
+    // InternalLatino.g:3789:1: rule__Elegir__Group_3__0__Impl : ( ( rule__Elegir__Alternatives_3_0 ) ) ;
     public final void rule__Elegir__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3805:1: ( ( ( rule__Elegir__Alternatives_3_0 ) ) )
-            // InternalLatino.g:3806:1: ( ( rule__Elegir__Alternatives_3_0 ) )
+            // InternalLatino.g:3793:1: ( ( ( rule__Elegir__Alternatives_3_0 ) ) )
+            // InternalLatino.g:3794:1: ( ( rule__Elegir__Alternatives_3_0 ) )
             {
-            // InternalLatino.g:3806:1: ( ( rule__Elegir__Alternatives_3_0 ) )
-            // InternalLatino.g:3807:2: ( rule__Elegir__Alternatives_3_0 )
+            // InternalLatino.g:3794:1: ( ( rule__Elegir__Alternatives_3_0 ) )
+            // InternalLatino.g:3795:2: ( rule__Elegir__Alternatives_3_0 )
             {
              before(grammarAccess.getElegirAccess().getAlternatives_3_0()); 
-            // InternalLatino.g:3808:2: ( rule__Elegir__Alternatives_3_0 )
-            // InternalLatino.g:3808:3: rule__Elegir__Alternatives_3_0
+            // InternalLatino.g:3796:2: ( rule__Elegir__Alternatives_3_0 )
+            // InternalLatino.g:3796:3: rule__Elegir__Alternatives_3_0
             {
             pushFollow(FOLLOW_2);
             rule__Elegir__Alternatives_3_0();
@@ -11866,14 +11824,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Elegir__Group_3__1"
-    // InternalLatino.g:3816:1: rule__Elegir__Group_3__1 : rule__Elegir__Group_3__1__Impl rule__Elegir__Group_3__2 ;
+    // InternalLatino.g:3804:1: rule__Elegir__Group_3__1 : rule__Elegir__Group_3__1__Impl rule__Elegir__Group_3__2 ;
     public final void rule__Elegir__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3820:1: ( rule__Elegir__Group_3__1__Impl rule__Elegir__Group_3__2 )
-            // InternalLatino.g:3821:2: rule__Elegir__Group_3__1__Impl rule__Elegir__Group_3__2
+            // InternalLatino.g:3808:1: ( rule__Elegir__Group_3__1__Impl rule__Elegir__Group_3__2 )
+            // InternalLatino.g:3809:2: rule__Elegir__Group_3__1__Impl rule__Elegir__Group_3__2
             {
             pushFollow(FOLLOW_19);
             rule__Elegir__Group_3__1__Impl();
@@ -11904,20 +11862,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Elegir__Group_3__1__Impl"
-    // InternalLatino.g:3828:1: rule__Elegir__Group_3__1__Impl : ( ':' ) ;
+    // InternalLatino.g:3816:1: rule__Elegir__Group_3__1__Impl : ( ':' ) ;
     public final void rule__Elegir__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3832:1: ( ( ':' ) )
-            // InternalLatino.g:3833:1: ( ':' )
+            // InternalLatino.g:3820:1: ( ( ':' ) )
+            // InternalLatino.g:3821:1: ( ':' )
             {
-            // InternalLatino.g:3833:1: ( ':' )
-            // InternalLatino.g:3834:2: ':'
+            // InternalLatino.g:3821:1: ( ':' )
+            // InternalLatino.g:3822:2: ':'
             {
              before(grammarAccess.getElegirAccess().getColonKeyword_3_1()); 
-            match(input,63,FOLLOW_2); 
+            match(input,61,FOLLOW_2); 
              after(grammarAccess.getElegirAccess().getColonKeyword_3_1()); 
 
             }
@@ -11941,14 +11899,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Elegir__Group_3__2"
-    // InternalLatino.g:3843:1: rule__Elegir__Group_3__2 : rule__Elegir__Group_3__2__Impl ;
+    // InternalLatino.g:3831:1: rule__Elegir__Group_3__2 : rule__Elegir__Group_3__2__Impl ;
     public final void rule__Elegir__Group_3__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3847:1: ( rule__Elegir__Group_3__2__Impl )
-            // InternalLatino.g:3848:2: rule__Elegir__Group_3__2__Impl
+            // InternalLatino.g:3835:1: ( rule__Elegir__Group_3__2__Impl )
+            // InternalLatino.g:3836:2: rule__Elegir__Group_3__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Elegir__Group_3__2__Impl();
@@ -11974,24 +11932,24 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Elegir__Group_3__2__Impl"
-    // InternalLatino.g:3854:1: rule__Elegir__Group_3__2__Impl : ( ( ( rule__Elegir__DefectoAssignment_3_2 ) ) ( ( rule__Elegir__DefectoAssignment_3_2 )* ) ) ;
+    // InternalLatino.g:3842:1: rule__Elegir__Group_3__2__Impl : ( ( ( rule__Elegir__DefectoAssignment_3_2 ) ) ( ( rule__Elegir__DefectoAssignment_3_2 )* ) ) ;
     public final void rule__Elegir__Group_3__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3858:1: ( ( ( ( rule__Elegir__DefectoAssignment_3_2 ) ) ( ( rule__Elegir__DefectoAssignment_3_2 )* ) ) )
-            // InternalLatino.g:3859:1: ( ( ( rule__Elegir__DefectoAssignment_3_2 ) ) ( ( rule__Elegir__DefectoAssignment_3_2 )* ) )
+            // InternalLatino.g:3846:1: ( ( ( ( rule__Elegir__DefectoAssignment_3_2 ) ) ( ( rule__Elegir__DefectoAssignment_3_2 )* ) ) )
+            // InternalLatino.g:3847:1: ( ( ( rule__Elegir__DefectoAssignment_3_2 ) ) ( ( rule__Elegir__DefectoAssignment_3_2 )* ) )
             {
-            // InternalLatino.g:3859:1: ( ( ( rule__Elegir__DefectoAssignment_3_2 ) ) ( ( rule__Elegir__DefectoAssignment_3_2 )* ) )
-            // InternalLatino.g:3860:2: ( ( rule__Elegir__DefectoAssignment_3_2 ) ) ( ( rule__Elegir__DefectoAssignment_3_2 )* )
+            // InternalLatino.g:3847:1: ( ( ( rule__Elegir__DefectoAssignment_3_2 ) ) ( ( rule__Elegir__DefectoAssignment_3_2 )* ) )
+            // InternalLatino.g:3848:2: ( ( rule__Elegir__DefectoAssignment_3_2 ) ) ( ( rule__Elegir__DefectoAssignment_3_2 )* )
             {
-            // InternalLatino.g:3860:2: ( ( rule__Elegir__DefectoAssignment_3_2 ) )
-            // InternalLatino.g:3861:3: ( rule__Elegir__DefectoAssignment_3_2 )
+            // InternalLatino.g:3848:2: ( ( rule__Elegir__DefectoAssignment_3_2 ) )
+            // InternalLatino.g:3849:3: ( rule__Elegir__DefectoAssignment_3_2 )
             {
              before(grammarAccess.getElegirAccess().getDefectoAssignment_3_2()); 
-            // InternalLatino.g:3862:3: ( rule__Elegir__DefectoAssignment_3_2 )
-            // InternalLatino.g:3862:4: rule__Elegir__DefectoAssignment_3_2
+            // InternalLatino.g:3850:3: ( rule__Elegir__DefectoAssignment_3_2 )
+            // InternalLatino.g:3850:4: rule__Elegir__DefectoAssignment_3_2
             {
             pushFollow(FOLLOW_17);
             rule__Elegir__DefectoAssignment_3_2();
@@ -12005,24 +11963,24 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // InternalLatino.g:3865:2: ( ( rule__Elegir__DefectoAssignment_3_2 )* )
-            // InternalLatino.g:3866:3: ( rule__Elegir__DefectoAssignment_3_2 )*
+            // InternalLatino.g:3853:2: ( ( rule__Elegir__DefectoAssignment_3_2 )* )
+            // InternalLatino.g:3854:3: ( rule__Elegir__DefectoAssignment_3_2 )*
             {
              before(grammarAccess.getElegirAccess().getDefectoAssignment_3_2()); 
-            // InternalLatino.g:3867:3: ( rule__Elegir__DefectoAssignment_3_2 )*
+            // InternalLatino.g:3855:3: ( rule__Elegir__DefectoAssignment_3_2 )*
             loop34:
             do {
                 int alt34=2;
                 int LA34_0 = input.LA(1);
 
-                if ( (LA34_0==RULE_ID||(LA34_0>=15 && LA34_0<=22)||LA34_0==48||(LA34_0>=52 && LA34_0<=53)||LA34_0==55||LA34_0==57||(LA34_0>=60 && LA34_0<=62)) ) {
+                if ( (LA34_0==RULE_ID||(LA34_0>=15 && LA34_0<=20)||LA34_0==46||(LA34_0>=50 && LA34_0<=51)||LA34_0==53||LA34_0==55||(LA34_0>=58 && LA34_0<=60)) ) {
                     alt34=1;
                 }
 
 
                 switch (alt34) {
             	case 1 :
-            	    // InternalLatino.g:3867:4: rule__Elegir__DefectoAssignment_3_2
+            	    // InternalLatino.g:3855:4: rule__Elegir__DefectoAssignment_3_2
             	    {
             	    pushFollow(FOLLOW_17);
             	    rule__Elegir__DefectoAssignment_3_2();
@@ -12064,14 +12022,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Caso__Group__0"
-    // InternalLatino.g:3877:1: rule__Caso__Group__0 : rule__Caso__Group__0__Impl rule__Caso__Group__1 ;
+    // InternalLatino.g:3865:1: rule__Caso__Group__0 : rule__Caso__Group__0__Impl rule__Caso__Group__1 ;
     public final void rule__Caso__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3881:1: ( rule__Caso__Group__0__Impl rule__Caso__Group__1 )
-            // InternalLatino.g:3882:2: rule__Caso__Group__0__Impl rule__Caso__Group__1
+            // InternalLatino.g:3869:1: ( rule__Caso__Group__0__Impl rule__Caso__Group__1 )
+            // InternalLatino.g:3870:2: rule__Caso__Group__0__Impl rule__Caso__Group__1
             {
             pushFollow(FOLLOW_33);
             rule__Caso__Group__0__Impl();
@@ -12102,20 +12060,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Caso__Group__0__Impl"
-    // InternalLatino.g:3889:1: rule__Caso__Group__0__Impl : ( 'caso' ) ;
+    // InternalLatino.g:3877:1: rule__Caso__Group__0__Impl : ( 'caso' ) ;
     public final void rule__Caso__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3893:1: ( ( 'caso' ) )
-            // InternalLatino.g:3894:1: ( 'caso' )
+            // InternalLatino.g:3881:1: ( ( 'caso' ) )
+            // InternalLatino.g:3882:1: ( 'caso' )
             {
-            // InternalLatino.g:3894:1: ( 'caso' )
-            // InternalLatino.g:3895:2: 'caso'
+            // InternalLatino.g:3882:1: ( 'caso' )
+            // InternalLatino.g:3883:2: 'caso'
             {
              before(grammarAccess.getCasoAccess().getCasoKeyword_0()); 
-            match(input,64,FOLLOW_2); 
+            match(input,62,FOLLOW_2); 
              after(grammarAccess.getCasoAccess().getCasoKeyword_0()); 
 
             }
@@ -12139,14 +12097,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Caso__Group__1"
-    // InternalLatino.g:3904:1: rule__Caso__Group__1 : rule__Caso__Group__1__Impl rule__Caso__Group__2 ;
+    // InternalLatino.g:3892:1: rule__Caso__Group__1 : rule__Caso__Group__1__Impl rule__Caso__Group__2 ;
     public final void rule__Caso__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3908:1: ( rule__Caso__Group__1__Impl rule__Caso__Group__2 )
-            // InternalLatino.g:3909:2: rule__Caso__Group__1__Impl rule__Caso__Group__2
+            // InternalLatino.g:3896:1: ( rule__Caso__Group__1__Impl rule__Caso__Group__2 )
+            // InternalLatino.g:3897:2: rule__Caso__Group__1__Impl rule__Caso__Group__2
             {
             pushFollow(FOLLOW_32);
             rule__Caso__Group__1__Impl();
@@ -12177,21 +12135,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Caso__Group__1__Impl"
-    // InternalLatino.g:3916:1: rule__Caso__Group__1__Impl : ( ( rule__Caso__ValoresAssignment_1 ) ) ;
+    // InternalLatino.g:3904:1: rule__Caso__Group__1__Impl : ( ( rule__Caso__ValoresAssignment_1 ) ) ;
     public final void rule__Caso__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3920:1: ( ( ( rule__Caso__ValoresAssignment_1 ) ) )
-            // InternalLatino.g:3921:1: ( ( rule__Caso__ValoresAssignment_1 ) )
+            // InternalLatino.g:3908:1: ( ( ( rule__Caso__ValoresAssignment_1 ) ) )
+            // InternalLatino.g:3909:1: ( ( rule__Caso__ValoresAssignment_1 ) )
             {
-            // InternalLatino.g:3921:1: ( ( rule__Caso__ValoresAssignment_1 ) )
-            // InternalLatino.g:3922:2: ( rule__Caso__ValoresAssignment_1 )
+            // InternalLatino.g:3909:1: ( ( rule__Caso__ValoresAssignment_1 ) )
+            // InternalLatino.g:3910:2: ( rule__Caso__ValoresAssignment_1 )
             {
              before(grammarAccess.getCasoAccess().getValoresAssignment_1()); 
-            // InternalLatino.g:3923:2: ( rule__Caso__ValoresAssignment_1 )
-            // InternalLatino.g:3923:3: rule__Caso__ValoresAssignment_1
+            // InternalLatino.g:3911:2: ( rule__Caso__ValoresAssignment_1 )
+            // InternalLatino.g:3911:3: rule__Caso__ValoresAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Caso__ValoresAssignment_1();
@@ -12224,14 +12182,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Caso__Group__2"
-    // InternalLatino.g:3931:1: rule__Caso__Group__2 : rule__Caso__Group__2__Impl rule__Caso__Group__3 ;
+    // InternalLatino.g:3919:1: rule__Caso__Group__2 : rule__Caso__Group__2__Impl rule__Caso__Group__3 ;
     public final void rule__Caso__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3935:1: ( rule__Caso__Group__2__Impl rule__Caso__Group__3 )
-            // InternalLatino.g:3936:2: rule__Caso__Group__2__Impl rule__Caso__Group__3
+            // InternalLatino.g:3923:1: ( rule__Caso__Group__2__Impl rule__Caso__Group__3 )
+            // InternalLatino.g:3924:2: rule__Caso__Group__2__Impl rule__Caso__Group__3
             {
             pushFollow(FOLLOW_34);
             rule__Caso__Group__2__Impl();
@@ -12262,20 +12220,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Caso__Group__2__Impl"
-    // InternalLatino.g:3943:1: rule__Caso__Group__2__Impl : ( ':' ) ;
+    // InternalLatino.g:3931:1: rule__Caso__Group__2__Impl : ( ':' ) ;
     public final void rule__Caso__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3947:1: ( ( ':' ) )
-            // InternalLatino.g:3948:1: ( ':' )
+            // InternalLatino.g:3935:1: ( ( ':' ) )
+            // InternalLatino.g:3936:1: ( ':' )
             {
-            // InternalLatino.g:3948:1: ( ':' )
-            // InternalLatino.g:3949:2: ':'
+            // InternalLatino.g:3936:1: ( ':' )
+            // InternalLatino.g:3937:2: ':'
             {
              before(grammarAccess.getCasoAccess().getColonKeyword_2()); 
-            match(input,63,FOLLOW_2); 
+            match(input,61,FOLLOW_2); 
              after(grammarAccess.getCasoAccess().getColonKeyword_2()); 
 
             }
@@ -12299,14 +12257,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Caso__Group__3"
-    // InternalLatino.g:3958:1: rule__Caso__Group__3 : rule__Caso__Group__3__Impl rule__Caso__Group__4 ;
+    // InternalLatino.g:3946:1: rule__Caso__Group__3 : rule__Caso__Group__3__Impl rule__Caso__Group__4 ;
     public final void rule__Caso__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3962:1: ( rule__Caso__Group__3__Impl rule__Caso__Group__4 )
-            // InternalLatino.g:3963:2: rule__Caso__Group__3__Impl rule__Caso__Group__4
+            // InternalLatino.g:3950:1: ( rule__Caso__Group__3__Impl rule__Caso__Group__4 )
+            // InternalLatino.g:3951:2: rule__Caso__Group__3__Impl rule__Caso__Group__4
             {
             pushFollow(FOLLOW_34);
             rule__Caso__Group__3__Impl();
@@ -12337,33 +12295,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Caso__Group__3__Impl"
-    // InternalLatino.g:3970:1: rule__Caso__Group__3__Impl : ( ( rule__Caso__Group_3__0 )* ) ;
+    // InternalLatino.g:3958:1: rule__Caso__Group__3__Impl : ( ( rule__Caso__Group_3__0 )* ) ;
     public final void rule__Caso__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3974:1: ( ( ( rule__Caso__Group_3__0 )* ) )
-            // InternalLatino.g:3975:1: ( ( rule__Caso__Group_3__0 )* )
+            // InternalLatino.g:3962:1: ( ( ( rule__Caso__Group_3__0 )* ) )
+            // InternalLatino.g:3963:1: ( ( rule__Caso__Group_3__0 )* )
             {
-            // InternalLatino.g:3975:1: ( ( rule__Caso__Group_3__0 )* )
-            // InternalLatino.g:3976:2: ( rule__Caso__Group_3__0 )*
+            // InternalLatino.g:3963:1: ( ( rule__Caso__Group_3__0 )* )
+            // InternalLatino.g:3964:2: ( rule__Caso__Group_3__0 )*
             {
              before(grammarAccess.getCasoAccess().getGroup_3()); 
-            // InternalLatino.g:3977:2: ( rule__Caso__Group_3__0 )*
+            // InternalLatino.g:3965:2: ( rule__Caso__Group_3__0 )*
             loop35:
             do {
                 int alt35=2;
                 int LA35_0 = input.LA(1);
 
-                if ( (LA35_0==64) ) {
+                if ( (LA35_0==62) ) {
                     alt35=1;
                 }
 
 
                 switch (alt35) {
             	case 1 :
-            	    // InternalLatino.g:3977:3: rule__Caso__Group_3__0
+            	    // InternalLatino.g:3965:3: rule__Caso__Group_3__0
             	    {
             	    pushFollow(FOLLOW_31);
             	    rule__Caso__Group_3__0();
@@ -12402,14 +12360,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Caso__Group__4"
-    // InternalLatino.g:3985:1: rule__Caso__Group__4 : rule__Caso__Group__4__Impl ;
+    // InternalLatino.g:3973:1: rule__Caso__Group__4 : rule__Caso__Group__4__Impl ;
     public final void rule__Caso__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:3989:1: ( rule__Caso__Group__4__Impl )
-            // InternalLatino.g:3990:2: rule__Caso__Group__4__Impl
+            // InternalLatino.g:3977:1: ( rule__Caso__Group__4__Impl )
+            // InternalLatino.g:3978:2: rule__Caso__Group__4__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Caso__Group__4__Impl();
@@ -12435,24 +12393,24 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Caso__Group__4__Impl"
-    // InternalLatino.g:3996:1: rule__Caso__Group__4__Impl : ( ( ( rule__Caso__SentenciasAssignment_4 ) ) ( ( rule__Caso__SentenciasAssignment_4 )* ) ) ;
+    // InternalLatino.g:3984:1: rule__Caso__Group__4__Impl : ( ( ( rule__Caso__SentenciasAssignment_4 ) ) ( ( rule__Caso__SentenciasAssignment_4 )* ) ) ;
     public final void rule__Caso__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4000:1: ( ( ( ( rule__Caso__SentenciasAssignment_4 ) ) ( ( rule__Caso__SentenciasAssignment_4 )* ) ) )
-            // InternalLatino.g:4001:1: ( ( ( rule__Caso__SentenciasAssignment_4 ) ) ( ( rule__Caso__SentenciasAssignment_4 )* ) )
+            // InternalLatino.g:3988:1: ( ( ( ( rule__Caso__SentenciasAssignment_4 ) ) ( ( rule__Caso__SentenciasAssignment_4 )* ) ) )
+            // InternalLatino.g:3989:1: ( ( ( rule__Caso__SentenciasAssignment_4 ) ) ( ( rule__Caso__SentenciasAssignment_4 )* ) )
             {
-            // InternalLatino.g:4001:1: ( ( ( rule__Caso__SentenciasAssignment_4 ) ) ( ( rule__Caso__SentenciasAssignment_4 )* ) )
-            // InternalLatino.g:4002:2: ( ( rule__Caso__SentenciasAssignment_4 ) ) ( ( rule__Caso__SentenciasAssignment_4 )* )
+            // InternalLatino.g:3989:1: ( ( ( rule__Caso__SentenciasAssignment_4 ) ) ( ( rule__Caso__SentenciasAssignment_4 )* ) )
+            // InternalLatino.g:3990:2: ( ( rule__Caso__SentenciasAssignment_4 ) ) ( ( rule__Caso__SentenciasAssignment_4 )* )
             {
-            // InternalLatino.g:4002:2: ( ( rule__Caso__SentenciasAssignment_4 ) )
-            // InternalLatino.g:4003:3: ( rule__Caso__SentenciasAssignment_4 )
+            // InternalLatino.g:3990:2: ( ( rule__Caso__SentenciasAssignment_4 ) )
+            // InternalLatino.g:3991:3: ( rule__Caso__SentenciasAssignment_4 )
             {
              before(grammarAccess.getCasoAccess().getSentenciasAssignment_4()); 
-            // InternalLatino.g:4004:3: ( rule__Caso__SentenciasAssignment_4 )
-            // InternalLatino.g:4004:4: rule__Caso__SentenciasAssignment_4
+            // InternalLatino.g:3992:3: ( rule__Caso__SentenciasAssignment_4 )
+            // InternalLatino.g:3992:4: rule__Caso__SentenciasAssignment_4
             {
             pushFollow(FOLLOW_35);
             rule__Caso__SentenciasAssignment_4();
@@ -12466,24 +12424,24 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
             }
 
-            // InternalLatino.g:4007:2: ( ( rule__Caso__SentenciasAssignment_4 )* )
-            // InternalLatino.g:4008:3: ( rule__Caso__SentenciasAssignment_4 )*
+            // InternalLatino.g:3995:2: ( ( rule__Caso__SentenciasAssignment_4 )* )
+            // InternalLatino.g:3996:3: ( rule__Caso__SentenciasAssignment_4 )*
             {
              before(grammarAccess.getCasoAccess().getSentenciasAssignment_4()); 
-            // InternalLatino.g:4009:3: ( rule__Caso__SentenciasAssignment_4 )*
+            // InternalLatino.g:3997:3: ( rule__Caso__SentenciasAssignment_4 )*
             loop36:
             do {
                 int alt36=2;
                 int LA36_0 = input.LA(1);
 
-                if ( (LA36_0==RULE_ID||(LA36_0>=15 && LA36_0<=22)||LA36_0==48||(LA36_0>=52 && LA36_0<=53)||LA36_0==55||LA36_0==57||(LA36_0>=60 && LA36_0<=62)) ) {
+                if ( (LA36_0==RULE_ID||(LA36_0>=15 && LA36_0<=20)||LA36_0==46||(LA36_0>=50 && LA36_0<=51)||LA36_0==53||LA36_0==55||(LA36_0>=58 && LA36_0<=60)) ) {
                     alt36=1;
                 }
 
 
                 switch (alt36) {
             	case 1 :
-            	    // InternalLatino.g:4009:4: rule__Caso__SentenciasAssignment_4
+            	    // InternalLatino.g:3997:4: rule__Caso__SentenciasAssignment_4
             	    {
             	    pushFollow(FOLLOW_35);
             	    rule__Caso__SentenciasAssignment_4();
@@ -12525,14 +12483,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Caso__Group_3__0"
-    // InternalLatino.g:4019:1: rule__Caso__Group_3__0 : rule__Caso__Group_3__0__Impl rule__Caso__Group_3__1 ;
+    // InternalLatino.g:4007:1: rule__Caso__Group_3__0 : rule__Caso__Group_3__0__Impl rule__Caso__Group_3__1 ;
     public final void rule__Caso__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4023:1: ( rule__Caso__Group_3__0__Impl rule__Caso__Group_3__1 )
-            // InternalLatino.g:4024:2: rule__Caso__Group_3__0__Impl rule__Caso__Group_3__1
+            // InternalLatino.g:4011:1: ( rule__Caso__Group_3__0__Impl rule__Caso__Group_3__1 )
+            // InternalLatino.g:4012:2: rule__Caso__Group_3__0__Impl rule__Caso__Group_3__1
             {
             pushFollow(FOLLOW_33);
             rule__Caso__Group_3__0__Impl();
@@ -12563,20 +12521,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Caso__Group_3__0__Impl"
-    // InternalLatino.g:4031:1: rule__Caso__Group_3__0__Impl : ( 'caso' ) ;
+    // InternalLatino.g:4019:1: rule__Caso__Group_3__0__Impl : ( 'caso' ) ;
     public final void rule__Caso__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4035:1: ( ( 'caso' ) )
-            // InternalLatino.g:4036:1: ( 'caso' )
+            // InternalLatino.g:4023:1: ( ( 'caso' ) )
+            // InternalLatino.g:4024:1: ( 'caso' )
             {
-            // InternalLatino.g:4036:1: ( 'caso' )
-            // InternalLatino.g:4037:2: 'caso'
+            // InternalLatino.g:4024:1: ( 'caso' )
+            // InternalLatino.g:4025:2: 'caso'
             {
              before(grammarAccess.getCasoAccess().getCasoKeyword_3_0()); 
-            match(input,64,FOLLOW_2); 
+            match(input,62,FOLLOW_2); 
              after(grammarAccess.getCasoAccess().getCasoKeyword_3_0()); 
 
             }
@@ -12600,14 +12558,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Caso__Group_3__1"
-    // InternalLatino.g:4046:1: rule__Caso__Group_3__1 : rule__Caso__Group_3__1__Impl rule__Caso__Group_3__2 ;
+    // InternalLatino.g:4034:1: rule__Caso__Group_3__1 : rule__Caso__Group_3__1__Impl rule__Caso__Group_3__2 ;
     public final void rule__Caso__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4050:1: ( rule__Caso__Group_3__1__Impl rule__Caso__Group_3__2 )
-            // InternalLatino.g:4051:2: rule__Caso__Group_3__1__Impl rule__Caso__Group_3__2
+            // InternalLatino.g:4038:1: ( rule__Caso__Group_3__1__Impl rule__Caso__Group_3__2 )
+            // InternalLatino.g:4039:2: rule__Caso__Group_3__1__Impl rule__Caso__Group_3__2
             {
             pushFollow(FOLLOW_32);
             rule__Caso__Group_3__1__Impl();
@@ -12638,21 +12596,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Caso__Group_3__1__Impl"
-    // InternalLatino.g:4058:1: rule__Caso__Group_3__1__Impl : ( ( rule__Caso__ValoresAssignment_3_1 ) ) ;
+    // InternalLatino.g:4046:1: rule__Caso__Group_3__1__Impl : ( ( rule__Caso__ValoresAssignment_3_1 ) ) ;
     public final void rule__Caso__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4062:1: ( ( ( rule__Caso__ValoresAssignment_3_1 ) ) )
-            // InternalLatino.g:4063:1: ( ( rule__Caso__ValoresAssignment_3_1 ) )
+            // InternalLatino.g:4050:1: ( ( ( rule__Caso__ValoresAssignment_3_1 ) ) )
+            // InternalLatino.g:4051:1: ( ( rule__Caso__ValoresAssignment_3_1 ) )
             {
-            // InternalLatino.g:4063:1: ( ( rule__Caso__ValoresAssignment_3_1 ) )
-            // InternalLatino.g:4064:2: ( rule__Caso__ValoresAssignment_3_1 )
+            // InternalLatino.g:4051:1: ( ( rule__Caso__ValoresAssignment_3_1 ) )
+            // InternalLatino.g:4052:2: ( rule__Caso__ValoresAssignment_3_1 )
             {
              before(grammarAccess.getCasoAccess().getValoresAssignment_3_1()); 
-            // InternalLatino.g:4065:2: ( rule__Caso__ValoresAssignment_3_1 )
-            // InternalLatino.g:4065:3: rule__Caso__ValoresAssignment_3_1
+            // InternalLatino.g:4053:2: ( rule__Caso__ValoresAssignment_3_1 )
+            // InternalLatino.g:4053:3: rule__Caso__ValoresAssignment_3_1
             {
             pushFollow(FOLLOW_2);
             rule__Caso__ValoresAssignment_3_1();
@@ -12685,14 +12643,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Caso__Group_3__2"
-    // InternalLatino.g:4073:1: rule__Caso__Group_3__2 : rule__Caso__Group_3__2__Impl ;
+    // InternalLatino.g:4061:1: rule__Caso__Group_3__2 : rule__Caso__Group_3__2__Impl ;
     public final void rule__Caso__Group_3__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4077:1: ( rule__Caso__Group_3__2__Impl )
-            // InternalLatino.g:4078:2: rule__Caso__Group_3__2__Impl
+            // InternalLatino.g:4065:1: ( rule__Caso__Group_3__2__Impl )
+            // InternalLatino.g:4066:2: rule__Caso__Group_3__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Caso__Group_3__2__Impl();
@@ -12718,20 +12676,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Caso__Group_3__2__Impl"
-    // InternalLatino.g:4084:1: rule__Caso__Group_3__2__Impl : ( ':' ) ;
+    // InternalLatino.g:4072:1: rule__Caso__Group_3__2__Impl : ( ':' ) ;
     public final void rule__Caso__Group_3__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4088:1: ( ( ':' ) )
-            // InternalLatino.g:4089:1: ( ':' )
+            // InternalLatino.g:4076:1: ( ( ':' ) )
+            // InternalLatino.g:4077:1: ( ':' )
             {
-            // InternalLatino.g:4089:1: ( ':' )
-            // InternalLatino.g:4090:2: ':'
+            // InternalLatino.g:4077:1: ( ':' )
+            // InternalLatino.g:4078:2: ':'
             {
              before(grammarAccess.getCasoAccess().getColonKeyword_3_2()); 
-            match(input,63,FOLLOW_2); 
+            match(input,61,FOLLOW_2); 
              after(grammarAccess.getCasoAccess().getColonKeyword_3_2()); 
 
             }
@@ -12755,14 +12713,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group__0"
-    // InternalLatino.g:4100:1: rule__Funcion__Group__0 : rule__Funcion__Group__0__Impl rule__Funcion__Group__1 ;
+    // InternalLatino.g:4088:1: rule__Funcion__Group__0 : rule__Funcion__Group__0__Impl rule__Funcion__Group__1 ;
     public final void rule__Funcion__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4104:1: ( rule__Funcion__Group__0__Impl rule__Funcion__Group__1 )
-            // InternalLatino.g:4105:2: rule__Funcion__Group__0__Impl rule__Funcion__Group__1
+            // InternalLatino.g:4092:1: ( rule__Funcion__Group__0__Impl rule__Funcion__Group__1 )
+            // InternalLatino.g:4093:2: rule__Funcion__Group__0__Impl rule__Funcion__Group__1
             {
             pushFollow(FOLLOW_22);
             rule__Funcion__Group__0__Impl();
@@ -12793,21 +12751,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group__0__Impl"
-    // InternalLatino.g:4112:1: rule__Funcion__Group__0__Impl : ( ( rule__Funcion__Alternatives_0 ) ) ;
+    // InternalLatino.g:4100:1: rule__Funcion__Group__0__Impl : ( ( rule__Funcion__Alternatives_0 ) ) ;
     public final void rule__Funcion__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4116:1: ( ( ( rule__Funcion__Alternatives_0 ) ) )
-            // InternalLatino.g:4117:1: ( ( rule__Funcion__Alternatives_0 ) )
+            // InternalLatino.g:4104:1: ( ( ( rule__Funcion__Alternatives_0 ) ) )
+            // InternalLatino.g:4105:1: ( ( rule__Funcion__Alternatives_0 ) )
             {
-            // InternalLatino.g:4117:1: ( ( rule__Funcion__Alternatives_0 ) )
-            // InternalLatino.g:4118:2: ( rule__Funcion__Alternatives_0 )
+            // InternalLatino.g:4105:1: ( ( rule__Funcion__Alternatives_0 ) )
+            // InternalLatino.g:4106:2: ( rule__Funcion__Alternatives_0 )
             {
              before(grammarAccess.getFuncionAccess().getAlternatives_0()); 
-            // InternalLatino.g:4119:2: ( rule__Funcion__Alternatives_0 )
-            // InternalLatino.g:4119:3: rule__Funcion__Alternatives_0
+            // InternalLatino.g:4107:2: ( rule__Funcion__Alternatives_0 )
+            // InternalLatino.g:4107:3: rule__Funcion__Alternatives_0
             {
             pushFollow(FOLLOW_2);
             rule__Funcion__Alternatives_0();
@@ -12840,14 +12798,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group__1"
-    // InternalLatino.g:4127:1: rule__Funcion__Group__1 : rule__Funcion__Group__1__Impl rule__Funcion__Group__2 ;
+    // InternalLatino.g:4115:1: rule__Funcion__Group__1 : rule__Funcion__Group__1__Impl rule__Funcion__Group__2 ;
     public final void rule__Funcion__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4131:1: ( rule__Funcion__Group__1__Impl rule__Funcion__Group__2 )
-            // InternalLatino.g:4132:2: rule__Funcion__Group__1__Impl rule__Funcion__Group__2
+            // InternalLatino.g:4119:1: ( rule__Funcion__Group__1__Impl rule__Funcion__Group__2 )
+            // InternalLatino.g:4120:2: rule__Funcion__Group__1__Impl rule__Funcion__Group__2
             {
             pushFollow(FOLLOW_8);
             rule__Funcion__Group__1__Impl();
@@ -12878,21 +12836,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group__1__Impl"
-    // InternalLatino.g:4139:1: rule__Funcion__Group__1__Impl : ( ( rule__Funcion__NombreAssignment_1 ) ) ;
+    // InternalLatino.g:4127:1: rule__Funcion__Group__1__Impl : ( ( rule__Funcion__NombreAssignment_1 ) ) ;
     public final void rule__Funcion__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4143:1: ( ( ( rule__Funcion__NombreAssignment_1 ) ) )
-            // InternalLatino.g:4144:1: ( ( rule__Funcion__NombreAssignment_1 ) )
+            // InternalLatino.g:4131:1: ( ( ( rule__Funcion__NombreAssignment_1 ) ) )
+            // InternalLatino.g:4132:1: ( ( rule__Funcion__NombreAssignment_1 ) )
             {
-            // InternalLatino.g:4144:1: ( ( rule__Funcion__NombreAssignment_1 ) )
-            // InternalLatino.g:4145:2: ( rule__Funcion__NombreAssignment_1 )
+            // InternalLatino.g:4132:1: ( ( rule__Funcion__NombreAssignment_1 ) )
+            // InternalLatino.g:4133:2: ( rule__Funcion__NombreAssignment_1 )
             {
              before(grammarAccess.getFuncionAccess().getNombreAssignment_1()); 
-            // InternalLatino.g:4146:2: ( rule__Funcion__NombreAssignment_1 )
-            // InternalLatino.g:4146:3: rule__Funcion__NombreAssignment_1
+            // InternalLatino.g:4134:2: ( rule__Funcion__NombreAssignment_1 )
+            // InternalLatino.g:4134:3: rule__Funcion__NombreAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Funcion__NombreAssignment_1();
@@ -12925,14 +12883,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group__2"
-    // InternalLatino.g:4154:1: rule__Funcion__Group__2 : rule__Funcion__Group__2__Impl rule__Funcion__Group__3 ;
+    // InternalLatino.g:4142:1: rule__Funcion__Group__2 : rule__Funcion__Group__2__Impl rule__Funcion__Group__3 ;
     public final void rule__Funcion__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4158:1: ( rule__Funcion__Group__2__Impl rule__Funcion__Group__3 )
-            // InternalLatino.g:4159:2: rule__Funcion__Group__2__Impl rule__Funcion__Group__3
+            // InternalLatino.g:4146:1: ( rule__Funcion__Group__2__Impl rule__Funcion__Group__3 )
+            // InternalLatino.g:4147:2: rule__Funcion__Group__2__Impl rule__Funcion__Group__3
             {
             pushFollow(FOLLOW_36);
             rule__Funcion__Group__2__Impl();
@@ -12963,20 +12921,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group__2__Impl"
-    // InternalLatino.g:4166:1: rule__Funcion__Group__2__Impl : ( '(' ) ;
+    // InternalLatino.g:4154:1: rule__Funcion__Group__2__Impl : ( '(' ) ;
     public final void rule__Funcion__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4170:1: ( ( '(' ) )
-            // InternalLatino.g:4171:1: ( '(' )
+            // InternalLatino.g:4158:1: ( ( '(' ) )
+            // InternalLatino.g:4159:1: ( '(' )
             {
-            // InternalLatino.g:4171:1: ( '(' )
-            // InternalLatino.g:4172:2: '('
+            // InternalLatino.g:4159:1: ( '(' )
+            // InternalLatino.g:4160:2: '('
             {
              before(grammarAccess.getFuncionAccess().getLeftParenthesisKeyword_2()); 
-            match(input,42,FOLLOW_2); 
+            match(input,40,FOLLOW_2); 
              after(grammarAccess.getFuncionAccess().getLeftParenthesisKeyword_2()); 
 
             }
@@ -13000,14 +12958,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group__3"
-    // InternalLatino.g:4181:1: rule__Funcion__Group__3 : rule__Funcion__Group__3__Impl rule__Funcion__Group__4 ;
+    // InternalLatino.g:4169:1: rule__Funcion__Group__3 : rule__Funcion__Group__3__Impl rule__Funcion__Group__4 ;
     public final void rule__Funcion__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4185:1: ( rule__Funcion__Group__3__Impl rule__Funcion__Group__4 )
-            // InternalLatino.g:4186:2: rule__Funcion__Group__3__Impl rule__Funcion__Group__4
+            // InternalLatino.g:4173:1: ( rule__Funcion__Group__3__Impl rule__Funcion__Group__4 )
+            // InternalLatino.g:4174:2: rule__Funcion__Group__3__Impl rule__Funcion__Group__4
             {
             pushFollow(FOLLOW_36);
             rule__Funcion__Group__3__Impl();
@@ -13038,20 +12996,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group__3__Impl"
-    // InternalLatino.g:4193:1: rule__Funcion__Group__3__Impl : ( ( rule__Funcion__Group_3__0 )? ) ;
+    // InternalLatino.g:4181:1: rule__Funcion__Group__3__Impl : ( ( rule__Funcion__Group_3__0 )? ) ;
     public final void rule__Funcion__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4197:1: ( ( ( rule__Funcion__Group_3__0 )? ) )
-            // InternalLatino.g:4198:1: ( ( rule__Funcion__Group_3__0 )? )
+            // InternalLatino.g:4185:1: ( ( ( rule__Funcion__Group_3__0 )? ) )
+            // InternalLatino.g:4186:1: ( ( rule__Funcion__Group_3__0 )? )
             {
-            // InternalLatino.g:4198:1: ( ( rule__Funcion__Group_3__0 )? )
-            // InternalLatino.g:4199:2: ( rule__Funcion__Group_3__0 )?
+            // InternalLatino.g:4186:1: ( ( rule__Funcion__Group_3__0 )? )
+            // InternalLatino.g:4187:2: ( rule__Funcion__Group_3__0 )?
             {
              before(grammarAccess.getFuncionAccess().getGroup_3()); 
-            // InternalLatino.g:4200:2: ( rule__Funcion__Group_3__0 )?
+            // InternalLatino.g:4188:2: ( rule__Funcion__Group_3__0 )?
             int alt37=2;
             int LA37_0 = input.LA(1);
 
@@ -13060,7 +13018,7 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
             }
             switch (alt37) {
                 case 1 :
-                    // InternalLatino.g:4200:3: rule__Funcion__Group_3__0
+                    // InternalLatino.g:4188:3: rule__Funcion__Group_3__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Funcion__Group_3__0();
@@ -13096,14 +13054,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group__4"
-    // InternalLatino.g:4208:1: rule__Funcion__Group__4 : rule__Funcion__Group__4__Impl rule__Funcion__Group__5 ;
+    // InternalLatino.g:4196:1: rule__Funcion__Group__4 : rule__Funcion__Group__4__Impl rule__Funcion__Group__5 ;
     public final void rule__Funcion__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4212:1: ( rule__Funcion__Group__4__Impl rule__Funcion__Group__5 )
-            // InternalLatino.g:4213:2: rule__Funcion__Group__4__Impl rule__Funcion__Group__5
+            // InternalLatino.g:4200:1: ( rule__Funcion__Group__4__Impl rule__Funcion__Group__5 )
+            // InternalLatino.g:4201:2: rule__Funcion__Group__4__Impl rule__Funcion__Group__5
             {
             pushFollow(FOLLOW_20);
             rule__Funcion__Group__4__Impl();
@@ -13134,20 +13092,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group__4__Impl"
-    // InternalLatino.g:4220:1: rule__Funcion__Group__4__Impl : ( ')' ) ;
+    // InternalLatino.g:4208:1: rule__Funcion__Group__4__Impl : ( ')' ) ;
     public final void rule__Funcion__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4224:1: ( ( ')' ) )
-            // InternalLatino.g:4225:1: ( ')' )
+            // InternalLatino.g:4212:1: ( ( ')' ) )
+            // InternalLatino.g:4213:1: ( ')' )
             {
-            // InternalLatino.g:4225:1: ( ')' )
-            // InternalLatino.g:4226:2: ')'
+            // InternalLatino.g:4213:1: ( ')' )
+            // InternalLatino.g:4214:2: ')'
             {
              before(grammarAccess.getFuncionAccess().getRightParenthesisKeyword_4()); 
-            match(input,44,FOLLOW_2); 
+            match(input,42,FOLLOW_2); 
              after(grammarAccess.getFuncionAccess().getRightParenthesisKeyword_4()); 
 
             }
@@ -13171,14 +13129,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group__5"
-    // InternalLatino.g:4235:1: rule__Funcion__Group__5 : rule__Funcion__Group__5__Impl rule__Funcion__Group__6 ;
+    // InternalLatino.g:4223:1: rule__Funcion__Group__5 : rule__Funcion__Group__5__Impl rule__Funcion__Group__6 ;
     public final void rule__Funcion__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4239:1: ( rule__Funcion__Group__5__Impl rule__Funcion__Group__6 )
-            // InternalLatino.g:4240:2: rule__Funcion__Group__5__Impl rule__Funcion__Group__6
+            // InternalLatino.g:4227:1: ( rule__Funcion__Group__5__Impl rule__Funcion__Group__6 )
+            // InternalLatino.g:4228:2: rule__Funcion__Group__5__Impl rule__Funcion__Group__6
             {
             pushFollow(FOLLOW_20);
             rule__Funcion__Group__5__Impl();
@@ -13209,33 +13167,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group__5__Impl"
-    // InternalLatino.g:4247:1: rule__Funcion__Group__5__Impl : ( ( rule__Funcion__CuerpoAssignment_5 )* ) ;
+    // InternalLatino.g:4235:1: rule__Funcion__Group__5__Impl : ( ( rule__Funcion__CuerpoAssignment_5 )* ) ;
     public final void rule__Funcion__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4251:1: ( ( ( rule__Funcion__CuerpoAssignment_5 )* ) )
-            // InternalLatino.g:4252:1: ( ( rule__Funcion__CuerpoAssignment_5 )* )
+            // InternalLatino.g:4239:1: ( ( ( rule__Funcion__CuerpoAssignment_5 )* ) )
+            // InternalLatino.g:4240:1: ( ( rule__Funcion__CuerpoAssignment_5 )* )
             {
-            // InternalLatino.g:4252:1: ( ( rule__Funcion__CuerpoAssignment_5 )* )
-            // InternalLatino.g:4253:2: ( rule__Funcion__CuerpoAssignment_5 )*
+            // InternalLatino.g:4240:1: ( ( rule__Funcion__CuerpoAssignment_5 )* )
+            // InternalLatino.g:4241:2: ( rule__Funcion__CuerpoAssignment_5 )*
             {
              before(grammarAccess.getFuncionAccess().getCuerpoAssignment_5()); 
-            // InternalLatino.g:4254:2: ( rule__Funcion__CuerpoAssignment_5 )*
+            // InternalLatino.g:4242:2: ( rule__Funcion__CuerpoAssignment_5 )*
             loop38:
             do {
                 int alt38=2;
                 int LA38_0 = input.LA(1);
 
-                if ( (LA38_0==RULE_ID||(LA38_0>=15 && LA38_0<=22)||LA38_0==48||(LA38_0>=52 && LA38_0<=53)||LA38_0==55||LA38_0==57||(LA38_0>=60 && LA38_0<=62)) ) {
+                if ( (LA38_0==RULE_ID||(LA38_0>=15 && LA38_0<=20)||LA38_0==46||(LA38_0>=50 && LA38_0<=51)||LA38_0==53||LA38_0==55||(LA38_0>=58 && LA38_0<=60)) ) {
                     alt38=1;
                 }
 
 
                 switch (alt38) {
             	case 1 :
-            	    // InternalLatino.g:4254:3: rule__Funcion__CuerpoAssignment_5
+            	    // InternalLatino.g:4242:3: rule__Funcion__CuerpoAssignment_5
             	    {
             	    pushFollow(FOLLOW_17);
             	    rule__Funcion__CuerpoAssignment_5();
@@ -13274,14 +13232,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group__6"
-    // InternalLatino.g:4262:1: rule__Funcion__Group__6 : rule__Funcion__Group__6__Impl ;
+    // InternalLatino.g:4250:1: rule__Funcion__Group__6 : rule__Funcion__Group__6__Impl ;
     public final void rule__Funcion__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4266:1: ( rule__Funcion__Group__6__Impl )
-            // InternalLatino.g:4267:2: rule__Funcion__Group__6__Impl
+            // InternalLatino.g:4254:1: ( rule__Funcion__Group__6__Impl )
+            // InternalLatino.g:4255:2: rule__Funcion__Group__6__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Funcion__Group__6__Impl();
@@ -13307,20 +13265,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group__6__Impl"
-    // InternalLatino.g:4273:1: rule__Funcion__Group__6__Impl : ( 'fin' ) ;
+    // InternalLatino.g:4261:1: rule__Funcion__Group__6__Impl : ( 'fin' ) ;
     public final void rule__Funcion__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4277:1: ( ( 'fin' ) )
-            // InternalLatino.g:4278:1: ( 'fin' )
+            // InternalLatino.g:4265:1: ( ( 'fin' ) )
+            // InternalLatino.g:4266:1: ( 'fin' )
             {
-            // InternalLatino.g:4278:1: ( 'fin' )
-            // InternalLatino.g:4279:2: 'fin'
+            // InternalLatino.g:4266:1: ( 'fin' )
+            // InternalLatino.g:4267:2: 'fin'
             {
              before(grammarAccess.getFuncionAccess().getFinKeyword_6()); 
-            match(input,49,FOLLOW_2); 
+            match(input,47,FOLLOW_2); 
              after(grammarAccess.getFuncionAccess().getFinKeyword_6()); 
 
             }
@@ -13344,14 +13302,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group_3__0"
-    // InternalLatino.g:4289:1: rule__Funcion__Group_3__0 : rule__Funcion__Group_3__0__Impl rule__Funcion__Group_3__1 ;
+    // InternalLatino.g:4277:1: rule__Funcion__Group_3__0 : rule__Funcion__Group_3__0__Impl rule__Funcion__Group_3__1 ;
     public final void rule__Funcion__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4293:1: ( rule__Funcion__Group_3__0__Impl rule__Funcion__Group_3__1 )
-            // InternalLatino.g:4294:2: rule__Funcion__Group_3__0__Impl rule__Funcion__Group_3__1
+            // InternalLatino.g:4281:1: ( rule__Funcion__Group_3__0__Impl rule__Funcion__Group_3__1 )
+            // InternalLatino.g:4282:2: rule__Funcion__Group_3__0__Impl rule__Funcion__Group_3__1
             {
             pushFollow(FOLLOW_13);
             rule__Funcion__Group_3__0__Impl();
@@ -13382,21 +13340,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group_3__0__Impl"
-    // InternalLatino.g:4301:1: rule__Funcion__Group_3__0__Impl : ( ( rule__Funcion__ParametrosAssignment_3_0 ) ) ;
+    // InternalLatino.g:4289:1: rule__Funcion__Group_3__0__Impl : ( ( rule__Funcion__ParametrosAssignment_3_0 ) ) ;
     public final void rule__Funcion__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4305:1: ( ( ( rule__Funcion__ParametrosAssignment_3_0 ) ) )
-            // InternalLatino.g:4306:1: ( ( rule__Funcion__ParametrosAssignment_3_0 ) )
+            // InternalLatino.g:4293:1: ( ( ( rule__Funcion__ParametrosAssignment_3_0 ) ) )
+            // InternalLatino.g:4294:1: ( ( rule__Funcion__ParametrosAssignment_3_0 ) )
             {
-            // InternalLatino.g:4306:1: ( ( rule__Funcion__ParametrosAssignment_3_0 ) )
-            // InternalLatino.g:4307:2: ( rule__Funcion__ParametrosAssignment_3_0 )
+            // InternalLatino.g:4294:1: ( ( rule__Funcion__ParametrosAssignment_3_0 ) )
+            // InternalLatino.g:4295:2: ( rule__Funcion__ParametrosAssignment_3_0 )
             {
              before(grammarAccess.getFuncionAccess().getParametrosAssignment_3_0()); 
-            // InternalLatino.g:4308:2: ( rule__Funcion__ParametrosAssignment_3_0 )
-            // InternalLatino.g:4308:3: rule__Funcion__ParametrosAssignment_3_0
+            // InternalLatino.g:4296:2: ( rule__Funcion__ParametrosAssignment_3_0 )
+            // InternalLatino.g:4296:3: rule__Funcion__ParametrosAssignment_3_0
             {
             pushFollow(FOLLOW_2);
             rule__Funcion__ParametrosAssignment_3_0();
@@ -13429,14 +13387,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group_3__1"
-    // InternalLatino.g:4316:1: rule__Funcion__Group_3__1 : rule__Funcion__Group_3__1__Impl ;
+    // InternalLatino.g:4304:1: rule__Funcion__Group_3__1 : rule__Funcion__Group_3__1__Impl ;
     public final void rule__Funcion__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4320:1: ( rule__Funcion__Group_3__1__Impl )
-            // InternalLatino.g:4321:2: rule__Funcion__Group_3__1__Impl
+            // InternalLatino.g:4308:1: ( rule__Funcion__Group_3__1__Impl )
+            // InternalLatino.g:4309:2: rule__Funcion__Group_3__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Funcion__Group_3__1__Impl();
@@ -13462,33 +13420,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group_3__1__Impl"
-    // InternalLatino.g:4327:1: rule__Funcion__Group_3__1__Impl : ( ( rule__Funcion__Group_3_1__0 )* ) ;
+    // InternalLatino.g:4315:1: rule__Funcion__Group_3__1__Impl : ( ( rule__Funcion__Group_3_1__0 )* ) ;
     public final void rule__Funcion__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4331:1: ( ( ( rule__Funcion__Group_3_1__0 )* ) )
-            // InternalLatino.g:4332:1: ( ( rule__Funcion__Group_3_1__0 )* )
+            // InternalLatino.g:4319:1: ( ( ( rule__Funcion__Group_3_1__0 )* ) )
+            // InternalLatino.g:4320:1: ( ( rule__Funcion__Group_3_1__0 )* )
             {
-            // InternalLatino.g:4332:1: ( ( rule__Funcion__Group_3_1__0 )* )
-            // InternalLatino.g:4333:2: ( rule__Funcion__Group_3_1__0 )*
+            // InternalLatino.g:4320:1: ( ( rule__Funcion__Group_3_1__0 )* )
+            // InternalLatino.g:4321:2: ( rule__Funcion__Group_3_1__0 )*
             {
              before(grammarAccess.getFuncionAccess().getGroup_3_1()); 
-            // InternalLatino.g:4334:2: ( rule__Funcion__Group_3_1__0 )*
+            // InternalLatino.g:4322:2: ( rule__Funcion__Group_3_1__0 )*
             loop39:
             do {
                 int alt39=2;
                 int LA39_0 = input.LA(1);
 
-                if ( (LA39_0==47) ) {
+                if ( (LA39_0==45) ) {
                     alt39=1;
                 }
 
 
                 switch (alt39) {
             	case 1 :
-            	    // InternalLatino.g:4334:3: rule__Funcion__Group_3_1__0
+            	    // InternalLatino.g:4322:3: rule__Funcion__Group_3_1__0
             	    {
             	    pushFollow(FOLLOW_14);
             	    rule__Funcion__Group_3_1__0();
@@ -13527,14 +13485,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group_3_1__0"
-    // InternalLatino.g:4343:1: rule__Funcion__Group_3_1__0 : rule__Funcion__Group_3_1__0__Impl rule__Funcion__Group_3_1__1 ;
+    // InternalLatino.g:4331:1: rule__Funcion__Group_3_1__0 : rule__Funcion__Group_3_1__0__Impl rule__Funcion__Group_3_1__1 ;
     public final void rule__Funcion__Group_3_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4347:1: ( rule__Funcion__Group_3_1__0__Impl rule__Funcion__Group_3_1__1 )
-            // InternalLatino.g:4348:2: rule__Funcion__Group_3_1__0__Impl rule__Funcion__Group_3_1__1
+            // InternalLatino.g:4335:1: ( rule__Funcion__Group_3_1__0__Impl rule__Funcion__Group_3_1__1 )
+            // InternalLatino.g:4336:2: rule__Funcion__Group_3_1__0__Impl rule__Funcion__Group_3_1__1
             {
             pushFollow(FOLLOW_22);
             rule__Funcion__Group_3_1__0__Impl();
@@ -13565,20 +13523,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group_3_1__0__Impl"
-    // InternalLatino.g:4355:1: rule__Funcion__Group_3_1__0__Impl : ( ',' ) ;
+    // InternalLatino.g:4343:1: rule__Funcion__Group_3_1__0__Impl : ( ',' ) ;
     public final void rule__Funcion__Group_3_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4359:1: ( ( ',' ) )
-            // InternalLatino.g:4360:1: ( ',' )
+            // InternalLatino.g:4347:1: ( ( ',' ) )
+            // InternalLatino.g:4348:1: ( ',' )
             {
-            // InternalLatino.g:4360:1: ( ',' )
-            // InternalLatino.g:4361:2: ','
+            // InternalLatino.g:4348:1: ( ',' )
+            // InternalLatino.g:4349:2: ','
             {
              before(grammarAccess.getFuncionAccess().getCommaKeyword_3_1_0()); 
-            match(input,47,FOLLOW_2); 
+            match(input,45,FOLLOW_2); 
              after(grammarAccess.getFuncionAccess().getCommaKeyword_3_1_0()); 
 
             }
@@ -13602,14 +13560,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group_3_1__1"
-    // InternalLatino.g:4370:1: rule__Funcion__Group_3_1__1 : rule__Funcion__Group_3_1__1__Impl ;
+    // InternalLatino.g:4358:1: rule__Funcion__Group_3_1__1 : rule__Funcion__Group_3_1__1__Impl ;
     public final void rule__Funcion__Group_3_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4374:1: ( rule__Funcion__Group_3_1__1__Impl )
-            // InternalLatino.g:4375:2: rule__Funcion__Group_3_1__1__Impl
+            // InternalLatino.g:4362:1: ( rule__Funcion__Group_3_1__1__Impl )
+            // InternalLatino.g:4363:2: rule__Funcion__Group_3_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Funcion__Group_3_1__1__Impl();
@@ -13635,21 +13593,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__Group_3_1__1__Impl"
-    // InternalLatino.g:4381:1: rule__Funcion__Group_3_1__1__Impl : ( ( rule__Funcion__ParametrosAssignment_3_1_1 ) ) ;
+    // InternalLatino.g:4369:1: rule__Funcion__Group_3_1__1__Impl : ( ( rule__Funcion__ParametrosAssignment_3_1_1 ) ) ;
     public final void rule__Funcion__Group_3_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4385:1: ( ( ( rule__Funcion__ParametrosAssignment_3_1_1 ) ) )
-            // InternalLatino.g:4386:1: ( ( rule__Funcion__ParametrosAssignment_3_1_1 ) )
+            // InternalLatino.g:4373:1: ( ( ( rule__Funcion__ParametrosAssignment_3_1_1 ) ) )
+            // InternalLatino.g:4374:1: ( ( rule__Funcion__ParametrosAssignment_3_1_1 ) )
             {
-            // InternalLatino.g:4386:1: ( ( rule__Funcion__ParametrosAssignment_3_1_1 ) )
-            // InternalLatino.g:4387:2: ( rule__Funcion__ParametrosAssignment_3_1_1 )
+            // InternalLatino.g:4374:1: ( ( rule__Funcion__ParametrosAssignment_3_1_1 ) )
+            // InternalLatino.g:4375:2: ( rule__Funcion__ParametrosAssignment_3_1_1 )
             {
              before(grammarAccess.getFuncionAccess().getParametrosAssignment_3_1_1()); 
-            // InternalLatino.g:4388:2: ( rule__Funcion__ParametrosAssignment_3_1_1 )
-            // InternalLatino.g:4388:3: rule__Funcion__ParametrosAssignment_3_1_1
+            // InternalLatino.g:4376:2: ( rule__Funcion__ParametrosAssignment_3_1_1 )
+            // InternalLatino.g:4376:3: rule__Funcion__ParametrosAssignment_3_1_1
             {
             pushFollow(FOLLOW_2);
             rule__Funcion__ParametrosAssignment_3_1_1();
@@ -13682,14 +13640,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Retorno__Group__0"
-    // InternalLatino.g:4397:1: rule__Retorno__Group__0 : rule__Retorno__Group__0__Impl rule__Retorno__Group__1 ;
+    // InternalLatino.g:4385:1: rule__Retorno__Group__0 : rule__Retorno__Group__0__Impl rule__Retorno__Group__1 ;
     public final void rule__Retorno__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4401:1: ( rule__Retorno__Group__0__Impl rule__Retorno__Group__1 )
-            // InternalLatino.g:4402:2: rule__Retorno__Group__0__Impl rule__Retorno__Group__1
+            // InternalLatino.g:4389:1: ( rule__Retorno__Group__0__Impl rule__Retorno__Group__1 )
+            // InternalLatino.g:4390:2: rule__Retorno__Group__0__Impl rule__Retorno__Group__1
             {
             pushFollow(FOLLOW_6);
             rule__Retorno__Group__0__Impl();
@@ -13720,21 +13678,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Retorno__Group__0__Impl"
-    // InternalLatino.g:4409:1: rule__Retorno__Group__0__Impl : ( ( rule__Retorno__Alternatives_0 ) ) ;
+    // InternalLatino.g:4397:1: rule__Retorno__Group__0__Impl : ( ( rule__Retorno__Alternatives_0 ) ) ;
     public final void rule__Retorno__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4413:1: ( ( ( rule__Retorno__Alternatives_0 ) ) )
-            // InternalLatino.g:4414:1: ( ( rule__Retorno__Alternatives_0 ) )
+            // InternalLatino.g:4401:1: ( ( ( rule__Retorno__Alternatives_0 ) ) )
+            // InternalLatino.g:4402:1: ( ( rule__Retorno__Alternatives_0 ) )
             {
-            // InternalLatino.g:4414:1: ( ( rule__Retorno__Alternatives_0 ) )
-            // InternalLatino.g:4415:2: ( rule__Retorno__Alternatives_0 )
+            // InternalLatino.g:4402:1: ( ( rule__Retorno__Alternatives_0 ) )
+            // InternalLatino.g:4403:2: ( rule__Retorno__Alternatives_0 )
             {
              before(grammarAccess.getRetornoAccess().getAlternatives_0()); 
-            // InternalLatino.g:4416:2: ( rule__Retorno__Alternatives_0 )
-            // InternalLatino.g:4416:3: rule__Retorno__Alternatives_0
+            // InternalLatino.g:4404:2: ( rule__Retorno__Alternatives_0 )
+            // InternalLatino.g:4404:3: rule__Retorno__Alternatives_0
             {
             pushFollow(FOLLOW_2);
             rule__Retorno__Alternatives_0();
@@ -13767,14 +13725,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Retorno__Group__1"
-    // InternalLatino.g:4424:1: rule__Retorno__Group__1 : rule__Retorno__Group__1__Impl ;
+    // InternalLatino.g:4412:1: rule__Retorno__Group__1 : rule__Retorno__Group__1__Impl ;
     public final void rule__Retorno__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4428:1: ( rule__Retorno__Group__1__Impl )
-            // InternalLatino.g:4429:2: rule__Retorno__Group__1__Impl
+            // InternalLatino.g:4416:1: ( rule__Retorno__Group__1__Impl )
+            // InternalLatino.g:4417:2: rule__Retorno__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Retorno__Group__1__Impl();
@@ -13800,21 +13758,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Retorno__Group__1__Impl"
-    // InternalLatino.g:4435:1: rule__Retorno__Group__1__Impl : ( ( rule__Retorno__ValorAssignment_1 ) ) ;
+    // InternalLatino.g:4423:1: rule__Retorno__Group__1__Impl : ( ( rule__Retorno__ValorAssignment_1 ) ) ;
     public final void rule__Retorno__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4439:1: ( ( ( rule__Retorno__ValorAssignment_1 ) ) )
-            // InternalLatino.g:4440:1: ( ( rule__Retorno__ValorAssignment_1 ) )
+            // InternalLatino.g:4427:1: ( ( ( rule__Retorno__ValorAssignment_1 ) ) )
+            // InternalLatino.g:4428:1: ( ( rule__Retorno__ValorAssignment_1 ) )
             {
-            // InternalLatino.g:4440:1: ( ( rule__Retorno__ValorAssignment_1 ) )
-            // InternalLatino.g:4441:2: ( rule__Retorno__ValorAssignment_1 )
+            // InternalLatino.g:4428:1: ( ( rule__Retorno__ValorAssignment_1 ) )
+            // InternalLatino.g:4429:2: ( rule__Retorno__ValorAssignment_1 )
             {
              before(grammarAccess.getRetornoAccess().getValorAssignment_1()); 
-            // InternalLatino.g:4442:2: ( rule__Retorno__ValorAssignment_1 )
-            // InternalLatino.g:4442:3: rule__Retorno__ValorAssignment_1
+            // InternalLatino.g:4430:2: ( rule__Retorno__ValorAssignment_1 )
+            // InternalLatino.g:4430:3: rule__Retorno__ValorAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Retorno__ValorAssignment_1();
@@ -13847,14 +13805,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Llamada__Group__0"
-    // InternalLatino.g:4451:1: rule__Llamada__Group__0 : rule__Llamada__Group__0__Impl rule__Llamada__Group__1 ;
+    // InternalLatino.g:4439:1: rule__Llamada__Group__0 : rule__Llamada__Group__0__Impl rule__Llamada__Group__1 ;
     public final void rule__Llamada__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4455:1: ( rule__Llamada__Group__0__Impl rule__Llamada__Group__1 )
-            // InternalLatino.g:4456:2: rule__Llamada__Group__0__Impl rule__Llamada__Group__1
+            // InternalLatino.g:4443:1: ( rule__Llamada__Group__0__Impl rule__Llamada__Group__1 )
+            // InternalLatino.g:4444:2: rule__Llamada__Group__0__Impl rule__Llamada__Group__1
             {
             pushFollow(FOLLOW_8);
             rule__Llamada__Group__0__Impl();
@@ -13885,21 +13843,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Llamada__Group__0__Impl"
-    // InternalLatino.g:4463:1: rule__Llamada__Group__0__Impl : ( ( rule__Llamada__FuncionAssignment_0 ) ) ;
+    // InternalLatino.g:4451:1: rule__Llamada__Group__0__Impl : ( ( rule__Llamada__FuncionAssignment_0 ) ) ;
     public final void rule__Llamada__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4467:1: ( ( ( rule__Llamada__FuncionAssignment_0 ) ) )
-            // InternalLatino.g:4468:1: ( ( rule__Llamada__FuncionAssignment_0 ) )
+            // InternalLatino.g:4455:1: ( ( ( rule__Llamada__FuncionAssignment_0 ) ) )
+            // InternalLatino.g:4456:1: ( ( rule__Llamada__FuncionAssignment_0 ) )
             {
-            // InternalLatino.g:4468:1: ( ( rule__Llamada__FuncionAssignment_0 ) )
-            // InternalLatino.g:4469:2: ( rule__Llamada__FuncionAssignment_0 )
+            // InternalLatino.g:4456:1: ( ( rule__Llamada__FuncionAssignment_0 ) )
+            // InternalLatino.g:4457:2: ( rule__Llamada__FuncionAssignment_0 )
             {
              before(grammarAccess.getLlamadaAccess().getFuncionAssignment_0()); 
-            // InternalLatino.g:4470:2: ( rule__Llamada__FuncionAssignment_0 )
-            // InternalLatino.g:4470:3: rule__Llamada__FuncionAssignment_0
+            // InternalLatino.g:4458:2: ( rule__Llamada__FuncionAssignment_0 )
+            // InternalLatino.g:4458:3: rule__Llamada__FuncionAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__Llamada__FuncionAssignment_0();
@@ -13932,14 +13890,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Llamada__Group__1"
-    // InternalLatino.g:4478:1: rule__Llamada__Group__1 : rule__Llamada__Group__1__Impl rule__Llamada__Group__2 ;
+    // InternalLatino.g:4466:1: rule__Llamada__Group__1 : rule__Llamada__Group__1__Impl rule__Llamada__Group__2 ;
     public final void rule__Llamada__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4482:1: ( rule__Llamada__Group__1__Impl rule__Llamada__Group__2 )
-            // InternalLatino.g:4483:2: rule__Llamada__Group__1__Impl rule__Llamada__Group__2
+            // InternalLatino.g:4470:1: ( rule__Llamada__Group__1__Impl rule__Llamada__Group__2 )
+            // InternalLatino.g:4471:2: rule__Llamada__Group__1__Impl rule__Llamada__Group__2
             {
             pushFollow(FOLLOW_37);
             rule__Llamada__Group__1__Impl();
@@ -13970,20 +13928,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Llamada__Group__1__Impl"
-    // InternalLatino.g:4490:1: rule__Llamada__Group__1__Impl : ( '(' ) ;
+    // InternalLatino.g:4478:1: rule__Llamada__Group__1__Impl : ( '(' ) ;
     public final void rule__Llamada__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4494:1: ( ( '(' ) )
-            // InternalLatino.g:4495:1: ( '(' )
+            // InternalLatino.g:4482:1: ( ( '(' ) )
+            // InternalLatino.g:4483:1: ( '(' )
             {
-            // InternalLatino.g:4495:1: ( '(' )
-            // InternalLatino.g:4496:2: '('
+            // InternalLatino.g:4483:1: ( '(' )
+            // InternalLatino.g:4484:2: '('
             {
              before(grammarAccess.getLlamadaAccess().getLeftParenthesisKeyword_1()); 
-            match(input,42,FOLLOW_2); 
+            match(input,40,FOLLOW_2); 
              after(grammarAccess.getLlamadaAccess().getLeftParenthesisKeyword_1()); 
 
             }
@@ -14007,14 +13965,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Llamada__Group__2"
-    // InternalLatino.g:4505:1: rule__Llamada__Group__2 : rule__Llamada__Group__2__Impl rule__Llamada__Group__3 ;
+    // InternalLatino.g:4493:1: rule__Llamada__Group__2 : rule__Llamada__Group__2__Impl rule__Llamada__Group__3 ;
     public final void rule__Llamada__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4509:1: ( rule__Llamada__Group__2__Impl rule__Llamada__Group__3 )
-            // InternalLatino.g:4510:2: rule__Llamada__Group__2__Impl rule__Llamada__Group__3
+            // InternalLatino.g:4497:1: ( rule__Llamada__Group__2__Impl rule__Llamada__Group__3 )
+            // InternalLatino.g:4498:2: rule__Llamada__Group__2__Impl rule__Llamada__Group__3
             {
             pushFollow(FOLLOW_37);
             rule__Llamada__Group__2__Impl();
@@ -14045,29 +14003,29 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Llamada__Group__2__Impl"
-    // InternalLatino.g:4517:1: rule__Llamada__Group__2__Impl : ( ( rule__Llamada__Group_2__0 )? ) ;
+    // InternalLatino.g:4505:1: rule__Llamada__Group__2__Impl : ( ( rule__Llamada__Group_2__0 )? ) ;
     public final void rule__Llamada__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4521:1: ( ( ( rule__Llamada__Group_2__0 )? ) )
-            // InternalLatino.g:4522:1: ( ( rule__Llamada__Group_2__0 )? )
+            // InternalLatino.g:4509:1: ( ( ( rule__Llamada__Group_2__0 )? ) )
+            // InternalLatino.g:4510:1: ( ( rule__Llamada__Group_2__0 )? )
             {
-            // InternalLatino.g:4522:1: ( ( rule__Llamada__Group_2__0 )? )
-            // InternalLatino.g:4523:2: ( rule__Llamada__Group_2__0 )?
+            // InternalLatino.g:4510:1: ( ( rule__Llamada__Group_2__0 )? )
+            // InternalLatino.g:4511:2: ( rule__Llamada__Group_2__0 )?
             {
              before(grammarAccess.getLlamadaAccess().getGroup_2()); 
-            // InternalLatino.g:4524:2: ( rule__Llamada__Group_2__0 )?
+            // InternalLatino.g:4512:2: ( rule__Llamada__Group_2__0 )?
             int alt40=2;
             int LA40_0 = input.LA(1);
 
-            if ( ((LA40_0>=RULE_STRING && LA40_0<=RULE_INT)||LA40_0==30||(LA40_0>=34 && LA40_0<=36)||LA40_0==42||LA40_0==68) ) {
+            if ( ((LA40_0>=RULE_STRING && LA40_0<=RULE_INT)||LA40_0==28||(LA40_0>=32 && LA40_0<=34)||LA40_0==40||LA40_0==66) ) {
                 alt40=1;
             }
             switch (alt40) {
                 case 1 :
-                    // InternalLatino.g:4524:3: rule__Llamada__Group_2__0
+                    // InternalLatino.g:4512:3: rule__Llamada__Group_2__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Llamada__Group_2__0();
@@ -14103,14 +14061,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Llamada__Group__3"
-    // InternalLatino.g:4532:1: rule__Llamada__Group__3 : rule__Llamada__Group__3__Impl ;
+    // InternalLatino.g:4520:1: rule__Llamada__Group__3 : rule__Llamada__Group__3__Impl ;
     public final void rule__Llamada__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4536:1: ( rule__Llamada__Group__3__Impl )
-            // InternalLatino.g:4537:2: rule__Llamada__Group__3__Impl
+            // InternalLatino.g:4524:1: ( rule__Llamada__Group__3__Impl )
+            // InternalLatino.g:4525:2: rule__Llamada__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Llamada__Group__3__Impl();
@@ -14136,20 +14094,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Llamada__Group__3__Impl"
-    // InternalLatino.g:4543:1: rule__Llamada__Group__3__Impl : ( ')' ) ;
+    // InternalLatino.g:4531:1: rule__Llamada__Group__3__Impl : ( ')' ) ;
     public final void rule__Llamada__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4547:1: ( ( ')' ) )
-            // InternalLatino.g:4548:1: ( ')' )
+            // InternalLatino.g:4535:1: ( ( ')' ) )
+            // InternalLatino.g:4536:1: ( ')' )
             {
-            // InternalLatino.g:4548:1: ( ')' )
-            // InternalLatino.g:4549:2: ')'
+            // InternalLatino.g:4536:1: ( ')' )
+            // InternalLatino.g:4537:2: ')'
             {
              before(grammarAccess.getLlamadaAccess().getRightParenthesisKeyword_3()); 
-            match(input,44,FOLLOW_2); 
+            match(input,42,FOLLOW_2); 
              after(grammarAccess.getLlamadaAccess().getRightParenthesisKeyword_3()); 
 
             }
@@ -14173,14 +14131,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Llamada__Group_2__0"
-    // InternalLatino.g:4559:1: rule__Llamada__Group_2__0 : rule__Llamada__Group_2__0__Impl rule__Llamada__Group_2__1 ;
+    // InternalLatino.g:4547:1: rule__Llamada__Group_2__0 : rule__Llamada__Group_2__0__Impl rule__Llamada__Group_2__1 ;
     public final void rule__Llamada__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4563:1: ( rule__Llamada__Group_2__0__Impl rule__Llamada__Group_2__1 )
-            // InternalLatino.g:4564:2: rule__Llamada__Group_2__0__Impl rule__Llamada__Group_2__1
+            // InternalLatino.g:4551:1: ( rule__Llamada__Group_2__0__Impl rule__Llamada__Group_2__1 )
+            // InternalLatino.g:4552:2: rule__Llamada__Group_2__0__Impl rule__Llamada__Group_2__1
             {
             pushFollow(FOLLOW_13);
             rule__Llamada__Group_2__0__Impl();
@@ -14211,21 +14169,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Llamada__Group_2__0__Impl"
-    // InternalLatino.g:4571:1: rule__Llamada__Group_2__0__Impl : ( ( rule__Llamada__ArgumentosAssignment_2_0 ) ) ;
+    // InternalLatino.g:4559:1: rule__Llamada__Group_2__0__Impl : ( ( rule__Llamada__ArgumentosAssignment_2_0 ) ) ;
     public final void rule__Llamada__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4575:1: ( ( ( rule__Llamada__ArgumentosAssignment_2_0 ) ) )
-            // InternalLatino.g:4576:1: ( ( rule__Llamada__ArgumentosAssignment_2_0 ) )
+            // InternalLatino.g:4563:1: ( ( ( rule__Llamada__ArgumentosAssignment_2_0 ) ) )
+            // InternalLatino.g:4564:1: ( ( rule__Llamada__ArgumentosAssignment_2_0 ) )
             {
-            // InternalLatino.g:4576:1: ( ( rule__Llamada__ArgumentosAssignment_2_0 ) )
-            // InternalLatino.g:4577:2: ( rule__Llamada__ArgumentosAssignment_2_0 )
+            // InternalLatino.g:4564:1: ( ( rule__Llamada__ArgumentosAssignment_2_0 ) )
+            // InternalLatino.g:4565:2: ( rule__Llamada__ArgumentosAssignment_2_0 )
             {
              before(grammarAccess.getLlamadaAccess().getArgumentosAssignment_2_0()); 
-            // InternalLatino.g:4578:2: ( rule__Llamada__ArgumentosAssignment_2_0 )
-            // InternalLatino.g:4578:3: rule__Llamada__ArgumentosAssignment_2_0
+            // InternalLatino.g:4566:2: ( rule__Llamada__ArgumentosAssignment_2_0 )
+            // InternalLatino.g:4566:3: rule__Llamada__ArgumentosAssignment_2_0
             {
             pushFollow(FOLLOW_2);
             rule__Llamada__ArgumentosAssignment_2_0();
@@ -14258,14 +14216,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Llamada__Group_2__1"
-    // InternalLatino.g:4586:1: rule__Llamada__Group_2__1 : rule__Llamada__Group_2__1__Impl ;
+    // InternalLatino.g:4574:1: rule__Llamada__Group_2__1 : rule__Llamada__Group_2__1__Impl ;
     public final void rule__Llamada__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4590:1: ( rule__Llamada__Group_2__1__Impl )
-            // InternalLatino.g:4591:2: rule__Llamada__Group_2__1__Impl
+            // InternalLatino.g:4578:1: ( rule__Llamada__Group_2__1__Impl )
+            // InternalLatino.g:4579:2: rule__Llamada__Group_2__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Llamada__Group_2__1__Impl();
@@ -14291,33 +14249,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Llamada__Group_2__1__Impl"
-    // InternalLatino.g:4597:1: rule__Llamada__Group_2__1__Impl : ( ( rule__Llamada__Group_2_1__0 )* ) ;
+    // InternalLatino.g:4585:1: rule__Llamada__Group_2__1__Impl : ( ( rule__Llamada__Group_2_1__0 )* ) ;
     public final void rule__Llamada__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4601:1: ( ( ( rule__Llamada__Group_2_1__0 )* ) )
-            // InternalLatino.g:4602:1: ( ( rule__Llamada__Group_2_1__0 )* )
+            // InternalLatino.g:4589:1: ( ( ( rule__Llamada__Group_2_1__0 )* ) )
+            // InternalLatino.g:4590:1: ( ( rule__Llamada__Group_2_1__0 )* )
             {
-            // InternalLatino.g:4602:1: ( ( rule__Llamada__Group_2_1__0 )* )
-            // InternalLatino.g:4603:2: ( rule__Llamada__Group_2_1__0 )*
+            // InternalLatino.g:4590:1: ( ( rule__Llamada__Group_2_1__0 )* )
+            // InternalLatino.g:4591:2: ( rule__Llamada__Group_2_1__0 )*
             {
              before(grammarAccess.getLlamadaAccess().getGroup_2_1()); 
-            // InternalLatino.g:4604:2: ( rule__Llamada__Group_2_1__0 )*
+            // InternalLatino.g:4592:2: ( rule__Llamada__Group_2_1__0 )*
             loop41:
             do {
                 int alt41=2;
                 int LA41_0 = input.LA(1);
 
-                if ( (LA41_0==47) ) {
+                if ( (LA41_0==45) ) {
                     alt41=1;
                 }
 
 
                 switch (alt41) {
             	case 1 :
-            	    // InternalLatino.g:4604:3: rule__Llamada__Group_2_1__0
+            	    // InternalLatino.g:4592:3: rule__Llamada__Group_2_1__0
             	    {
             	    pushFollow(FOLLOW_14);
             	    rule__Llamada__Group_2_1__0();
@@ -14356,14 +14314,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Llamada__Group_2_1__0"
-    // InternalLatino.g:4613:1: rule__Llamada__Group_2_1__0 : rule__Llamada__Group_2_1__0__Impl rule__Llamada__Group_2_1__1 ;
+    // InternalLatino.g:4601:1: rule__Llamada__Group_2_1__0 : rule__Llamada__Group_2_1__0__Impl rule__Llamada__Group_2_1__1 ;
     public final void rule__Llamada__Group_2_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4617:1: ( rule__Llamada__Group_2_1__0__Impl rule__Llamada__Group_2_1__1 )
-            // InternalLatino.g:4618:2: rule__Llamada__Group_2_1__0__Impl rule__Llamada__Group_2_1__1
+            // InternalLatino.g:4605:1: ( rule__Llamada__Group_2_1__0__Impl rule__Llamada__Group_2_1__1 )
+            // InternalLatino.g:4606:2: rule__Llamada__Group_2_1__0__Impl rule__Llamada__Group_2_1__1
             {
             pushFollow(FOLLOW_6);
             rule__Llamada__Group_2_1__0__Impl();
@@ -14394,20 +14352,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Llamada__Group_2_1__0__Impl"
-    // InternalLatino.g:4625:1: rule__Llamada__Group_2_1__0__Impl : ( ',' ) ;
+    // InternalLatino.g:4613:1: rule__Llamada__Group_2_1__0__Impl : ( ',' ) ;
     public final void rule__Llamada__Group_2_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4629:1: ( ( ',' ) )
-            // InternalLatino.g:4630:1: ( ',' )
+            // InternalLatino.g:4617:1: ( ( ',' ) )
+            // InternalLatino.g:4618:1: ( ',' )
             {
-            // InternalLatino.g:4630:1: ( ',' )
-            // InternalLatino.g:4631:2: ','
+            // InternalLatino.g:4618:1: ( ',' )
+            // InternalLatino.g:4619:2: ','
             {
              before(grammarAccess.getLlamadaAccess().getCommaKeyword_2_1_0()); 
-            match(input,47,FOLLOW_2); 
+            match(input,45,FOLLOW_2); 
              after(grammarAccess.getLlamadaAccess().getCommaKeyword_2_1_0()); 
 
             }
@@ -14431,14 +14389,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Llamada__Group_2_1__1"
-    // InternalLatino.g:4640:1: rule__Llamada__Group_2_1__1 : rule__Llamada__Group_2_1__1__Impl ;
+    // InternalLatino.g:4628:1: rule__Llamada__Group_2_1__1 : rule__Llamada__Group_2_1__1__Impl ;
     public final void rule__Llamada__Group_2_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4644:1: ( rule__Llamada__Group_2_1__1__Impl )
-            // InternalLatino.g:4645:2: rule__Llamada__Group_2_1__1__Impl
+            // InternalLatino.g:4632:1: ( rule__Llamada__Group_2_1__1__Impl )
+            // InternalLatino.g:4633:2: rule__Llamada__Group_2_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Llamada__Group_2_1__1__Impl();
@@ -14464,21 +14422,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Llamada__Group_2_1__1__Impl"
-    // InternalLatino.g:4651:1: rule__Llamada__Group_2_1__1__Impl : ( ( rule__Llamada__ArgumentosAssignment_2_1_1 ) ) ;
+    // InternalLatino.g:4639:1: rule__Llamada__Group_2_1__1__Impl : ( ( rule__Llamada__ArgumentosAssignment_2_1_1 ) ) ;
     public final void rule__Llamada__Group_2_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4655:1: ( ( ( rule__Llamada__ArgumentosAssignment_2_1_1 ) ) )
-            // InternalLatino.g:4656:1: ( ( rule__Llamada__ArgumentosAssignment_2_1_1 ) )
+            // InternalLatino.g:4643:1: ( ( ( rule__Llamada__ArgumentosAssignment_2_1_1 ) ) )
+            // InternalLatino.g:4644:1: ( ( rule__Llamada__ArgumentosAssignment_2_1_1 ) )
             {
-            // InternalLatino.g:4656:1: ( ( rule__Llamada__ArgumentosAssignment_2_1_1 ) )
-            // InternalLatino.g:4657:2: ( rule__Llamada__ArgumentosAssignment_2_1_1 )
+            // InternalLatino.g:4644:1: ( ( rule__Llamada__ArgumentosAssignment_2_1_1 ) )
+            // InternalLatino.g:4645:2: ( rule__Llamada__ArgumentosAssignment_2_1_1 )
             {
              before(grammarAccess.getLlamadaAccess().getArgumentosAssignment_2_1_1()); 
-            // InternalLatino.g:4658:2: ( rule__Llamada__ArgumentosAssignment_2_1_1 )
-            // InternalLatino.g:4658:3: rule__Llamada__ArgumentosAssignment_2_1_1
+            // InternalLatino.g:4646:2: ( rule__Llamada__ArgumentosAssignment_2_1_1 )
+            // InternalLatino.g:4646:3: rule__Llamada__ArgumentosAssignment_2_1_1
             {
             pushFollow(FOLLOW_2);
             rule__Llamada__ArgumentosAssignment_2_1_1();
@@ -14511,14 +14469,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Imprimir__Group__0"
-    // InternalLatino.g:4667:1: rule__Imprimir__Group__0 : rule__Imprimir__Group__0__Impl rule__Imprimir__Group__1 ;
+    // InternalLatino.g:4655:1: rule__Imprimir__Group__0 : rule__Imprimir__Group__0__Impl rule__Imprimir__Group__1 ;
     public final void rule__Imprimir__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4671:1: ( rule__Imprimir__Group__0__Impl rule__Imprimir__Group__1 )
-            // InternalLatino.g:4672:2: rule__Imprimir__Group__0__Impl rule__Imprimir__Group__1
+            // InternalLatino.g:4659:1: ( rule__Imprimir__Group__0__Impl rule__Imprimir__Group__1 )
+            // InternalLatino.g:4660:2: rule__Imprimir__Group__0__Impl rule__Imprimir__Group__1
             {
             pushFollow(FOLLOW_8);
             rule__Imprimir__Group__0__Impl();
@@ -14549,21 +14507,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Imprimir__Group__0__Impl"
-    // InternalLatino.g:4679:1: rule__Imprimir__Group__0__Impl : ( ( rule__Imprimir__Alternatives_0 ) ) ;
+    // InternalLatino.g:4667:1: rule__Imprimir__Group__0__Impl : ( ( rule__Imprimir__Alternatives_0 ) ) ;
     public final void rule__Imprimir__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4683:1: ( ( ( rule__Imprimir__Alternatives_0 ) ) )
-            // InternalLatino.g:4684:1: ( ( rule__Imprimir__Alternatives_0 ) )
+            // InternalLatino.g:4671:1: ( ( ( rule__Imprimir__Alternatives_0 ) ) )
+            // InternalLatino.g:4672:1: ( ( rule__Imprimir__Alternatives_0 ) )
             {
-            // InternalLatino.g:4684:1: ( ( rule__Imprimir__Alternatives_0 ) )
-            // InternalLatino.g:4685:2: ( rule__Imprimir__Alternatives_0 )
+            // InternalLatino.g:4672:1: ( ( rule__Imprimir__Alternatives_0 ) )
+            // InternalLatino.g:4673:2: ( rule__Imprimir__Alternatives_0 )
             {
              before(grammarAccess.getImprimirAccess().getAlternatives_0()); 
-            // InternalLatino.g:4686:2: ( rule__Imprimir__Alternatives_0 )
-            // InternalLatino.g:4686:3: rule__Imprimir__Alternatives_0
+            // InternalLatino.g:4674:2: ( rule__Imprimir__Alternatives_0 )
+            // InternalLatino.g:4674:3: rule__Imprimir__Alternatives_0
             {
             pushFollow(FOLLOW_2);
             rule__Imprimir__Alternatives_0();
@@ -14596,14 +14554,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Imprimir__Group__1"
-    // InternalLatino.g:4694:1: rule__Imprimir__Group__1 : rule__Imprimir__Group__1__Impl rule__Imprimir__Group__2 ;
+    // InternalLatino.g:4682:1: rule__Imprimir__Group__1 : rule__Imprimir__Group__1__Impl rule__Imprimir__Group__2 ;
     public final void rule__Imprimir__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4698:1: ( rule__Imprimir__Group__1__Impl rule__Imprimir__Group__2 )
-            // InternalLatino.g:4699:2: rule__Imprimir__Group__1__Impl rule__Imprimir__Group__2
+            // InternalLatino.g:4686:1: ( rule__Imprimir__Group__1__Impl rule__Imprimir__Group__2 )
+            // InternalLatino.g:4687:2: rule__Imprimir__Group__1__Impl rule__Imprimir__Group__2
             {
             pushFollow(FOLLOW_6);
             rule__Imprimir__Group__1__Impl();
@@ -14634,20 +14592,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Imprimir__Group__1__Impl"
-    // InternalLatino.g:4706:1: rule__Imprimir__Group__1__Impl : ( '(' ) ;
+    // InternalLatino.g:4694:1: rule__Imprimir__Group__1__Impl : ( '(' ) ;
     public final void rule__Imprimir__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4710:1: ( ( '(' ) )
-            // InternalLatino.g:4711:1: ( '(' )
+            // InternalLatino.g:4698:1: ( ( '(' ) )
+            // InternalLatino.g:4699:1: ( '(' )
             {
-            // InternalLatino.g:4711:1: ( '(' )
-            // InternalLatino.g:4712:2: '('
+            // InternalLatino.g:4699:1: ( '(' )
+            // InternalLatino.g:4700:2: '('
             {
              before(grammarAccess.getImprimirAccess().getLeftParenthesisKeyword_1()); 
-            match(input,42,FOLLOW_2); 
+            match(input,40,FOLLOW_2); 
              after(grammarAccess.getImprimirAccess().getLeftParenthesisKeyword_1()); 
 
             }
@@ -14671,14 +14629,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Imprimir__Group__2"
-    // InternalLatino.g:4721:1: rule__Imprimir__Group__2 : rule__Imprimir__Group__2__Impl rule__Imprimir__Group__3 ;
+    // InternalLatino.g:4709:1: rule__Imprimir__Group__2 : rule__Imprimir__Group__2__Impl rule__Imprimir__Group__3 ;
     public final void rule__Imprimir__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4725:1: ( rule__Imprimir__Group__2__Impl rule__Imprimir__Group__3 )
-            // InternalLatino.g:4726:2: rule__Imprimir__Group__2__Impl rule__Imprimir__Group__3
+            // InternalLatino.g:4713:1: ( rule__Imprimir__Group__2__Impl rule__Imprimir__Group__3 )
+            // InternalLatino.g:4714:2: rule__Imprimir__Group__2__Impl rule__Imprimir__Group__3
             {
             pushFollow(FOLLOW_10);
             rule__Imprimir__Group__2__Impl();
@@ -14709,21 +14667,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Imprimir__Group__2__Impl"
-    // InternalLatino.g:4733:1: rule__Imprimir__Group__2__Impl : ( ( rule__Imprimir__MensajeAssignment_2 ) ) ;
+    // InternalLatino.g:4721:1: rule__Imprimir__Group__2__Impl : ( ( rule__Imprimir__MensajeAssignment_2 ) ) ;
     public final void rule__Imprimir__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4737:1: ( ( ( rule__Imprimir__MensajeAssignment_2 ) ) )
-            // InternalLatino.g:4738:1: ( ( rule__Imprimir__MensajeAssignment_2 ) )
+            // InternalLatino.g:4725:1: ( ( ( rule__Imprimir__MensajeAssignment_2 ) ) )
+            // InternalLatino.g:4726:1: ( ( rule__Imprimir__MensajeAssignment_2 ) )
             {
-            // InternalLatino.g:4738:1: ( ( rule__Imprimir__MensajeAssignment_2 ) )
-            // InternalLatino.g:4739:2: ( rule__Imprimir__MensajeAssignment_2 )
+            // InternalLatino.g:4726:1: ( ( rule__Imprimir__MensajeAssignment_2 ) )
+            // InternalLatino.g:4727:2: ( rule__Imprimir__MensajeAssignment_2 )
             {
              before(grammarAccess.getImprimirAccess().getMensajeAssignment_2()); 
-            // InternalLatino.g:4740:2: ( rule__Imprimir__MensajeAssignment_2 )
-            // InternalLatino.g:4740:3: rule__Imprimir__MensajeAssignment_2
+            // InternalLatino.g:4728:2: ( rule__Imprimir__MensajeAssignment_2 )
+            // InternalLatino.g:4728:3: rule__Imprimir__MensajeAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__Imprimir__MensajeAssignment_2();
@@ -14756,14 +14714,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Imprimir__Group__3"
-    // InternalLatino.g:4748:1: rule__Imprimir__Group__3 : rule__Imprimir__Group__3__Impl ;
+    // InternalLatino.g:4736:1: rule__Imprimir__Group__3 : rule__Imprimir__Group__3__Impl ;
     public final void rule__Imprimir__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4752:1: ( rule__Imprimir__Group__3__Impl )
-            // InternalLatino.g:4753:2: rule__Imprimir__Group__3__Impl
+            // InternalLatino.g:4740:1: ( rule__Imprimir__Group__3__Impl )
+            // InternalLatino.g:4741:2: rule__Imprimir__Group__3__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Imprimir__Group__3__Impl();
@@ -14789,20 +14747,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Imprimir__Group__3__Impl"
-    // InternalLatino.g:4759:1: rule__Imprimir__Group__3__Impl : ( ')' ) ;
+    // InternalLatino.g:4747:1: rule__Imprimir__Group__3__Impl : ( ')' ) ;
     public final void rule__Imprimir__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4763:1: ( ( ')' ) )
-            // InternalLatino.g:4764:1: ( ')' )
+            // InternalLatino.g:4751:1: ( ( ')' ) )
+            // InternalLatino.g:4752:1: ( ')' )
             {
-            // InternalLatino.g:4764:1: ( ')' )
-            // InternalLatino.g:4765:2: ')'
+            // InternalLatino.g:4752:1: ( ')' )
+            // InternalLatino.g:4753:2: ')'
             {
              before(grammarAccess.getImprimirAccess().getRightParenthesisKeyword_3()); 
-            match(input,44,FOLLOW_2); 
+            match(input,42,FOLLOW_2); 
              after(grammarAccess.getImprimirAccess().getRightParenthesisKeyword_3()); 
 
             }
@@ -14826,14 +14784,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Expresion__Group__0"
-    // InternalLatino.g:4775:1: rule__Expresion__Group__0 : rule__Expresion__Group__0__Impl rule__Expresion__Group__1 ;
+    // InternalLatino.g:4763:1: rule__Expresion__Group__0 : rule__Expresion__Group__0__Impl rule__Expresion__Group__1 ;
     public final void rule__Expresion__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4779:1: ( rule__Expresion__Group__0__Impl rule__Expresion__Group__1 )
-            // InternalLatino.g:4780:2: rule__Expresion__Group__0__Impl rule__Expresion__Group__1
+            // InternalLatino.g:4767:1: ( rule__Expresion__Group__0__Impl rule__Expresion__Group__1 )
+            // InternalLatino.g:4768:2: rule__Expresion__Group__0__Impl rule__Expresion__Group__1
             {
             pushFollow(FOLLOW_38);
             rule__Expresion__Group__0__Impl();
@@ -14864,17 +14822,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Expresion__Group__0__Impl"
-    // InternalLatino.g:4787:1: rule__Expresion__Group__0__Impl : ( ruleConjuncion ) ;
+    // InternalLatino.g:4775:1: rule__Expresion__Group__0__Impl : ( ruleConjuncion ) ;
     public final void rule__Expresion__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4791:1: ( ( ruleConjuncion ) )
-            // InternalLatino.g:4792:1: ( ruleConjuncion )
+            // InternalLatino.g:4779:1: ( ( ruleConjuncion ) )
+            // InternalLatino.g:4780:1: ( ruleConjuncion )
             {
-            // InternalLatino.g:4792:1: ( ruleConjuncion )
-            // InternalLatino.g:4793:2: ruleConjuncion
+            // InternalLatino.g:4780:1: ( ruleConjuncion )
+            // InternalLatino.g:4781:2: ruleConjuncion
             {
              before(grammarAccess.getExpresionAccess().getConjuncionParserRuleCall_0()); 
             pushFollow(FOLLOW_2);
@@ -14905,14 +14863,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Expresion__Group__1"
-    // InternalLatino.g:4802:1: rule__Expresion__Group__1 : rule__Expresion__Group__1__Impl ;
+    // InternalLatino.g:4790:1: rule__Expresion__Group__1 : rule__Expresion__Group__1__Impl ;
     public final void rule__Expresion__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4806:1: ( rule__Expresion__Group__1__Impl )
-            // InternalLatino.g:4807:2: rule__Expresion__Group__1__Impl
+            // InternalLatino.g:4794:1: ( rule__Expresion__Group__1__Impl )
+            // InternalLatino.g:4795:2: rule__Expresion__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Expresion__Group__1__Impl();
@@ -14938,33 +14896,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Expresion__Group__1__Impl"
-    // InternalLatino.g:4813:1: rule__Expresion__Group__1__Impl : ( ( rule__Expresion__Group_1__0 )* ) ;
+    // InternalLatino.g:4801:1: rule__Expresion__Group__1__Impl : ( ( rule__Expresion__Group_1__0 )* ) ;
     public final void rule__Expresion__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4817:1: ( ( ( rule__Expresion__Group_1__0 )* ) )
-            // InternalLatino.g:4818:1: ( ( rule__Expresion__Group_1__0 )* )
+            // InternalLatino.g:4805:1: ( ( ( rule__Expresion__Group_1__0 )* ) )
+            // InternalLatino.g:4806:1: ( ( rule__Expresion__Group_1__0 )* )
             {
-            // InternalLatino.g:4818:1: ( ( rule__Expresion__Group_1__0 )* )
-            // InternalLatino.g:4819:2: ( rule__Expresion__Group_1__0 )*
+            // InternalLatino.g:4806:1: ( ( rule__Expresion__Group_1__0 )* )
+            // InternalLatino.g:4807:2: ( rule__Expresion__Group_1__0 )*
             {
              before(grammarAccess.getExpresionAccess().getGroup_1()); 
-            // InternalLatino.g:4820:2: ( rule__Expresion__Group_1__0 )*
+            // InternalLatino.g:4808:2: ( rule__Expresion__Group_1__0 )*
             loop42:
             do {
                 int alt42=2;
                 int LA42_0 = input.LA(1);
 
-                if ( (LA42_0==65) ) {
+                if ( (LA42_0==63) ) {
                     alt42=1;
                 }
 
 
                 switch (alt42) {
             	case 1 :
-            	    // InternalLatino.g:4820:3: rule__Expresion__Group_1__0
+            	    // InternalLatino.g:4808:3: rule__Expresion__Group_1__0
             	    {
             	    pushFollow(FOLLOW_39);
             	    rule__Expresion__Group_1__0();
@@ -15003,14 +14961,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Expresion__Group_1__0"
-    // InternalLatino.g:4829:1: rule__Expresion__Group_1__0 : rule__Expresion__Group_1__0__Impl rule__Expresion__Group_1__1 ;
+    // InternalLatino.g:4817:1: rule__Expresion__Group_1__0 : rule__Expresion__Group_1__0__Impl rule__Expresion__Group_1__1 ;
     public final void rule__Expresion__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4833:1: ( rule__Expresion__Group_1__0__Impl rule__Expresion__Group_1__1 )
-            // InternalLatino.g:4834:2: rule__Expresion__Group_1__0__Impl rule__Expresion__Group_1__1
+            // InternalLatino.g:4821:1: ( rule__Expresion__Group_1__0__Impl rule__Expresion__Group_1__1 )
+            // InternalLatino.g:4822:2: rule__Expresion__Group_1__0__Impl rule__Expresion__Group_1__1
             {
             pushFollow(FOLLOW_6);
             rule__Expresion__Group_1__0__Impl();
@@ -15041,20 +14999,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Expresion__Group_1__0__Impl"
-    // InternalLatino.g:4841:1: rule__Expresion__Group_1__0__Impl : ( '||' ) ;
+    // InternalLatino.g:4829:1: rule__Expresion__Group_1__0__Impl : ( '||' ) ;
     public final void rule__Expresion__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4845:1: ( ( '||' ) )
-            // InternalLatino.g:4846:1: ( '||' )
+            // InternalLatino.g:4833:1: ( ( '||' ) )
+            // InternalLatino.g:4834:1: ( '||' )
             {
-            // InternalLatino.g:4846:1: ( '||' )
-            // InternalLatino.g:4847:2: '||'
+            // InternalLatino.g:4834:1: ( '||' )
+            // InternalLatino.g:4835:2: '||'
             {
              before(grammarAccess.getExpresionAccess().getVerticalLineVerticalLineKeyword_1_0()); 
-            match(input,65,FOLLOW_2); 
+            match(input,63,FOLLOW_2); 
              after(grammarAccess.getExpresionAccess().getVerticalLineVerticalLineKeyword_1_0()); 
 
             }
@@ -15078,14 +15036,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Expresion__Group_1__1"
-    // InternalLatino.g:4856:1: rule__Expresion__Group_1__1 : rule__Expresion__Group_1__1__Impl ;
+    // InternalLatino.g:4844:1: rule__Expresion__Group_1__1 : rule__Expresion__Group_1__1__Impl ;
     public final void rule__Expresion__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4860:1: ( rule__Expresion__Group_1__1__Impl )
-            // InternalLatino.g:4861:2: rule__Expresion__Group_1__1__Impl
+            // InternalLatino.g:4848:1: ( rule__Expresion__Group_1__1__Impl )
+            // InternalLatino.g:4849:2: rule__Expresion__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Expresion__Group_1__1__Impl();
@@ -15111,17 +15069,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Expresion__Group_1__1__Impl"
-    // InternalLatino.g:4867:1: rule__Expresion__Group_1__1__Impl : ( ruleConjuncion ) ;
+    // InternalLatino.g:4855:1: rule__Expresion__Group_1__1__Impl : ( ruleConjuncion ) ;
     public final void rule__Expresion__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4871:1: ( ( ruleConjuncion ) )
-            // InternalLatino.g:4872:1: ( ruleConjuncion )
+            // InternalLatino.g:4859:1: ( ( ruleConjuncion ) )
+            // InternalLatino.g:4860:1: ( ruleConjuncion )
             {
-            // InternalLatino.g:4872:1: ( ruleConjuncion )
-            // InternalLatino.g:4873:2: ruleConjuncion
+            // InternalLatino.g:4860:1: ( ruleConjuncion )
+            // InternalLatino.g:4861:2: ruleConjuncion
             {
              before(grammarAccess.getExpresionAccess().getConjuncionParserRuleCall_1_1()); 
             pushFollow(FOLLOW_2);
@@ -15152,14 +15110,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Conjuncion__Group__0"
-    // InternalLatino.g:4883:1: rule__Conjuncion__Group__0 : rule__Conjuncion__Group__0__Impl rule__Conjuncion__Group__1 ;
+    // InternalLatino.g:4871:1: rule__Conjuncion__Group__0 : rule__Conjuncion__Group__0__Impl rule__Conjuncion__Group__1 ;
     public final void rule__Conjuncion__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4887:1: ( rule__Conjuncion__Group__0__Impl rule__Conjuncion__Group__1 )
-            // InternalLatino.g:4888:2: rule__Conjuncion__Group__0__Impl rule__Conjuncion__Group__1
+            // InternalLatino.g:4875:1: ( rule__Conjuncion__Group__0__Impl rule__Conjuncion__Group__1 )
+            // InternalLatino.g:4876:2: rule__Conjuncion__Group__0__Impl rule__Conjuncion__Group__1
             {
             pushFollow(FOLLOW_40);
             rule__Conjuncion__Group__0__Impl();
@@ -15190,17 +15148,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Conjuncion__Group__0__Impl"
-    // InternalLatino.g:4895:1: rule__Conjuncion__Group__0__Impl : ( ruleComparacion ) ;
+    // InternalLatino.g:4883:1: rule__Conjuncion__Group__0__Impl : ( ruleComparacion ) ;
     public final void rule__Conjuncion__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4899:1: ( ( ruleComparacion ) )
-            // InternalLatino.g:4900:1: ( ruleComparacion )
+            // InternalLatino.g:4887:1: ( ( ruleComparacion ) )
+            // InternalLatino.g:4888:1: ( ruleComparacion )
             {
-            // InternalLatino.g:4900:1: ( ruleComparacion )
-            // InternalLatino.g:4901:2: ruleComparacion
+            // InternalLatino.g:4888:1: ( ruleComparacion )
+            // InternalLatino.g:4889:2: ruleComparacion
             {
              before(grammarAccess.getConjuncionAccess().getComparacionParserRuleCall_0()); 
             pushFollow(FOLLOW_2);
@@ -15231,14 +15189,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Conjuncion__Group__1"
-    // InternalLatino.g:4910:1: rule__Conjuncion__Group__1 : rule__Conjuncion__Group__1__Impl ;
+    // InternalLatino.g:4898:1: rule__Conjuncion__Group__1 : rule__Conjuncion__Group__1__Impl ;
     public final void rule__Conjuncion__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4914:1: ( rule__Conjuncion__Group__1__Impl )
-            // InternalLatino.g:4915:2: rule__Conjuncion__Group__1__Impl
+            // InternalLatino.g:4902:1: ( rule__Conjuncion__Group__1__Impl )
+            // InternalLatino.g:4903:2: rule__Conjuncion__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Conjuncion__Group__1__Impl();
@@ -15264,33 +15222,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Conjuncion__Group__1__Impl"
-    // InternalLatino.g:4921:1: rule__Conjuncion__Group__1__Impl : ( ( rule__Conjuncion__Group_1__0 )* ) ;
+    // InternalLatino.g:4909:1: rule__Conjuncion__Group__1__Impl : ( ( rule__Conjuncion__Group_1__0 )* ) ;
     public final void rule__Conjuncion__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4925:1: ( ( ( rule__Conjuncion__Group_1__0 )* ) )
-            // InternalLatino.g:4926:1: ( ( rule__Conjuncion__Group_1__0 )* )
+            // InternalLatino.g:4913:1: ( ( ( rule__Conjuncion__Group_1__0 )* ) )
+            // InternalLatino.g:4914:1: ( ( rule__Conjuncion__Group_1__0 )* )
             {
-            // InternalLatino.g:4926:1: ( ( rule__Conjuncion__Group_1__0 )* )
-            // InternalLatino.g:4927:2: ( rule__Conjuncion__Group_1__0 )*
+            // InternalLatino.g:4914:1: ( ( rule__Conjuncion__Group_1__0 )* )
+            // InternalLatino.g:4915:2: ( rule__Conjuncion__Group_1__0 )*
             {
              before(grammarAccess.getConjuncionAccess().getGroup_1()); 
-            // InternalLatino.g:4928:2: ( rule__Conjuncion__Group_1__0 )*
+            // InternalLatino.g:4916:2: ( rule__Conjuncion__Group_1__0 )*
             loop43:
             do {
                 int alt43=2;
                 int LA43_0 = input.LA(1);
 
-                if ( (LA43_0==66) ) {
+                if ( (LA43_0==64) ) {
                     alt43=1;
                 }
 
 
                 switch (alt43) {
             	case 1 :
-            	    // InternalLatino.g:4928:3: rule__Conjuncion__Group_1__0
+            	    // InternalLatino.g:4916:3: rule__Conjuncion__Group_1__0
             	    {
             	    pushFollow(FOLLOW_41);
             	    rule__Conjuncion__Group_1__0();
@@ -15329,14 +15287,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Conjuncion__Group_1__0"
-    // InternalLatino.g:4937:1: rule__Conjuncion__Group_1__0 : rule__Conjuncion__Group_1__0__Impl rule__Conjuncion__Group_1__1 ;
+    // InternalLatino.g:4925:1: rule__Conjuncion__Group_1__0 : rule__Conjuncion__Group_1__0__Impl rule__Conjuncion__Group_1__1 ;
     public final void rule__Conjuncion__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4941:1: ( rule__Conjuncion__Group_1__0__Impl rule__Conjuncion__Group_1__1 )
-            // InternalLatino.g:4942:2: rule__Conjuncion__Group_1__0__Impl rule__Conjuncion__Group_1__1
+            // InternalLatino.g:4929:1: ( rule__Conjuncion__Group_1__0__Impl rule__Conjuncion__Group_1__1 )
+            // InternalLatino.g:4930:2: rule__Conjuncion__Group_1__0__Impl rule__Conjuncion__Group_1__1
             {
             pushFollow(FOLLOW_6);
             rule__Conjuncion__Group_1__0__Impl();
@@ -15367,20 +15325,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Conjuncion__Group_1__0__Impl"
-    // InternalLatino.g:4949:1: rule__Conjuncion__Group_1__0__Impl : ( '&&' ) ;
+    // InternalLatino.g:4937:1: rule__Conjuncion__Group_1__0__Impl : ( '&&' ) ;
     public final void rule__Conjuncion__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4953:1: ( ( '&&' ) )
-            // InternalLatino.g:4954:1: ( '&&' )
+            // InternalLatino.g:4941:1: ( ( '&&' ) )
+            // InternalLatino.g:4942:1: ( '&&' )
             {
-            // InternalLatino.g:4954:1: ( '&&' )
-            // InternalLatino.g:4955:2: '&&'
+            // InternalLatino.g:4942:1: ( '&&' )
+            // InternalLatino.g:4943:2: '&&'
             {
              before(grammarAccess.getConjuncionAccess().getAmpersandAmpersandKeyword_1_0()); 
-            match(input,66,FOLLOW_2); 
+            match(input,64,FOLLOW_2); 
              after(grammarAccess.getConjuncionAccess().getAmpersandAmpersandKeyword_1_0()); 
 
             }
@@ -15404,14 +15362,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Conjuncion__Group_1__1"
-    // InternalLatino.g:4964:1: rule__Conjuncion__Group_1__1 : rule__Conjuncion__Group_1__1__Impl ;
+    // InternalLatino.g:4952:1: rule__Conjuncion__Group_1__1 : rule__Conjuncion__Group_1__1__Impl ;
     public final void rule__Conjuncion__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4968:1: ( rule__Conjuncion__Group_1__1__Impl )
-            // InternalLatino.g:4969:2: rule__Conjuncion__Group_1__1__Impl
+            // InternalLatino.g:4956:1: ( rule__Conjuncion__Group_1__1__Impl )
+            // InternalLatino.g:4957:2: rule__Conjuncion__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Conjuncion__Group_1__1__Impl();
@@ -15437,17 +15395,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Conjuncion__Group_1__1__Impl"
-    // InternalLatino.g:4975:1: rule__Conjuncion__Group_1__1__Impl : ( ruleComparacion ) ;
+    // InternalLatino.g:4963:1: rule__Conjuncion__Group_1__1__Impl : ( ruleComparacion ) ;
     public final void rule__Conjuncion__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4979:1: ( ( ruleComparacion ) )
-            // InternalLatino.g:4980:1: ( ruleComparacion )
+            // InternalLatino.g:4967:1: ( ( ruleComparacion ) )
+            // InternalLatino.g:4968:1: ( ruleComparacion )
             {
-            // InternalLatino.g:4980:1: ( ruleComparacion )
-            // InternalLatino.g:4981:2: ruleComparacion
+            // InternalLatino.g:4968:1: ( ruleComparacion )
+            // InternalLatino.g:4969:2: ruleComparacion
             {
              before(grammarAccess.getConjuncionAccess().getComparacionParserRuleCall_1_1()); 
             pushFollow(FOLLOW_2);
@@ -15478,14 +15436,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Comparacion__Group__0"
-    // InternalLatino.g:4991:1: rule__Comparacion__Group__0 : rule__Comparacion__Group__0__Impl rule__Comparacion__Group__1 ;
+    // InternalLatino.g:4979:1: rule__Comparacion__Group__0 : rule__Comparacion__Group__0__Impl rule__Comparacion__Group__1 ;
     public final void rule__Comparacion__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:4995:1: ( rule__Comparacion__Group__0__Impl rule__Comparacion__Group__1 )
-            // InternalLatino.g:4996:2: rule__Comparacion__Group__0__Impl rule__Comparacion__Group__1
+            // InternalLatino.g:4983:1: ( rule__Comparacion__Group__0__Impl rule__Comparacion__Group__1 )
+            // InternalLatino.g:4984:2: rule__Comparacion__Group__0__Impl rule__Comparacion__Group__1
             {
             pushFollow(FOLLOW_42);
             rule__Comparacion__Group__0__Impl();
@@ -15516,17 +15474,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Comparacion__Group__0__Impl"
-    // InternalLatino.g:5003:1: rule__Comparacion__Group__0__Impl : ( ruleConcatenacion ) ;
+    // InternalLatino.g:4991:1: rule__Comparacion__Group__0__Impl : ( ruleConcatenacion ) ;
     public final void rule__Comparacion__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5007:1: ( ( ruleConcatenacion ) )
-            // InternalLatino.g:5008:1: ( ruleConcatenacion )
+            // InternalLatino.g:4995:1: ( ( ruleConcatenacion ) )
+            // InternalLatino.g:4996:1: ( ruleConcatenacion )
             {
-            // InternalLatino.g:5008:1: ( ruleConcatenacion )
-            // InternalLatino.g:5009:2: ruleConcatenacion
+            // InternalLatino.g:4996:1: ( ruleConcatenacion )
+            // InternalLatino.g:4997:2: ruleConcatenacion
             {
              before(grammarAccess.getComparacionAccess().getConcatenacionParserRuleCall_0()); 
             pushFollow(FOLLOW_2);
@@ -15557,14 +15515,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Comparacion__Group__1"
-    // InternalLatino.g:5018:1: rule__Comparacion__Group__1 : rule__Comparacion__Group__1__Impl ;
+    // InternalLatino.g:5006:1: rule__Comparacion__Group__1 : rule__Comparacion__Group__1__Impl ;
     public final void rule__Comparacion__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5022:1: ( rule__Comparacion__Group__1__Impl )
-            // InternalLatino.g:5023:2: rule__Comparacion__Group__1__Impl
+            // InternalLatino.g:5010:1: ( rule__Comparacion__Group__1__Impl )
+            // InternalLatino.g:5011:2: rule__Comparacion__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Comparacion__Group__1__Impl();
@@ -15590,29 +15548,29 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Comparacion__Group__1__Impl"
-    // InternalLatino.g:5029:1: rule__Comparacion__Group__1__Impl : ( ( rule__Comparacion__Group_1__0 )? ) ;
+    // InternalLatino.g:5017:1: rule__Comparacion__Group__1__Impl : ( ( rule__Comparacion__Group_1__0 )? ) ;
     public final void rule__Comparacion__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5033:1: ( ( ( rule__Comparacion__Group_1__0 )? ) )
-            // InternalLatino.g:5034:1: ( ( rule__Comparacion__Group_1__0 )? )
+            // InternalLatino.g:5021:1: ( ( ( rule__Comparacion__Group_1__0 )? ) )
+            // InternalLatino.g:5022:1: ( ( rule__Comparacion__Group_1__0 )? )
             {
-            // InternalLatino.g:5034:1: ( ( rule__Comparacion__Group_1__0 )? )
-            // InternalLatino.g:5035:2: ( rule__Comparacion__Group_1__0 )?
+            // InternalLatino.g:5022:1: ( ( rule__Comparacion__Group_1__0 )? )
+            // InternalLatino.g:5023:2: ( rule__Comparacion__Group_1__0 )?
             {
              before(grammarAccess.getComparacionAccess().getGroup_1()); 
-            // InternalLatino.g:5036:2: ( rule__Comparacion__Group_1__0 )?
+            // InternalLatino.g:5024:2: ( rule__Comparacion__Group_1__0 )?
             int alt44=2;
             int LA44_0 = input.LA(1);
 
-            if ( ((LA44_0>=23 && LA44_0<=28)) ) {
+            if ( ((LA44_0>=21 && LA44_0<=26)) ) {
                 alt44=1;
             }
             switch (alt44) {
                 case 1 :
-                    // InternalLatino.g:5036:3: rule__Comparacion__Group_1__0
+                    // InternalLatino.g:5024:3: rule__Comparacion__Group_1__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Comparacion__Group_1__0();
@@ -15648,14 +15606,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Comparacion__Group_1__0"
-    // InternalLatino.g:5045:1: rule__Comparacion__Group_1__0 : rule__Comparacion__Group_1__0__Impl rule__Comparacion__Group_1__1 ;
+    // InternalLatino.g:5033:1: rule__Comparacion__Group_1__0 : rule__Comparacion__Group_1__0__Impl rule__Comparacion__Group_1__1 ;
     public final void rule__Comparacion__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5049:1: ( rule__Comparacion__Group_1__0__Impl rule__Comparacion__Group_1__1 )
-            // InternalLatino.g:5050:2: rule__Comparacion__Group_1__0__Impl rule__Comparacion__Group_1__1
+            // InternalLatino.g:5037:1: ( rule__Comparacion__Group_1__0__Impl rule__Comparacion__Group_1__1 )
+            // InternalLatino.g:5038:2: rule__Comparacion__Group_1__0__Impl rule__Comparacion__Group_1__1
             {
             pushFollow(FOLLOW_6);
             rule__Comparacion__Group_1__0__Impl();
@@ -15686,21 +15644,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Comparacion__Group_1__0__Impl"
-    // InternalLatino.g:5057:1: rule__Comparacion__Group_1__0__Impl : ( ( rule__Comparacion__Alternatives_1_0 ) ) ;
+    // InternalLatino.g:5045:1: rule__Comparacion__Group_1__0__Impl : ( ( rule__Comparacion__Alternatives_1_0 ) ) ;
     public final void rule__Comparacion__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5061:1: ( ( ( rule__Comparacion__Alternatives_1_0 ) ) )
-            // InternalLatino.g:5062:1: ( ( rule__Comparacion__Alternatives_1_0 ) )
+            // InternalLatino.g:5049:1: ( ( ( rule__Comparacion__Alternatives_1_0 ) ) )
+            // InternalLatino.g:5050:1: ( ( rule__Comparacion__Alternatives_1_0 ) )
             {
-            // InternalLatino.g:5062:1: ( ( rule__Comparacion__Alternatives_1_0 ) )
-            // InternalLatino.g:5063:2: ( rule__Comparacion__Alternatives_1_0 )
+            // InternalLatino.g:5050:1: ( ( rule__Comparacion__Alternatives_1_0 ) )
+            // InternalLatino.g:5051:2: ( rule__Comparacion__Alternatives_1_0 )
             {
              before(grammarAccess.getComparacionAccess().getAlternatives_1_0()); 
-            // InternalLatino.g:5064:2: ( rule__Comparacion__Alternatives_1_0 )
-            // InternalLatino.g:5064:3: rule__Comparacion__Alternatives_1_0
+            // InternalLatino.g:5052:2: ( rule__Comparacion__Alternatives_1_0 )
+            // InternalLatino.g:5052:3: rule__Comparacion__Alternatives_1_0
             {
             pushFollow(FOLLOW_2);
             rule__Comparacion__Alternatives_1_0();
@@ -15733,14 +15691,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Comparacion__Group_1__1"
-    // InternalLatino.g:5072:1: rule__Comparacion__Group_1__1 : rule__Comparacion__Group_1__1__Impl ;
+    // InternalLatino.g:5060:1: rule__Comparacion__Group_1__1 : rule__Comparacion__Group_1__1__Impl ;
     public final void rule__Comparacion__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5076:1: ( rule__Comparacion__Group_1__1__Impl )
-            // InternalLatino.g:5077:2: rule__Comparacion__Group_1__1__Impl
+            // InternalLatino.g:5064:1: ( rule__Comparacion__Group_1__1__Impl )
+            // InternalLatino.g:5065:2: rule__Comparacion__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Comparacion__Group_1__1__Impl();
@@ -15766,17 +15724,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Comparacion__Group_1__1__Impl"
-    // InternalLatino.g:5083:1: rule__Comparacion__Group_1__1__Impl : ( ruleConcatenacion ) ;
+    // InternalLatino.g:5071:1: rule__Comparacion__Group_1__1__Impl : ( ruleConcatenacion ) ;
     public final void rule__Comparacion__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5087:1: ( ( ruleConcatenacion ) )
-            // InternalLatino.g:5088:1: ( ruleConcatenacion )
+            // InternalLatino.g:5075:1: ( ( ruleConcatenacion ) )
+            // InternalLatino.g:5076:1: ( ruleConcatenacion )
             {
-            // InternalLatino.g:5088:1: ( ruleConcatenacion )
-            // InternalLatino.g:5089:2: ruleConcatenacion
+            // InternalLatino.g:5076:1: ( ruleConcatenacion )
+            // InternalLatino.g:5077:2: ruleConcatenacion
             {
              before(grammarAccess.getComparacionAccess().getConcatenacionParserRuleCall_1_1()); 
             pushFollow(FOLLOW_2);
@@ -15807,14 +15765,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Concatenacion__Group__0"
-    // InternalLatino.g:5099:1: rule__Concatenacion__Group__0 : rule__Concatenacion__Group__0__Impl rule__Concatenacion__Group__1 ;
+    // InternalLatino.g:5087:1: rule__Concatenacion__Group__0 : rule__Concatenacion__Group__0__Impl rule__Concatenacion__Group__1 ;
     public final void rule__Concatenacion__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5103:1: ( rule__Concatenacion__Group__0__Impl rule__Concatenacion__Group__1 )
-            // InternalLatino.g:5104:2: rule__Concatenacion__Group__0__Impl rule__Concatenacion__Group__1
+            // InternalLatino.g:5091:1: ( rule__Concatenacion__Group__0__Impl rule__Concatenacion__Group__1 )
+            // InternalLatino.g:5092:2: rule__Concatenacion__Group__0__Impl rule__Concatenacion__Group__1
             {
             pushFollow(FOLLOW_43);
             rule__Concatenacion__Group__0__Impl();
@@ -15845,17 +15803,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Concatenacion__Group__0__Impl"
-    // InternalLatino.g:5111:1: rule__Concatenacion__Group__0__Impl : ( ruleSuma ) ;
+    // InternalLatino.g:5099:1: rule__Concatenacion__Group__0__Impl : ( ruleSuma ) ;
     public final void rule__Concatenacion__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5115:1: ( ( ruleSuma ) )
-            // InternalLatino.g:5116:1: ( ruleSuma )
+            // InternalLatino.g:5103:1: ( ( ruleSuma ) )
+            // InternalLatino.g:5104:1: ( ruleSuma )
             {
-            // InternalLatino.g:5116:1: ( ruleSuma )
-            // InternalLatino.g:5117:2: ruleSuma
+            // InternalLatino.g:5104:1: ( ruleSuma )
+            // InternalLatino.g:5105:2: ruleSuma
             {
              before(grammarAccess.getConcatenacionAccess().getSumaParserRuleCall_0()); 
             pushFollow(FOLLOW_2);
@@ -15886,14 +15844,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Concatenacion__Group__1"
-    // InternalLatino.g:5126:1: rule__Concatenacion__Group__1 : rule__Concatenacion__Group__1__Impl ;
+    // InternalLatino.g:5114:1: rule__Concatenacion__Group__1 : rule__Concatenacion__Group__1__Impl ;
     public final void rule__Concatenacion__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5130:1: ( rule__Concatenacion__Group__1__Impl )
-            // InternalLatino.g:5131:2: rule__Concatenacion__Group__1__Impl
+            // InternalLatino.g:5118:1: ( rule__Concatenacion__Group__1__Impl )
+            // InternalLatino.g:5119:2: rule__Concatenacion__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Concatenacion__Group__1__Impl();
@@ -15919,33 +15877,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Concatenacion__Group__1__Impl"
-    // InternalLatino.g:5137:1: rule__Concatenacion__Group__1__Impl : ( ( rule__Concatenacion__Group_1__0 )* ) ;
+    // InternalLatino.g:5125:1: rule__Concatenacion__Group__1__Impl : ( ( rule__Concatenacion__Group_1__0 )* ) ;
     public final void rule__Concatenacion__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5141:1: ( ( ( rule__Concatenacion__Group_1__0 )* ) )
-            // InternalLatino.g:5142:1: ( ( rule__Concatenacion__Group_1__0 )* )
+            // InternalLatino.g:5129:1: ( ( ( rule__Concatenacion__Group_1__0 )* ) )
+            // InternalLatino.g:5130:1: ( ( rule__Concatenacion__Group_1__0 )* )
             {
-            // InternalLatino.g:5142:1: ( ( rule__Concatenacion__Group_1__0 )* )
-            // InternalLatino.g:5143:2: ( rule__Concatenacion__Group_1__0 )*
+            // InternalLatino.g:5130:1: ( ( rule__Concatenacion__Group_1__0 )* )
+            // InternalLatino.g:5131:2: ( rule__Concatenacion__Group_1__0 )*
             {
              before(grammarAccess.getConcatenacionAccess().getGroup_1()); 
-            // InternalLatino.g:5144:2: ( rule__Concatenacion__Group_1__0 )*
+            // InternalLatino.g:5132:2: ( rule__Concatenacion__Group_1__0 )*
             loop45:
             do {
                 int alt45=2;
                 int LA45_0 = input.LA(1);
 
-                if ( (LA45_0==67) ) {
+                if ( (LA45_0==65) ) {
                     alt45=1;
                 }
 
 
                 switch (alt45) {
             	case 1 :
-            	    // InternalLatino.g:5144:3: rule__Concatenacion__Group_1__0
+            	    // InternalLatino.g:5132:3: rule__Concatenacion__Group_1__0
             	    {
             	    pushFollow(FOLLOW_44);
             	    rule__Concatenacion__Group_1__0();
@@ -15984,14 +15942,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Concatenacion__Group_1__0"
-    // InternalLatino.g:5153:1: rule__Concatenacion__Group_1__0 : rule__Concatenacion__Group_1__0__Impl rule__Concatenacion__Group_1__1 ;
+    // InternalLatino.g:5141:1: rule__Concatenacion__Group_1__0 : rule__Concatenacion__Group_1__0__Impl rule__Concatenacion__Group_1__1 ;
     public final void rule__Concatenacion__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5157:1: ( rule__Concatenacion__Group_1__0__Impl rule__Concatenacion__Group_1__1 )
-            // InternalLatino.g:5158:2: rule__Concatenacion__Group_1__0__Impl rule__Concatenacion__Group_1__1
+            // InternalLatino.g:5145:1: ( rule__Concatenacion__Group_1__0__Impl rule__Concatenacion__Group_1__1 )
+            // InternalLatino.g:5146:2: rule__Concatenacion__Group_1__0__Impl rule__Concatenacion__Group_1__1
             {
             pushFollow(FOLLOW_6);
             rule__Concatenacion__Group_1__0__Impl();
@@ -16022,20 +15980,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Concatenacion__Group_1__0__Impl"
-    // InternalLatino.g:5165:1: rule__Concatenacion__Group_1__0__Impl : ( '..' ) ;
+    // InternalLatino.g:5153:1: rule__Concatenacion__Group_1__0__Impl : ( '..' ) ;
     public final void rule__Concatenacion__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5169:1: ( ( '..' ) )
-            // InternalLatino.g:5170:1: ( '..' )
+            // InternalLatino.g:5157:1: ( ( '..' ) )
+            // InternalLatino.g:5158:1: ( '..' )
             {
-            // InternalLatino.g:5170:1: ( '..' )
-            // InternalLatino.g:5171:2: '..'
+            // InternalLatino.g:5158:1: ( '..' )
+            // InternalLatino.g:5159:2: '..'
             {
              before(grammarAccess.getConcatenacionAccess().getFullStopFullStopKeyword_1_0()); 
-            match(input,67,FOLLOW_2); 
+            match(input,65,FOLLOW_2); 
              after(grammarAccess.getConcatenacionAccess().getFullStopFullStopKeyword_1_0()); 
 
             }
@@ -16059,14 +16017,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Concatenacion__Group_1__1"
-    // InternalLatino.g:5180:1: rule__Concatenacion__Group_1__1 : rule__Concatenacion__Group_1__1__Impl ;
+    // InternalLatino.g:5168:1: rule__Concatenacion__Group_1__1 : rule__Concatenacion__Group_1__1__Impl ;
     public final void rule__Concatenacion__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5184:1: ( rule__Concatenacion__Group_1__1__Impl )
-            // InternalLatino.g:5185:2: rule__Concatenacion__Group_1__1__Impl
+            // InternalLatino.g:5172:1: ( rule__Concatenacion__Group_1__1__Impl )
+            // InternalLatino.g:5173:2: rule__Concatenacion__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Concatenacion__Group_1__1__Impl();
@@ -16092,17 +16050,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Concatenacion__Group_1__1__Impl"
-    // InternalLatino.g:5191:1: rule__Concatenacion__Group_1__1__Impl : ( ruleSuma ) ;
+    // InternalLatino.g:5179:1: rule__Concatenacion__Group_1__1__Impl : ( ruleSuma ) ;
     public final void rule__Concatenacion__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5195:1: ( ( ruleSuma ) )
-            // InternalLatino.g:5196:1: ( ruleSuma )
+            // InternalLatino.g:5183:1: ( ( ruleSuma ) )
+            // InternalLatino.g:5184:1: ( ruleSuma )
             {
-            // InternalLatino.g:5196:1: ( ruleSuma )
-            // InternalLatino.g:5197:2: ruleSuma
+            // InternalLatino.g:5184:1: ( ruleSuma )
+            // InternalLatino.g:5185:2: ruleSuma
             {
              before(grammarAccess.getConcatenacionAccess().getSumaParserRuleCall_1_1()); 
             pushFollow(FOLLOW_2);
@@ -16133,14 +16091,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Suma__Group__0"
-    // InternalLatino.g:5207:1: rule__Suma__Group__0 : rule__Suma__Group__0__Impl rule__Suma__Group__1 ;
+    // InternalLatino.g:5195:1: rule__Suma__Group__0 : rule__Suma__Group__0__Impl rule__Suma__Group__1 ;
     public final void rule__Suma__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5211:1: ( rule__Suma__Group__0__Impl rule__Suma__Group__1 )
-            // InternalLatino.g:5212:2: rule__Suma__Group__0__Impl rule__Suma__Group__1
+            // InternalLatino.g:5199:1: ( rule__Suma__Group__0__Impl rule__Suma__Group__1 )
+            // InternalLatino.g:5200:2: rule__Suma__Group__0__Impl rule__Suma__Group__1
             {
             pushFollow(FOLLOW_45);
             rule__Suma__Group__0__Impl();
@@ -16171,17 +16129,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Suma__Group__0__Impl"
-    // InternalLatino.g:5219:1: rule__Suma__Group__0__Impl : ( ruleProducto ) ;
+    // InternalLatino.g:5207:1: rule__Suma__Group__0__Impl : ( ruleProducto ) ;
     public final void rule__Suma__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5223:1: ( ( ruleProducto ) )
-            // InternalLatino.g:5224:1: ( ruleProducto )
+            // InternalLatino.g:5211:1: ( ( ruleProducto ) )
+            // InternalLatino.g:5212:1: ( ruleProducto )
             {
-            // InternalLatino.g:5224:1: ( ruleProducto )
-            // InternalLatino.g:5225:2: ruleProducto
+            // InternalLatino.g:5212:1: ( ruleProducto )
+            // InternalLatino.g:5213:2: ruleProducto
             {
              before(grammarAccess.getSumaAccess().getProductoParserRuleCall_0()); 
             pushFollow(FOLLOW_2);
@@ -16212,14 +16170,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Suma__Group__1"
-    // InternalLatino.g:5234:1: rule__Suma__Group__1 : rule__Suma__Group__1__Impl ;
+    // InternalLatino.g:5222:1: rule__Suma__Group__1 : rule__Suma__Group__1__Impl ;
     public final void rule__Suma__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5238:1: ( rule__Suma__Group__1__Impl )
-            // InternalLatino.g:5239:2: rule__Suma__Group__1__Impl
+            // InternalLatino.g:5226:1: ( rule__Suma__Group__1__Impl )
+            // InternalLatino.g:5227:2: rule__Suma__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Suma__Group__1__Impl();
@@ -16245,33 +16203,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Suma__Group__1__Impl"
-    // InternalLatino.g:5245:1: rule__Suma__Group__1__Impl : ( ( rule__Suma__Group_1__0 )* ) ;
+    // InternalLatino.g:5233:1: rule__Suma__Group__1__Impl : ( ( rule__Suma__Group_1__0 )* ) ;
     public final void rule__Suma__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5249:1: ( ( ( rule__Suma__Group_1__0 )* ) )
-            // InternalLatino.g:5250:1: ( ( rule__Suma__Group_1__0 )* )
+            // InternalLatino.g:5237:1: ( ( ( rule__Suma__Group_1__0 )* ) )
+            // InternalLatino.g:5238:1: ( ( rule__Suma__Group_1__0 )* )
             {
-            // InternalLatino.g:5250:1: ( ( rule__Suma__Group_1__0 )* )
-            // InternalLatino.g:5251:2: ( rule__Suma__Group_1__0 )*
+            // InternalLatino.g:5238:1: ( ( rule__Suma__Group_1__0 )* )
+            // InternalLatino.g:5239:2: ( rule__Suma__Group_1__0 )*
             {
              before(grammarAccess.getSumaAccess().getGroup_1()); 
-            // InternalLatino.g:5252:2: ( rule__Suma__Group_1__0 )*
+            // InternalLatino.g:5240:2: ( rule__Suma__Group_1__0 )*
             loop46:
             do {
                 int alt46=2;
                 int LA46_0 = input.LA(1);
 
-                if ( ((LA46_0>=29 && LA46_0<=30)) ) {
+                if ( ((LA46_0>=27 && LA46_0<=28)) ) {
                     alt46=1;
                 }
 
 
                 switch (alt46) {
             	case 1 :
-            	    // InternalLatino.g:5252:3: rule__Suma__Group_1__0
+            	    // InternalLatino.g:5240:3: rule__Suma__Group_1__0
             	    {
             	    pushFollow(FOLLOW_46);
             	    rule__Suma__Group_1__0();
@@ -16310,14 +16268,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Suma__Group_1__0"
-    // InternalLatino.g:5261:1: rule__Suma__Group_1__0 : rule__Suma__Group_1__0__Impl rule__Suma__Group_1__1 ;
+    // InternalLatino.g:5249:1: rule__Suma__Group_1__0 : rule__Suma__Group_1__0__Impl rule__Suma__Group_1__1 ;
     public final void rule__Suma__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5265:1: ( rule__Suma__Group_1__0__Impl rule__Suma__Group_1__1 )
-            // InternalLatino.g:5266:2: rule__Suma__Group_1__0__Impl rule__Suma__Group_1__1
+            // InternalLatino.g:5253:1: ( rule__Suma__Group_1__0__Impl rule__Suma__Group_1__1 )
+            // InternalLatino.g:5254:2: rule__Suma__Group_1__0__Impl rule__Suma__Group_1__1
             {
             pushFollow(FOLLOW_6);
             rule__Suma__Group_1__0__Impl();
@@ -16348,21 +16306,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Suma__Group_1__0__Impl"
-    // InternalLatino.g:5273:1: rule__Suma__Group_1__0__Impl : ( ( rule__Suma__Alternatives_1_0 ) ) ;
+    // InternalLatino.g:5261:1: rule__Suma__Group_1__0__Impl : ( ( rule__Suma__Alternatives_1_0 ) ) ;
     public final void rule__Suma__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5277:1: ( ( ( rule__Suma__Alternatives_1_0 ) ) )
-            // InternalLatino.g:5278:1: ( ( rule__Suma__Alternatives_1_0 ) )
+            // InternalLatino.g:5265:1: ( ( ( rule__Suma__Alternatives_1_0 ) ) )
+            // InternalLatino.g:5266:1: ( ( rule__Suma__Alternatives_1_0 ) )
             {
-            // InternalLatino.g:5278:1: ( ( rule__Suma__Alternatives_1_0 ) )
-            // InternalLatino.g:5279:2: ( rule__Suma__Alternatives_1_0 )
+            // InternalLatino.g:5266:1: ( ( rule__Suma__Alternatives_1_0 ) )
+            // InternalLatino.g:5267:2: ( rule__Suma__Alternatives_1_0 )
             {
              before(grammarAccess.getSumaAccess().getAlternatives_1_0()); 
-            // InternalLatino.g:5280:2: ( rule__Suma__Alternatives_1_0 )
-            // InternalLatino.g:5280:3: rule__Suma__Alternatives_1_0
+            // InternalLatino.g:5268:2: ( rule__Suma__Alternatives_1_0 )
+            // InternalLatino.g:5268:3: rule__Suma__Alternatives_1_0
             {
             pushFollow(FOLLOW_2);
             rule__Suma__Alternatives_1_0();
@@ -16395,14 +16353,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Suma__Group_1__1"
-    // InternalLatino.g:5288:1: rule__Suma__Group_1__1 : rule__Suma__Group_1__1__Impl ;
+    // InternalLatino.g:5276:1: rule__Suma__Group_1__1 : rule__Suma__Group_1__1__Impl ;
     public final void rule__Suma__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5292:1: ( rule__Suma__Group_1__1__Impl )
-            // InternalLatino.g:5293:2: rule__Suma__Group_1__1__Impl
+            // InternalLatino.g:5280:1: ( rule__Suma__Group_1__1__Impl )
+            // InternalLatino.g:5281:2: rule__Suma__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Suma__Group_1__1__Impl();
@@ -16428,17 +16386,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Suma__Group_1__1__Impl"
-    // InternalLatino.g:5299:1: rule__Suma__Group_1__1__Impl : ( ruleProducto ) ;
+    // InternalLatino.g:5287:1: rule__Suma__Group_1__1__Impl : ( ruleProducto ) ;
     public final void rule__Suma__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5303:1: ( ( ruleProducto ) )
-            // InternalLatino.g:5304:1: ( ruleProducto )
+            // InternalLatino.g:5291:1: ( ( ruleProducto ) )
+            // InternalLatino.g:5292:1: ( ruleProducto )
             {
-            // InternalLatino.g:5304:1: ( ruleProducto )
-            // InternalLatino.g:5305:2: ruleProducto
+            // InternalLatino.g:5292:1: ( ruleProducto )
+            // InternalLatino.g:5293:2: ruleProducto
             {
              before(grammarAccess.getSumaAccess().getProductoParserRuleCall_1_1()); 
             pushFollow(FOLLOW_2);
@@ -16469,14 +16427,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Producto__Group__0"
-    // InternalLatino.g:5315:1: rule__Producto__Group__0 : rule__Producto__Group__0__Impl rule__Producto__Group__1 ;
+    // InternalLatino.g:5303:1: rule__Producto__Group__0 : rule__Producto__Group__0__Impl rule__Producto__Group__1 ;
     public final void rule__Producto__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5319:1: ( rule__Producto__Group__0__Impl rule__Producto__Group__1 )
-            // InternalLatino.g:5320:2: rule__Producto__Group__0__Impl rule__Producto__Group__1
+            // InternalLatino.g:5307:1: ( rule__Producto__Group__0__Impl rule__Producto__Group__1 )
+            // InternalLatino.g:5308:2: rule__Producto__Group__0__Impl rule__Producto__Group__1
             {
             pushFollow(FOLLOW_47);
             rule__Producto__Group__0__Impl();
@@ -16507,17 +16465,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Producto__Group__0__Impl"
-    // InternalLatino.g:5327:1: rule__Producto__Group__0__Impl : ( ruleUnario ) ;
+    // InternalLatino.g:5315:1: rule__Producto__Group__0__Impl : ( ruleUnario ) ;
     public final void rule__Producto__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5331:1: ( ( ruleUnario ) )
-            // InternalLatino.g:5332:1: ( ruleUnario )
+            // InternalLatino.g:5319:1: ( ( ruleUnario ) )
+            // InternalLatino.g:5320:1: ( ruleUnario )
             {
-            // InternalLatino.g:5332:1: ( ruleUnario )
-            // InternalLatino.g:5333:2: ruleUnario
+            // InternalLatino.g:5320:1: ( ruleUnario )
+            // InternalLatino.g:5321:2: ruleUnario
             {
              before(grammarAccess.getProductoAccess().getUnarioParserRuleCall_0()); 
             pushFollow(FOLLOW_2);
@@ -16548,14 +16506,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Producto__Group__1"
-    // InternalLatino.g:5342:1: rule__Producto__Group__1 : rule__Producto__Group__1__Impl ;
+    // InternalLatino.g:5330:1: rule__Producto__Group__1 : rule__Producto__Group__1__Impl ;
     public final void rule__Producto__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5346:1: ( rule__Producto__Group__1__Impl )
-            // InternalLatino.g:5347:2: rule__Producto__Group__1__Impl
+            // InternalLatino.g:5334:1: ( rule__Producto__Group__1__Impl )
+            // InternalLatino.g:5335:2: rule__Producto__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Producto__Group__1__Impl();
@@ -16581,33 +16539,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Producto__Group__1__Impl"
-    // InternalLatino.g:5353:1: rule__Producto__Group__1__Impl : ( ( rule__Producto__Group_1__0 )* ) ;
+    // InternalLatino.g:5341:1: rule__Producto__Group__1__Impl : ( ( rule__Producto__Group_1__0 )* ) ;
     public final void rule__Producto__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5357:1: ( ( ( rule__Producto__Group_1__0 )* ) )
-            // InternalLatino.g:5358:1: ( ( rule__Producto__Group_1__0 )* )
+            // InternalLatino.g:5345:1: ( ( ( rule__Producto__Group_1__0 )* ) )
+            // InternalLatino.g:5346:1: ( ( rule__Producto__Group_1__0 )* )
             {
-            // InternalLatino.g:5358:1: ( ( rule__Producto__Group_1__0 )* )
-            // InternalLatino.g:5359:2: ( rule__Producto__Group_1__0 )*
+            // InternalLatino.g:5346:1: ( ( rule__Producto__Group_1__0 )* )
+            // InternalLatino.g:5347:2: ( rule__Producto__Group_1__0 )*
             {
              before(grammarAccess.getProductoAccess().getGroup_1()); 
-            // InternalLatino.g:5360:2: ( rule__Producto__Group_1__0 )*
+            // InternalLatino.g:5348:2: ( rule__Producto__Group_1__0 )*
             loop47:
             do {
                 int alt47=2;
                 int LA47_0 = input.LA(1);
 
-                if ( ((LA47_0>=31 && LA47_0<=33)) ) {
+                if ( ((LA47_0>=29 && LA47_0<=31)) ) {
                     alt47=1;
                 }
 
 
                 switch (alt47) {
             	case 1 :
-            	    // InternalLatino.g:5360:3: rule__Producto__Group_1__0
+            	    // InternalLatino.g:5348:3: rule__Producto__Group_1__0
             	    {
             	    pushFollow(FOLLOW_48);
             	    rule__Producto__Group_1__0();
@@ -16646,14 +16604,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Producto__Group_1__0"
-    // InternalLatino.g:5369:1: rule__Producto__Group_1__0 : rule__Producto__Group_1__0__Impl rule__Producto__Group_1__1 ;
+    // InternalLatino.g:5357:1: rule__Producto__Group_1__0 : rule__Producto__Group_1__0__Impl rule__Producto__Group_1__1 ;
     public final void rule__Producto__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5373:1: ( rule__Producto__Group_1__0__Impl rule__Producto__Group_1__1 )
-            // InternalLatino.g:5374:2: rule__Producto__Group_1__0__Impl rule__Producto__Group_1__1
+            // InternalLatino.g:5361:1: ( rule__Producto__Group_1__0__Impl rule__Producto__Group_1__1 )
+            // InternalLatino.g:5362:2: rule__Producto__Group_1__0__Impl rule__Producto__Group_1__1
             {
             pushFollow(FOLLOW_6);
             rule__Producto__Group_1__0__Impl();
@@ -16684,21 +16642,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Producto__Group_1__0__Impl"
-    // InternalLatino.g:5381:1: rule__Producto__Group_1__0__Impl : ( ( rule__Producto__Alternatives_1_0 ) ) ;
+    // InternalLatino.g:5369:1: rule__Producto__Group_1__0__Impl : ( ( rule__Producto__Alternatives_1_0 ) ) ;
     public final void rule__Producto__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5385:1: ( ( ( rule__Producto__Alternatives_1_0 ) ) )
-            // InternalLatino.g:5386:1: ( ( rule__Producto__Alternatives_1_0 ) )
+            // InternalLatino.g:5373:1: ( ( ( rule__Producto__Alternatives_1_0 ) ) )
+            // InternalLatino.g:5374:1: ( ( rule__Producto__Alternatives_1_0 ) )
             {
-            // InternalLatino.g:5386:1: ( ( rule__Producto__Alternatives_1_0 ) )
-            // InternalLatino.g:5387:2: ( rule__Producto__Alternatives_1_0 )
+            // InternalLatino.g:5374:1: ( ( rule__Producto__Alternatives_1_0 ) )
+            // InternalLatino.g:5375:2: ( rule__Producto__Alternatives_1_0 )
             {
              before(grammarAccess.getProductoAccess().getAlternatives_1_0()); 
-            // InternalLatino.g:5388:2: ( rule__Producto__Alternatives_1_0 )
-            // InternalLatino.g:5388:3: rule__Producto__Alternatives_1_0
+            // InternalLatino.g:5376:2: ( rule__Producto__Alternatives_1_0 )
+            // InternalLatino.g:5376:3: rule__Producto__Alternatives_1_0
             {
             pushFollow(FOLLOW_2);
             rule__Producto__Alternatives_1_0();
@@ -16731,14 +16689,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Producto__Group_1__1"
-    // InternalLatino.g:5396:1: rule__Producto__Group_1__1 : rule__Producto__Group_1__1__Impl ;
+    // InternalLatino.g:5384:1: rule__Producto__Group_1__1 : rule__Producto__Group_1__1__Impl ;
     public final void rule__Producto__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5400:1: ( rule__Producto__Group_1__1__Impl )
-            // InternalLatino.g:5401:2: rule__Producto__Group_1__1__Impl
+            // InternalLatino.g:5388:1: ( rule__Producto__Group_1__1__Impl )
+            // InternalLatino.g:5389:2: rule__Producto__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Producto__Group_1__1__Impl();
@@ -16764,17 +16722,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Producto__Group_1__1__Impl"
-    // InternalLatino.g:5407:1: rule__Producto__Group_1__1__Impl : ( ruleUnario ) ;
+    // InternalLatino.g:5395:1: rule__Producto__Group_1__1__Impl : ( ruleUnario ) ;
     public final void rule__Producto__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5411:1: ( ( ruleUnario ) )
-            // InternalLatino.g:5412:1: ( ruleUnario )
+            // InternalLatino.g:5399:1: ( ( ruleUnario ) )
+            // InternalLatino.g:5400:1: ( ruleUnario )
             {
-            // InternalLatino.g:5412:1: ( ruleUnario )
-            // InternalLatino.g:5413:2: ruleUnario
+            // InternalLatino.g:5400:1: ( ruleUnario )
+            // InternalLatino.g:5401:2: ruleUnario
             {
              before(grammarAccess.getProductoAccess().getUnarioParserRuleCall_1_1()); 
             pushFollow(FOLLOW_2);
@@ -16805,14 +16763,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Unario__Group_0__0"
-    // InternalLatino.g:5423:1: rule__Unario__Group_0__0 : rule__Unario__Group_0__0__Impl rule__Unario__Group_0__1 ;
+    // InternalLatino.g:5411:1: rule__Unario__Group_0__0 : rule__Unario__Group_0__0__Impl rule__Unario__Group_0__1 ;
     public final void rule__Unario__Group_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5427:1: ( rule__Unario__Group_0__0__Impl rule__Unario__Group_0__1 )
-            // InternalLatino.g:5428:2: rule__Unario__Group_0__0__Impl rule__Unario__Group_0__1
+            // InternalLatino.g:5415:1: ( rule__Unario__Group_0__0__Impl rule__Unario__Group_0__1 )
+            // InternalLatino.g:5416:2: rule__Unario__Group_0__0__Impl rule__Unario__Group_0__1
             {
             pushFollow(FOLLOW_6);
             rule__Unario__Group_0__0__Impl();
@@ -16843,20 +16801,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Unario__Group_0__0__Impl"
-    // InternalLatino.g:5435:1: rule__Unario__Group_0__0__Impl : ( '!' ) ;
+    // InternalLatino.g:5423:1: rule__Unario__Group_0__0__Impl : ( '!' ) ;
     public final void rule__Unario__Group_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5439:1: ( ( '!' ) )
-            // InternalLatino.g:5440:1: ( '!' )
+            // InternalLatino.g:5427:1: ( ( '!' ) )
+            // InternalLatino.g:5428:1: ( '!' )
             {
-            // InternalLatino.g:5440:1: ( '!' )
-            // InternalLatino.g:5441:2: '!'
+            // InternalLatino.g:5428:1: ( '!' )
+            // InternalLatino.g:5429:2: '!'
             {
              before(grammarAccess.getUnarioAccess().getExclamationMarkKeyword_0_0()); 
-            match(input,68,FOLLOW_2); 
+            match(input,66,FOLLOW_2); 
              after(grammarAccess.getUnarioAccess().getExclamationMarkKeyword_0_0()); 
 
             }
@@ -16880,14 +16838,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Unario__Group_0__1"
-    // InternalLatino.g:5450:1: rule__Unario__Group_0__1 : rule__Unario__Group_0__1__Impl ;
+    // InternalLatino.g:5438:1: rule__Unario__Group_0__1 : rule__Unario__Group_0__1__Impl ;
     public final void rule__Unario__Group_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5454:1: ( rule__Unario__Group_0__1__Impl )
-            // InternalLatino.g:5455:2: rule__Unario__Group_0__1__Impl
+            // InternalLatino.g:5442:1: ( rule__Unario__Group_0__1__Impl )
+            // InternalLatino.g:5443:2: rule__Unario__Group_0__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Unario__Group_0__1__Impl();
@@ -16913,17 +16871,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Unario__Group_0__1__Impl"
-    // InternalLatino.g:5461:1: rule__Unario__Group_0__1__Impl : ( ruleUnario ) ;
+    // InternalLatino.g:5449:1: rule__Unario__Group_0__1__Impl : ( ruleUnario ) ;
     public final void rule__Unario__Group_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5465:1: ( ( ruleUnario ) )
-            // InternalLatino.g:5466:1: ( ruleUnario )
+            // InternalLatino.g:5453:1: ( ( ruleUnario ) )
+            // InternalLatino.g:5454:1: ( ruleUnario )
             {
-            // InternalLatino.g:5466:1: ( ruleUnario )
-            // InternalLatino.g:5467:2: ruleUnario
+            // InternalLatino.g:5454:1: ( ruleUnario )
+            // InternalLatino.g:5455:2: ruleUnario
             {
              before(grammarAccess.getUnarioAccess().getUnarioParserRuleCall_0_1()); 
             pushFollow(FOLLOW_2);
@@ -16954,14 +16912,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Unario__Group_1__0"
-    // InternalLatino.g:5477:1: rule__Unario__Group_1__0 : rule__Unario__Group_1__0__Impl rule__Unario__Group_1__1 ;
+    // InternalLatino.g:5465:1: rule__Unario__Group_1__0 : rule__Unario__Group_1__0__Impl rule__Unario__Group_1__1 ;
     public final void rule__Unario__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5481:1: ( rule__Unario__Group_1__0__Impl rule__Unario__Group_1__1 )
-            // InternalLatino.g:5482:2: rule__Unario__Group_1__0__Impl rule__Unario__Group_1__1
+            // InternalLatino.g:5469:1: ( rule__Unario__Group_1__0__Impl rule__Unario__Group_1__1 )
+            // InternalLatino.g:5470:2: rule__Unario__Group_1__0__Impl rule__Unario__Group_1__1
             {
             pushFollow(FOLLOW_6);
             rule__Unario__Group_1__0__Impl();
@@ -16992,20 +16950,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Unario__Group_1__0__Impl"
-    // InternalLatino.g:5489:1: rule__Unario__Group_1__0__Impl : ( '-' ) ;
+    // InternalLatino.g:5477:1: rule__Unario__Group_1__0__Impl : ( '-' ) ;
     public final void rule__Unario__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5493:1: ( ( '-' ) )
-            // InternalLatino.g:5494:1: ( '-' )
+            // InternalLatino.g:5481:1: ( ( '-' ) )
+            // InternalLatino.g:5482:1: ( '-' )
             {
-            // InternalLatino.g:5494:1: ( '-' )
-            // InternalLatino.g:5495:2: '-'
+            // InternalLatino.g:5482:1: ( '-' )
+            // InternalLatino.g:5483:2: '-'
             {
              before(grammarAccess.getUnarioAccess().getHyphenMinusKeyword_1_0()); 
-            match(input,30,FOLLOW_2); 
+            match(input,28,FOLLOW_2); 
              after(grammarAccess.getUnarioAccess().getHyphenMinusKeyword_1_0()); 
 
             }
@@ -17029,14 +16987,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Unario__Group_1__1"
-    // InternalLatino.g:5504:1: rule__Unario__Group_1__1 : rule__Unario__Group_1__1__Impl ;
+    // InternalLatino.g:5492:1: rule__Unario__Group_1__1 : rule__Unario__Group_1__1__Impl ;
     public final void rule__Unario__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5508:1: ( rule__Unario__Group_1__1__Impl )
-            // InternalLatino.g:5509:2: rule__Unario__Group_1__1__Impl
+            // InternalLatino.g:5496:1: ( rule__Unario__Group_1__1__Impl )
+            // InternalLatino.g:5497:2: rule__Unario__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Unario__Group_1__1__Impl();
@@ -17062,17 +17020,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Unario__Group_1__1__Impl"
-    // InternalLatino.g:5515:1: rule__Unario__Group_1__1__Impl : ( ruleUnario ) ;
+    // InternalLatino.g:5503:1: rule__Unario__Group_1__1__Impl : ( ruleUnario ) ;
     public final void rule__Unario__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5519:1: ( ( ruleUnario ) )
-            // InternalLatino.g:5520:1: ( ruleUnario )
+            // InternalLatino.g:5507:1: ( ( ruleUnario ) )
+            // InternalLatino.g:5508:1: ( ruleUnario )
             {
-            // InternalLatino.g:5520:1: ( ruleUnario )
-            // InternalLatino.g:5521:2: ruleUnario
+            // InternalLatino.g:5508:1: ( ruleUnario )
+            // InternalLatino.g:5509:2: ruleUnario
             {
              before(grammarAccess.getUnarioAccess().getUnarioParserRuleCall_1_1()); 
             pushFollow(FOLLOW_2);
@@ -17103,14 +17061,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0__0"
-    // InternalLatino.g:5531:1: rule__Primario__Group_0__0 : rule__Primario__Group_0__0__Impl rule__Primario__Group_0__1 ;
+    // InternalLatino.g:5519:1: rule__Primario__Group_0__0 : rule__Primario__Group_0__0__Impl rule__Primario__Group_0__1 ;
     public final void rule__Primario__Group_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5535:1: ( rule__Primario__Group_0__0__Impl rule__Primario__Group_0__1 )
-            // InternalLatino.g:5536:2: rule__Primario__Group_0__0__Impl rule__Primario__Group_0__1
+            // InternalLatino.g:5523:1: ( rule__Primario__Group_0__0__Impl rule__Primario__Group_0__1 )
+            // InternalLatino.g:5524:2: rule__Primario__Group_0__0__Impl rule__Primario__Group_0__1
             {
             pushFollow(FOLLOW_49);
             rule__Primario__Group_0__0__Impl();
@@ -17141,17 +17099,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0__0__Impl"
-    // InternalLatino.g:5543:1: rule__Primario__Group_0__0__Impl : ( RULE_ID ) ;
+    // InternalLatino.g:5531:1: rule__Primario__Group_0__0__Impl : ( RULE_ID ) ;
     public final void rule__Primario__Group_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5547:1: ( ( RULE_ID ) )
-            // InternalLatino.g:5548:1: ( RULE_ID )
+            // InternalLatino.g:5535:1: ( ( RULE_ID ) )
+            // InternalLatino.g:5536:1: ( RULE_ID )
             {
-            // InternalLatino.g:5548:1: ( RULE_ID )
-            // InternalLatino.g:5549:2: RULE_ID
+            // InternalLatino.g:5536:1: ( RULE_ID )
+            // InternalLatino.g:5537:2: RULE_ID
             {
              before(grammarAccess.getPrimarioAccess().getIDTerminalRuleCall_0_0()); 
             match(input,RULE_ID,FOLLOW_2); 
@@ -17178,14 +17136,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0__1"
-    // InternalLatino.g:5558:1: rule__Primario__Group_0__1 : rule__Primario__Group_0__1__Impl ;
+    // InternalLatino.g:5546:1: rule__Primario__Group_0__1 : rule__Primario__Group_0__1__Impl ;
     public final void rule__Primario__Group_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5562:1: ( rule__Primario__Group_0__1__Impl )
-            // InternalLatino.g:5563:2: rule__Primario__Group_0__1__Impl
+            // InternalLatino.g:5550:1: ( rule__Primario__Group_0__1__Impl )
+            // InternalLatino.g:5551:2: rule__Primario__Group_0__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Primario__Group_0__1__Impl();
@@ -17211,29 +17169,29 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0__1__Impl"
-    // InternalLatino.g:5569:1: rule__Primario__Group_0__1__Impl : ( ( rule__Primario__Alternatives_0_1 )? ) ;
+    // InternalLatino.g:5557:1: rule__Primario__Group_0__1__Impl : ( ( rule__Primario__Alternatives_0_1 )? ) ;
     public final void rule__Primario__Group_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5573:1: ( ( ( rule__Primario__Alternatives_0_1 )? ) )
-            // InternalLatino.g:5574:1: ( ( rule__Primario__Alternatives_0_1 )? )
+            // InternalLatino.g:5561:1: ( ( ( rule__Primario__Alternatives_0_1 )? ) )
+            // InternalLatino.g:5562:1: ( ( rule__Primario__Alternatives_0_1 )? )
             {
-            // InternalLatino.g:5574:1: ( ( rule__Primario__Alternatives_0_1 )? )
-            // InternalLatino.g:5575:2: ( rule__Primario__Alternatives_0_1 )?
+            // InternalLatino.g:5562:1: ( ( rule__Primario__Alternatives_0_1 )? )
+            // InternalLatino.g:5563:2: ( rule__Primario__Alternatives_0_1 )?
             {
              before(grammarAccess.getPrimarioAccess().getAlternatives_0_1()); 
-            // InternalLatino.g:5576:2: ( rule__Primario__Alternatives_0_1 )?
+            // InternalLatino.g:5564:2: ( rule__Primario__Alternatives_0_1 )?
             int alt48=2;
             int LA48_0 = input.LA(1);
 
-            if ( (LA48_0==42||LA48_0==45) ) {
+            if ( (LA48_0==40||LA48_0==43) ) {
                 alt48=1;
             }
             switch (alt48) {
                 case 1 :
-                    // InternalLatino.g:5576:3: rule__Primario__Alternatives_0_1
+                    // InternalLatino.g:5564:3: rule__Primario__Alternatives_0_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__Primario__Alternatives_0_1();
@@ -17269,14 +17227,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_0__0"
-    // InternalLatino.g:5585:1: rule__Primario__Group_0_1_0__0 : rule__Primario__Group_0_1_0__0__Impl rule__Primario__Group_0_1_0__1 ;
+    // InternalLatino.g:5573:1: rule__Primario__Group_0_1_0__0 : rule__Primario__Group_0_1_0__0__Impl rule__Primario__Group_0_1_0__1 ;
     public final void rule__Primario__Group_0_1_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5589:1: ( rule__Primario__Group_0_1_0__0__Impl rule__Primario__Group_0_1_0__1 )
-            // InternalLatino.g:5590:2: rule__Primario__Group_0_1_0__0__Impl rule__Primario__Group_0_1_0__1
+            // InternalLatino.g:5577:1: ( rule__Primario__Group_0_1_0__0__Impl rule__Primario__Group_0_1_0__1 )
+            // InternalLatino.g:5578:2: rule__Primario__Group_0_1_0__0__Impl rule__Primario__Group_0_1_0__1
             {
             pushFollow(FOLLOW_6);
             rule__Primario__Group_0_1_0__0__Impl();
@@ -17307,20 +17265,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_0__0__Impl"
-    // InternalLatino.g:5597:1: rule__Primario__Group_0_1_0__0__Impl : ( '[' ) ;
+    // InternalLatino.g:5585:1: rule__Primario__Group_0_1_0__0__Impl : ( '[' ) ;
     public final void rule__Primario__Group_0_1_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5601:1: ( ( '[' ) )
-            // InternalLatino.g:5602:1: ( '[' )
+            // InternalLatino.g:5589:1: ( ( '[' ) )
+            // InternalLatino.g:5590:1: ( '[' )
             {
-            // InternalLatino.g:5602:1: ( '[' )
-            // InternalLatino.g:5603:2: '['
+            // InternalLatino.g:5590:1: ( '[' )
+            // InternalLatino.g:5591:2: '['
             {
              before(grammarAccess.getPrimarioAccess().getLeftSquareBracketKeyword_0_1_0_0()); 
-            match(input,45,FOLLOW_2); 
+            match(input,43,FOLLOW_2); 
              after(grammarAccess.getPrimarioAccess().getLeftSquareBracketKeyword_0_1_0_0()); 
 
             }
@@ -17344,14 +17302,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_0__1"
-    // InternalLatino.g:5612:1: rule__Primario__Group_0_1_0__1 : rule__Primario__Group_0_1_0__1__Impl rule__Primario__Group_0_1_0__2 ;
+    // InternalLatino.g:5600:1: rule__Primario__Group_0_1_0__1 : rule__Primario__Group_0_1_0__1__Impl rule__Primario__Group_0_1_0__2 ;
     public final void rule__Primario__Group_0_1_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5616:1: ( rule__Primario__Group_0_1_0__1__Impl rule__Primario__Group_0_1_0__2 )
-            // InternalLatino.g:5617:2: rule__Primario__Group_0_1_0__1__Impl rule__Primario__Group_0_1_0__2
+            // InternalLatino.g:5604:1: ( rule__Primario__Group_0_1_0__1__Impl rule__Primario__Group_0_1_0__2 )
+            // InternalLatino.g:5605:2: rule__Primario__Group_0_1_0__1__Impl rule__Primario__Group_0_1_0__2
             {
             pushFollow(FOLLOW_15);
             rule__Primario__Group_0_1_0__1__Impl();
@@ -17382,17 +17340,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_0__1__Impl"
-    // InternalLatino.g:5624:1: rule__Primario__Group_0_1_0__1__Impl : ( ruleExpresion ) ;
+    // InternalLatino.g:5612:1: rule__Primario__Group_0_1_0__1__Impl : ( ruleExpresion ) ;
     public final void rule__Primario__Group_0_1_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5628:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:5629:1: ( ruleExpresion )
+            // InternalLatino.g:5616:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:5617:1: ( ruleExpresion )
             {
-            // InternalLatino.g:5629:1: ( ruleExpresion )
-            // InternalLatino.g:5630:2: ruleExpresion
+            // InternalLatino.g:5617:1: ( ruleExpresion )
+            // InternalLatino.g:5618:2: ruleExpresion
             {
              before(grammarAccess.getPrimarioAccess().getExpresionParserRuleCall_0_1_0_1()); 
             pushFollow(FOLLOW_2);
@@ -17423,14 +17381,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_0__2"
-    // InternalLatino.g:5639:1: rule__Primario__Group_0_1_0__2 : rule__Primario__Group_0_1_0__2__Impl ;
+    // InternalLatino.g:5627:1: rule__Primario__Group_0_1_0__2 : rule__Primario__Group_0_1_0__2__Impl ;
     public final void rule__Primario__Group_0_1_0__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5643:1: ( rule__Primario__Group_0_1_0__2__Impl )
-            // InternalLatino.g:5644:2: rule__Primario__Group_0_1_0__2__Impl
+            // InternalLatino.g:5631:1: ( rule__Primario__Group_0_1_0__2__Impl )
+            // InternalLatino.g:5632:2: rule__Primario__Group_0_1_0__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Primario__Group_0_1_0__2__Impl();
@@ -17456,20 +17414,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_0__2__Impl"
-    // InternalLatino.g:5650:1: rule__Primario__Group_0_1_0__2__Impl : ( ']' ) ;
+    // InternalLatino.g:5638:1: rule__Primario__Group_0_1_0__2__Impl : ( ']' ) ;
     public final void rule__Primario__Group_0_1_0__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5654:1: ( ( ']' ) )
-            // InternalLatino.g:5655:1: ( ']' )
+            // InternalLatino.g:5642:1: ( ( ']' ) )
+            // InternalLatino.g:5643:1: ( ']' )
             {
-            // InternalLatino.g:5655:1: ( ']' )
-            // InternalLatino.g:5656:2: ']'
+            // InternalLatino.g:5643:1: ( ']' )
+            // InternalLatino.g:5644:2: ']'
             {
              before(grammarAccess.getPrimarioAccess().getRightSquareBracketKeyword_0_1_0_2()); 
-            match(input,46,FOLLOW_2); 
+            match(input,44,FOLLOW_2); 
              after(grammarAccess.getPrimarioAccess().getRightSquareBracketKeyword_0_1_0_2()); 
 
             }
@@ -17493,14 +17451,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_1__0"
-    // InternalLatino.g:5666:1: rule__Primario__Group_0_1_1__0 : rule__Primario__Group_0_1_1__0__Impl rule__Primario__Group_0_1_1__1 ;
+    // InternalLatino.g:5654:1: rule__Primario__Group_0_1_1__0 : rule__Primario__Group_0_1_1__0__Impl rule__Primario__Group_0_1_1__1 ;
     public final void rule__Primario__Group_0_1_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5670:1: ( rule__Primario__Group_0_1_1__0__Impl rule__Primario__Group_0_1_1__1 )
-            // InternalLatino.g:5671:2: rule__Primario__Group_0_1_1__0__Impl rule__Primario__Group_0_1_1__1
+            // InternalLatino.g:5658:1: ( rule__Primario__Group_0_1_1__0__Impl rule__Primario__Group_0_1_1__1 )
+            // InternalLatino.g:5659:2: rule__Primario__Group_0_1_1__0__Impl rule__Primario__Group_0_1_1__1
             {
             pushFollow(FOLLOW_37);
             rule__Primario__Group_0_1_1__0__Impl();
@@ -17531,20 +17489,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_1__0__Impl"
-    // InternalLatino.g:5678:1: rule__Primario__Group_0_1_1__0__Impl : ( '(' ) ;
+    // InternalLatino.g:5666:1: rule__Primario__Group_0_1_1__0__Impl : ( '(' ) ;
     public final void rule__Primario__Group_0_1_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5682:1: ( ( '(' ) )
-            // InternalLatino.g:5683:1: ( '(' )
+            // InternalLatino.g:5670:1: ( ( '(' ) )
+            // InternalLatino.g:5671:1: ( '(' )
             {
-            // InternalLatino.g:5683:1: ( '(' )
-            // InternalLatino.g:5684:2: '('
+            // InternalLatino.g:5671:1: ( '(' )
+            // InternalLatino.g:5672:2: '('
             {
              before(grammarAccess.getPrimarioAccess().getLeftParenthesisKeyword_0_1_1_0()); 
-            match(input,42,FOLLOW_2); 
+            match(input,40,FOLLOW_2); 
              after(grammarAccess.getPrimarioAccess().getLeftParenthesisKeyword_0_1_1_0()); 
 
             }
@@ -17568,14 +17526,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_1__1"
-    // InternalLatino.g:5693:1: rule__Primario__Group_0_1_1__1 : rule__Primario__Group_0_1_1__1__Impl rule__Primario__Group_0_1_1__2 ;
+    // InternalLatino.g:5681:1: rule__Primario__Group_0_1_1__1 : rule__Primario__Group_0_1_1__1__Impl rule__Primario__Group_0_1_1__2 ;
     public final void rule__Primario__Group_0_1_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5697:1: ( rule__Primario__Group_0_1_1__1__Impl rule__Primario__Group_0_1_1__2 )
-            // InternalLatino.g:5698:2: rule__Primario__Group_0_1_1__1__Impl rule__Primario__Group_0_1_1__2
+            // InternalLatino.g:5685:1: ( rule__Primario__Group_0_1_1__1__Impl rule__Primario__Group_0_1_1__2 )
+            // InternalLatino.g:5686:2: rule__Primario__Group_0_1_1__1__Impl rule__Primario__Group_0_1_1__2
             {
             pushFollow(FOLLOW_37);
             rule__Primario__Group_0_1_1__1__Impl();
@@ -17606,29 +17564,29 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_1__1__Impl"
-    // InternalLatino.g:5705:1: rule__Primario__Group_0_1_1__1__Impl : ( ( rule__Primario__Group_0_1_1_1__0 )? ) ;
+    // InternalLatino.g:5693:1: rule__Primario__Group_0_1_1__1__Impl : ( ( rule__Primario__Group_0_1_1_1__0 )? ) ;
     public final void rule__Primario__Group_0_1_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5709:1: ( ( ( rule__Primario__Group_0_1_1_1__0 )? ) )
-            // InternalLatino.g:5710:1: ( ( rule__Primario__Group_0_1_1_1__0 )? )
+            // InternalLatino.g:5697:1: ( ( ( rule__Primario__Group_0_1_1_1__0 )? ) )
+            // InternalLatino.g:5698:1: ( ( rule__Primario__Group_0_1_1_1__0 )? )
             {
-            // InternalLatino.g:5710:1: ( ( rule__Primario__Group_0_1_1_1__0 )? )
-            // InternalLatino.g:5711:2: ( rule__Primario__Group_0_1_1_1__0 )?
+            // InternalLatino.g:5698:1: ( ( rule__Primario__Group_0_1_1_1__0 )? )
+            // InternalLatino.g:5699:2: ( rule__Primario__Group_0_1_1_1__0 )?
             {
              before(grammarAccess.getPrimarioAccess().getGroup_0_1_1_1()); 
-            // InternalLatino.g:5712:2: ( rule__Primario__Group_0_1_1_1__0 )?
+            // InternalLatino.g:5700:2: ( rule__Primario__Group_0_1_1_1__0 )?
             int alt49=2;
             int LA49_0 = input.LA(1);
 
-            if ( ((LA49_0>=RULE_STRING && LA49_0<=RULE_INT)||LA49_0==30||(LA49_0>=34 && LA49_0<=36)||LA49_0==42||LA49_0==68) ) {
+            if ( ((LA49_0>=RULE_STRING && LA49_0<=RULE_INT)||LA49_0==28||(LA49_0>=32 && LA49_0<=34)||LA49_0==40||LA49_0==66) ) {
                 alt49=1;
             }
             switch (alt49) {
                 case 1 :
-                    // InternalLatino.g:5712:3: rule__Primario__Group_0_1_1_1__0
+                    // InternalLatino.g:5700:3: rule__Primario__Group_0_1_1_1__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Primario__Group_0_1_1_1__0();
@@ -17664,14 +17622,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_1__2"
-    // InternalLatino.g:5720:1: rule__Primario__Group_0_1_1__2 : rule__Primario__Group_0_1_1__2__Impl ;
+    // InternalLatino.g:5708:1: rule__Primario__Group_0_1_1__2 : rule__Primario__Group_0_1_1__2__Impl ;
     public final void rule__Primario__Group_0_1_1__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5724:1: ( rule__Primario__Group_0_1_1__2__Impl )
-            // InternalLatino.g:5725:2: rule__Primario__Group_0_1_1__2__Impl
+            // InternalLatino.g:5712:1: ( rule__Primario__Group_0_1_1__2__Impl )
+            // InternalLatino.g:5713:2: rule__Primario__Group_0_1_1__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Primario__Group_0_1_1__2__Impl();
@@ -17697,20 +17655,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_1__2__Impl"
-    // InternalLatino.g:5731:1: rule__Primario__Group_0_1_1__2__Impl : ( ')' ) ;
+    // InternalLatino.g:5719:1: rule__Primario__Group_0_1_1__2__Impl : ( ')' ) ;
     public final void rule__Primario__Group_0_1_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5735:1: ( ( ')' ) )
-            // InternalLatino.g:5736:1: ( ')' )
+            // InternalLatino.g:5723:1: ( ( ')' ) )
+            // InternalLatino.g:5724:1: ( ')' )
             {
-            // InternalLatino.g:5736:1: ( ')' )
-            // InternalLatino.g:5737:2: ')'
+            // InternalLatino.g:5724:1: ( ')' )
+            // InternalLatino.g:5725:2: ')'
             {
              before(grammarAccess.getPrimarioAccess().getRightParenthesisKeyword_0_1_1_2()); 
-            match(input,44,FOLLOW_2); 
+            match(input,42,FOLLOW_2); 
              after(grammarAccess.getPrimarioAccess().getRightParenthesisKeyword_0_1_1_2()); 
 
             }
@@ -17734,14 +17692,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_1_1__0"
-    // InternalLatino.g:5747:1: rule__Primario__Group_0_1_1_1__0 : rule__Primario__Group_0_1_1_1__0__Impl rule__Primario__Group_0_1_1_1__1 ;
+    // InternalLatino.g:5735:1: rule__Primario__Group_0_1_1_1__0 : rule__Primario__Group_0_1_1_1__0__Impl rule__Primario__Group_0_1_1_1__1 ;
     public final void rule__Primario__Group_0_1_1_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5751:1: ( rule__Primario__Group_0_1_1_1__0__Impl rule__Primario__Group_0_1_1_1__1 )
-            // InternalLatino.g:5752:2: rule__Primario__Group_0_1_1_1__0__Impl rule__Primario__Group_0_1_1_1__1
+            // InternalLatino.g:5739:1: ( rule__Primario__Group_0_1_1_1__0__Impl rule__Primario__Group_0_1_1_1__1 )
+            // InternalLatino.g:5740:2: rule__Primario__Group_0_1_1_1__0__Impl rule__Primario__Group_0_1_1_1__1
             {
             pushFollow(FOLLOW_13);
             rule__Primario__Group_0_1_1_1__0__Impl();
@@ -17772,17 +17730,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_1_1__0__Impl"
-    // InternalLatino.g:5759:1: rule__Primario__Group_0_1_1_1__0__Impl : ( ruleExpresion ) ;
+    // InternalLatino.g:5747:1: rule__Primario__Group_0_1_1_1__0__Impl : ( ruleExpresion ) ;
     public final void rule__Primario__Group_0_1_1_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5763:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:5764:1: ( ruleExpresion )
+            // InternalLatino.g:5751:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:5752:1: ( ruleExpresion )
             {
-            // InternalLatino.g:5764:1: ( ruleExpresion )
-            // InternalLatino.g:5765:2: ruleExpresion
+            // InternalLatino.g:5752:1: ( ruleExpresion )
+            // InternalLatino.g:5753:2: ruleExpresion
             {
              before(grammarAccess.getPrimarioAccess().getExpresionParserRuleCall_0_1_1_1_0()); 
             pushFollow(FOLLOW_2);
@@ -17813,14 +17771,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_1_1__1"
-    // InternalLatino.g:5774:1: rule__Primario__Group_0_1_1_1__1 : rule__Primario__Group_0_1_1_1__1__Impl ;
+    // InternalLatino.g:5762:1: rule__Primario__Group_0_1_1_1__1 : rule__Primario__Group_0_1_1_1__1__Impl ;
     public final void rule__Primario__Group_0_1_1_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5778:1: ( rule__Primario__Group_0_1_1_1__1__Impl )
-            // InternalLatino.g:5779:2: rule__Primario__Group_0_1_1_1__1__Impl
+            // InternalLatino.g:5766:1: ( rule__Primario__Group_0_1_1_1__1__Impl )
+            // InternalLatino.g:5767:2: rule__Primario__Group_0_1_1_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Primario__Group_0_1_1_1__1__Impl();
@@ -17846,33 +17804,33 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_1_1__1__Impl"
-    // InternalLatino.g:5785:1: rule__Primario__Group_0_1_1_1__1__Impl : ( ( rule__Primario__Group_0_1_1_1_1__0 )* ) ;
+    // InternalLatino.g:5773:1: rule__Primario__Group_0_1_1_1__1__Impl : ( ( rule__Primario__Group_0_1_1_1_1__0 )* ) ;
     public final void rule__Primario__Group_0_1_1_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5789:1: ( ( ( rule__Primario__Group_0_1_1_1_1__0 )* ) )
-            // InternalLatino.g:5790:1: ( ( rule__Primario__Group_0_1_1_1_1__0 )* )
+            // InternalLatino.g:5777:1: ( ( ( rule__Primario__Group_0_1_1_1_1__0 )* ) )
+            // InternalLatino.g:5778:1: ( ( rule__Primario__Group_0_1_1_1_1__0 )* )
             {
-            // InternalLatino.g:5790:1: ( ( rule__Primario__Group_0_1_1_1_1__0 )* )
-            // InternalLatino.g:5791:2: ( rule__Primario__Group_0_1_1_1_1__0 )*
+            // InternalLatino.g:5778:1: ( ( rule__Primario__Group_0_1_1_1_1__0 )* )
+            // InternalLatino.g:5779:2: ( rule__Primario__Group_0_1_1_1_1__0 )*
             {
              before(grammarAccess.getPrimarioAccess().getGroup_0_1_1_1_1()); 
-            // InternalLatino.g:5792:2: ( rule__Primario__Group_0_1_1_1_1__0 )*
+            // InternalLatino.g:5780:2: ( rule__Primario__Group_0_1_1_1_1__0 )*
             loop50:
             do {
                 int alt50=2;
                 int LA50_0 = input.LA(1);
 
-                if ( (LA50_0==47) ) {
+                if ( (LA50_0==45) ) {
                     alt50=1;
                 }
 
 
                 switch (alt50) {
             	case 1 :
-            	    // InternalLatino.g:5792:3: rule__Primario__Group_0_1_1_1_1__0
+            	    // InternalLatino.g:5780:3: rule__Primario__Group_0_1_1_1_1__0
             	    {
             	    pushFollow(FOLLOW_14);
             	    rule__Primario__Group_0_1_1_1_1__0();
@@ -17911,14 +17869,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_1_1_1__0"
-    // InternalLatino.g:5801:1: rule__Primario__Group_0_1_1_1_1__0 : rule__Primario__Group_0_1_1_1_1__0__Impl rule__Primario__Group_0_1_1_1_1__1 ;
+    // InternalLatino.g:5789:1: rule__Primario__Group_0_1_1_1_1__0 : rule__Primario__Group_0_1_1_1_1__0__Impl rule__Primario__Group_0_1_1_1_1__1 ;
     public final void rule__Primario__Group_0_1_1_1_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5805:1: ( rule__Primario__Group_0_1_1_1_1__0__Impl rule__Primario__Group_0_1_1_1_1__1 )
-            // InternalLatino.g:5806:2: rule__Primario__Group_0_1_1_1_1__0__Impl rule__Primario__Group_0_1_1_1_1__1
+            // InternalLatino.g:5793:1: ( rule__Primario__Group_0_1_1_1_1__0__Impl rule__Primario__Group_0_1_1_1_1__1 )
+            // InternalLatino.g:5794:2: rule__Primario__Group_0_1_1_1_1__0__Impl rule__Primario__Group_0_1_1_1_1__1
             {
             pushFollow(FOLLOW_6);
             rule__Primario__Group_0_1_1_1_1__0__Impl();
@@ -17949,20 +17907,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_1_1_1__0__Impl"
-    // InternalLatino.g:5813:1: rule__Primario__Group_0_1_1_1_1__0__Impl : ( ',' ) ;
+    // InternalLatino.g:5801:1: rule__Primario__Group_0_1_1_1_1__0__Impl : ( ',' ) ;
     public final void rule__Primario__Group_0_1_1_1_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5817:1: ( ( ',' ) )
-            // InternalLatino.g:5818:1: ( ',' )
+            // InternalLatino.g:5805:1: ( ( ',' ) )
+            // InternalLatino.g:5806:1: ( ',' )
             {
-            // InternalLatino.g:5818:1: ( ',' )
-            // InternalLatino.g:5819:2: ','
+            // InternalLatino.g:5806:1: ( ',' )
+            // InternalLatino.g:5807:2: ','
             {
              before(grammarAccess.getPrimarioAccess().getCommaKeyword_0_1_1_1_1_0()); 
-            match(input,47,FOLLOW_2); 
+            match(input,45,FOLLOW_2); 
              after(grammarAccess.getPrimarioAccess().getCommaKeyword_0_1_1_1_1_0()); 
 
             }
@@ -17986,14 +17944,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_1_1_1__1"
-    // InternalLatino.g:5828:1: rule__Primario__Group_0_1_1_1_1__1 : rule__Primario__Group_0_1_1_1_1__1__Impl ;
+    // InternalLatino.g:5816:1: rule__Primario__Group_0_1_1_1_1__1 : rule__Primario__Group_0_1_1_1_1__1__Impl ;
     public final void rule__Primario__Group_0_1_1_1_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5832:1: ( rule__Primario__Group_0_1_1_1_1__1__Impl )
-            // InternalLatino.g:5833:2: rule__Primario__Group_0_1_1_1_1__1__Impl
+            // InternalLatino.g:5820:1: ( rule__Primario__Group_0_1_1_1_1__1__Impl )
+            // InternalLatino.g:5821:2: rule__Primario__Group_0_1_1_1_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Primario__Group_0_1_1_1_1__1__Impl();
@@ -18019,17 +17977,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_0_1_1_1_1__1__Impl"
-    // InternalLatino.g:5839:1: rule__Primario__Group_0_1_1_1_1__1__Impl : ( ruleExpresion ) ;
+    // InternalLatino.g:5827:1: rule__Primario__Group_0_1_1_1_1__1__Impl : ( ruleExpresion ) ;
     public final void rule__Primario__Group_0_1_1_1_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5843:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:5844:1: ( ruleExpresion )
+            // InternalLatino.g:5831:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:5832:1: ( ruleExpresion )
             {
-            // InternalLatino.g:5844:1: ( ruleExpresion )
-            // InternalLatino.g:5845:2: ruleExpresion
+            // InternalLatino.g:5832:1: ( ruleExpresion )
+            // InternalLatino.g:5833:2: ruleExpresion
             {
              before(grammarAccess.getPrimarioAccess().getExpresionParserRuleCall_0_1_1_1_1_1()); 
             pushFollow(FOLLOW_2);
@@ -18060,14 +18018,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_6__0"
-    // InternalLatino.g:5855:1: rule__Primario__Group_6__0 : rule__Primario__Group_6__0__Impl rule__Primario__Group_6__1 ;
+    // InternalLatino.g:5843:1: rule__Primario__Group_6__0 : rule__Primario__Group_6__0__Impl rule__Primario__Group_6__1 ;
     public final void rule__Primario__Group_6__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5859:1: ( rule__Primario__Group_6__0__Impl rule__Primario__Group_6__1 )
-            // InternalLatino.g:5860:2: rule__Primario__Group_6__0__Impl rule__Primario__Group_6__1
+            // InternalLatino.g:5847:1: ( rule__Primario__Group_6__0__Impl rule__Primario__Group_6__1 )
+            // InternalLatino.g:5848:2: rule__Primario__Group_6__0__Impl rule__Primario__Group_6__1
             {
             pushFollow(FOLLOW_6);
             rule__Primario__Group_6__0__Impl();
@@ -18098,20 +18056,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_6__0__Impl"
-    // InternalLatino.g:5867:1: rule__Primario__Group_6__0__Impl : ( '(' ) ;
+    // InternalLatino.g:5855:1: rule__Primario__Group_6__0__Impl : ( '(' ) ;
     public final void rule__Primario__Group_6__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5871:1: ( ( '(' ) )
-            // InternalLatino.g:5872:1: ( '(' )
+            // InternalLatino.g:5859:1: ( ( '(' ) )
+            // InternalLatino.g:5860:1: ( '(' )
             {
-            // InternalLatino.g:5872:1: ( '(' )
-            // InternalLatino.g:5873:2: '('
+            // InternalLatino.g:5860:1: ( '(' )
+            // InternalLatino.g:5861:2: '('
             {
              before(grammarAccess.getPrimarioAccess().getLeftParenthesisKeyword_6_0()); 
-            match(input,42,FOLLOW_2); 
+            match(input,40,FOLLOW_2); 
              after(grammarAccess.getPrimarioAccess().getLeftParenthesisKeyword_6_0()); 
 
             }
@@ -18135,14 +18093,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_6__1"
-    // InternalLatino.g:5882:1: rule__Primario__Group_6__1 : rule__Primario__Group_6__1__Impl rule__Primario__Group_6__2 ;
+    // InternalLatino.g:5870:1: rule__Primario__Group_6__1 : rule__Primario__Group_6__1__Impl rule__Primario__Group_6__2 ;
     public final void rule__Primario__Group_6__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5886:1: ( rule__Primario__Group_6__1__Impl rule__Primario__Group_6__2 )
-            // InternalLatino.g:5887:2: rule__Primario__Group_6__1__Impl rule__Primario__Group_6__2
+            // InternalLatino.g:5874:1: ( rule__Primario__Group_6__1__Impl rule__Primario__Group_6__2 )
+            // InternalLatino.g:5875:2: rule__Primario__Group_6__1__Impl rule__Primario__Group_6__2
             {
             pushFollow(FOLLOW_10);
             rule__Primario__Group_6__1__Impl();
@@ -18173,17 +18131,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_6__1__Impl"
-    // InternalLatino.g:5894:1: rule__Primario__Group_6__1__Impl : ( ruleExpresion ) ;
+    // InternalLatino.g:5882:1: rule__Primario__Group_6__1__Impl : ( ruleExpresion ) ;
     public final void rule__Primario__Group_6__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5898:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:5899:1: ( ruleExpresion )
+            // InternalLatino.g:5886:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:5887:1: ( ruleExpresion )
             {
-            // InternalLatino.g:5899:1: ( ruleExpresion )
-            // InternalLatino.g:5900:2: ruleExpresion
+            // InternalLatino.g:5887:1: ( ruleExpresion )
+            // InternalLatino.g:5888:2: ruleExpresion
             {
              before(grammarAccess.getPrimarioAccess().getExpresionParserRuleCall_6_1()); 
             pushFollow(FOLLOW_2);
@@ -18214,14 +18172,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_6__2"
-    // InternalLatino.g:5909:1: rule__Primario__Group_6__2 : rule__Primario__Group_6__2__Impl ;
+    // InternalLatino.g:5897:1: rule__Primario__Group_6__2 : rule__Primario__Group_6__2__Impl ;
     public final void rule__Primario__Group_6__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5913:1: ( rule__Primario__Group_6__2__Impl )
-            // InternalLatino.g:5914:2: rule__Primario__Group_6__2__Impl
+            // InternalLatino.g:5901:1: ( rule__Primario__Group_6__2__Impl )
+            // InternalLatino.g:5902:2: rule__Primario__Group_6__2__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Primario__Group_6__2__Impl();
@@ -18247,20 +18205,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Primario__Group_6__2__Impl"
-    // InternalLatino.g:5920:1: rule__Primario__Group_6__2__Impl : ( ')' ) ;
+    // InternalLatino.g:5908:1: rule__Primario__Group_6__2__Impl : ( ')' ) ;
     public final void rule__Primario__Group_6__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5924:1: ( ( ')' ) )
-            // InternalLatino.g:5925:1: ( ')' )
+            // InternalLatino.g:5912:1: ( ( ')' ) )
+            // InternalLatino.g:5913:1: ( ')' )
             {
-            // InternalLatino.g:5925:1: ( ')' )
-            // InternalLatino.g:5926:2: ')'
+            // InternalLatino.g:5913:1: ( ')' )
+            // InternalLatino.g:5914:2: ')'
             {
              before(grammarAccess.getPrimarioAccess().getRightParenthesisKeyword_6_2()); 
-            match(input,44,FOLLOW_2); 
+            match(input,42,FOLLOW_2); 
              after(grammarAccess.getPrimarioAccess().getRightParenthesisKeyword_6_2()); 
 
             }
@@ -18284,14 +18242,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Numero__Group__0"
-    // InternalLatino.g:5936:1: rule__Numero__Group__0 : rule__Numero__Group__0__Impl rule__Numero__Group__1 ;
+    // InternalLatino.g:5924:1: rule__Numero__Group__0 : rule__Numero__Group__0__Impl rule__Numero__Group__1 ;
     public final void rule__Numero__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5940:1: ( rule__Numero__Group__0__Impl rule__Numero__Group__1 )
-            // InternalLatino.g:5941:2: rule__Numero__Group__0__Impl rule__Numero__Group__1
+            // InternalLatino.g:5928:1: ( rule__Numero__Group__0__Impl rule__Numero__Group__1 )
+            // InternalLatino.g:5929:2: rule__Numero__Group__0__Impl rule__Numero__Group__1
             {
             pushFollow(FOLLOW_50);
             rule__Numero__Group__0__Impl();
@@ -18322,17 +18280,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Numero__Group__0__Impl"
-    // InternalLatino.g:5948:1: rule__Numero__Group__0__Impl : ( RULE_INT ) ;
+    // InternalLatino.g:5936:1: rule__Numero__Group__0__Impl : ( RULE_INT ) ;
     public final void rule__Numero__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5952:1: ( ( RULE_INT ) )
-            // InternalLatino.g:5953:1: ( RULE_INT )
+            // InternalLatino.g:5940:1: ( ( RULE_INT ) )
+            // InternalLatino.g:5941:1: ( RULE_INT )
             {
-            // InternalLatino.g:5953:1: ( RULE_INT )
-            // InternalLatino.g:5954:2: RULE_INT
+            // InternalLatino.g:5941:1: ( RULE_INT )
+            // InternalLatino.g:5942:2: RULE_INT
             {
              before(grammarAccess.getNumeroAccess().getINTTerminalRuleCall_0()); 
             match(input,RULE_INT,FOLLOW_2); 
@@ -18359,14 +18317,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Numero__Group__1"
-    // InternalLatino.g:5963:1: rule__Numero__Group__1 : rule__Numero__Group__1__Impl ;
+    // InternalLatino.g:5951:1: rule__Numero__Group__1 : rule__Numero__Group__1__Impl ;
     public final void rule__Numero__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5967:1: ( rule__Numero__Group__1__Impl )
-            // InternalLatino.g:5968:2: rule__Numero__Group__1__Impl
+            // InternalLatino.g:5955:1: ( rule__Numero__Group__1__Impl )
+            // InternalLatino.g:5956:2: rule__Numero__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Numero__Group__1__Impl();
@@ -18392,29 +18350,29 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Numero__Group__1__Impl"
-    // InternalLatino.g:5974:1: rule__Numero__Group__1__Impl : ( ( rule__Numero__Group_1__0 )? ) ;
+    // InternalLatino.g:5962:1: rule__Numero__Group__1__Impl : ( ( rule__Numero__Group_1__0 )? ) ;
     public final void rule__Numero__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5978:1: ( ( ( rule__Numero__Group_1__0 )? ) )
-            // InternalLatino.g:5979:1: ( ( rule__Numero__Group_1__0 )? )
+            // InternalLatino.g:5966:1: ( ( ( rule__Numero__Group_1__0 )? ) )
+            // InternalLatino.g:5967:1: ( ( rule__Numero__Group_1__0 )? )
             {
-            // InternalLatino.g:5979:1: ( ( rule__Numero__Group_1__0 )? )
-            // InternalLatino.g:5980:2: ( rule__Numero__Group_1__0 )?
+            // InternalLatino.g:5967:1: ( ( rule__Numero__Group_1__0 )? )
+            // InternalLatino.g:5968:2: ( rule__Numero__Group_1__0 )?
             {
              before(grammarAccess.getNumeroAccess().getGroup_1()); 
-            // InternalLatino.g:5981:2: ( rule__Numero__Group_1__0 )?
+            // InternalLatino.g:5969:2: ( rule__Numero__Group_1__0 )?
             int alt51=2;
             int LA51_0 = input.LA(1);
 
-            if ( (LA51_0==69) ) {
+            if ( (LA51_0==67) ) {
                 alt51=1;
             }
             switch (alt51) {
                 case 1 :
-                    // InternalLatino.g:5981:3: rule__Numero__Group_1__0
+                    // InternalLatino.g:5969:3: rule__Numero__Group_1__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Numero__Group_1__0();
@@ -18450,14 +18408,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Numero__Group_1__0"
-    // InternalLatino.g:5990:1: rule__Numero__Group_1__0 : rule__Numero__Group_1__0__Impl rule__Numero__Group_1__1 ;
+    // InternalLatino.g:5978:1: rule__Numero__Group_1__0 : rule__Numero__Group_1__0__Impl rule__Numero__Group_1__1 ;
     public final void rule__Numero__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:5994:1: ( rule__Numero__Group_1__0__Impl rule__Numero__Group_1__1 )
-            // InternalLatino.g:5995:2: rule__Numero__Group_1__0__Impl rule__Numero__Group_1__1
+            // InternalLatino.g:5982:1: ( rule__Numero__Group_1__0__Impl rule__Numero__Group_1__1 )
+            // InternalLatino.g:5983:2: rule__Numero__Group_1__0__Impl rule__Numero__Group_1__1
             {
             pushFollow(FOLLOW_51);
             rule__Numero__Group_1__0__Impl();
@@ -18488,20 +18446,20 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Numero__Group_1__0__Impl"
-    // InternalLatino.g:6002:1: rule__Numero__Group_1__0__Impl : ( '.' ) ;
+    // InternalLatino.g:5990:1: rule__Numero__Group_1__0__Impl : ( '.' ) ;
     public final void rule__Numero__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6006:1: ( ( '.' ) )
-            // InternalLatino.g:6007:1: ( '.' )
+            // InternalLatino.g:5994:1: ( ( '.' ) )
+            // InternalLatino.g:5995:1: ( '.' )
             {
-            // InternalLatino.g:6007:1: ( '.' )
-            // InternalLatino.g:6008:2: '.'
+            // InternalLatino.g:5995:1: ( '.' )
+            // InternalLatino.g:5996:2: '.'
             {
              before(grammarAccess.getNumeroAccess().getFullStopKeyword_1_0()); 
-            match(input,69,FOLLOW_2); 
+            match(input,67,FOLLOW_2); 
              after(grammarAccess.getNumeroAccess().getFullStopKeyword_1_0()); 
 
             }
@@ -18525,14 +18483,14 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Numero__Group_1__1"
-    // InternalLatino.g:6017:1: rule__Numero__Group_1__1 : rule__Numero__Group_1__1__Impl ;
+    // InternalLatino.g:6005:1: rule__Numero__Group_1__1 : rule__Numero__Group_1__1__Impl ;
     public final void rule__Numero__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6021:1: ( rule__Numero__Group_1__1__Impl )
-            // InternalLatino.g:6022:2: rule__Numero__Group_1__1__Impl
+            // InternalLatino.g:6009:1: ( rule__Numero__Group_1__1__Impl )
+            // InternalLatino.g:6010:2: rule__Numero__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Numero__Group_1__1__Impl();
@@ -18558,17 +18516,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Numero__Group_1__1__Impl"
-    // InternalLatino.g:6028:1: rule__Numero__Group_1__1__Impl : ( RULE_INT ) ;
+    // InternalLatino.g:6016:1: rule__Numero__Group_1__1__Impl : ( RULE_INT ) ;
     public final void rule__Numero__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6032:1: ( ( RULE_INT ) )
-            // InternalLatino.g:6033:1: ( RULE_INT )
+            // InternalLatino.g:6020:1: ( ( RULE_INT ) )
+            // InternalLatino.g:6021:1: ( RULE_INT )
             {
-            // InternalLatino.g:6033:1: ( RULE_INT )
-            // InternalLatino.g:6034:2: RULE_INT
+            // InternalLatino.g:6021:1: ( RULE_INT )
+            // InternalLatino.g:6022:2: RULE_INT
             {
              before(grammarAccess.getNumeroAccess().getINTTerminalRuleCall_1_1()); 
             match(input,RULE_INT,FOLLOW_2); 
@@ -18595,17 +18553,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Programa__SentenciasAssignment_1"
-    // InternalLatino.g:6044:1: rule__Programa__SentenciasAssignment_1 : ( ruleSentenciaPrincipal ) ;
+    // InternalLatino.g:6032:1: rule__Programa__SentenciasAssignment_1 : ( ruleSentenciaPrincipal ) ;
     public final void rule__Programa__SentenciasAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6048:1: ( ( ruleSentenciaPrincipal ) )
-            // InternalLatino.g:6049:2: ( ruleSentenciaPrincipal )
+            // InternalLatino.g:6036:1: ( ( ruleSentenciaPrincipal ) )
+            // InternalLatino.g:6037:2: ( ruleSentenciaPrincipal )
             {
-            // InternalLatino.g:6049:2: ( ruleSentenciaPrincipal )
-            // InternalLatino.g:6050:3: ruleSentenciaPrincipal
+            // InternalLatino.g:6037:2: ( ruleSentenciaPrincipal )
+            // InternalLatino.g:6038:3: ruleSentenciaPrincipal
             {
              before(grammarAccess.getProgramaAccess().getSentenciasSentenciaPrincipalParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -18636,17 +18594,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Asignacion__NombreAssignment_0"
-    // InternalLatino.g:6059:1: rule__Asignacion__NombreAssignment_0 : ( RULE_ID ) ;
+    // InternalLatino.g:6047:1: rule__Asignacion__NombreAssignment_0 : ( RULE_ID ) ;
     public final void rule__Asignacion__NombreAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6063:1: ( ( RULE_ID ) )
-            // InternalLatino.g:6064:2: ( RULE_ID )
+            // InternalLatino.g:6051:1: ( ( RULE_ID ) )
+            // InternalLatino.g:6052:2: ( RULE_ID )
             {
-            // InternalLatino.g:6064:2: ( RULE_ID )
-            // InternalLatino.g:6065:3: RULE_ID
+            // InternalLatino.g:6052:2: ( RULE_ID )
+            // InternalLatino.g:6053:3: RULE_ID
             {
              before(grammarAccess.getAsignacionAccess().getNombreIDTerminalRuleCall_0_0()); 
             match(input,RULE_ID,FOLLOW_2); 
@@ -18673,17 +18631,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Asignacion__ValorAssignment_2"
-    // InternalLatino.g:6074:1: rule__Asignacion__ValorAssignment_2 : ( ruleExpresion ) ;
+    // InternalLatino.g:6062:1: rule__Asignacion__ValorAssignment_2 : ( ruleExpresion ) ;
     public final void rule__Asignacion__ValorAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6078:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:6079:2: ( ruleExpresion )
+            // InternalLatino.g:6066:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:6067:2: ( ruleExpresion )
             {
-            // InternalLatino.g:6079:2: ( ruleExpresion )
-            // InternalLatino.g:6080:3: ruleExpresion
+            // InternalLatino.g:6067:2: ( ruleExpresion )
+            // InternalLatino.g:6068:3: ruleExpresion
             {
              before(grammarAccess.getAsignacionAccess().getValorExpresionParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -18714,17 +18672,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__NombreAssignment_0"
-    // InternalLatino.g:6089:1: rule__Leer__NombreAssignment_0 : ( RULE_ID ) ;
+    // InternalLatino.g:6077:1: rule__Leer__NombreAssignment_0 : ( RULE_ID ) ;
     public final void rule__Leer__NombreAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6093:1: ( ( RULE_ID ) )
-            // InternalLatino.g:6094:2: ( RULE_ID )
+            // InternalLatino.g:6081:1: ( ( RULE_ID ) )
+            // InternalLatino.g:6082:2: ( RULE_ID )
             {
-            // InternalLatino.g:6094:2: ( RULE_ID )
-            // InternalLatino.g:6095:3: RULE_ID
+            // InternalLatino.g:6082:2: ( RULE_ID )
+            // InternalLatino.g:6083:3: RULE_ID
             {
              before(grammarAccess.getLeerAccess().getNombreIDTerminalRuleCall_0_0()); 
             match(input,RULE_ID,FOLLOW_2); 
@@ -18751,17 +18709,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Leer__ConversionAssignment_2_0_0"
-    // InternalLatino.g:6104:1: rule__Leer__ConversionAssignment_2_0_0 : ( ruleConversion ) ;
+    // InternalLatino.g:6092:1: rule__Leer__ConversionAssignment_2_0_0 : ( ruleConversion ) ;
     public final void rule__Leer__ConversionAssignment_2_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6108:1: ( ( ruleConversion ) )
-            // InternalLatino.g:6109:2: ( ruleConversion )
+            // InternalLatino.g:6096:1: ( ( ruleConversion ) )
+            // InternalLatino.g:6097:2: ( ruleConversion )
             {
-            // InternalLatino.g:6109:2: ( ruleConversion )
-            // InternalLatino.g:6110:3: ruleConversion
+            // InternalLatino.g:6097:2: ( ruleConversion )
+            // InternalLatino.g:6098:3: ruleConversion
             {
              before(grammarAccess.getLeerAccess().getConversionConversionEnumRuleCall_2_0_0_0()); 
             pushFollow(FOLLOW_2);
@@ -18792,17 +18750,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__NombreAssignment_0"
-    // InternalLatino.g:6119:1: rule__Lista__NombreAssignment_0 : ( RULE_ID ) ;
+    // InternalLatino.g:6107:1: rule__Lista__NombreAssignment_0 : ( RULE_ID ) ;
     public final void rule__Lista__NombreAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6123:1: ( ( RULE_ID ) )
-            // InternalLatino.g:6124:2: ( RULE_ID )
+            // InternalLatino.g:6111:1: ( ( RULE_ID ) )
+            // InternalLatino.g:6112:2: ( RULE_ID )
             {
-            // InternalLatino.g:6124:2: ( RULE_ID )
-            // InternalLatino.g:6125:3: RULE_ID
+            // InternalLatino.g:6112:2: ( RULE_ID )
+            // InternalLatino.g:6113:3: RULE_ID
             {
              before(grammarAccess.getListaAccess().getNombreIDTerminalRuleCall_0_0()); 
             match(input,RULE_ID,FOLLOW_2); 
@@ -18829,17 +18787,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__ElementosAssignment_3_0"
-    // InternalLatino.g:6134:1: rule__Lista__ElementosAssignment_3_0 : ( ruleExpresion ) ;
+    // InternalLatino.g:6122:1: rule__Lista__ElementosAssignment_3_0 : ( ruleExpresion ) ;
     public final void rule__Lista__ElementosAssignment_3_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6138:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:6139:2: ( ruleExpresion )
+            // InternalLatino.g:6126:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:6127:2: ( ruleExpresion )
             {
-            // InternalLatino.g:6139:2: ( ruleExpresion )
-            // InternalLatino.g:6140:3: ruleExpresion
+            // InternalLatino.g:6127:2: ( ruleExpresion )
+            // InternalLatino.g:6128:3: ruleExpresion
             {
              before(grammarAccess.getListaAccess().getElementosExpresionParserRuleCall_3_0_0()); 
             pushFollow(FOLLOW_2);
@@ -18870,17 +18828,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Lista__ElementosAssignment_3_1_1"
-    // InternalLatino.g:6149:1: rule__Lista__ElementosAssignment_3_1_1 : ( ruleExpresion ) ;
+    // InternalLatino.g:6137:1: rule__Lista__ElementosAssignment_3_1_1 : ( ruleExpresion ) ;
     public final void rule__Lista__ElementosAssignment_3_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6153:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:6154:2: ( ruleExpresion )
+            // InternalLatino.g:6141:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:6142:2: ( ruleExpresion )
             {
-            // InternalLatino.g:6154:2: ( ruleExpresion )
-            // InternalLatino.g:6155:3: ruleExpresion
+            // InternalLatino.g:6142:2: ( ruleExpresion )
+            // InternalLatino.g:6143:3: ruleExpresion
             {
              before(grammarAccess.getListaAccess().getElementosExpresionParserRuleCall_3_1_1_0()); 
             pushFollow(FOLLOW_2);
@@ -18911,17 +18869,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AsignacionIndice__ListaAssignment_0"
-    // InternalLatino.g:6164:1: rule__AsignacionIndice__ListaAssignment_0 : ( RULE_ID ) ;
+    // InternalLatino.g:6152:1: rule__AsignacionIndice__ListaAssignment_0 : ( RULE_ID ) ;
     public final void rule__AsignacionIndice__ListaAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6168:1: ( ( RULE_ID ) )
-            // InternalLatino.g:6169:2: ( RULE_ID )
+            // InternalLatino.g:6156:1: ( ( RULE_ID ) )
+            // InternalLatino.g:6157:2: ( RULE_ID )
             {
-            // InternalLatino.g:6169:2: ( RULE_ID )
-            // InternalLatino.g:6170:3: RULE_ID
+            // InternalLatino.g:6157:2: ( RULE_ID )
+            // InternalLatino.g:6158:3: RULE_ID
             {
              before(grammarAccess.getAsignacionIndiceAccess().getListaIDTerminalRuleCall_0_0()); 
             match(input,RULE_ID,FOLLOW_2); 
@@ -18948,17 +18906,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AsignacionIndice__IndiceAssignment_2"
-    // InternalLatino.g:6179:1: rule__AsignacionIndice__IndiceAssignment_2 : ( ruleExpresion ) ;
+    // InternalLatino.g:6167:1: rule__AsignacionIndice__IndiceAssignment_2 : ( ruleExpresion ) ;
     public final void rule__AsignacionIndice__IndiceAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6183:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:6184:2: ( ruleExpresion )
+            // InternalLatino.g:6171:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:6172:2: ( ruleExpresion )
             {
-            // InternalLatino.g:6184:2: ( ruleExpresion )
-            // InternalLatino.g:6185:3: ruleExpresion
+            // InternalLatino.g:6172:2: ( ruleExpresion )
+            // InternalLatino.g:6173:3: ruleExpresion
             {
              before(grammarAccess.getAsignacionIndiceAccess().getIndiceExpresionParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -18989,17 +18947,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__AsignacionIndice__ValorAssignment_5"
-    // InternalLatino.g:6194:1: rule__AsignacionIndice__ValorAssignment_5 : ( ruleExpresion ) ;
+    // InternalLatino.g:6182:1: rule__AsignacionIndice__ValorAssignment_5 : ( ruleExpresion ) ;
     public final void rule__AsignacionIndice__ValorAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6198:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:6199:2: ( ruleExpresion )
+            // InternalLatino.g:6186:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:6187:2: ( ruleExpresion )
             {
-            // InternalLatino.g:6199:2: ( ruleExpresion )
-            // InternalLatino.g:6200:3: ruleExpresion
+            // InternalLatino.g:6187:2: ( ruleExpresion )
+            // InternalLatino.g:6188:3: ruleExpresion
             {
              before(grammarAccess.getAsignacionIndiceAccess().getValorExpresionParserRuleCall_5_0()); 
             pushFollow(FOLLOW_2);
@@ -19030,17 +18988,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__CondicionAssignment_1"
-    // InternalLatino.g:6209:1: rule__Condicional__CondicionAssignment_1 : ( ruleExpresion ) ;
+    // InternalLatino.g:6197:1: rule__Condicional__CondicionAssignment_1 : ( ruleExpresion ) ;
     public final void rule__Condicional__CondicionAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6213:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:6214:2: ( ruleExpresion )
+            // InternalLatino.g:6201:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:6202:2: ( ruleExpresion )
             {
-            // InternalLatino.g:6214:2: ( ruleExpresion )
-            // InternalLatino.g:6215:3: ruleExpresion
+            // InternalLatino.g:6202:2: ( ruleExpresion )
+            // InternalLatino.g:6203:3: ruleExpresion
             {
              before(grammarAccess.getCondicionalAccess().getCondicionExpresionParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -19071,17 +19029,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__EntoncesAssignment_2"
-    // InternalLatino.g:6224:1: rule__Condicional__EntoncesAssignment_2 : ( ruleSentencia ) ;
+    // InternalLatino.g:6212:1: rule__Condicional__EntoncesAssignment_2 : ( ruleSentencia ) ;
     public final void rule__Condicional__EntoncesAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6228:1: ( ( ruleSentencia ) )
-            // InternalLatino.g:6229:2: ( ruleSentencia )
+            // InternalLatino.g:6216:1: ( ( ruleSentencia ) )
+            // InternalLatino.g:6217:2: ( ruleSentencia )
             {
-            // InternalLatino.g:6229:2: ( ruleSentencia )
-            // InternalLatino.g:6230:3: ruleSentencia
+            // InternalLatino.g:6217:2: ( ruleSentencia )
+            // InternalLatino.g:6218:3: ruleSentencia
             {
              before(grammarAccess.getCondicionalAccess().getEntoncesSentenciaParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -19112,17 +19070,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__OsisAssignment_3"
-    // InternalLatino.g:6239:1: rule__Condicional__OsisAssignment_3 : ( ruleOsi ) ;
+    // InternalLatino.g:6227:1: rule__Condicional__OsisAssignment_3 : ( ruleOsi ) ;
     public final void rule__Condicional__OsisAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6243:1: ( ( ruleOsi ) )
-            // InternalLatino.g:6244:2: ( ruleOsi )
+            // InternalLatino.g:6231:1: ( ( ruleOsi ) )
+            // InternalLatino.g:6232:2: ( ruleOsi )
             {
-            // InternalLatino.g:6244:2: ( ruleOsi )
-            // InternalLatino.g:6245:3: ruleOsi
+            // InternalLatino.g:6232:2: ( ruleOsi )
+            // InternalLatino.g:6233:3: ruleOsi
             {
              before(grammarAccess.getCondicionalAccess().getOsisOsiParserRuleCall_3_0()); 
             pushFollow(FOLLOW_2);
@@ -19153,17 +19111,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Condicional__SinoAssignment_4_1"
-    // InternalLatino.g:6254:1: rule__Condicional__SinoAssignment_4_1 : ( ruleSentencia ) ;
+    // InternalLatino.g:6242:1: rule__Condicional__SinoAssignment_4_1 : ( ruleSentencia ) ;
     public final void rule__Condicional__SinoAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6258:1: ( ( ruleSentencia ) )
-            // InternalLatino.g:6259:2: ( ruleSentencia )
+            // InternalLatino.g:6246:1: ( ( ruleSentencia ) )
+            // InternalLatino.g:6247:2: ( ruleSentencia )
             {
-            // InternalLatino.g:6259:2: ( ruleSentencia )
-            // InternalLatino.g:6260:3: ruleSentencia
+            // InternalLatino.g:6247:2: ( ruleSentencia )
+            // InternalLatino.g:6248:3: ruleSentencia
             {
              before(grammarAccess.getCondicionalAccess().getSinoSentenciaParserRuleCall_4_1_0()); 
             pushFollow(FOLLOW_2);
@@ -19194,17 +19152,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Osi__CondicionAssignment_1"
-    // InternalLatino.g:6269:1: rule__Osi__CondicionAssignment_1 : ( ruleExpresion ) ;
+    // InternalLatino.g:6257:1: rule__Osi__CondicionAssignment_1 : ( ruleExpresion ) ;
     public final void rule__Osi__CondicionAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6273:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:6274:2: ( ruleExpresion )
+            // InternalLatino.g:6261:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:6262:2: ( ruleExpresion )
             {
-            // InternalLatino.g:6274:2: ( ruleExpresion )
-            // InternalLatino.g:6275:3: ruleExpresion
+            // InternalLatino.g:6262:2: ( ruleExpresion )
+            // InternalLatino.g:6263:3: ruleExpresion
             {
              before(grammarAccess.getOsiAccess().getCondicionExpresionParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -19235,17 +19193,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Osi__SentenciasAssignment_2"
-    // InternalLatino.g:6284:1: rule__Osi__SentenciasAssignment_2 : ( ruleSentencia ) ;
+    // InternalLatino.g:6272:1: rule__Osi__SentenciasAssignment_2 : ( ruleSentencia ) ;
     public final void rule__Osi__SentenciasAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6288:1: ( ( ruleSentencia ) )
-            // InternalLatino.g:6289:2: ( ruleSentencia )
+            // InternalLatino.g:6276:1: ( ( ruleSentencia ) )
+            // InternalLatino.g:6277:2: ( ruleSentencia )
             {
-            // InternalLatino.g:6289:2: ( ruleSentencia )
-            // InternalLatino.g:6290:3: ruleSentencia
+            // InternalLatino.g:6277:2: ( ruleSentencia )
+            // InternalLatino.g:6278:3: ruleSentencia
             {
              before(grammarAccess.getOsiAccess().getSentenciasSentenciaParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -19276,17 +19234,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Mientras__CondicionAssignment_1"
-    // InternalLatino.g:6299:1: rule__Mientras__CondicionAssignment_1 : ( ruleExpresion ) ;
+    // InternalLatino.g:6287:1: rule__Mientras__CondicionAssignment_1 : ( ruleExpresion ) ;
     public final void rule__Mientras__CondicionAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6303:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:6304:2: ( ruleExpresion )
+            // InternalLatino.g:6291:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:6292:2: ( ruleExpresion )
             {
-            // InternalLatino.g:6304:2: ( ruleExpresion )
-            // InternalLatino.g:6305:3: ruleExpresion
+            // InternalLatino.g:6292:2: ( ruleExpresion )
+            // InternalLatino.g:6293:3: ruleExpresion
             {
              before(grammarAccess.getMientrasAccess().getCondicionExpresionParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -19317,17 +19275,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Mientras__CuerpoAssignment_2"
-    // InternalLatino.g:6314:1: rule__Mientras__CuerpoAssignment_2 : ( ruleSentencia ) ;
+    // InternalLatino.g:6302:1: rule__Mientras__CuerpoAssignment_2 : ( ruleSentencia ) ;
     public final void rule__Mientras__CuerpoAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6318:1: ( ( ruleSentencia ) )
-            // InternalLatino.g:6319:2: ( ruleSentencia )
+            // InternalLatino.g:6306:1: ( ( ruleSentencia ) )
+            // InternalLatino.g:6307:2: ( ruleSentencia )
             {
-            // InternalLatino.g:6319:2: ( ruleSentencia )
-            // InternalLatino.g:6320:3: ruleSentencia
+            // InternalLatino.g:6307:2: ( ruleSentencia )
+            // InternalLatino.g:6308:3: ruleSentencia
             {
              before(grammarAccess.getMientrasAccess().getCuerpoSentenciaParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -19358,17 +19316,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Repetir__CuerpoAssignment_1"
-    // InternalLatino.g:6329:1: rule__Repetir__CuerpoAssignment_1 : ( ruleSentencia ) ;
+    // InternalLatino.g:6317:1: rule__Repetir__CuerpoAssignment_1 : ( ruleSentencia ) ;
     public final void rule__Repetir__CuerpoAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6333:1: ( ( ruleSentencia ) )
-            // InternalLatino.g:6334:2: ( ruleSentencia )
+            // InternalLatino.g:6321:1: ( ( ruleSentencia ) )
+            // InternalLatino.g:6322:2: ( ruleSentencia )
             {
-            // InternalLatino.g:6334:2: ( ruleSentencia )
-            // InternalLatino.g:6335:3: ruleSentencia
+            // InternalLatino.g:6322:2: ( ruleSentencia )
+            // InternalLatino.g:6323:3: ruleSentencia
             {
              before(grammarAccess.getRepetirAccess().getCuerpoSentenciaParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -19399,17 +19357,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Repetir__CondicionAssignment_3"
-    // InternalLatino.g:6344:1: rule__Repetir__CondicionAssignment_3 : ( ruleExpresion ) ;
+    // InternalLatino.g:6332:1: rule__Repetir__CondicionAssignment_3 : ( ruleExpresion ) ;
     public final void rule__Repetir__CondicionAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6348:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:6349:2: ( ruleExpresion )
+            // InternalLatino.g:6336:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:6337:2: ( ruleExpresion )
             {
-            // InternalLatino.g:6349:2: ( ruleExpresion )
-            // InternalLatino.g:6350:3: ruleExpresion
+            // InternalLatino.g:6337:2: ( ruleExpresion )
+            // InternalLatino.g:6338:3: ruleExpresion
             {
              before(grammarAccess.getRepetirAccess().getCondicionExpresionParserRuleCall_3_0()); 
             pushFollow(FOLLOW_2);
@@ -19440,17 +19398,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__InicioAssignment_2"
-    // InternalLatino.g:6359:1: rule__Desde__InicioAssignment_2 : ( ruleAsignacion ) ;
+    // InternalLatino.g:6347:1: rule__Desde__InicioAssignment_2 : ( ruleAsignacion ) ;
     public final void rule__Desde__InicioAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6363:1: ( ( ruleAsignacion ) )
-            // InternalLatino.g:6364:2: ( ruleAsignacion )
+            // InternalLatino.g:6351:1: ( ( ruleAsignacion ) )
+            // InternalLatino.g:6352:2: ( ruleAsignacion )
             {
-            // InternalLatino.g:6364:2: ( ruleAsignacion )
-            // InternalLatino.g:6365:3: ruleAsignacion
+            // InternalLatino.g:6352:2: ( ruleAsignacion )
+            // InternalLatino.g:6353:3: ruleAsignacion
             {
              before(grammarAccess.getDesdeAccess().getInicioAsignacionParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -19481,17 +19439,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__CondicionAssignment_4"
-    // InternalLatino.g:6374:1: rule__Desde__CondicionAssignment_4 : ( ruleExpresion ) ;
+    // InternalLatino.g:6362:1: rule__Desde__CondicionAssignment_4 : ( ruleExpresion ) ;
     public final void rule__Desde__CondicionAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6378:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:6379:2: ( ruleExpresion )
+            // InternalLatino.g:6366:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:6367:2: ( ruleExpresion )
             {
-            // InternalLatino.g:6379:2: ( ruleExpresion )
-            // InternalLatino.g:6380:3: ruleExpresion
+            // InternalLatino.g:6367:2: ( ruleExpresion )
+            // InternalLatino.g:6368:3: ruleExpresion
             {
              before(grammarAccess.getDesdeAccess().getCondicionExpresionParserRuleCall_4_0()); 
             pushFollow(FOLLOW_2);
@@ -19522,21 +19480,21 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__PasoAssignment_6"
-    // InternalLatino.g:6389:1: rule__Desde__PasoAssignment_6 : ( ( rule__Desde__PasoAlternatives_6_0 ) ) ;
+    // InternalLatino.g:6377:1: rule__Desde__PasoAssignment_6 : ( ( rule__Desde__PasoAlternatives_6_0 ) ) ;
     public final void rule__Desde__PasoAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6393:1: ( ( ( rule__Desde__PasoAlternatives_6_0 ) ) )
-            // InternalLatino.g:6394:2: ( ( rule__Desde__PasoAlternatives_6_0 ) )
+            // InternalLatino.g:6381:1: ( ( ( rule__Desde__PasoAlternatives_6_0 ) ) )
+            // InternalLatino.g:6382:2: ( ( rule__Desde__PasoAlternatives_6_0 ) )
             {
-            // InternalLatino.g:6394:2: ( ( rule__Desde__PasoAlternatives_6_0 ) )
-            // InternalLatino.g:6395:3: ( rule__Desde__PasoAlternatives_6_0 )
+            // InternalLatino.g:6382:2: ( ( rule__Desde__PasoAlternatives_6_0 ) )
+            // InternalLatino.g:6383:3: ( rule__Desde__PasoAlternatives_6_0 )
             {
              before(grammarAccess.getDesdeAccess().getPasoAlternatives_6_0()); 
-            // InternalLatino.g:6396:3: ( rule__Desde__PasoAlternatives_6_0 )
-            // InternalLatino.g:6396:4: rule__Desde__PasoAlternatives_6_0
+            // InternalLatino.g:6384:3: ( rule__Desde__PasoAlternatives_6_0 )
+            // InternalLatino.g:6384:4: rule__Desde__PasoAlternatives_6_0
             {
             pushFollow(FOLLOW_2);
             rule__Desde__PasoAlternatives_6_0();
@@ -19569,17 +19527,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Desde__CuerpoAssignment_8"
-    // InternalLatino.g:6404:1: rule__Desde__CuerpoAssignment_8 : ( ruleSentencia ) ;
+    // InternalLatino.g:6392:1: rule__Desde__CuerpoAssignment_8 : ( ruleSentencia ) ;
     public final void rule__Desde__CuerpoAssignment_8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6408:1: ( ( ruleSentencia ) )
-            // InternalLatino.g:6409:2: ( ruleSentencia )
+            // InternalLatino.g:6396:1: ( ( ruleSentencia ) )
+            // InternalLatino.g:6397:2: ( ruleSentencia )
             {
-            // InternalLatino.g:6409:2: ( ruleSentencia )
-            // InternalLatino.g:6410:3: ruleSentencia
+            // InternalLatino.g:6397:2: ( ruleSentencia )
+            // InternalLatino.g:6398:3: ruleSentencia
             {
              before(grammarAccess.getDesdeAccess().getCuerpoSentenciaParserRuleCall_8_0()); 
             pushFollow(FOLLOW_2);
@@ -19610,17 +19568,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__VariableAssignment_1"
-    // InternalLatino.g:6419:1: rule__Para__VariableAssignment_1 : ( ruleVariable ) ;
+    // InternalLatino.g:6407:1: rule__Para__VariableAssignment_1 : ( ruleVariable ) ;
     public final void rule__Para__VariableAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6423:1: ( ( ruleVariable ) )
-            // InternalLatino.g:6424:2: ( ruleVariable )
+            // InternalLatino.g:6411:1: ( ( ruleVariable ) )
+            // InternalLatino.g:6412:2: ( ruleVariable )
             {
-            // InternalLatino.g:6424:2: ( ruleVariable )
-            // InternalLatino.g:6425:3: ruleVariable
+            // InternalLatino.g:6412:2: ( ruleVariable )
+            // InternalLatino.g:6413:3: ruleVariable
             {
              before(grammarAccess.getParaAccess().getVariableVariableParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -19651,17 +19609,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__LimitesAssignment_5"
-    // InternalLatino.g:6434:1: rule__Para__LimitesAssignment_5 : ( ruleExpresion ) ;
+    // InternalLatino.g:6422:1: rule__Para__LimitesAssignment_5 : ( ruleExpresion ) ;
     public final void rule__Para__LimitesAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6438:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:6439:2: ( ruleExpresion )
+            // InternalLatino.g:6426:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:6427:2: ( ruleExpresion )
             {
-            // InternalLatino.g:6439:2: ( ruleExpresion )
-            // InternalLatino.g:6440:3: ruleExpresion
+            // InternalLatino.g:6427:2: ( ruleExpresion )
+            // InternalLatino.g:6428:3: ruleExpresion
             {
              before(grammarAccess.getParaAccess().getLimitesExpresionParserRuleCall_5_0()); 
             pushFollow(FOLLOW_2);
@@ -19692,17 +19650,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__LimitesAssignment_6_1"
-    // InternalLatino.g:6449:1: rule__Para__LimitesAssignment_6_1 : ( ruleExpresion ) ;
+    // InternalLatino.g:6437:1: rule__Para__LimitesAssignment_6_1 : ( ruleExpresion ) ;
     public final void rule__Para__LimitesAssignment_6_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6453:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:6454:2: ( ruleExpresion )
+            // InternalLatino.g:6441:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:6442:2: ( ruleExpresion )
             {
-            // InternalLatino.g:6454:2: ( ruleExpresion )
-            // InternalLatino.g:6455:3: ruleExpresion
+            // InternalLatino.g:6442:2: ( ruleExpresion )
+            // InternalLatino.g:6443:3: ruleExpresion
             {
              before(grammarAccess.getParaAccess().getLimitesExpresionParserRuleCall_6_1_0()); 
             pushFollow(FOLLOW_2);
@@ -19733,17 +19691,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__LimitesAssignment_6_2_1"
-    // InternalLatino.g:6464:1: rule__Para__LimitesAssignment_6_2_1 : ( ruleExpresion ) ;
+    // InternalLatino.g:6452:1: rule__Para__LimitesAssignment_6_2_1 : ( ruleExpresion ) ;
     public final void rule__Para__LimitesAssignment_6_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6468:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:6469:2: ( ruleExpresion )
+            // InternalLatino.g:6456:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:6457:2: ( ruleExpresion )
             {
-            // InternalLatino.g:6469:2: ( ruleExpresion )
-            // InternalLatino.g:6470:3: ruleExpresion
+            // InternalLatino.g:6457:2: ( ruleExpresion )
+            // InternalLatino.g:6458:3: ruleExpresion
             {
              before(grammarAccess.getParaAccess().getLimitesExpresionParserRuleCall_6_2_1_0()); 
             pushFollow(FOLLOW_2);
@@ -19774,17 +19732,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Para__CuerpoAssignment_8"
-    // InternalLatino.g:6479:1: rule__Para__CuerpoAssignment_8 : ( ruleSentencia ) ;
+    // InternalLatino.g:6467:1: rule__Para__CuerpoAssignment_8 : ( ruleSentencia ) ;
     public final void rule__Para__CuerpoAssignment_8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6483:1: ( ( ruleSentencia ) )
-            // InternalLatino.g:6484:2: ( ruleSentencia )
+            // InternalLatino.g:6471:1: ( ( ruleSentencia ) )
+            // InternalLatino.g:6472:2: ( ruleSentencia )
             {
-            // InternalLatino.g:6484:2: ( ruleSentencia )
-            // InternalLatino.g:6485:3: ruleSentencia
+            // InternalLatino.g:6472:2: ( ruleSentencia )
+            // InternalLatino.g:6473:3: ruleSentencia
             {
              before(grammarAccess.getParaAccess().getCuerpoSentenciaParserRuleCall_8_0()); 
             pushFollow(FOLLOW_2);
@@ -19815,17 +19773,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Variable__NombreAssignment"
-    // InternalLatino.g:6494:1: rule__Variable__NombreAssignment : ( RULE_ID ) ;
+    // InternalLatino.g:6482:1: rule__Variable__NombreAssignment : ( RULE_ID ) ;
     public final void rule__Variable__NombreAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6498:1: ( ( RULE_ID ) )
-            // InternalLatino.g:6499:2: ( RULE_ID )
+            // InternalLatino.g:6486:1: ( ( RULE_ID ) )
+            // InternalLatino.g:6487:2: ( RULE_ID )
             {
-            // InternalLatino.g:6499:2: ( RULE_ID )
-            // InternalLatino.g:6500:3: RULE_ID
+            // InternalLatino.g:6487:2: ( RULE_ID )
+            // InternalLatino.g:6488:3: RULE_ID
             {
              before(grammarAccess.getVariableAccess().getNombreIDTerminalRuleCall_0()); 
             match(input,RULE_ID,FOLLOW_2); 
@@ -19852,17 +19810,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Incremento__NombreAssignment_0"
-    // InternalLatino.g:6509:1: rule__Incremento__NombreAssignment_0 : ( RULE_ID ) ;
+    // InternalLatino.g:6497:1: rule__Incremento__NombreAssignment_0 : ( RULE_ID ) ;
     public final void rule__Incremento__NombreAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6513:1: ( ( RULE_ID ) )
-            // InternalLatino.g:6514:2: ( RULE_ID )
+            // InternalLatino.g:6501:1: ( ( RULE_ID ) )
+            // InternalLatino.g:6502:2: ( RULE_ID )
             {
-            // InternalLatino.g:6514:2: ( RULE_ID )
-            // InternalLatino.g:6515:3: RULE_ID
+            // InternalLatino.g:6502:2: ( RULE_ID )
+            // InternalLatino.g:6503:3: RULE_ID
             {
              before(grammarAccess.getIncrementoAccess().getNombreIDTerminalRuleCall_0_0()); 
             match(input,RULE_ID,FOLLOW_2); 
@@ -19889,17 +19847,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Incremento__OperadorAssignment_1"
-    // InternalLatino.g:6524:1: rule__Incremento__OperadorAssignment_1 : ( ruleOperadorPaso ) ;
+    // InternalLatino.g:6512:1: rule__Incremento__OperadorAssignment_1 : ( ruleOperadorPaso ) ;
     public final void rule__Incremento__OperadorAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6528:1: ( ( ruleOperadorPaso ) )
-            // InternalLatino.g:6529:2: ( ruleOperadorPaso )
+            // InternalLatino.g:6516:1: ( ( ruleOperadorPaso ) )
+            // InternalLatino.g:6517:2: ( ruleOperadorPaso )
             {
-            // InternalLatino.g:6529:2: ( ruleOperadorPaso )
-            // InternalLatino.g:6530:3: ruleOperadorPaso
+            // InternalLatino.g:6517:2: ( ruleOperadorPaso )
+            // InternalLatino.g:6518:3: ruleOperadorPaso
             {
              before(grammarAccess.getIncrementoAccess().getOperadorOperadorPasoEnumRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -19930,17 +19888,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Elegir__ExpresionAssignment_1"
-    // InternalLatino.g:6539:1: rule__Elegir__ExpresionAssignment_1 : ( ruleExpresion ) ;
+    // InternalLatino.g:6527:1: rule__Elegir__ExpresionAssignment_1 : ( ruleExpresion ) ;
     public final void rule__Elegir__ExpresionAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6543:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:6544:2: ( ruleExpresion )
+            // InternalLatino.g:6531:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:6532:2: ( ruleExpresion )
             {
-            // InternalLatino.g:6544:2: ( ruleExpresion )
-            // InternalLatino.g:6545:3: ruleExpresion
+            // InternalLatino.g:6532:2: ( ruleExpresion )
+            // InternalLatino.g:6533:3: ruleExpresion
             {
              before(grammarAccess.getElegirAccess().getExpresionExpresionParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -19971,17 +19929,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Elegir__CasosAssignment_2"
-    // InternalLatino.g:6554:1: rule__Elegir__CasosAssignment_2 : ( ruleCaso ) ;
+    // InternalLatino.g:6542:1: rule__Elegir__CasosAssignment_2 : ( ruleCaso ) ;
     public final void rule__Elegir__CasosAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6558:1: ( ( ruleCaso ) )
-            // InternalLatino.g:6559:2: ( ruleCaso )
+            // InternalLatino.g:6546:1: ( ( ruleCaso ) )
+            // InternalLatino.g:6547:2: ( ruleCaso )
             {
-            // InternalLatino.g:6559:2: ( ruleCaso )
-            // InternalLatino.g:6560:3: ruleCaso
+            // InternalLatino.g:6547:2: ( ruleCaso )
+            // InternalLatino.g:6548:3: ruleCaso
             {
              before(grammarAccess.getElegirAccess().getCasosCasoParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -20012,17 +19970,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Elegir__DefectoAssignment_3_2"
-    // InternalLatino.g:6569:1: rule__Elegir__DefectoAssignment_3_2 : ( ruleSentencia ) ;
+    // InternalLatino.g:6557:1: rule__Elegir__DefectoAssignment_3_2 : ( ruleSentencia ) ;
     public final void rule__Elegir__DefectoAssignment_3_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6573:1: ( ( ruleSentencia ) )
-            // InternalLatino.g:6574:2: ( ruleSentencia )
+            // InternalLatino.g:6561:1: ( ( ruleSentencia ) )
+            // InternalLatino.g:6562:2: ( ruleSentencia )
             {
-            // InternalLatino.g:6574:2: ( ruleSentencia )
-            // InternalLatino.g:6575:3: ruleSentencia
+            // InternalLatino.g:6562:2: ( ruleSentencia )
+            // InternalLatino.g:6563:3: ruleSentencia
             {
              before(grammarAccess.getElegirAccess().getDefectoSentenciaParserRuleCall_3_2_0()); 
             pushFollow(FOLLOW_2);
@@ -20053,17 +20011,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Caso__ValoresAssignment_1"
-    // InternalLatino.g:6584:1: rule__Caso__ValoresAssignment_1 : ( ruleConstante ) ;
+    // InternalLatino.g:6572:1: rule__Caso__ValoresAssignment_1 : ( ruleConstante ) ;
     public final void rule__Caso__ValoresAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6588:1: ( ( ruleConstante ) )
-            // InternalLatino.g:6589:2: ( ruleConstante )
+            // InternalLatino.g:6576:1: ( ( ruleConstante ) )
+            // InternalLatino.g:6577:2: ( ruleConstante )
             {
-            // InternalLatino.g:6589:2: ( ruleConstante )
-            // InternalLatino.g:6590:3: ruleConstante
+            // InternalLatino.g:6577:2: ( ruleConstante )
+            // InternalLatino.g:6578:3: ruleConstante
             {
              before(grammarAccess.getCasoAccess().getValoresConstanteParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -20094,17 +20052,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Caso__ValoresAssignment_3_1"
-    // InternalLatino.g:6599:1: rule__Caso__ValoresAssignment_3_1 : ( ruleConstante ) ;
+    // InternalLatino.g:6587:1: rule__Caso__ValoresAssignment_3_1 : ( ruleConstante ) ;
     public final void rule__Caso__ValoresAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6603:1: ( ( ruleConstante ) )
-            // InternalLatino.g:6604:2: ( ruleConstante )
+            // InternalLatino.g:6591:1: ( ( ruleConstante ) )
+            // InternalLatino.g:6592:2: ( ruleConstante )
             {
-            // InternalLatino.g:6604:2: ( ruleConstante )
-            // InternalLatino.g:6605:3: ruleConstante
+            // InternalLatino.g:6592:2: ( ruleConstante )
+            // InternalLatino.g:6593:3: ruleConstante
             {
              before(grammarAccess.getCasoAccess().getValoresConstanteParserRuleCall_3_1_0()); 
             pushFollow(FOLLOW_2);
@@ -20135,17 +20093,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Caso__SentenciasAssignment_4"
-    // InternalLatino.g:6614:1: rule__Caso__SentenciasAssignment_4 : ( ruleSentencia ) ;
+    // InternalLatino.g:6602:1: rule__Caso__SentenciasAssignment_4 : ( ruleSentencia ) ;
     public final void rule__Caso__SentenciasAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6618:1: ( ( ruleSentencia ) )
-            // InternalLatino.g:6619:2: ( ruleSentencia )
+            // InternalLatino.g:6606:1: ( ( ruleSentencia ) )
+            // InternalLatino.g:6607:2: ( ruleSentencia )
             {
-            // InternalLatino.g:6619:2: ( ruleSentencia )
-            // InternalLatino.g:6620:3: ruleSentencia
+            // InternalLatino.g:6607:2: ( ruleSentencia )
+            // InternalLatino.g:6608:3: ruleSentencia
             {
              before(grammarAccess.getCasoAccess().getSentenciasSentenciaParserRuleCall_4_0()); 
             pushFollow(FOLLOW_2);
@@ -20176,17 +20134,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__NombreAssignment_1"
-    // InternalLatino.g:6629:1: rule__Funcion__NombreAssignment_1 : ( RULE_ID ) ;
+    // InternalLatino.g:6617:1: rule__Funcion__NombreAssignment_1 : ( RULE_ID ) ;
     public final void rule__Funcion__NombreAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6633:1: ( ( RULE_ID ) )
-            // InternalLatino.g:6634:2: ( RULE_ID )
+            // InternalLatino.g:6621:1: ( ( RULE_ID ) )
+            // InternalLatino.g:6622:2: ( RULE_ID )
             {
-            // InternalLatino.g:6634:2: ( RULE_ID )
-            // InternalLatino.g:6635:3: RULE_ID
+            // InternalLatino.g:6622:2: ( RULE_ID )
+            // InternalLatino.g:6623:3: RULE_ID
             {
              before(grammarAccess.getFuncionAccess().getNombreIDTerminalRuleCall_1_0()); 
             match(input,RULE_ID,FOLLOW_2); 
@@ -20213,17 +20171,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__ParametrosAssignment_3_0"
-    // InternalLatino.g:6644:1: rule__Funcion__ParametrosAssignment_3_0 : ( ruleVariable ) ;
+    // InternalLatino.g:6632:1: rule__Funcion__ParametrosAssignment_3_0 : ( ruleVariable ) ;
     public final void rule__Funcion__ParametrosAssignment_3_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6648:1: ( ( ruleVariable ) )
-            // InternalLatino.g:6649:2: ( ruleVariable )
+            // InternalLatino.g:6636:1: ( ( ruleVariable ) )
+            // InternalLatino.g:6637:2: ( ruleVariable )
             {
-            // InternalLatino.g:6649:2: ( ruleVariable )
-            // InternalLatino.g:6650:3: ruleVariable
+            // InternalLatino.g:6637:2: ( ruleVariable )
+            // InternalLatino.g:6638:3: ruleVariable
             {
              before(grammarAccess.getFuncionAccess().getParametrosVariableParserRuleCall_3_0_0()); 
             pushFollow(FOLLOW_2);
@@ -20254,17 +20212,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__ParametrosAssignment_3_1_1"
-    // InternalLatino.g:6659:1: rule__Funcion__ParametrosAssignment_3_1_1 : ( ruleVariable ) ;
+    // InternalLatino.g:6647:1: rule__Funcion__ParametrosAssignment_3_1_1 : ( ruleVariable ) ;
     public final void rule__Funcion__ParametrosAssignment_3_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6663:1: ( ( ruleVariable ) )
-            // InternalLatino.g:6664:2: ( ruleVariable )
+            // InternalLatino.g:6651:1: ( ( ruleVariable ) )
+            // InternalLatino.g:6652:2: ( ruleVariable )
             {
-            // InternalLatino.g:6664:2: ( ruleVariable )
-            // InternalLatino.g:6665:3: ruleVariable
+            // InternalLatino.g:6652:2: ( ruleVariable )
+            // InternalLatino.g:6653:3: ruleVariable
             {
              before(grammarAccess.getFuncionAccess().getParametrosVariableParserRuleCall_3_1_1_0()); 
             pushFollow(FOLLOW_2);
@@ -20295,17 +20253,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Funcion__CuerpoAssignment_5"
-    // InternalLatino.g:6674:1: rule__Funcion__CuerpoAssignment_5 : ( ruleSentencia ) ;
+    // InternalLatino.g:6662:1: rule__Funcion__CuerpoAssignment_5 : ( ruleSentencia ) ;
     public final void rule__Funcion__CuerpoAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6678:1: ( ( ruleSentencia ) )
-            // InternalLatino.g:6679:2: ( ruleSentencia )
+            // InternalLatino.g:6666:1: ( ( ruleSentencia ) )
+            // InternalLatino.g:6667:2: ( ruleSentencia )
             {
-            // InternalLatino.g:6679:2: ( ruleSentencia )
-            // InternalLatino.g:6680:3: ruleSentencia
+            // InternalLatino.g:6667:2: ( ruleSentencia )
+            // InternalLatino.g:6668:3: ruleSentencia
             {
              before(grammarAccess.getFuncionAccess().getCuerpoSentenciaParserRuleCall_5_0()); 
             pushFollow(FOLLOW_2);
@@ -20336,17 +20294,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Retorno__ValorAssignment_1"
-    // InternalLatino.g:6689:1: rule__Retorno__ValorAssignment_1 : ( ruleExpresion ) ;
+    // InternalLatino.g:6677:1: rule__Retorno__ValorAssignment_1 : ( ruleExpresion ) ;
     public final void rule__Retorno__ValorAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6693:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:6694:2: ( ruleExpresion )
+            // InternalLatino.g:6681:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:6682:2: ( ruleExpresion )
             {
-            // InternalLatino.g:6694:2: ( ruleExpresion )
-            // InternalLatino.g:6695:3: ruleExpresion
+            // InternalLatino.g:6682:2: ( ruleExpresion )
+            // InternalLatino.g:6683:3: ruleExpresion
             {
              before(grammarAccess.getRetornoAccess().getValorExpresionParserRuleCall_1_0()); 
             pushFollow(FOLLOW_2);
@@ -20377,17 +20335,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Llamada__FuncionAssignment_0"
-    // InternalLatino.g:6704:1: rule__Llamada__FuncionAssignment_0 : ( RULE_ID ) ;
+    // InternalLatino.g:6692:1: rule__Llamada__FuncionAssignment_0 : ( RULE_ID ) ;
     public final void rule__Llamada__FuncionAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6708:1: ( ( RULE_ID ) )
-            // InternalLatino.g:6709:2: ( RULE_ID )
+            // InternalLatino.g:6696:1: ( ( RULE_ID ) )
+            // InternalLatino.g:6697:2: ( RULE_ID )
             {
-            // InternalLatino.g:6709:2: ( RULE_ID )
-            // InternalLatino.g:6710:3: RULE_ID
+            // InternalLatino.g:6697:2: ( RULE_ID )
+            // InternalLatino.g:6698:3: RULE_ID
             {
              before(grammarAccess.getLlamadaAccess().getFuncionIDTerminalRuleCall_0_0()); 
             match(input,RULE_ID,FOLLOW_2); 
@@ -20414,17 +20372,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Llamada__ArgumentosAssignment_2_0"
-    // InternalLatino.g:6719:1: rule__Llamada__ArgumentosAssignment_2_0 : ( ruleExpresion ) ;
+    // InternalLatino.g:6707:1: rule__Llamada__ArgumentosAssignment_2_0 : ( ruleExpresion ) ;
     public final void rule__Llamada__ArgumentosAssignment_2_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6723:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:6724:2: ( ruleExpresion )
+            // InternalLatino.g:6711:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:6712:2: ( ruleExpresion )
             {
-            // InternalLatino.g:6724:2: ( ruleExpresion )
-            // InternalLatino.g:6725:3: ruleExpresion
+            // InternalLatino.g:6712:2: ( ruleExpresion )
+            // InternalLatino.g:6713:3: ruleExpresion
             {
              before(grammarAccess.getLlamadaAccess().getArgumentosExpresionParserRuleCall_2_0_0()); 
             pushFollow(FOLLOW_2);
@@ -20455,17 +20413,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Llamada__ArgumentosAssignment_2_1_1"
-    // InternalLatino.g:6734:1: rule__Llamada__ArgumentosAssignment_2_1_1 : ( ruleExpresion ) ;
+    // InternalLatino.g:6722:1: rule__Llamada__ArgumentosAssignment_2_1_1 : ( ruleExpresion ) ;
     public final void rule__Llamada__ArgumentosAssignment_2_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6738:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:6739:2: ( ruleExpresion )
+            // InternalLatino.g:6726:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:6727:2: ( ruleExpresion )
             {
-            // InternalLatino.g:6739:2: ( ruleExpresion )
-            // InternalLatino.g:6740:3: ruleExpresion
+            // InternalLatino.g:6727:2: ( ruleExpresion )
+            // InternalLatino.g:6728:3: ruleExpresion
             {
              before(grammarAccess.getLlamadaAccess().getArgumentosExpresionParserRuleCall_2_1_1_0()); 
             pushFollow(FOLLOW_2);
@@ -20496,17 +20454,17 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Imprimir__MensajeAssignment_2"
-    // InternalLatino.g:6749:1: rule__Imprimir__MensajeAssignment_2 : ( ruleExpresion ) ;
+    // InternalLatino.g:6737:1: rule__Imprimir__MensajeAssignment_2 : ( ruleExpresion ) ;
     public final void rule__Imprimir__MensajeAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalLatino.g:6753:1: ( ( ruleExpresion ) )
-            // InternalLatino.g:6754:2: ( ruleExpresion )
+            // InternalLatino.g:6741:1: ( ( ruleExpresion ) )
+            // InternalLatino.g:6742:2: ( ruleExpresion )
             {
-            // InternalLatino.g:6754:2: ( ruleExpresion )
-            // InternalLatino.g:6755:3: ruleExpresion
+            // InternalLatino.g:6742:2: ( ruleExpresion )
+            // InternalLatino.g:6743:3: ruleExpresion
             {
              before(grammarAccess.getImprimirAccess().getMensajeExpresionParserRuleCall_2_0()); 
             pushFollow(FOLLOW_2);
@@ -20540,12 +20498,12 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
     protected DFA2 dfa2 = new DFA2(this);
     static final String dfa_1s = "\23\uffff";
-    static final String dfa_2s = "\1\5\1\47\14\uffff\1\4\4\uffff";
-    static final String dfa_3s = "\1\76\1\55\14\uffff\1\104\4\uffff";
+    static final String dfa_2s = "\1\5\1\45\14\uffff\1\4\4\uffff";
+    static final String dfa_3s = "\1\74\1\53\14\uffff\1\102\4\uffff";
     static final String dfa_4s = "\2\uffff\1\6\1\7\1\10\1\11\1\12\1\13\1\14\1\15\1\16\1\17\1\4\1\5\1\uffff\1\20\1\3\1\1\1\2";
     static final String dfa_5s = "\23\uffff}>";
     static final String[] dfa_6s = {
-            "\1\1\11\uffff\5\13\3\3\31\uffff\1\2\3\uffff\1\4\1\5\1\uffff\1\6\1\uffff\1\7\2\uffff\1\10\1\11\1\12",
+            "\1\1\11\uffff\3\13\3\3\31\uffff\1\2\3\uffff\1\4\1\5\1\uffff\1\6\1\uffff\1\7\2\uffff\1\10\1\11\1\12",
             "\2\15\1\16\1\17\2\uffff\1\14",
             "",
             "",
@@ -20559,7 +20517,7 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
             "",
             "",
             "",
-            "\3\21\27\uffff\1\21\3\uffff\3\21\2\22\3\uffff\1\21\1\22\1\uffff\1\20\26\uffff\1\21",
+            "\3\21\25\uffff\1\21\3\uffff\3\21\2\22\3\uffff\1\21\1\22\1\uffff\1\20\26\uffff\1\21",
             "",
             "",
             "",
@@ -20594,54 +20552,54 @@ public class InternalLatinoParser extends AbstractInternalContentAssistParser {
 
     public static final BitSet FOLLOW_1 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_2 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_3 = new BitSet(new long[]{0x72B10000007FE020L});
-    public static final BitSet FOLLOW_4 = new BitSet(new long[]{0x72B10000007FE022L});
-    public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x0000020000000000L});
-    public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x0000041C40000070L,0x0000000000000010L});
-    public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0000086000000000L});
-    public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000040000000000L});
-    public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000080000000000L});
-    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000100000000000L});
-    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000200000000000L});
-    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000441C40000070L,0x0000000000000010L});
-    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000800000000002L});
-    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000400000000000L});
-    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x72BF0000007F8020L});
-    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x72B10000007F8022L});
-    public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x0008000000000002L});
-    public static final BitSet FOLLOW_19 = new BitSet(new long[]{0x72B10000007F8020L});
-    public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x72B30000007F8020L});
-    public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x72F10000007F8020L});
+    public static final BitSet FOLLOW_3 = new BitSet(new long[]{0x1CAC4000001FE020L});
+    public static final BitSet FOLLOW_4 = new BitSet(new long[]{0x1CAC4000001FE022L});
+    public static final BitSet FOLLOW_5 = new BitSet(new long[]{0x0000008000000000L});
+    public static final BitSet FOLLOW_6 = new BitSet(new long[]{0x0000010710000070L,0x0000000000000004L});
+    public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0000021800000000L});
+    public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000010000000000L});
+    public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000020000000000L});
+    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000040000000000L});
+    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000080000000000L});
+    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000110710000070L,0x0000000000000004L});
+    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000200000000000L});
+    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000200000000002L});
+    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000100000000000L});
+    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x1CAFC000001F8020L});
+    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x1CAC4000001F8022L});
+    public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x0002000000000002L});
+    public static final BitSet FOLLOW_19 = new BitSet(new long[]{0x1CAC4000001F8020L});
+    public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x1CACC000001F8020L});
+    public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x1CBC4000001F8020L});
     public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0100000000000000L});
-    public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0400000000000000L});
-    public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x0800000000000000L});
-    public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x0000900000000000L});
-    public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x0000018000000000L});
-    public static final BitSet FOLLOW_28 = new BitSet(new long[]{0x1000000000000000L});
-    public static final BitSet FOLLOW_29 = new BitSet(new long[]{0x2000000000000000L});
-    public static final BitSet FOLLOW_30 = new BitSet(new long[]{0x0002000000001800L,0x0000000000000001L});
-    public static final BitSet FOLLOW_31 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000001L});
-    public static final BitSet FOLLOW_32 = new BitSet(new long[]{0x8000000000000000L});
+    public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0040000000000000L});
+    public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0100000000000000L});
+    public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x0200000000000000L});
+    public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x0000240000000000L});
+    public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x0000006000000000L});
+    public static final BitSet FOLLOW_28 = new BitSet(new long[]{0x0400000000000000L});
+    public static final BitSet FOLLOW_29 = new BitSet(new long[]{0x0800000000000000L});
+    public static final BitSet FOLLOW_30 = new BitSet(new long[]{0x4000800000001800L});
+    public static final BitSet FOLLOW_31 = new BitSet(new long[]{0x4000000000000002L});
+    public static final BitSet FOLLOW_32 = new BitSet(new long[]{0x2000000000000000L});
     public static final BitSet FOLLOW_33 = new BitSet(new long[]{0x0000000000000050L});
-    public static final BitSet FOLLOW_34 = new BitSet(new long[]{0x72B10000007F8020L,0x0000000000000001L});
-    public static final BitSet FOLLOW_35 = new BitSet(new long[]{0x72B10000007F8022L,0x0000000000000001L});
-    public static final BitSet FOLLOW_36 = new BitSet(new long[]{0x0000100000000020L});
-    public static final BitSet FOLLOW_37 = new BitSet(new long[]{0x0000141C40000070L,0x0000000000000010L});
-    public static final BitSet FOLLOW_38 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000002L});
-    public static final BitSet FOLLOW_39 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000002L});
-    public static final BitSet FOLLOW_40 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000004L});
-    public static final BitSet FOLLOW_41 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000004L});
-    public static final BitSet FOLLOW_42 = new BitSet(new long[]{0x000000001F800000L});
-    public static final BitSet FOLLOW_43 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000008L});
-    public static final BitSet FOLLOW_44 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000008L});
-    public static final BitSet FOLLOW_45 = new BitSet(new long[]{0x0000000060000000L});
-    public static final BitSet FOLLOW_46 = new BitSet(new long[]{0x0000000060000002L});
-    public static final BitSet FOLLOW_47 = new BitSet(new long[]{0x0000000380000000L});
-    public static final BitSet FOLLOW_48 = new BitSet(new long[]{0x0000000380000002L});
-    public static final BitSet FOLLOW_49 = new BitSet(new long[]{0x0000240000000000L});
-    public static final BitSet FOLLOW_50 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000020L});
+    public static final BitSet FOLLOW_34 = new BitSet(new long[]{0x5CAC4000001F8020L});
+    public static final BitSet FOLLOW_35 = new BitSet(new long[]{0x5CAC4000001F8022L});
+    public static final BitSet FOLLOW_36 = new BitSet(new long[]{0x0000040000000020L});
+    public static final BitSet FOLLOW_37 = new BitSet(new long[]{0x0000050710000070L,0x0000000000000004L});
+    public static final BitSet FOLLOW_38 = new BitSet(new long[]{0x8000000000000000L});
+    public static final BitSet FOLLOW_39 = new BitSet(new long[]{0x8000000000000002L});
+    public static final BitSet FOLLOW_40 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000001L});
+    public static final BitSet FOLLOW_41 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000001L});
+    public static final BitSet FOLLOW_42 = new BitSet(new long[]{0x0000000007E00000L});
+    public static final BitSet FOLLOW_43 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000002L});
+    public static final BitSet FOLLOW_44 = new BitSet(new long[]{0x0000000000000002L,0x0000000000000002L});
+    public static final BitSet FOLLOW_45 = new BitSet(new long[]{0x0000000018000000L});
+    public static final BitSet FOLLOW_46 = new BitSet(new long[]{0x0000000018000002L});
+    public static final BitSet FOLLOW_47 = new BitSet(new long[]{0x00000000E0000000L});
+    public static final BitSet FOLLOW_48 = new BitSet(new long[]{0x00000000E0000002L});
+    public static final BitSet FOLLOW_49 = new BitSet(new long[]{0x0000090000000000L});
+    public static final BitSet FOLLOW_50 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000008L});
     public static final BitSet FOLLOW_51 = new BitSet(new long[]{0x0000000000000040L});
 
 }

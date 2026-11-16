@@ -1155,21 +1155,9 @@ rule__Retorno__Alternatives_0
 	)
 	|
 	(
-		{ before(grammarAccess.getRetornoAccess().getRegresarKeyword_0_2()); }
-		'regresar'
-		{ after(grammarAccess.getRetornoAccess().getRegresarKeyword_0_2()); }
-	)
-	|
-	(
-		{ before(grammarAccess.getRetornoAccess().getDevolverKeyword_0_3()); }
-		'devolver'
-		{ after(grammarAccess.getRetornoAccess().getDevolverKeyword_0_3()); }
-	)
-	|
-	(
-		{ before(grammarAccess.getRetornoAccess().getRetKeyword_0_4()); }
+		{ before(grammarAccess.getRetornoAccess().getRetKeyword_0_2()); }
 		'ret'
-		{ after(grammarAccess.getRetornoAccess().getRetKeyword_0_4()); }
+		{ after(grammarAccess.getRetornoAccess().getRetKeyword_0_2()); }
 	)
 ;
 finally {

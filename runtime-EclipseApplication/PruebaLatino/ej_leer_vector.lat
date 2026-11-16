@@ -1,0 +1,21 @@
+# Lee cinco numeros, los guarda en un vector de tamano fijo y saca el mayor y el promedio
+# El vector se crea lleno de ceros porque no se pueden agregar elementos despues
+
+datos = [0, 0, 0, 0, 0]
+total = 5
+desde (i = 0; i < total; i++)
+    escribir("Numero " .. (i + 1))
+    dato = anumero(leer())
+    datos[i] = dato
+fin
+mayor = datos[0]
+suma = 0
+desde (i = 0; i < total; i++)
+    suma = suma + datos[i]
+    si datos[i] > mayor
+        mayor = datos[i]
+    fin
+fin
+escribir("Vector " .. datos)
+escribir("Mayor " .. mayor)
+escribir("Promedio " .. (suma / total))

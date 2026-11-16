@@ -1,0 +1,36 @@
+# Calculadora con menu, lee dos numeros y una opcion y usa elegir
+
+# Maximo comun divisor por el metodo de Euclides, usa el resto de la division hasta que da cero
+funcion mcd(x, y)
+    mientras y != 0
+        resto = x % y
+        x = y
+        y = resto
+    fin
+    retorno x
+fin
+
+escribir("Primer numero")
+a = anumero(leer())
+escribir("Segundo numero")
+b = anumero(leer())
+escribir("1 sumar, 2 restar, 3 multiplicar, 4 dividir, 5 mcd")
+opcion = anumero(leer())
+elegir opcion
+    caso 1:
+        escribir("Suma " .. a + b)
+    caso 2:
+        escribir("Resta " .. a - b)
+    caso 3:
+        escribir("Producto " .. a * b)
+    caso 4:
+        si b == 0
+            escribir("No se puede dividir para cero")
+        sino
+            escribir("Division " .. a / b)
+        fin
+    caso 5:
+        escribir("MCD " .. mcd(a, b))
+    otro:
+        escribir("Opcion no valida")
+fin

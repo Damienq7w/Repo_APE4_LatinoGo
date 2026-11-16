@@ -1,0 +1,44 @@
+# Trabaja con los digitos de un numero, los cuenta, los suma y dice si es perfecto
+# Un numero perfecto es igual a la suma de sus divisores, como 6 = 1 + 2 + 3
+
+# Saca el ultimo digito con el resto de dividir para 10 y lo quita del numero
+funcion sumaDigitos(num)
+    acumulado = 0
+    mientras num > 0
+        digito = num % 10
+        acumulado = acumulado + digito
+        num = (num - digito) / 10
+    fin
+    retorno acumulado
+fin
+
+# Empieza en un digito y suma uno cada vez que puede quitar el ultimo
+funcion cuentaDigitos(num)
+    contador = 1
+    mientras num >= 10
+        contador = contador + 1
+        num = (num - num % 10) / 10
+    fin
+    retorno contador
+fin
+
+# Suma todos los divisores menores que el numero
+funcion esPerfecto(num)
+    sumaDivisores = 0
+    desde (d = 1; d < num; d++)
+        si num % d == 0
+            sumaDivisores = sumaDivisores + d
+        fin
+    fin
+    retorno sumaDivisores == num && num > 0
+fin
+
+escribir("Escribe un numero entero positivo")
+numero = anumero(leer())
+escribir("Tiene " .. cuentaDigitos(numero) .. " digitos")
+escribir("Sus digitos suman " .. sumaDigitos(numero))
+si esPerfecto(numero)
+    escribir(numero .. " es perfecto")
+sino
+    escribir(numero .. " no es perfecto")
+fin
