@@ -48,7 +48,7 @@
     </eOperations>
     <eOperations name="esReservadaGo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
-        <details key="body" value="Set{'break', 'case', 'chan', 'const', 'continue', 'default', 'defer', 'else', 'fallthrough', 'for', 'func', 'go', 'goto', 'if', 'import', 'interface', 'map', 'package', 'range', 'return', 'select', 'struct', 'switch', 'type', 'var', 'fmt', 'main', 'true', 'false', 'nil', 'int', 'float64', 'string', 'bool', 'any', 'init', '_', 'leerTexto', 'leerNumero', 'aTexto', 'lector', 'bufio', 'math', 'os', 'strconv', 'strings', 'primeraVuelta'}->includes(n)"/>
+        <details key="body" value="Set{'break', 'case', 'chan', 'const', 'continue', 'default', 'defer', 'else', 'fallthrough', 'for', 'func', 'go', 'goto', 'if', 'import', 'interface', 'map', 'package', 'range', 'return', 'select', 'struct', 'switch', 'type', 'var', 'fmt', 'main', 'true', 'false', 'nil', 'int', 'float64', 'string', 'bool', 'any', 'init', '_', 'leerTexto', 'leerNumero', 'aTexto', 'lector', 'bufio', 'math', 'os', 'strconv', 'strings', 'ultimaVuelta'}->includes(n)"/>
       </eAnnotations>
       <eParameters name="n" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eOperations>

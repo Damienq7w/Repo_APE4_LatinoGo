@@ -1,0 +1,63 @@
+# Programas que el traductor acepta y pasa bien a Go pero Latino 1.4.4 no ejecuta igual
+# Para el Go se escriben 5, 1 y si, una entrada por linea
+
+# continuar dentro de repetir termina la vuelta y revisa la condicion
+# Latino 1.4.4 pierde las variables despues de un continuar en cualquier ciclo
+n2 = 0
+repetir
+    n2 = n2 + 1
+    si n2 == 2
+        continuar
+    fin
+    escribir(n2)
+hasta n2 >= 3
+# para en rango, el fin no se incluye, con continuar y romper
+# Latino 1.4.4 se cierra sin mostrar nada cuando ve un para
+para j en rango(10)
+    si j == 2
+        continuar
+    fin
+    si j > 4
+        romper
+    fin
+    escribir(j)
+fin
+# rango con inicio, fin y paso negativo
+para m en rango(6, 0, -2)
+    escribir(m)
+fin
+# elegir dentro de un ciclo, romper sale del ciclo y no solo del elegir
+# Latino 1.4.4 vuelve al inicio del ciclo con las variables perdidas y no termina nunca
+para d en rango(1, 9)
+    elegir d
+        caso 1:
+            escribir("lunes")
+        caso 6: caso 7:
+            escribir("fin de semana")
+            romper
+        otro:
+            escribir("dia " .. d)
+    fin
+fin
+# leer sin anumero ni acadena toma el tipo segun como se use la variable
+# Latino 1.4.4 deja nulo en la variable cuando se asigna leer sin conversion
+cantidad = leer()
+doble = cantidad * 2
+escribir(doble)
+opcion = leer()
+si opcion == 1
+    escribir("Elegiste la opcion uno")
+fin
+respuesta = leer()
+si respuesta != "no"
+    escribir("Seguimos")
+fin
+# El parametro numeros tapa a la lista global numeros dentro de la funcion
+# Latino 1.4.4 mezcla el parametro con la variable global del mismo nombre
+# y tambien da valores viejos cuando una funcion cambia una variable global
+numeros = [3, 40, 4]
+funcion triple(numeros)
+    retorno numeros * 3
+fin
+escribir(triple(5))
+escribir(numeros)

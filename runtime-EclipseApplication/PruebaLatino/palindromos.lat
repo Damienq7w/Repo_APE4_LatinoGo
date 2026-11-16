@@ -1,0 +1,31 @@
+# Cuenta y muestra los numeros palindromos desde 1 hasta un limite
+# Un palindromo se lee igual al derecho y al reves, como 121 o 7
+
+# Da la vuelta a un numero sacando sus digitos uno por uno
+funcion invertir(n)
+    invertido = 0
+    mientras n > 0
+        digito = n % 10
+        invertido = invertido * 10 + digito
+        n = (n - digito) / 10
+    fin
+    retorno invertido
+fin
+
+# Es palindromo si al darle la vuelta queda el mismo numero
+funcion esPalindromo(n)
+    retorno invertir(n) == n
+fin
+
+escribir("Hasta que numero busco palindromos")
+limite = anumero(leer())
+
+cantidad = 0
+desde (i = 1; i <= limite; i++)
+    si esPalindromo(i)
+        escribir(i)
+        cantidad++
+    fin
+fin
+
+escribir("Entre 1 y " .. limite .. " hay " .. cantidad .. " palindromos")

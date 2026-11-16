@@ -319,10 +319,11 @@ class LatinoGenerator extends AbstractGenerator {
 			«ENDFOR»
 		}'''
 
-	// repetir hace el cuerpo una vez y despues mira la condicion. primeraVuelta hace eso en el mismo for,
-	// asi un continuar tambien pasa por la condicion y el ciclo puede terminar
+	// Latino 1.4.4 mira la condicion antes del cuerpo y sale despues del cuerpo si era verdadera,
+	// por eso ultimaVuelta guarda la condicion al empezar y el for la revisa al terminar la vuelta
 	def dispatch CharSequence sentencia(Repetir r) '''
-		«etiqueta(r)»for primeraVuelta := true; primeraVuelta || !(«traducir(r.condicion)»); primeraVuelta = false {
+		«etiqueta(r)»for ultimaVuelta := false; !ultimaVuelta; {
+			ultimaVuelta = «traducir(r.condicion)»
 			«FOR s : r.cuerpo»
 				«sentencia(s)»
 			«ENDFOR»

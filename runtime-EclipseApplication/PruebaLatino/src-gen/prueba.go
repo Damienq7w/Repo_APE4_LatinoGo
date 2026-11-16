@@ -46,15 +46,11 @@ var suma float64
 var i float64
 var contador float64
 var k float64
-var n2 float64
-var j float64
-var m float64
 var r float64
-var d float64
 var total2 float64
 
-func sumar(a float64, b float64) float64 {
-	return a + b
+func sumar(s1 float64, s2 float64) float64 {
+	return s1 + s2
 }
 
 func saludar(quien string) {
@@ -82,10 +78,6 @@ func dobleDe(n float64) float64 {
 
 func saluda(n string) {
 	fmt.Println(("Hola " + aTexto(n)))
-}
-
-func triple(numeros float64) float64 {
-	return numeros * 3.0
 }
 
 func main() {
@@ -222,43 +214,20 @@ func main() {
 		contador = contador - 1.0
 	}
 	k = 0.0
-	for primeraVuelta := true; primeraVuelta || !(k >= 6.0); primeraVuelta = false {
+	for ultimaVuelta := false; !ultimaVuelta; {
+		ultimaVuelta = k >= 6.0
 		k = k + 2.0
 	}
 	fmt.Println(("k vale " + aTexto(k)))
-	n2 = 0.0
-	for primeraVuelta := true; primeraVuelta || !(n2 >= 3.0); primeraVuelta = false {
-		n2 = n2 + 1.0
-		if n2 == 2.0 {
-			continue
-		}
-		fmt.Println(aTexto(n2))
+	i = 0.0
+	for ultimaVuelta := false; !ultimaVuelta; {
+		ultimaVuelta = i >= 3.0
+		fmt.Println(("vuelta " + aTexto(i)))
+		i = i + 1.0
 	}
-	for j = 0.0; j < 10.0; j += 1.0 {
-		if j == 2.0 {
-			continue
-		}
-		if j > 4.0 {
-			break
-		}
-		fmt.Println(aTexto(j))
-	}
-	for m = 6.0; m > 0.0; m += -2.0 {
-		fmt.Println(aTexto(m))
-	}
+	fmt.Println(("fin " + aTexto(i)))
 	for r = 3.0; r > 0.0; r-- {
 		fmt.Println(aTexto(r))
-	}
-	ciclo1: for d = 1.0; d < 9.0; d += 1.0 {
-		switch d {
-		case 1.0:
-			fmt.Println("lunes")
-		case 6.0, 7.0:
-			fmt.Println("fin de semana")
-			break ciclo1
-		default:
-			fmt.Println(("dia " + aTexto(d)))
-		}
 	}
 	switch ciudad {
 	case "Ambato":
@@ -278,8 +247,6 @@ func main() {
 	fmt.Println(("El mayor es " + aTexto(mayor(7.0, 4.0))))
 	fmt.Println(aTexto(dobleDe(4.0)))
 	saluda("Ana")
-	fmt.Println(aTexto(triple(5.0)))
-	fmt.Println(aTexto(numeros))
 }
 
 func leerTexto() string {

@@ -59,7 +59,8 @@ Mientras returns Mientras:
 		(cuerpo+=Sentencia)*
 	'fin';
 
-// repetir ... hasta i >= 5 hace el cuerpo y para cuando la condicion es verdadera, no lleva fin
+// repetir ... hasta i >= 5 hace el cuerpo al menos una vez, no lleva fin
+// en Latino 1.4.4 la condicion se mira antes de cada vuelta y si era verdadera esa es la ultima
 Repetir returns Repetir:
 	'repetir'
 		(cuerpo+=Sentencia)*
@@ -122,10 +123,10 @@ Funcion returns Funcion:
 		(cuerpo+=Sentencia)*
 	'fin';
 
-// retorno devuelve un valor, tambien se escribe retornar, regresar, devolver o ret
+// retorno devuelve un valor, tambien se escribe retornar o ret como en Latino 1.4.4
 // el valor es obligatorio, sin el la linea siguiente se leeria como el valor
 Retorno returns Retorno:
-	('retorno' | 'retornar' | 'regresar' | 'devolver' | 'ret') valor=Expresion;
+	('retorno' | 'retornar' | 'ret') valor=Expresion;
 
 // Llamar a una funcion como sentencia sola, saludar con un valor entre parentesis
 Llamada returns Llamada:
